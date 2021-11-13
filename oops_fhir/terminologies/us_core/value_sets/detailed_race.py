@@ -1,3 +1,5 @@
+""" The 900+ [CDC Race codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 5 OMB race category codes. """
+
 _resource_type_ = """ValueSet"""
 _id_ = """detailed-race"""
 _url_ = """http://hl7.org/fhir/us/core/ValueSet/detailed-race"""

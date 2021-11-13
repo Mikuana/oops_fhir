@@ -1,3 +1,5 @@
+""" The type of participation a provenance agent played for a given target. """
+
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-provenance-participant-type"""
 _url_ = """http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type"""

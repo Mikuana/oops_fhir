@@ -1,3 +1,5 @@
+""" The US Core DocumentReference Type Value Set includes all LOINC  values whose SCALE is DOC in the LOINC database and the HL7 v3 Code System NullFlavor concept 'unknown' """
+
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-documentreference-type"""
 _url_ = """http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type"""

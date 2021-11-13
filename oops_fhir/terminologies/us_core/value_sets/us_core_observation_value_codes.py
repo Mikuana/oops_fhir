@@ -1,3 +1,5 @@
+""" [Snomed-CT](http://www.ihtsdo.org/) concept codes for coded results """
+
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-observation-value-codes"""
 _url_ = """http://hl7.org/fhir/us/core/ValueSet/us-core-observation-value-codes"""

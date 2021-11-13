@@ -1,3 +1,5 @@
+""" This value set currently contains all of LOINC. The codes selected should represent discrete and narrative diagnostic observations and reports """
+
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-diagnosticreport-report-and-note-codes"""
 _url_ = """http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-report-and-note-codes"""

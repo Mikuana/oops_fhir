@@ -1,3 +1,5 @@
+""" Concepts from CPT, SNOMED CT, HCPCS Level II Alphanumeric Codes, ICD-10-PCS,CDT and LOINC code systems that can be used to indicate the type of procedure performed. """
+
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-procedure-code"""
 _url_ = """http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"""

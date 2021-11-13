@@ -1,3 +1,5 @@
+""" The vital sign codes from the base FHIR and US Core Vital Signs. """
+
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-vital-signs"""
 _url_ = """http://hl7.org/fhir/us/core/ValueSet/us-core-vital-signs"""

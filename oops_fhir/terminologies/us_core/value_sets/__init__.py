@@ -85,6 +85,7 @@ class ValueSet:
         }
 
         self.Meta.target.write_text(
+            f'''""" {self.__doc__} """\n\n''' +
             "\n".join(
                 [
                     f"_{v}_ = "

@@ -1,3 +1,5 @@
+""" The US Core Narrative Status Value Set limits the text status for the resource narrative. """
+
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-narrative-status"""
 _url_ = """http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status"""

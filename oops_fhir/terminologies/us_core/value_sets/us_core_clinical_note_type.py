@@ -1,3 +1,5 @@
+""" The US Core Clinical Note Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes. """
+
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-clinical-note-type"""
 _url_ = """http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type"""
