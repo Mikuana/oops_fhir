@@ -7,10 +7,12 @@ following CPT sections:   - 99201-99499 E/M  - 99500-99600 home health
 medication management  - 98966-98968 non physician telephone services
 (subscription to AMA Required)"""
 
+
+__all__ = []
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-encounter-type"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreEncounterType"
 _title_ = "US Core Encounter Type"

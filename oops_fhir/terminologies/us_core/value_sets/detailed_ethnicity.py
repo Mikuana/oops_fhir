@@ -2,10 +2,12 @@
 codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are
 grouped under one of the 2 OMB ethnicity category codes."""
 
+
+__all__ = []
+
 _resource_type_ = "ValueSet"
 _id_ = "detailed-ethnicity"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "DetailedEthnicity"
 _title_ = "Detailed ethnicity"

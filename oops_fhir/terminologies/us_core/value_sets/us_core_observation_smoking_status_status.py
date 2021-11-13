@@ -1,10 +1,12 @@
 """Codes providing the status of an observation for smoking status.
 Constrained to `final`and `entered-in-error`."""
 
+
+__all__ = ["final", "entered_in_error"]
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-observation-smoking-status-status"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smoking-status-status"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreObservationSmokingStatusStatus"
 _title_ = "US Core Status for Smoking Status Observation"

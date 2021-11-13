@@ -4,10 +4,12 @@ Collecting, and Presenting Federal Data on Race and Ethnicity,
 Statistical Policy Directive No. 15, as revised, October 30, 1997](https
 ://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)."""
 
+
+__all__ = ["hispanic_or_latino", "non_hispanic_or_latino"]
+
 _resource_type_ = "ValueSet"
 _id_ = "omb-ethnicity-category"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "OmbEthnicityCategories"
 _title_ = "OMB Ethnicity Categories"

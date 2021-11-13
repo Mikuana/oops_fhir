@@ -2,10 +2,12 @@
 whose SCALE is DOC in the LOINC database and the HL7 v3 Code System
 NullFlavor concept 'unknown'"""
 
+
+__all__ = ["unknown"]
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-documentreference-type"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreDocumentReferenceType"
 _title_ = "US Core DocumentReference Type"

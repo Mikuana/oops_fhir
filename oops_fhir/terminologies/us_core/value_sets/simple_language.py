@@ -6,10 +6,12 @@ character code if a 2 character code does not exist. It points back to
 [RFC 5646](https://tools.ietf.org/html/rfc5646), however only the
 language codes are required, all other elements are optional."""
 
+
+__all__ = []
+
 _resource_type_ = "ValueSet"
 _id_ = "simple-language"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/simple-language"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "LanguageCodesWithLanguageAndOptionallyARegionModifier"
 _title_ = "Language codes with language and optionally a region modifier"

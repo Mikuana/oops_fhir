@@ -2,10 +2,12 @@
 Taxonomy Code Set classification codes for providers. Only concepts with
 a classification and no specialization are included."""
 
+
+__all__ = []
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-provider-role"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreProviderRoleNucc"
 _title_ = "US Core Provider Role (NUCC)"

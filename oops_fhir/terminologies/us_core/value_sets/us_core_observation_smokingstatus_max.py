@@ -1,9 +1,11 @@
 """Representing a patient’s smoking behavior using concepts from SNOMED CT."""
 
+
+__all__ = []
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-observation-smokingstatus-max"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smokingstatus-max"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreSmokingStatusmaxValueSet"
 _title_ = "US Core Smoking Status Max-Binding"

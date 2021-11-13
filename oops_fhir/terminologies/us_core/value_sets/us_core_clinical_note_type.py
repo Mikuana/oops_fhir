@@ -1,10 +1,12 @@
 """The US Core Clinical Note Type Value Set is a 'starter set' of types
 supported for fetching and storing clinical notes."""
 
+
+__all__ = ["x18842_5", "x11488_4", "x34117_2", "x11506_3", "x28570_0"]
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-clinical-note-type"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreClinicalNoteType"
 _title_ = "US Core Clinical Note Type"

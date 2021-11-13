@@ -5,10 +5,12 @@ relevant to that patient's healthcare (e.g., signs, symptoms, and
 defined conditions).   ICD-10 is appropriate for Diagnosis information,
 and ICD-9 for historical information."""
 
+
+__all__ = ["x160245001"]
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-condition-code"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreConditionCode"
 _title_ = "US Core Condition Code"

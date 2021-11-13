@@ -1,9 +1,11 @@
 """The type of participation a provenance agent played for a given target."""
 
+
+__all__ = []
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-provenance-participant-type"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreProvenancePaticipantTypeCodes"
 _title_ = "US Core Provenance Participant Type Codes"

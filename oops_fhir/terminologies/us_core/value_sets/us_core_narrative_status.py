@@ -1,10 +1,12 @@
 """The US Core Narrative Status Value Set limits the text status for the
 resource narrative."""
 
+
+__all__ = ["additional", "generated"]
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-narrative-status"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "NarrativeStatus"
 _title_ = "US Core Narrative Status"

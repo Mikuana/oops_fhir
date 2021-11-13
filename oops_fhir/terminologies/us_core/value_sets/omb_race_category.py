@@ -7,6 +7,17 @@ Ethnicity, Statistical Policy Directive No. 15, as revised, October 30,
 1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf
 ) ."""
 
+
+__all__ = [
+    "american_indian_or_alaska_native",
+    "asian",
+    "black_or_african_american",
+    "native_hawaiian_or_other_pacific_islander",
+    "white",
+    "unknown",
+    "asked_but_no_answer",
+]
+
 _resource_type_ = "ValueSet"
 _id_ = "omb-race-category"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/omb-race-category"

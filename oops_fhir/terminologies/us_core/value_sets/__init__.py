@@ -55,13 +55,16 @@ class ValueSet:
             "copyright": "copyright",
         }
         for k, v in ats.items():
-            if isinstance(self.Meta.definition.get(k), str):
+            if self.Meta.definition.get(k) is None:
+                continue
+            elif isinstance(self.Meta.definition.get(k), str):
                 v2 = self.Meta.definition.get(k)
                 v2 = '\n'.join(textwrap.wrap(v2, 88))
 
                 v2 = f'"""{v2}"""' if '\n' in v2 else f'"{v2}"'
             else:
                 v2 = str(self.Meta.definition.get(k))
+
             em.append((f'_{v}_', v2))
         return em
 
@@ -97,10 +100,11 @@ class ValueSet:
             f"{name} = {value}\n" + (f'""" {desc} """\n' if desc else "")
             for name, desc, value in self.expanded_values()
         ]
-
+        all_values = [name for name, _, _ in self.expanded_values()]
         self.Meta.target.write_text(
-            '"""' + '\n'.join(textwrap.wrap(self.__doc__, 72)) + '"""\n\n' +
-            "\n".join(f'{n} = {v}' for n, v in self.expanded_meta())
+            '"""' + '\n'.join(textwrap.wrap(self.__doc__, 72)) + '"""\n\n'
+            + f"\n__all__ = [" + ','.join(f"'{x}'" for x in all_values) + "]\n\n"
+            + "\n".join(f'{n} = {v}' for n, v in self.expanded_meta())
             + "\n\n"
             + "\n".join(values)
         )

@@ -1,5 +1,8 @@
 """This value set defines two letter USPS alphabetic codes."""
 
+
+__all__ = []
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-usps-state"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state"

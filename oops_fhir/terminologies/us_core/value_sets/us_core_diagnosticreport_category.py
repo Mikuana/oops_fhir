@@ -1,10 +1,12 @@
 """The US Core Diagnostic Report Category Value Set is a 'starter set' of
 categories supported for fetching and Diagnostic Reports and notes."""
 
+
+__all__ = ["radiology", "cardiology", "pathology"]
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-diagnosticreport-category"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreDiagnosticReportCategory"
 _title_ = "US Core DiagnosticReport Category"

@@ -2,10 +2,12 @@
 ICD-10-PCS,CDT and LOINC code systems that can be used to indicate the
 type of procedure performed."""
 
+
+__all__ = []
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-procedure-code"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreProcedureCodes"
 _title_ = "US Core Procedure Codes"

@@ -1,10 +1,12 @@
 """The US Core Smoking Status Observation Codes Value Set is a 'starter
 set' of concepts to capture smoking status."""
 
+
+__all__ = ["tobacco_smoking_status_n_h_i_s"]
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-smoking-status-observation-codes"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-smoking-status-observation-codes"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "USCoreSmokingStatusObservationCodes"
 _title_ = "US Core Smoking Status Observation Codes"

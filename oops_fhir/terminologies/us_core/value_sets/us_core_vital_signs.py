@@ -1,9 +1,11 @@
 """The vital sign codes from the base FHIR and US Core Vital Signs."""
 
+
+__all__ = ["x59576_9", "x8289_1", "x77606_2", "x59408_5", "x3150_0", "x3151_8"]
+
 _resource_type_ = "ValueSet"
 _id_ = "us-core-vital-signs"
 _url_ = "http://hl7.org/fhir/us/core/ValueSet/us-core-vital-signs"
-_identifier_ = None
 _version_ = "4.0.0"
 _name_ = "UsCoreVitalSigns"
 _title_ = "US Core Vital Signs ValueSet"
