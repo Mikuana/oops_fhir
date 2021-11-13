@@ -1,4 +1,5 @@
-""" The Document Type value set includes all LOINC  values whose CLASSTYPE is LABORATORY in the LOINC database """
+"""The Document Type value set includes all LOINC  values whose CLASSTYPE
+is LABORATORY in the LOINC database"""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-diagnosticreport-lab-codes"""

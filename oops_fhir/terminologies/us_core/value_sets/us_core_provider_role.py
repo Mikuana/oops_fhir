@@ -1,4 +1,6 @@
-""" Provider roles codes which are composed of the NUCC Health Care Provider Taxonomy Code Set classification codes for providers. Only concepts with a classification and no specialization are included. """
+"""Provider roles codes which are composed of the NUCC Health Care Provider
+Taxonomy Code Set classification codes for providers. Only concepts with
+a classification and no specialization are included."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-provider-role"""

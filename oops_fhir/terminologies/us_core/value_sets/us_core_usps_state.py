@@ -1,4 +1,4 @@
-""" This value set defines two letter USPS alphabetic codes. """
+"""This value set defines two letter USPS alphabetic codes."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-usps-state"""

@@ -1,4 +1,5 @@
-""" The US Core DocumentReferences Category Value Set is a 'starter set' of categories supported for fetching and storing clinical notes. """
+"""The US Core DocumentReferences Category Value Set is a 'starter set' of
+categories supported for fetching and storing clinical notes."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-documentreference-category"""

@@ -1,4 +1,9 @@
-""" This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions).   ICD-10 is appropriate for Diagnosis information, and ICD-9 for historical information. """
+"""This describes the problem. Diagnosis/Problem List is broadly defined as
+a series of brief statements that catalog a patient's medical, nursing,
+dental, social, preventative and psychiatric events and issues that are
+relevant to that patient's healthcare (e.g., signs, symptoms, and
+defined conditions).   ICD-10 is appropriate for Diagnosis information,
+and ICD-9 for historical information."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-condition-code"""

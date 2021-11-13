@@ -1,4 +1,5 @@
-""" The US Core Smoking Status Observation Codes Value Set is a 'starter set' of concepts to capture smoking status. """
+"""The US Core Smoking Status Observation Codes Value Set is a 'starter
+set' of concepts to capture smoking status."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-smoking-status-observation-codes"""

@@ -1,4 +1,7 @@
-""" The US Core Condition Category Codes support the separate concepts of problems and health concerns in Condition.category in order for API consumers to be able to separate health concerns and problems. However this is not mandatory for 2015 certification """
+"""The US Core Condition Category Codes support the separate concepts of
+problems and health concerns in Condition.category in order for API
+consumers to be able to separate health concerns and problems. However
+this is not mandatory for 2015 certification"""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-condition-category"""

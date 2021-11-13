@@ -1,4 +1,5 @@
-""" Codes providing the status of an observation for smoking status. Constrained to `final`and `entered-in-error`. """
+"""Codes providing the status of an observation for smoking status.
+Constrained to `final`and `entered-in-error`."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-observation-smoking-status-status"""

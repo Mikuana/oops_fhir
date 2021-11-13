@@ -1,4 +1,4 @@
-""" Representing a patient’s smoking behavior using concepts from SNOMED CT. """
+"""Representing a patient’s smoking behavior using concepts from SNOMED CT."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-observation-smokingstatus-max"""

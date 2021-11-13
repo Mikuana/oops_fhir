@@ -1,4 +1,5 @@
-""" The US Core Narrative Status Value Set limits the text status for the resource narrative. """
+"""The US Core Narrative Status Value Set limits the text status for the
+resource narrative."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-narrative-status"""

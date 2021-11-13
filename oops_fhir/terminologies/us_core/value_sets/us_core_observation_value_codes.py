@@ -1,4 +1,4 @@
-""" [Snomed-CT](http://www.ihtsdo.org/) concept codes for coded results """
+"""[Snomed-CT](http://www.ihtsdo.org/) concept codes for coded results"""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-observation-value-codes"""

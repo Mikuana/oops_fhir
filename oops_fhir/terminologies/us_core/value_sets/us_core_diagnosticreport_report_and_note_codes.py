@@ -1,4 +1,6 @@
-""" This value set currently contains all of LOINC. The codes selected should represent discrete and narrative diagnostic observations and reports """
+"""This value set currently contains all of LOINC. The codes selected
+should represent discrete and narrative diagnostic observations and
+reports"""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-diagnosticreport-report-and-note-codes"""

@@ -1,4 +1,4 @@
-""" The vital sign codes from the base FHIR and US Core Vital Signs. """
+"""The vital sign codes from the base FHIR and US Core Vital Signs."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-vital-signs"""

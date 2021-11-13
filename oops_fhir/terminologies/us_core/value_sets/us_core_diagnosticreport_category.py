@@ -1,4 +1,5 @@
-""" The US Core Diagnostic Report Category Value Set is a 'starter set' of categories supported for fetching and Diagnostic Reports and notes. """
+"""The US Core Diagnostic Report Category Value Set is a 'starter set' of
+categories supported for fetching and Diagnostic Reports and notes."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """us-core-diagnosticreport-category"""

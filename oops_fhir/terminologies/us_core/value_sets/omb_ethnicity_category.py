@@ -1,4 +1,8 @@
-""" The codes for the ethnicity categories - 'Hispanic or Latino' and 'Non Hispanic or Latino' - as defined by the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf). """
+"""The codes for the ethnicity categories - 'Hispanic or Latino' and 'Non
+Hispanic or Latino' - as defined by the [OMB Standards for Maintaining,
+Collecting, and Presenting Federal Data on Race and Ethnicity,
+Statistical Policy Directive No. 15, as revised, October 30, 1997](https
+://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)."""
 
 _resource_type_ = """ValueSet"""
 _id_ = """omb-ethnicity-category"""

@@ -1,4 +1,6 @@
-""" Codes for assigning sex at birth as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc) """
+"""Codes for assigning sex at birth as specified by the [Office of the
+National Coordinator for Health IT
+(ONC)](https://www.healthit.gov/newsroom/about-onc)"""
 
 _resource_type_ = """ValueSet"""
 _id_ = """birthsex"""

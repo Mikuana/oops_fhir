@@ -1,3 +1,4 @@
+import textwrap
 import json
 import re
 import subprocess
@@ -85,7 +86,7 @@ class ValueSet:
         }
 
         self.Meta.target.write_text(
-            f'''""" {self.__doc__} """\n\n''' +
+            '"""' + '\n'.join(textwrap.wrap(self.__doc__, 72)) + '"""\n\n' +
             "\n".join(
                 [
                     f"_{v}_ = "
