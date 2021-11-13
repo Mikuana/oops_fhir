@@ -1,8 +1,8 @@
-import textwrap
 import json
 import re
 import subprocess
 import sys
+import textwrap
 from pathlib import Path
 from typing import Tuple, List, Any
 
@@ -22,7 +22,7 @@ class ValueSet:
         """ Resolvable URL to resource type definition """
 
     def __init__(self, json_file_name):
-        with Path(Path(__file__).parent, json_file_name) as f:
+        with Path(Path(__file__).parent, 'r4', 'value_set', json_file_name) as f:
             self.Meta.raw_json = f.read_text()
 
         self.Meta.definition = json.loads(self.Meta.raw_json)
@@ -31,7 +31,7 @@ class ValueSet:
 
         self.Meta.target = Path(
             Path(
-                Path(__file__).parent, self.Meta.definition.get("id").replace("-", "_")
+                Path(__file__).parent, 'r4', 'value_set', self.Meta.definition.get("id").replace("-", "_")
             )
         ).with_suffix(".py")
 
@@ -113,6 +113,6 @@ class ValueSet:
         )
 
 
-for vs in Path(Path(__file__).parent).glob("*.json"):
+for vs in Path(Path(__file__).parent, 'r4', 'value_set').glob("*.json"):
     print(vs.name)
     ValueSet(vs.name)
