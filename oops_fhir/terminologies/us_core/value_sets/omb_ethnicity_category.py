@@ -4,16 +4,16 @@ Collecting, and Presenting Federal Data on Race and Ethnicity,
 Statistical Policy Directive No. 15, as revised, October 30, 1997](https
 ://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)."""
 
-_resource_type_ = """ValueSet"""
-_id_ = """omb-ethnicity-category"""
-_url_ = """http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"""
+_resource_type_ = "ValueSet"
+_id_ = "omb-ethnicity-category"
+_url_ = "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"
 _identifier_ = None
-_version_ = """4.0.0"""
-_name_ = """OmbEthnicityCategories"""
-_title_ = """OMB Ethnicity Categories"""
-_status_ = """active"""
-_date_ = """2019-05-21"""
-_publisher_ = """HL7 International - US Realm Steering Committee"""
+_version_ = "4.0.0"
+_name_ = "OmbEthnicityCategories"
+_title_ = "OMB Ethnicity Categories"
+_status_ = "active"
+_date_ = "2019-05-21"
+_publisher_ = "HL7 International - US Realm Steering Committee"
 _contact_ = [
     {
         "name": "HL7 International - US Realm Steering Committee",
@@ -26,7 +26,7 @@ _contact_ = [
     }
 ]
 _jurisdiction_ = [{"coding": [{"system": "urn:iso:std:iso:3166", "code": "US"}]}]
-_copyright_ = """Used by permission of HL7 International, all rights reserved Creative Commons License"""
+_copyright_ = "Used by permission of HL7 International, all rights reserved Creative Commons License"
 
 hispanic_or_latino = {
     "url": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category",

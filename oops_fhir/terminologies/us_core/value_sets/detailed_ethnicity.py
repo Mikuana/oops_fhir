@@ -2,16 +2,16 @@
 codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are
 grouped under one of the 2 OMB ethnicity category codes."""
 
-_resource_type_ = """ValueSet"""
-_id_ = """detailed-ethnicity"""
-_url_ = """http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity"""
+_resource_type_ = "ValueSet"
+_id_ = "detailed-ethnicity"
+_url_ = "http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity"
 _identifier_ = None
-_version_ = """4.0.0"""
-_name_ = """DetailedEthnicity"""
-_title_ = """Detailed ethnicity"""
-_status_ = """active"""
-_date_ = """2019-05-21"""
-_publisher_ = """HL7 International - US Realm Steering Committee"""
+_version_ = "4.0.0"
+_name_ = "DetailedEthnicity"
+_title_ = "Detailed ethnicity"
+_status_ = "active"
+_date_ = "2019-05-21"
+_publisher_ = "HL7 International - US Realm Steering Committee"
 _contact_ = [
     {
         "name": "HL7 International - US Realm Steering Committee",
@@ -24,4 +24,4 @@ _contact_ = [
     }
 ]
 _jurisdiction_ = [{"coding": [{"system": "urn:iso:std:iso:3166", "code": "US"}]}]
-_copyright_ = """Used by permission of HL7 International, all rights reserved Creative Commons License"""
+_copyright_ = "Used by permission of HL7 International, all rights reserved Creative Commons License"

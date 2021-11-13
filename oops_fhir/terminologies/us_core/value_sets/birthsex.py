@@ -2,18 +2,18 @@
 National Coordinator for Health IT
 (ONC)](https://www.healthit.gov/newsroom/about-onc)"""
 
-_resource_type_ = """ValueSet"""
-_id_ = """birthsex"""
-_url_ = """http://hl7.org/fhir/us/core/ValueSet/birthsex"""
+_resource_type_ = "ValueSet"
+_id_ = "birthsex"
+_url_ = "http://hl7.org/fhir/us/core/ValueSet/birthsex"
 _identifier_ = [
     {"system": "urn:ietf:rfc:3986", "value": "urn:oid:2.16.840.1.113762.1.4.1021.24"}
 ]
-_version_ = """4.0.0"""
-_name_ = """BirthSex"""
-_title_ = """Birth Sex"""
-_status_ = """active"""
-_date_ = """2019-05-21"""
-_publisher_ = """HL7 International - US Realm Steering Committee"""
+_version_ = "4.0.0"
+_name_ = "BirthSex"
+_title_ = "Birth Sex"
+_status_ = "active"
+_date_ = "2019-05-21"
+_publisher_ = "HL7 International - US Realm Steering Committee"
 _contact_ = [
     {
         "name": "HL7 International - US Realm Steering Committee",
@@ -26,7 +26,7 @@ _contact_ = [
     }
 ]
 _jurisdiction_ = [{"coding": [{"system": "urn:iso:std:iso:3166", "code": "US"}]}]
-_copyright_ = """Used by permission of HL7 International, all rights reserved Creative Commons License"""
+_copyright_ = "Used by permission of HL7 International, all rights reserved Creative Commons License"
 
 female = {
     "url": "http://hl7.org/fhir/us/core/ValueSet/birthsex",

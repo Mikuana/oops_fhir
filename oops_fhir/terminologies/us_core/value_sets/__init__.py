@@ -4,7 +4,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
-from typing import Tuple, List
+from typing import Tuple, List, Any
 
 
 class ValueSet:
@@ -36,6 +36,34 @@ class ValueSet:
         ).with_suffix(".py")
 
         self.pythonize()
+
+    def expanded_meta(self):
+        em: List[Tuple[str, Any]] = []
+        ats = {
+            "resourceType": "resource_type",
+            "id": "id",
+            "url": "url",
+            "identifier": "identifier",
+            "version": "version",
+            "name": "name",
+            "title": "title",
+            "status": "status",
+            "date": "date",
+            "publisher": "publisher",
+            "contact": "contact",
+            "jurisdiction": "jurisdiction",
+            "copyright": "copyright",
+        }
+        for k, v in ats.items():
+            if isinstance(self.Meta.definition.get(k), str):
+                v2 = self.Meta.definition.get(k)
+                v2 = '\n'.join(textwrap.wrap(v2, 88))
+
+                v2 = f'"""{v2}"""' if '\n' in v2 else f'"{v2}"'
+            else:
+                v2 = str(self.Meta.definition.get(k))
+            em.append((f'_{v}_', v2))
+        return em
 
     def expanded_values(self):
         ev: List[Tuple[str, str, dict]] = []
@@ -69,35 +97,10 @@ class ValueSet:
             f"{name} = {value}\n" + (f'""" {desc} """\n' if desc else "")
             for name, desc, value in self.expanded_values()
         ]
-        ats = {
-            "resourceType": "resource_type",
-            "id": "id",
-            "url": "url",
-            "identifier": "identifier",
-            "version": "version",
-            "name": "name",
-            "title": "title",
-            "status": "status",
-            "date": "date",
-            "publisher": "publisher",
-            "contact": "contact",
-            "jurisdiction": "jurisdiction",
-            "copyright": "copyright",
-        }
 
         self.Meta.target.write_text(
             '"""' + '\n'.join(textwrap.wrap(self.__doc__, 72)) + '"""\n\n' +
-            "\n".join(
-                [
-                    f"_{v}_ = "
-                    + (
-                        f'"""{self.Meta.definition.get(k)}"""'
-                        if isinstance(self.Meta.definition.get(k), str)
-                        else str(self.Meta.definition.get(k))
-                    )
-                    for k, v in ats.items()
-                ]
-            )
+            "\n".join(f'{n} = {v}' for n, v in self.expanded_meta())
             + "\n\n"
             + "\n".join(values)
         )
