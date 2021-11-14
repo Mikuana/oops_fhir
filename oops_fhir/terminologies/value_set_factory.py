@@ -5,11 +5,16 @@ import subprocess
 import sys
 import textwrap
 from enum import Enum
+from importlib import import_module
 from pathlib import Path
 from typing import Tuple, List, Any
 
-reg_p = Path(Path(__file__).parent, 'registry.json')
+reg_p = Path(Path(__file__).parent, "registry.json")
 registry = json.loads(reg_p.read_text())
+
+
+class Literal(str):
+    pass
 
 
 class ResourceType(Enum):
@@ -58,13 +63,20 @@ class ResourceMeta:
 
 
 class ResourceFrame:
+    imports: set = set()
+
     class Meta(ResourceMeta):
         pass
 
     def __init__(self, json_file_name):
         pd = Path(Path(__file__).parent, "r4", self.Meta.resource_type.value)
         with Path(pd, json_file_name) as f:
-            self.Meta.location = f.relative_to(Path(__file__).parent).with_suffix('').as_posix().replace('/', '.')
+            self.Meta.location = (
+                f.relative_to(Path(__file__).parent)
+                .with_suffix("")
+                .as_posix()
+                .replace("/", ".")
+            )
             self.Meta.raw_json = f.read_text()
 
         self.Meta.definition = json.loads(self.Meta.raw_json)
@@ -122,15 +134,22 @@ class ResourceFrame:
         return ev
 
     def pythonize(self):
+        concepts = self.concepts()
         values = [
             f"{name} = {value}\n" + (f'""" {desc} """\n' if desc else "")
-            for name, desc, value in self.concepts()
+            for name, desc, value in concepts
         ]
-        all_values = [name for name, _, _ in self.concepts()]
+        all_values = [name for name, _, _ in concepts]
         self.Meta.target.write_text(
             '"""'
             + "\n".join(textwrap.wrap(self.__doc__, 72))
             + '"""\n\n'
+            + "\n".join(
+                [
+                    f"from {x.rsplit('.', 1)[0]} import {x.rsplit('.', 1)[1]}"
+                    for x in self.imports
+                ]
+            )
             + f"\n__all__ = ["
             + ",".join(f"'{x}'" for x in all_values)
             + "]\n\n"
@@ -154,7 +173,7 @@ class CodeSystem(ResourceFrame):
         ev: List[Tuple[str, str, dict]] = []
         for j in self.Meta.definition.get("concept", ()):
             d = {
-                "code": j['code'],
+                "code": j["code"],
                 "display": j["display"],
                 "definition": j.get("definition"),
             }
@@ -165,7 +184,7 @@ class CodeSystem(ResourceFrame):
             k = re.sub(r"_{2,}", "_", k)
             k = k if k[0].isalpha() else f"x{k}"
             if keyword.iskeyword(k):
-                k = f'x_{k}'
+                k = f"x_{k}"
 
             vd = {a: b for a, b in d.items() if b}
 
@@ -177,13 +196,55 @@ class ValueSet(ResourceFrame):
     class Meta(ResourceMeta):
         resource_type = ResourceType.VALUE_SET
 
+    def concepts(self):
+        ev: List[Tuple[str, str, str]] = []
 
-if __name__ == '__main__':
-    for vs in Path(r'/home/chris/PycharmProjects/oops_fhir/oops_fhir/terminologies/r4/code_system').glob("*.json"):
-        print(vs.name)
-        CodeSystem(vs.name)
-        # break
+        for i in self.Meta.definition["compose"]["include"]:
+            if i.get("concept"):
+                for j in i.get("concept", ()):
+                    d = {
+                        "system": i["system"],
+                        "code": j["code"],
+                        "display": j.get("display"),
+                    }
 
-    reg_p.write_text(json.dumps(
-        {k: registry[k] for k in sorted(registry.keys())}, indent=2
-    ))
+                    k = str(j.get("display", j.get("code")))
+                    k = re.sub(r"(?<!^)(?=[A-Z])", "_", k).lower()
+                    k = re.sub(r"[^a-z0-9_]", "_", k)
+                    k = re.sub(r"_{2,}", "_", k)
+                    k = k if k[0].isalpha() else f"x{k}"
+
+                    vd = dict(url=self.Meta.url)
+                    if len(self.Meta.definition["compose"]["include"]) > 1:
+                        vd["valueCoding"] = {a: b for a, b in d.items() if b}
+                    elif d.get("display"):
+                        vd["valueString"] = d.get("display")
+                    else:
+                        vd["valueCode"] = d.get("code")
+
+                    ev.append((k, j.get("display", j.get("code")), vd))
+            else:
+                mod = f"oops_fhir.terminologies.{registry[i['system']]}"
+                mod = import_module(mod)
+                self.imports.add(mod.__name__)
+                for concept in mod.__all__:
+                    ev.append(
+                        (
+                            concept,
+                            getattr(mod, concept)["definition"],
+                            f"""{{
+                            'url': _url_,
+                            'valueCode': {mod.__name__.split('.')[-1]}.{concept}['code']
+                        }}""",
+                        )
+                    )
+        return ev
+
+
+if __name__ == "__main__":
+    prefix = "/home/chris/PycharmProjects/oops_fhir/oops_fhir/terminologies"
+    CodeSystem(f"{prefix}/r4/code_system/administrative_gender.json")
+    ValueSet(f"{prefix}/r4/value_set/administrative_gender.json")
+    reg_p.write_text(
+        json.dumps({k: registry[k] for k in sorted(registry.keys())}, indent=2)
+    )

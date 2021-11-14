@@ -34,7 +34,7 @@
   "http://hl7.org/fhir/ValueSet/adjudication-error": "r4/value_set/adjudication_error",
   "http://hl7.org/fhir/ValueSet/adjudication-reason": "r4/value_set/adjudication_reason",
   "http://hl7.org/fhir/ValueSet/administration-method-codes": "r4/value_set/administration_method_codes",
-  "http://hl7.org/fhir/ValueSet/administrative-gender": "r4/value_set/administrative_gender",
+  "http://hl7.org/fhir/ValueSet/administrative-gender": "r4.value_set.administrative_gender",
   "http://hl7.org/fhir/ValueSet/adverse-event-actuality": "r4/value_set/adverse_event_actuality",
   "http://hl7.org/fhir/ValueSet/adverse-event-category": "r4/value_set/adverse_event_category",
   "http://hl7.org/fhir/ValueSet/adverse-event-causality-assess": "r4/value_set/adverse_event_causality_assess",
