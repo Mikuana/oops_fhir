@@ -3,18 +3,27 @@ import keyword
 import re
 import subprocess
 import sys
+import tempfile
 import textwrap
+import zipfile
 from enum import Enum
 from importlib import import_module
 from pathlib import Path
 from typing import Tuple, List, Any
+from urllib.request import urlretrieve
 
-reg_p = Path(Path(__file__).parent, "registry.json")
+reg_p = Path(Path(__file__).parent, "../oops_fhir/terminologies/registry.json")
 registry = json.loads(reg_p.read_text())
 
+d = Path(__file__).parent
 
-class Literal(str):
-    pass
+
+def prep_r4():
+    url = 'http://hl7.org/fhir/definitions.json.zip'
+    with tempfile.NamedTemporaryFile('wb') as tf:
+        urlretrieve(url, tf.name)
+        with zipfile.ZipFile(tf.name, 'r') as zip_ref:
+            zip_ref.extractall(Path(d, 'r4'))
 
 
 class ResourceType(Enum):
@@ -68,24 +77,22 @@ class ResourceFrame:
     class Meta(ResourceMeta):
         pass
 
-    def __init__(self, json_file_name):
-        pd = Path(Path(__file__).parent, "r4", self.Meta.resource_type.value)
-        with Path(pd, json_file_name) as f:
-            self.Meta.location = (
-                f.relative_to(Path(__file__).parent)
-                .with_suffix("")
-                .as_posix()
-                .replace("/", ".")
-            )
-            self.Meta.raw_json = f.read_text()
+    def __init__(self, definition):
+        pd = Path(Path(__file__).parent, "../oops_fhir/terminologies/r4", self.Meta.resource_type.value)
 
-        self.Meta.definition = json.loads(self.Meta.raw_json)
-        self.__doc__ = self.Meta.definition["description"]
+        self.Meta.definition = definition
+        self.__doc__ = self.Meta.definition.get("description")
         self.Meta.url = self.Meta.definition["url"]
 
         self.Meta.target = Path(
             Path(pd, self.Meta.definition.get("id").replace("-", "_"))
         ).with_suffix(".py")
+        self.Meta.location = (
+            self.Meta.target.relative_to(Path(__file__).parent)
+                .with_suffix("")
+                .as_posix()
+                .replace("/", ".")
+        )
 
         self.pythonize()
         self.register()
@@ -117,7 +124,7 @@ class ResourceFrame:
                 }
 
                 k = str(j.get("display", j.get("code")))
-                k = re.sub(r"(?<!^)(?=[A-Z])", "_", k).lower()
+                k = re.sub(r"(?<!^)(?<![A-Z])(?=[A-Z])", "_", k).lower()
                 k = re.sub(r"[^a-z0-9_]", "_", k)
                 k = re.sub(r"_{2,}", "_", k)
                 k = k if k[0].isalpha() else f"x{k}"
@@ -134,6 +141,8 @@ class ResourceFrame:
         return ev
 
     def pythonize(self):
+        self.Meta.target.parent.mkdir(parents=True, exist_ok=True)
+        Path(self.Meta.target.parent, '__init__.py').touch()
         concepts = self.concepts()
         values = [
             f"{name} = {value}\n" + (f'""" {desc} """\n' if desc else "")
@@ -142,7 +151,7 @@ class ResourceFrame:
         all_values = [name for name, _, _ in concepts]
         self.Meta.target.write_text(
             '"""'
-            + "\n".join(textwrap.wrap(self.__doc__, 72))
+            + "\n".join(textwrap.wrap(self.__doc__ or '', 72))
             + '"""\n\n'
             + "\n".join(
                 [
@@ -162,7 +171,7 @@ class ResourceFrame:
         )
 
     def register(self):
-        registry[self.Meta.url] = self.Meta.location
+        registry[self.Meta.url] = self.Meta.target
 
 
 class CodeSystem(ResourceFrame):
@@ -174,12 +183,12 @@ class CodeSystem(ResourceFrame):
         for j in self.Meta.definition.get("concept", ()):
             d = {
                 "code": j["code"],
-                "display": j["display"],
+                "display": j.get("display"),
                 "definition": j.get("definition"),
             }
 
             k = str(j.get("display", j.get("code")))
-            k = re.sub(r"(?<!^)(?=[A-Z])", "_", k).lower()
+            k = re.sub(r"(?<!^)(?<![A-Z])(?=[A-Z])", "_", k).lower()
             k = re.sub(r"[^a-z0-9_]", "_", k)
             k = re.sub(r"_{2,}", "_", k)
             k = k if k[0].isalpha() else f"x{k}"
@@ -242,9 +251,16 @@ class ValueSet(ResourceFrame):
 
 
 if __name__ == "__main__":
-    prefix = "/home/chris/PycharmProjects/oops_fhir/oops_fhir/terminologies"
-    CodeSystem(f"{prefix}/r4/code_system/administrative_gender.json")
-    ValueSet(f"{prefix}/r4/value_set/administrative_gender.json")
-    reg_p.write_text(
-        json.dumps({k: registry[k] for k in sorted(registry.keys())}, indent=2)
-    )
+    # R4
+    d = Path("r4")
+    j = json.loads(Path(d, 'valuesets.json').read_text())
+    for e in j['entry']:
+        if e['resource']['resourceType'] == 'CodeSystem':
+            print(e['resource']['id'])
+            CodeSystem(e['resource'])
+            break
+
+    # ValueSet(f"{prefix}/r4/value_set/administrative_gender.json")
+    # reg_p.write_text(
+    #     json.dumps({k: registry[k] for k in sorted(registry.keys())}, indent=2)
+    # )
