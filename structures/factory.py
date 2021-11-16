@@ -9,13 +9,39 @@ import zipfile
 from enum import Enum
 from importlib import import_module
 from pathlib import Path
-from typing import Tuple, List, Any
+from typing import Tuple, List, Any, Union
 from urllib.request import urlretrieve
+
+from fhir.resources.codesystem import CodeSystem
 
 reg_p = Path(Path(__file__).parent, "../oops_fhir/terminologies/registry.json")
 registry = json.loads(reg_p.read_text())
 
 d = Path(__file__).parent
+
+_class_case_pattern = re.compile(r'[^a-zA-Z0-9]')
+
+
+def wrap(indent: int, text: Union[str, None]):
+    return (chr(10) + ' ' * indent).join([l for l in textwrap.wrap(text or '')])
+
+
+def class_case(x: str):
+    y = _class_case_pattern.sub('', x.title())
+    if keyword.iskeyword(y):
+        return f"x{y}"
+    elif str(y[0]).isdigit():
+        return f"x{y}"
+    else:
+        return y
+
+
+def snake_case(x: str):
+    y = re.sub(r"(?<!^)(?<![A-Z])(?=[A-Z])", "_", x).lower()
+    y = re.sub(r"[^a-z0-9_]", "_", y)
+    y = re.sub(r"_{2,}", "_", y)
+    y = y if y[0].isalpha() else f"x{y}"
+    return y
 
 
 def prep_r4():
@@ -26,228 +52,58 @@ def prep_r4():
             zip_ref.extractall(Path(d, 'r4'))
 
 
-class ResourceType(Enum):
-    CODE_SYSTEM = "code_system"
-    VALUE_SET = "value_set"
+m = {
+    'CodeSystem': CodeSystem
+}
 
 
-class ResourceMeta:
-    raw_json: str
-    """ Raw JSON string which defines the resource """
-
-    definition: dict
-    """ Dictionary object parsed from raw JSON string """
-
-    target: Path
-    """ Target python script for the resource """
-
-    location: str
-    """ A resource location identifier """
-
-    url: str
-    """ Resolvable URL to resource type definition """
-
-    resource_type: ResourceType
-    """ Type of FHIR resource that this frame will support """
-
-    attribute_map = {
-        "resourceType": "resource_type",
-        "id": "id",
-        "url": "url",
-        "identifier": "identifier",
-        "version": "version",
-        "name": "name",
-        "title": "title",
-        "status": "status",
-        "date": "date",
-        "publisher": "publisher",
-        "contact": "contact",
-        "jurisdiction": "jurisdiction",
-        "copyright": "copyright",
-    }
-    """
-    A dictionary with expected keys to be mapped to variables, and values of
-    the variable name to be assigned to.
-    """
-
-
-class ResourceFrame:
-    imports: set = set()
-
-    class Meta(ResourceMeta):
-        pass
-
+class CodeSystemFactory:
     def __init__(self, definition):
-        pd = Path(Path(__file__).parent, "../oops_fhir/terminologies/r4", self.Meta.resource_type.value)
-
-        self.Meta.definition = definition
-        self.__doc__ = self.Meta.definition.get("description")
-        self.Meta.url = self.Meta.definition["url"]
-
-        self.Meta.target = Path(
-            Path(pd, self.Meta.definition.get("id").replace("-", "_"))
-        ).with_suffix(".py")
-        self.Meta.location = (
-            self.Meta.target.relative_to(Path(__file__).parent)
-                .with_suffix("")
-                .as_posix()
-                .replace("/", ".")
+        r: CodeSystem = CodeSystem.parse_obj(definition)
+        self.target = Path(
+            Path(__file__).parent, "../oops_fhir/terminologies/r4/code_system",
+            snake_case(r.name)
         )
+        self.target.parent.mkdir(parents=True, exist_ok=True)
+        Path(self.target.parent, '__init__.py').touch()
+        txt = textwrap.dedent(f'''
+        """
+        {r.title} ({r.status})
 
-        self.pythonize()
-        self.register()
+        {r.description}
 
-    def expand_meta(self) -> List[Tuple[str, Any]]:
-        em = []
-        for k, v in self.Meta.attribute_map.items():
-            if self.Meta.definition.get(k) is None:
-                continue
-            elif isinstance(self.Meta.definition.get(k), str):
-                v2 = self.Meta.definition.get(k)
-                v2 = "\n".join(textwrap.wrap(v2, 88))
+        {r.url}
+        """
 
-                v2 = f'"""{v2}"""' if "\n" in v2 else f'"{v2}"'
-            else:
-                v2 = str(self.Meta.definition.get(k))
+        import json
+        from pathlib import Path
 
-            em.append((f"_{v}_", v2))
-        return em
+        from fhir.resources.codesystem import CodeSystem
+        from oops_fhir.terminologies import CodeSystemConceptFrame
 
-    def concepts(self):
-        ev: List[Tuple[str, str, dict]] = []
-        for i in self.Meta.definition["compose"]["include"]:
-            for j in i.get("concept", ()):
-                d = {
-                    "system": i["system"],
-                    "code": j["code"],
-                    "display": j.get("display"),
-                }
+        __all__ = {[class_case(x.display or x.code) for x in r.concept or ()]}
 
-                k = str(j.get("display", j.get("code")))
-                k = re.sub(r"(?<!^)(?<![A-Z])(?=[A-Z])", "_", k).lower()
-                k = re.sub(r"[^a-z0-9_]", "_", k)
-                k = re.sub(r"_{2,}", "_", k)
-                k = k if k[0].isalpha() else f"x{k}"
+        _resource = CodeSystem.parse_file(Path(__file__).with_suffix('.json'))
+        ''')
 
-                vd = dict(url=self.Meta.url)
-                if len(self.Meta.definition["compose"]["include"]) > 1:
-                    vd["valueCoding"] = {a: b for a, b in d.items() if b}
-                elif d.get("display"):
-                    vd["valueString"] = d.get("display")
-                else:
-                    vd["valueCode"] = d.get("code")
+        for ix, con in enumerate(r.concept or ()):
+            txt += textwrap.dedent(f'''
+            class {class_case(con.display or con.code)}(CodeSystemConceptFrame):
+                """
+                {wrap(16, con.display)}
 
-                ev.append((k, j.get("display", j.get("code")), vd))
-        return ev
+                {wrap(16, con.definition)}
+                """
+                resource = _resource.concept[{ix}]
+            ''')
 
-    def pythonize(self):
-        self.Meta.target.parent.mkdir(parents=True, exist_ok=True)
-        Path(self.Meta.target.parent, '__init__.py').touch()
-        concepts = self.concepts()
-        values = [
-            f"{name} = {value}\n" + (f'""" {desc} """\n' if desc else "")
-            for name, desc, value in concepts
-        ]
-        all_values = [name for name, _, _ in concepts]
-        self.Meta.target.write_text(
-            '"""'
-            + "\n".join(textwrap.wrap(self.__doc__ or '', 72))
-            + '"""\n\n'
-            + "\n".join(
-                [
-                    f"from {x.rsplit('.', 1)[0]} import {x.rsplit('.', 1)[1]}"
-                    for x in self.imports
-                ]
-            )
-            + f"\n__all__ = ["
-            + ",".join(f"'{x}'" for x in all_values)
-            + "]\n\n"
-            + "\n".join(f"{n} = {v}" for n, v in self.expand_meta())
-            + "\n\n"
-            + "\n".join(values)
+        Path(self.target).with_suffix('.py').write_text(txt)
+        Path(self.target).with_suffix('.json').write_text(
+            json.dumps(definition, indent=2)
         )
         subprocess.check_call(
-            [sys.executable, "-m", "black", "-q", self.Meta.target.as_posix()]
+            [sys.executable, "-m", "black", "-q", self.target.with_suffix('.py')]
         )
-
-    def register(self):
-        registry[self.Meta.url] = self.Meta.target
-
-
-class CodeSystem(ResourceFrame):
-    class Meta(ResourceMeta):
-        resource_type = ResourceType.CODE_SYSTEM
-
-    def concepts(self):
-        ev: List[Tuple[str, str, dict]] = []
-        for j in self.Meta.definition.get("concept", ()):
-            d = {
-                "code": j["code"],
-                "display": j.get("display"),
-                "definition": j.get("definition"),
-            }
-
-            k = str(j.get("display", j.get("code")))
-            k = re.sub(r"(?<!^)(?<![A-Z])(?=[A-Z])", "_", k).lower()
-            k = re.sub(r"[^a-z0-9_]", "_", k)
-            k = re.sub(r"_{2,}", "_", k)
-            k = k if k[0].isalpha() else f"x{k}"
-            if keyword.iskeyword(k):
-                k = f"x_{k}"
-
-            vd = {a: b for a, b in d.items() if b}
-
-            ev.append((k, j.get("definition", j.get("display", j.get("code"))), vd))
-        return ev
-
-
-class ValueSet(ResourceFrame):
-    class Meta(ResourceMeta):
-        resource_type = ResourceType.VALUE_SET
-
-    def concepts(self):
-        ev: List[Tuple[str, str, str]] = []
-
-        for i in self.Meta.definition["compose"]["include"]:
-            if i.get("concept"):
-                for j in i.get("concept", ()):
-                    d = {
-                        "system": i["system"],
-                        "code": j["code"],
-                        "display": j.get("display"),
-                    }
-
-                    k = str(j.get("display", j.get("code")))
-                    k = re.sub(r"(?<!^)(?=[A-Z])", "_", k).lower()
-                    k = re.sub(r"[^a-z0-9_]", "_", k)
-                    k = re.sub(r"_{2,}", "_", k)
-                    k = k if k[0].isalpha() else f"x{k}"
-
-                    vd = dict(url=self.Meta.url)
-                    if len(self.Meta.definition["compose"]["include"]) > 1:
-                        vd["valueCoding"] = {a: b for a, b in d.items() if b}
-                    elif d.get("display"):
-                        vd["valueString"] = d.get("display")
-                    else:
-                        vd["valueCode"] = d.get("code")
-
-                    ev.append((k, j.get("display", j.get("code")), vd))
-            else:
-                mod = f"oops_fhir.terminologies.{registry[i['system']]}"
-                mod = import_module(mod)
-                self.imports.add(mod.__name__)
-                for concept in mod.__all__:
-                    ev.append(
-                        (
-                            concept,
-                            getattr(mod, concept)["definition"],
-                            f"""{{
-                            'url': _url_,
-                            'valueCode': {mod.__name__.split('.')[-1]}.{concept}['code']
-                        }}""",
-                        )
-                    )
-        return ev
 
 
 if __name__ == "__main__":
@@ -256,9 +112,9 @@ if __name__ == "__main__":
     j = json.loads(Path(d, 'valuesets.json').read_text())
     for e in j['entry']:
         if e['resource']['resourceType'] == 'CodeSystem':
-            print(e['resource']['id'])
-            CodeSystem(e['resource'])
-            break
+            # if e['resource']['id'] == 'standards-status':
+            print(e['resource']['name'])
+            rf = CodeSystemFactory(e['resource'])
 
     # ValueSet(f"{prefix}/r4/value_set/administrative_gender.json")
     # reg_p.write_text(
