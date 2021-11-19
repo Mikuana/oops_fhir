@@ -82,15 +82,17 @@ def safe_first(x: str):
     return x
 
 
-var_pat = re.compile(r'[^a-z0-9\-]', re.IGNORECASE)
+var_pat = re.compile(r'[^a-z0-9_]', re.IGNORECASE)
 extra_under_pat = re.compile(r'_{2,}')
+camel_break_pat = re.compile(r"(?<!^)(?<![A-Z])(?=[A-Z])")
 
 
 def snake_case(x: str):
     x = safe_first(x)
     x = var_pat.sub('_', x)
+    x = camel_break_pat.sub('_', x).lower()
     x = extra_under_pat.sub('_', x)
-    x = x.strip('_').lower()
+    x = x.strip('_')
 
     if keyword.iskeyword(x):
         return f"v_{x}"
@@ -209,9 +211,9 @@ class ValueSetFactory:
                     txt += textwrap.dedent(f'''
                     class {class_case(con.display or con.code)}(ValueSetComposeFrame):
                         """
-                        {wrap(16, con.display)}
+                        {wrap(24, con.display)}
 
-                        {wrap(16, con.code)}
+                        {wrap(24, con.code)}
                         """
                         resource = _resource.compose.include[{ix}].concept[{ix2}]
                     ''')
@@ -243,18 +245,18 @@ class ValueSetFactory:
 if __name__ == "__main__":
     d = Path("r4")
     j = json.loads(Path(d, 'valuesets.json').read_text())
-    # for e in j['entry']:
-    #     if e['resource']['resourceType'] == 'CodeSystem':
-    #         rf = CodeSystemFactory(e['resource'])
-    #         print(rf.target)
-    #         registry[rf.resource.url] = rf.target.relative_to(
-    #             Path(__file__).parent.parent.absolute()
-    #         ).as_posix().replace('/', '.')
+    for e in j['entry']:
+        if e['resource']['resourceType'] == 'CodeSystem':  # and e['resource']['name'] == 'AdministrativeGender':
+            rf = CodeSystemFactory(e['resource'])
+            print(rf.resource.name)
+            registry[rf.resource.url] = rf.target.relative_to(
+                Path(__file__).parent.parent.absolute()
+            ).as_posix().replace('/', '.')
 
     for e in j['entry']:
-        if e['resource']['resourceType'] == 'ValueSet':
-            print(e['resource']['name'])
+        if e['resource']['resourceType'] == 'ValueSet':  # and e['resource']['name'] == 'AdministrativeGender':
             rf = ValueSetFactory(e['resource'])
+            print(rf.resource.name)
             registry[rf.resource.url] = rf.target.relative_to(
                 Path(__file__).parent.parent.absolute()
             ).as_posix().replace('/', '.')
