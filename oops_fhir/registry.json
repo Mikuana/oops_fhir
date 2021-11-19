@@ -1,0 +1,4 @@
+{
+  "http://hl7.org/fhir/ValueSet/example-extensional": "oops_fhir.terminologies.r4.value_set.loinc_codes_for_cholesterol_in_serum_plasma",
+  "http://hl7.org/fhir/ValueSet/ucum-common": "oops_fhir.terminologies.r4.value_set.common_ucum_units"
+}
