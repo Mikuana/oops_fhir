@@ -27,9 +27,7 @@ def read_version():
         raise RuntimeError(f"Unable to read version string: {e}")
 
 
-requirements = [
-    'fhir.resources'
-]
+requirements = ["fhir.resources"]
 
 test_requirements = [
     "pytest>=3",
