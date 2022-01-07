@@ -5,15 +5,21 @@ import textwrap
 from pathlib import Path
 from typing import Union
 
+import jinja2
+from jinja2 import Template
 from fhir.resources.bundle import Bundle
 
 from structures.utils import snake_case
-from structures.parser.code_system import concepts
 
 registry = {}
 
 bp = Path("/home/chris/PycharmProjects/oops_fhir/structures/")
 p2 = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir")
+
+loader = jinja2.FileSystemLoader('/home/chris/PycharmProjects/oops_fhir/structures/templates')
+jinj_env = jinja2.Environment(loader=loader)
+jinj_env.filters['snake_case'] = snake_case
+jinj_env.filters['wrap'] = lambda x: '\n'.join(textwrap.wrap(x, 72))
 
 sources = [("r4",), ("us", "core")]
 for source in sources:
@@ -90,7 +96,11 @@ for source in sources:
             )
 
             if resource.resource_type == 'CodeSystem':
-                txt += '\n' + concepts(resource)
+                txt = jinj_env.get_template('code_system.j2').render(
+                    resource=resource
+                )
+
+            # if resource.resource_type
 
             rp.with_suffix(".py").write_text(txt)
             subprocess.check_call(

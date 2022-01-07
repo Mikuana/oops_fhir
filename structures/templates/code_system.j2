@@ -1,0 +1,23 @@
+"""
+{{ resource.title }}
+
+{{ resource.description | wrap }}
+
+Status: {{ resource.status }} - Version: {{ resource.version }}
+
+{{ resource.url }}
+"""
+from pathlib import Path
+
+from fhir.resources.codesystem import CodeSystem
+
+__all__ = [{% for concept in resource.concept %}
+'{{ concept.code | snake_case }}',
+{% endfor %}]
+
+resource = CodeSystem.parse_file(Path(__file__).with_suffix(".json"))
+
+{% for concept in resource.concept %}
+{{ concept.code | snake_case }} = {{ concept.json() }}
+""" {{ concept.definition }} """
+{% endfor %}
