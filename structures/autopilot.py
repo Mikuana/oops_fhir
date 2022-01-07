@@ -153,6 +153,10 @@ for source in sources:
                     f'''
                 """
                 {resource.name}
+
+                {resource.description}
+
+                {resource.url}
                 """
 
                 from pathlib import Path
