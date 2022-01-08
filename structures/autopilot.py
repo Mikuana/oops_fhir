@@ -2,14 +2,14 @@ import json
 import subprocess
 import sys
 import textwrap
+import warnings
 from pathlib import Path
 from typing import Union
 
 import jinja2
-from jinja2 import Template
-from fhir.resources.bundle import Bundle
 
-from structures.utils import snake_case
+from fhir.resources.bundle import Bundle
+from structures.utils import snake_case, all_imps, namespace_imps
 
 registry = {}
 
@@ -17,11 +17,20 @@ bp = Path("/home/chris/PycharmProjects/oops_fhir/structures/")
 p2 = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir")
 
 loader = jinja2.FileSystemLoader('/home/chris/PycharmProjects/oops_fhir/structures/templates')
-jinj_env = jinja2.Environment(loader=loader)
+jinj_env = jinja2.Environment(
+    loader=loader,
+    extensions=['jinja2.ext.do']
+)
 jinj_env.filters['snake_case'] = snake_case
 jinj_env.filters['wrap'] = lambda x: '\n'.join(textwrap.wrap(x, 72))
+jinj_env.filters['all_imps'] = all_imps
+jinj_env.filters['enumerate'] = enumerate
+jinj_env.filters['namespace_imps'] = namespace_imps
 
-sources = [("r4",), ("us", "core")]
+# TODO: re-enable us core
+# sources = [("r4",), ("us", "core")]
+sources = [("r4",)]
+
 for source in sources:
     sp = Path(p2, *source)
     sp.mkdir(exist_ok=True, parents=True)
@@ -29,6 +38,8 @@ for source in sources:
     bundle: Union[Bundle, None] = None
     resources = []
     for bj in Path(bp, *source).glob("*.json"):
+        if bj.name != 'valuesets.json':  # TODO: remove this skip
+            continue
         try:
             print(bj)
             bundle = Bundle.parse_file(bj)
@@ -59,6 +70,8 @@ for source in sources:
                     .replace("/", ".")
             )
 
+        jinj_env.filters['oops_ref'] = lambda x: registry[x]
+
         for resource in resources:
             # TODO: remove this loop skip
             if resource.id != 'abstract-types':
@@ -74,38 +87,18 @@ for source in sources:
                 json.dumps(json.loads(resource.json()), indent=2)
             )
 
-            txt = (
-                textwrap.dedent(
-                    f'''
-                """
-                {resource.name}
-
-                {resource.description}
-
-                {resource.url}
-                """
-
-                from pathlib import Path
-
-                from fhir.resources.{resource.resource_type.lower()} import {resource.resource_type}
-                # TODO: import referenced resources
-
-                resource = {resource.resource_type}.parse_file(Path(__file__).with_suffix('.json'))
-                '''
+            try:
+                template = jinj_env.get_template(
+                    f'{snake_case(resource.resource_type)}.j2'
                 )
-            )
+                txt = template.render(resource=resource)
 
-            if resource.resource_type == 'CodeSystem':
-                txt = jinj_env.get_template('code_system.j2').render(
-                    resource=resource
+                rp.with_suffix(".py").write_text(txt)
+                subprocess.check_call(
+                    [sys.executable, "-m", "black", "-q", rp.with_suffix('.py')]
                 )
-
-            # if resource.resource_type
-
-            rp.with_suffix(".py").write_text(txt)
-            subprocess.check_call(
-                [sys.executable, "-m", "black", "-q", rp.with_suffix('.py')]
-            )
+            except jinja2.TemplateNotFound as e:
+                warnings.warn(str(e))
 
 reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
 reg_p.write_text(

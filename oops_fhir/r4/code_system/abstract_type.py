@@ -1,8 +1,9 @@
 """
 AbstractType
 
-A list of the base types defined by this version of the FHIR specification -
-types that are defined, but for which only specializations actually are created.
+A list of the base types defined by this version of the FHIR
+specification - types that are defined, but for which only
+specializations actually are created.
 
 Status: active - Version: 4.0.1
 

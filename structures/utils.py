@@ -1,3 +1,5 @@
+from typing import List, Dict
+from importlib import import_module
 import builtins
 import keyword
 import re
@@ -89,3 +91,11 @@ def class_case(x: str):
         return f"v{x}"
     else:
         return x
+
+
+def all_imps(module: str) -> List[str]:
+    return getattr(import_module(module), "__all__")
+
+
+def namespace_imps(imps: List[str], space_index: int) -> Dict[str, str]:
+    return {x: x + '_' + str(space_index) for x in imps}
