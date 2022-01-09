@@ -14,9 +14,12 @@ from pathlib import Path
 from fhir.resources.valueset import ValueSet
 
 
-{
-    "v_type": "oops_fhir.r4.code_system.abstract_type",
-    "v_any": "oops_fhir.r4.code_system.abstract_type",
-}
+from oops_fhir.r4.code_system.abstract_type import (
+    v_type,
+    v_any,
+)
+
+
+__all__ = ["v_type", "v_any"]
 
 resource = ValueSet.parse_file(Path(__file__).with_suffix(".json"))

@@ -1,3 +1,4 @@
+{% set values = resource | get_values %}
 """
 {{ resource.title or resource.name}}
 
@@ -11,7 +12,20 @@ from pathlib import Path
 
 from fhir.resources.valueset import ValueSet
 
-{% set concepts = resource | value_set_concepts %}
-{{ {k: v for k, v in concepts.items()} }}
+{% for i in values.imports %}
+from {{ i[0] }} import (
+    {% for k,v in i[1].items() %}
+    {{ k }}{{ ' as ' + v  if k != v else ''}},
+    {% endfor %}
+)
+{% endfor %}
+
+
+__all__ = {{ values.all_member }}
+
+{% for k, v in values.concepts.items() %}
+{{ k }} = {{ v.json() }}
+""" {{ v.definition or v.display }} """
+{% endfor %}
 
 resource = ValueSet.parse_file(Path(__file__).with_suffix(".json"))

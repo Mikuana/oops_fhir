@@ -7,9 +7,9 @@ from pathlib import Path
 from typing import Union
 
 import jinja2
-
 from fhir.resources.bundle import Bundle
-from structures.utils import snake_case, all_imps, namespace_imps, register_urls, value_set_concepts
+
+from structures.utils import snake_case, all_imps, namespace_imps, stage_values
 
 reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
 bp = Path("/home/chris/PycharmProjects/oops_fhir/structures/")
@@ -28,14 +28,13 @@ jinj_env = jinja2.Environment(
     loader=loader,
     extensions=['jinja2.ext.do']
 )
-# jinj_env.lstrip_blocks = True
 jinj_env.filters['snake_case'] = snake_case
 jinj_env.filters['wrap'] = lambda x: '\n'.join(textwrap.wrap(x, 72))
 jinj_env.filters['all_imps'] = all_imps
 jinj_env.filters['enumerate'] = enumerate
 jinj_env.filters['namespace_imps'] = namespace_imps
 jinj_env.filters['oops_ref'] = lambda x: registry.get(x)
-jinj_env.filters['value_set_concepts'] = lambda x: value_set_concepts(x, registry)
+jinj_env.filters['get_values'] = lambda x: stage_values(x, registry)
 
 for source in sources:
     sp = Path(p2, *source)
@@ -74,7 +73,7 @@ for source in sources:
                 continue  # this is a weird resource; I don't understand it
             elif resource.resource_type != 'ValueSet':  # TODO: focus on value sets for now
                 continue
-            elif resource.name != 'AbstractType':
+            elif resource.name != "Yes/No/Don't Know":
                 continue
 
             resource.text = None

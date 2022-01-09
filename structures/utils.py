@@ -256,6 +256,11 @@ class ValueSetStager:
         self.all_member.extend([e for v in self.imports for e in v[1].values()])
 
 
+def stage_values(value_set, registry) -> ValueSetStager:
+    x = ValueSetStager(value_set, registry)
+    return x
+
+
 if __name__ == '__main__':
     reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
     registry = json.loads(reg_p.read_text())
