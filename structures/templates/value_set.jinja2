@@ -11,42 +11,7 @@ from pathlib import Path
 
 from fhir.resources.valueset import ValueSet
 
-{% if resource.expansion %}
-    {# prefer expanded values when present #}
-
-__all__ = [{% for concept in resource.expansion.contains %}
-'{{ concept.code | snake_case }}',
-{% endfor %}]
-
-{% for concept in resource.expansion.contains %}
-{{ concept.code | snake_case }} = {{ concept.json() }}
-""" {{ concept.definition or concept.display }} """
-{% endfor %}
-
-{% elif resource.compose.include | length > 1 %}
-
-{% set aliases = [] %}
-{% for ix, i in (resource.compose.include | enumerate) %}
-
-{% set mod = resource.compose.include[0].system | oops_ref %}
-
-{% set imps = mod | all_imps | namespace_imps(ix) %}
-{% do aliases.extend(imps.values()) %}
-
-from {{ mod }} import ({% for k, v in imps.items() %} {{k}} as {{v}}, {% endfor %})
-
-{% endfor %}
-__all__ = {{ aliases }}
-
-{% else %}
-
-{% set mod = resource.compose.include[0].system | oops_ref %}
-{% set imps = mod | all_imps %}
-from {{ mod }} import {{ imps | join(',') }}
-
-__all__ = {{ imps }}
-
-
-{% endif %}
+{% set concepts = resource | value_set_concepts %}
+{{ {k: v for k, v in concepts.items()} }}
 
 resource = ValueSet.parse_file(Path(__file__).with_suffix(".json"))

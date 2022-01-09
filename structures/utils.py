@@ -1,3 +1,4 @@
+from hashlib import sha1
 import json
 from collections import Counter
 from pathlib import Path
@@ -10,7 +11,10 @@ import textwrap
 from typing import Union
 
 from fhir.resources.bundle import Bundle
-from fhir.resources.valueset import ValueSet, ValueSetComposeIncludeConcept
+from fhir.resources.valueset import (
+    ValueSet, ValueSetComposeIncludeConcept, ValueSetExpansionContains,
+    ValueSetComposeInclude
+)
 
 rep = {
     " ": "space",
@@ -158,7 +162,8 @@ def register_urls(sources: List[Tuple[str]]):
     return registry
 
 
-def value_set_concepts(x: ValueSet) -> Dict[str, ValueSetComposeIncludeConcept]:
+def value_set_concepts(x: ValueSet, registry: Dict) -> \
+    Tuple[Dict[str, ValueSetComposeIncludeConcept], Dict[str, str]]:
     if x.expansion:
         # noinspection PyUnresolvedReferences
         return {
@@ -174,7 +179,9 @@ def value_set_concepts(x: ValueSet) -> Dict[str, ValueSetComposeIncludeConcept]:
                 for v in inclusion.concept
             })
         else:
-            inclusion.system
+            ref = registry.get(inclusion.system)
+            if ref:
+                concepts.append({x: ref for x in all_imps(ref)})
 
     if len(concepts) == 1:
         concepts = concepts[0]
@@ -194,8 +201,55 @@ def value_set_concepts(x: ValueSet) -> Dict[str, ValueSetComposeIncludeConcept]:
     return concepts
 
 
+# noinspection PyUnresolvedReferences
+class ValueSetStager:
+    def __init__(self, value_set: ValueSet, registry: dict):
+        self.resource = value_set
+        self.namespaces = dict()
+        self.isolated_names = Counter()
+        self.unified_names = dict()
+        self.concepts = dict()
+
+        if self.resource.expansion:
+            self.namespaces['expansion'] = {
+                snake_case(v.code): v
+                for v in self.resource.expansion.contains
+            }
+
+        else:
+            for i in self.resource.compose.include:
+                if i.concept:
+                    self.namespaces[i.system] = {
+                        snake_case(x.code): x
+                        for x in i.concept
+                    }
+                else:
+                    ref = registry[i.system]
+                    self.namespaces[ref] = {
+                        x: None
+                        for x in all_imps(ref)
+                    }
+
+        for namespace in self.namespaces.values():
+            for name in namespace.keys():
+                self.isolated_names[name] += 1
+
+        for namespace, concepts in self.namespaces.items():
+            # add hash suffix to any name which is duplicated across spaces
+            self.unified_names = {
+                (namespace, x): x + '_' + sha1(namespace.encode()).hexdigest()[:4]
+                if self.isolated_names[x] > 1 else x
+                for x in concepts.keys()
+            }
+
+
 if __name__ == '__main__':
-    v1 = ValueSet.parse_file(
-        Path('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/common_ucum_units.json'))
+    reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
+    registry = json.loads(reg_p.read_text())
+    v1 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/common_ucum_units.json')
     v2 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/yes_no_don_t_know.json')
-    print(value_set_concepts(v1))
+    v3 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/abstract_type.json')
+    v4 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/administrative_gender.json')
+
+    z = ValueSetStager(v4, registry)
+    print(z.unified_names)
