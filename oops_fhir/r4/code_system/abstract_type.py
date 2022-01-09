@@ -13,12 +13,11 @@ from pathlib import Path
 
 from fhir.resources.codesystem import CodeSystem
 
+
 __all__ = [
     "v_type",
     "v_any",
 ]
-
-resource = CodeSystem.parse_file(Path(__file__).with_suffix(".json"))
 
 
 v_type = {
@@ -34,3 +33,6 @@ v_any = {
     "display": "Any",
 }
 """ A place holder that means any kind of resource """
+
+
+resource = CodeSystem.parse_file(Path(__file__).with_suffix(".json"))

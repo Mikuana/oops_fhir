@@ -9,27 +9,32 @@ from typing import Union
 import jinja2
 
 from fhir.resources.bundle import Bundle
-from structures.utils import snake_case, all_imps, namespace_imps
+from structures.utils import snake_case, all_imps, namespace_imps, register_urls
 
-registry = {}
-
+reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
 bp = Path("/home/chris/PycharmProjects/oops_fhir/structures/")
 p2 = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir")
+
+# TODO: re-enable us core
+# sources = [("r4",), ("us", "core")]
+sources = [("r4",)]
+
+registry = json.loads(reg_p.read_text())
+# registry = register_urls(sources)
+
 
 loader = jinja2.FileSystemLoader('/home/chris/PycharmProjects/oops_fhir/structures/templates')
 jinj_env = jinja2.Environment(
     loader=loader,
     extensions=['jinja2.ext.do']
 )
+# jinj_env.lstrip_blocks = True
 jinj_env.filters['snake_case'] = snake_case
 jinj_env.filters['wrap'] = lambda x: '\n'.join(textwrap.wrap(x, 72))
 jinj_env.filters['all_imps'] = all_imps
 jinj_env.filters['enumerate'] = enumerate
 jinj_env.filters['namespace_imps'] = namespace_imps
-
-# TODO: re-enable us core
-# sources = [("r4",), ("us", "core")]
-sources = [("r4",)]
+jinj_env.filters['oops_ref'] = lambda x: registry.get(x)
 
 for source in sources:
     sp = Path(p2, *source)
@@ -38,7 +43,7 @@ for source in sources:
     bundle: Union[Bundle, None] = None
     resources = []
     for bj in Path(bp, *source).glob("*.json"):
-        if bj.name != 'valuesets.json':  # TODO: remove this skip
+        if bj.name != 'valuesets.json':
             continue
         try:
             print(bj)
@@ -62,19 +67,11 @@ for source in sources:
             resources = [e.resource for e in bundle.entry]
 
         for resource in resources:
-            rtp = Path(sp, snake_case(resource.resource_type))
-            rp = Path(rtp, snake_case(resource.name))
-            registry[resource.url] = (
-                rp.relative_to("/home/chris/PycharmProjects/oops_fhir/")
-                    .as_posix()
-                    .replace("/", ".")
-            )
-
-        jinj_env.filters['oops_ref'] = lambda x: registry[x]
-
-        for resource in resources:
-            # TODO: remove this loop skip
-            if resource.id != 'abstract-types':
+            if resource.experimental is True:
+                continue
+            elif resource.name == 'MessageEvent':  # TODO: wat?
+                continue  # this is a weird resource; I don't understand it
+            elif resource.resource_type != 'ValueSet':  # TODO: focus on value sets for now
                 continue
 
             resource.text = None
@@ -88,8 +85,9 @@ for source in sources:
             )
 
             try:
+                print(resource.name, f'({resource.resource_type})')
                 template = jinj_env.get_template(
-                    f'{snake_case(resource.resource_type)}.j2'
+                    f'{snake_case(resource.resource_type)}.jinja2'
                 )
                 txt = template.render(resource=resource)
 
@@ -99,8 +97,3 @@ for source in sources:
                 )
             except jinja2.TemplateNotFound as e:
                 warnings.warn(str(e))
-
-reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
-reg_p.write_text(
-    json.dumps({k: registry[k] for k in sorted(registry.keys())}, indent=2)
-)
