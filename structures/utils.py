@@ -1,3 +1,4 @@
+import types
 from hashlib import sha1
 import json
 from collections import Counter
@@ -225,7 +226,7 @@ class ValueSetStager:
                     }
                 else:  # import module
                     ref = registry[i.system]
-                    self.namespaces[ref] = {
+                    self.namespaces[import_module(ref)] = {
                         x: x
                         for x in all_imps(ref)
                     }
@@ -234,14 +235,25 @@ class ValueSetStager:
             for name in namespace.keys():
                 self.isolated_names[name] += 1
 
-        for namespace, concepts in self.namespaces.items():
-            self.concepts.update({
-                (k + '_' + sha1(namespace.encode()).hexdigest()[:4]
-                    if self.isolated_names[k] > 1 else k): v
-                for k, v in concepts.items()
-            })
+        self.imports = []
+        for k, v in self.namespaces.items():
+            if isinstance(k, types.ModuleType):
+                self.imports.append((
+                    k.__name__, {
+                        name: f'{alias}_{sha1(k.__name__.encode()).hexdigest()[:4]}'
+                        if self.isolated_names[alias] > 1 else alias
+                        for name, alias in v.items()
+                    }
+                ))
+            else:
+                self.concepts.update({
+                    (name + '_' + sha1(k.encode()).hexdigest()[:4]
+                     if self.isolated_names[name] > 1 else name): concept
+                    for name, concept in v.items()
+                })
 
         self.all_member = [x for x in self.concepts.keys()]
+        self.all_member.extend([e for v in self.imports for e in v[1].values()])
 
 
 if __name__ == '__main__':
@@ -252,5 +264,5 @@ if __name__ == '__main__':
     v3 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/abstract_type.json')
     v4 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/administrative_gender.json')
 
-    z = ValueSetStager(v1, registry)
+    z = ValueSetStager(v3, registry)
     print(z.all_member)
