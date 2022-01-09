@@ -22,4 +22,5 @@ from oops_fhir.r4.code_system.abstract_type import (
 
 __all__ = ["v_type", "v_any"]
 
+
 resource = ValueSet.parse_file(Path(__file__).with_suffix(".json"))

@@ -1,4 +1,5 @@
 import types
+import warnings
 from hashlib import sha1
 import json
 from collections import Counter
@@ -105,7 +106,7 @@ def class_case(x: str):
 
 
 def all_imps(module: str) -> List[str]:
-    return getattr(import_module(module), "__all__")
+    return getattr(import_module(module), "__all__", [])
 
 
 def namespace_imps(imps: List[str], space_index: int) -> Dict[str, str]:
@@ -163,45 +164,6 @@ def register_urls(sources: List[Tuple[str]]):
     return registry
 
 
-def value_set_concepts(x: ValueSet, registry: Dict) -> \
-    Tuple[Dict[str, ValueSetComposeIncludeConcept], Dict[str, str]]:
-    if x.expansion:
-        # noinspection PyUnresolvedReferences
-        return {
-            snake_case(v.code): v
-            for v in x.expansion.contains
-        }
-
-    concepts = []
-    for inclusion in x.compose.include:
-        if inclusion.concept:
-            concepts.append({
-                snake_case(v.code): v
-                for v in inclusion.concept
-            })
-        else:
-            ref = registry.get(inclusion.system)
-            if ref:
-                concepts.append({x: ref for x in all_imps(ref)})
-
-    if len(concepts) == 1:
-        concepts = concepts[0]
-    else:
-        merged_concepts = dict()
-        names = Counter([snake_case(e) for s in concepts for e in s])
-        dup_names = [k for k, v in names.items() if v > 1]
-        print(dup_names)
-        for ix, inclusion in enumerate(concepts):
-            merged_concepts.update({
-                f'{k}_{str(ix)}' if k in dup_names else k: v
-                for k, v in inclusion.items()
-            })
-
-        concepts = merged_concepts
-
-    return concepts
-
-
 # noinspection PyUnresolvedReferences
 class ValueSetStager:
     def __init__(self, value_set: ValueSet, registry: dict):
@@ -225,11 +187,16 @@ class ValueSetStager:
                         for x in i.concept
                     }
                 else:  # import module
-                    ref = registry[i.system]
-                    self.namespaces[import_module(ref)] = {
-                        x: x
-                        for x in all_imps(ref)
-                    }
+                    try:
+                        ref = registry[i.system]
+                        self.namespaces[import_module(ref)] = {
+                            x: x
+                            for x in all_imps(ref)
+                        }
+                    except KeyError:
+                        warnings.warn(
+                            f'ValueSet {self.resource.name} missing entry for {i.system}'
+                        )
 
         for namespace in self.namespaces.values():
             for name in namespace.keys():

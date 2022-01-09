@@ -51,7 +51,6 @@ for source in sources:
         except Exception as e:
             j = json.loads(bj.read_text())
             resource_type = j.get("resourceType")
-            print(bj.name, resource_type)
             if resource_type == "ImplementationGuide" or bj.name == 'v2-tables.json':
                 continue
             elif resource_type:
@@ -73,8 +72,8 @@ for source in sources:
                 continue  # this is a weird resource; I don't understand it
             elif resource.resource_type != 'ValueSet':  # TODO: focus on value sets for now
                 continue
-            elif resource.name != "Yes/No/Don't Know":
-                continue
+            # elif resource.name != "Yes/No/Don't Know":
+            #     continue
 
             resource.text = None
             rtp = Path(sp, snake_case(resource.resource_type))
@@ -87,7 +86,6 @@ for source in sources:
             )
 
             try:
-                print(resource.name, f'({resource.resource_type})')
                 template = jinj_env.get_template(
                     f'{snake_case(resource.resource_type)}.jinja2'
                 )

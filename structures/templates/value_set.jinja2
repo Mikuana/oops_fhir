@@ -13,15 +13,18 @@ from pathlib import Path
 from fhir.resources.valueset import ValueSet
 
 {% for i in values.imports %}
+{% if i[1] %}
 from {{ i[0] }} import (
     {% for k,v in i[1].items() %}
     {{ k }}{{ ' as ' + v  if k != v else ''}},
     {% endfor %}
 )
+{% endif %}
 {% endfor %}
 
-
+{% if values.all_member %}
 __all__ = {{ values.all_member }}
+{% endif %}
 
 {% for k, v in values.concepts.items() %}
 {{ k }} = {{ v.json() }}
