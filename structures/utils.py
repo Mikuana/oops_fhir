@@ -223,10 +223,10 @@ class ValueSetStager:
                         snake_case(x.code): x
                         for x in i.concept
                     }
-                else:
+                else:  # import module
                     ref = registry[i.system]
                     self.namespaces[ref] = {
-                        x: None
+                        x: x
                         for x in all_imps(ref)
                     }
 
@@ -235,12 +235,13 @@ class ValueSetStager:
                 self.isolated_names[name] += 1
 
         for namespace, concepts in self.namespaces.items():
-            # add hash suffix to any name which is duplicated across spaces
-            self.unified_names = {
-                (namespace, x): x + '_' + sha1(namespace.encode()).hexdigest()[:4]
-                if self.isolated_names[x] > 1 else x
-                for x in concepts.keys()
-            }
+            self.concepts.update({
+                (k + '_' + sha1(namespace.encode()).hexdigest()[:4]
+                    if self.isolated_names[k] > 1 else k): v
+                for k, v in concepts.items()
+            })
+
+        self.all_member = [x for x in self.concepts.keys()]
 
 
 if __name__ == '__main__':
@@ -251,5 +252,5 @@ if __name__ == '__main__':
     v3 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/abstract_type.json')
     v4 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/administrative_gender.json')
 
-    z = ValueSetStager(v4, registry)
-    print(z.unified_names)
+    z = ValueSetStager(v1, registry)
+    print(z.all_member)
