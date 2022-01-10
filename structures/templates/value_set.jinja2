@@ -27,7 +27,7 @@ __all__ = {{ values.all_member }}
 {% endif %}
 
 {% for k, v in values.concepts.items() %}
-{{ k }} = {{ v.json() }}
+{{ k }} = {{ v.json() | json_to_py}}
 """ {{ v.definition or v.display }} """
 {% endfor %}
 

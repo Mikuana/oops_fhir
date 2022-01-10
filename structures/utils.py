@@ -228,6 +228,10 @@ def stage_values(value_set, registry) -> ValueSetStager:
     return x
 
 
+def json_to_py(x: str):
+    return json.loads(x)
+
+
 if __name__ == '__main__':
     reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
     registry = json.loads(reg_p.read_text())

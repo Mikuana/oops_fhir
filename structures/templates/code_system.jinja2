@@ -15,12 +15,14 @@ from fhir.resources.codesystem import CodeSystem
 
 {% if resource.content == 'complete' %}
 
+{% if resource.concept %}
 __all__ = [{% for concept in resource.concept %}
 '{{ concept.code | snake_case }}',
 {% endfor %}]
+{% endif %}
 
 {% for concept in resource.concept %}
-{{ concept.code | snake_case }} = {{ concept.json() }}
+{{ concept.code | snake_case }} = {{ concept.json() | json_to_py }}
 """ {{ concept.definition or concept.display }} """
 {% endfor %}
 

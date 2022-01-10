@@ -7,6 +7,8 @@ specializations actually are created.
 
 Status: active - Version: 4.0.1
 
+Copyright None
+
 http://hl7.org/fhir/abstract-types
 """
 from pathlib import Path
