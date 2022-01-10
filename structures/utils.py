@@ -1,22 +1,19 @@
-import types
-import warnings
-from hashlib import sha1
-import json
-from collections import Counter
-from pathlib import Path
-from typing import List, Dict, Tuple
-from importlib import import_module
+import logging
 import builtins
+import json
 import keyword
 import re
 import textwrap
+import types
+from collections import Counter
+from hashlib import sha1
+from importlib import import_module
+from pathlib import Path
+from typing import List, Dict, Tuple
 from typing import Union
 
 from fhir.resources.bundle import Bundle
-from fhir.resources.valueset import (
-    ValueSet, ValueSetComposeIncludeConcept, ValueSetExpansionContains,
-    ValueSetComposeInclude
-)
+from fhir.resources.valueset import ValueSet
 
 rep = {
     " ": "space",
@@ -90,7 +87,7 @@ def snake_case(x: str):
     x = x.strip("_")
 
     if keyword.iskeyword(x) or x in dir(builtins):
-        return f"v_{x}"
+        return f"{x}_"
     else:
         return x
 
@@ -100,7 +97,7 @@ def class_case(x: str):
     x = class_pat.sub("", x.title())
 
     if keyword.iskeyword(x) or x in dir(builtins):
-        return f"v{x}"
+        return f"{x}_"
     else:
         return x
 
@@ -147,6 +144,7 @@ def register_urls(sources: List[Tuple[str]]):
                     continue
 
             if bundle:
+                # noinspection PyUnresolvedReferences
                 resources = [e.resource for e in bundle.entry]
 
             for resource in resources:
@@ -194,8 +192,9 @@ class ValueSetStager:
                             for x in all_imps(ref)
                         }
                     except KeyError:
-                        warnings.warn(
-                            f'ValueSet {self.resource.name} missing entry for {i.system}'
+                        logging.warning(
+                            f'ValueSet {self.resource.name} failed to import '
+                            f'system reference {i.system}'
                         )
 
         for namespace in self.namespaces.values():
@@ -233,8 +232,8 @@ def json_to_py(x: str):
 
 
 if __name__ == '__main__':
-    reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
-    registry = json.loads(reg_p.read_text())
+    rp = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
+    r = json.loads(rp.read_text())
     v1 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/security_role_type.json')
-    z = ValueSetStager(v1, registry)
+    z = ValueSetStager(v1, r)
     print(z.all_member)

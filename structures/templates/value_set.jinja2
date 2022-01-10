@@ -8,9 +8,9 @@ Status: {{ resource.status }} - Version: {{ resource.version }}
 
 {{ resource.url }}
 """
-from pathlib import Path
+from pathlib import _Path
 
-from fhir.resources.valueset import ValueSet
+from fhir.resources.valueset import _ValueSet
 
 {% for i in values.imports %}
 {% if i[1] %}
@@ -31,4 +31,4 @@ __all__ = {{ values.all_member }}
 """ {{ v.definition or v.display }} """
 {% endfor %}
 
-resource = ValueSet.parse_file(Path(__file__).with_suffix(".json"))
+__resource = _ValueSet.parse_file(_Path(__file__).with_suffix(".json"))
