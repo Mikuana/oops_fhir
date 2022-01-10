@@ -235,10 +235,6 @@ def json_to_py(x: str):
 if __name__ == '__main__':
     reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
     registry = json.loads(reg_p.read_text())
-    v1 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/common_ucum_units.json')
-    v2 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/yes_no_don_t_know.json')
-    v3 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/abstract_type.json')
-    v4 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/administrative_gender.json')
-
-    z = ValueSetStager(v3, registry)
+    v1 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/security_role_type.json')
+    z = ValueSetStager(v1, registry)
     print(z.all_member)
