@@ -4,13 +4,10 @@ from fhir.resources.codesystem import CodeSystem
 
 from oops_fhir.utils import CodeSystemConcept
 
-{% if resource.content == 'complete' %}
-
-_resource = CodeSystem.parse_file(Path(__file__).with_suffix(".json"))
-
-{% if resource.concept %}
 
 __all__ = ['{{ resource.name | camel_case }}']
+
+_resource = CodeSystem.parse_file(Path(__file__).with_suffix(".json"))
 
 
 class {{ resource.name | camel_case }}:
@@ -25,7 +22,7 @@ class {{ resource.name | camel_case }}:
 
     {{ resource.url }}
     """
-
+    {% if resource.concept %}
     {% for concept in resource.concept %}
     {{ concept.code | snake_case }} = CodeSystemConcept({{ concept.json() | json_to_py }})
     """
@@ -34,10 +31,8 @@ class {{ resource.name | camel_case }}:
     {{ concept.definition or '' }}
     """
     {% endfor %}
+    {% endif %}
+
 
     class Meta:
         resource = _resource
-
-{% endif %}
-
-{% endif %}

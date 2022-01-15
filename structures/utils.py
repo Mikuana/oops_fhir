@@ -171,13 +171,12 @@ def register_urls(sources: List[Tuple[str]]):
 class ValueSetStager:
     def __init__(self, value_set: ValueSet, registry: dict):
         self.resource = value_set
-        self.namespaces = dict()
-        self.isolated_names = Counter()
-        self.unified_names = dict()
         self.concepts = dict()
+        self.namespaces = dict()
+        self.imports = dict()
 
         if self.resource.expansion:
-            self.namespaces['expansion'] = {
+            self.concepts = {
                 snake_case(v.code): v
                 for v in self.resource.expansion.contains
             }
@@ -186,45 +185,17 @@ class ValueSetStager:
             for i in self.resource.compose.include:
                 if i.concept:
                     self.namespaces[i.system] = {
-                        snake_case(x.code): x
-                        for x in i.concept
+                        snake_case(x.code): x for x in i.concept
                     }
                 else:  # import module
                     try:
                         ref = registry[i.system]
-                        self.namespaces[import_module(ref)] = {
-                            x: x
-                            for x in all_imps(ref)
-                        }
+                        self.imports[import_module(ref)] = all_imps(ref)
                     except KeyError:
                         logging.warning(
                             f'ValueSet {self.resource.name} failed to import '
                             f'system reference {i.system}'
                         )
-
-        for namespace in self.namespaces.values():
-            for name in namespace.keys():
-                self.isolated_names[name] += 1
-
-        self.imports = []
-        for k, v in self.namespaces.items():
-            if isinstance(k, types.ModuleType):
-                self.imports.append((
-                    k.__name__, {
-                        name: f'{alias}_{sha1(k.__name__.encode()).hexdigest()[:4]}'
-                        if self.isolated_names[alias] > 1 else alias
-                        for name, alias in v.items()
-                    }
-                ))
-            else:
-                self.concepts.update({
-                    (name + '_' + sha1(k.encode()).hexdigest()[:4]
-                     if self.isolated_names[name] > 1 else name): concept
-                    for name, concept in v.items()
-                })
-
-        self.all_member = [x for x in self.concepts.keys()]
-        self.all_member.extend([e for v in self.imports for e in v[1].values()])
 
 
 def stage_values(value_set, registry) -> ValueSetStager:

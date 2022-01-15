@@ -1,34 +1,38 @@
 {% set values = resource | get_values %}
-"""
-{{ resource.title or resource.name}}
+from pathlib import Path
 
-{{ resource.description | wrap }}
+from fhir.resources.valueset import ValueSet
 
-Status: {{ resource.status }} - Version: {{ resource.version }}
+{% for i, e in values.imports.items() %}
+from {{ i.__name__ }} import {{ ','.join(e) }}
+{% endfor %}
 
-{{ resource.url }}
-"""
-from pathlib import Path as _Path
 
-from fhir.resources.valueset import ValueSet as _ValueSet
+__all__ = ['{{ resource.name | camel_case }}']
 
-{% for i in values.imports %}
-{% if i[1] %}
-from {{ i[0] }} import (
-    {% for k,v in i[1].items() %}
-    {{ k }}{{ ' as ' + v  if k != v else ''}},
+_resource = ValueSet.parse_file(Path(__file__).with_suffix(".json"))
+
+
+class {{ resource.name | camel_case }}:
+    """
+    {{ resource.title or resource.name}}
+
+    {{ resource.description | wrap }}
+
+    Status: {{ resource.status }} - Version: {{ resource.version }}
+
+    {{ resource.url }}
+    """
+    {% for k, v in values.imports.items() %}
+    {% for x in v %}
+    {{ x | snake_case }} = {{ x }}
     {% endfor %}
-)
-{% endif %}
-{% endfor %}
+    {% endfor %}
 
-{% if values.all_member %}
-__all__ = {{ values.all_member }}
-{% endif %}
+    {% for k, v in values.concepts.items() %}
+    {{ k }} = {{ v.json() | json_to_py}}
+    """ {{ v.definition or v.display }} """
+    {% endfor %}
 
-{% for k, v in values.concepts.items() %}
-{{ k }} = {{ v.json() | json_to_py}}
-""" {{ v.definition or v.display }} """
-{% endfor %}
-
-__resource = _ValueSet.parse_file(_Path(__file__).with_suffix(".json"))
+    class Meta:
+        resource = _resource
