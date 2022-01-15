@@ -92,9 +92,14 @@ def snake_case(x: str):
         return x
 
 
-def class_case(x: str):
+def screaming_snake_case(x: str):
+    # TODO: put in code system templates
+    return snake_case(x).upper()
+
+
+def camel_case(x: str):
     x = safe_first(x)
-    x = class_pat.sub("", x.title())
+    x = class_pat.sub("", x)
 
     if keyword.iskeyword(x) or x in dir(builtins):
         return f"{x}_"

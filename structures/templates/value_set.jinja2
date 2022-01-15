@@ -8,9 +8,9 @@ Status: {{ resource.status }} - Version: {{ resource.version }}
 
 {{ resource.url }}
 """
-from pathlib import _Path
+from pathlib import Path as _Path
 
-from fhir.resources.valueset import _ValueSet
+from fhir.resources.valueset import ValueSet as _ValueSet
 
 {% for i in values.imports %}
 {% if i[1] %}

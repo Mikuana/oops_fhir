@@ -1,35 +1,43 @@
-"""
-{{ resource.title }}
+from pathlib import Path
 
-{{ resource.description | wrap }}
+from fhir.resources.codesystem import CodeSystem
 
-Status: {{ resource.status }} - Version: {{ resource.version }}
-
-Copyright {{ resource.copyright }}
-
-{{ resource.url }}
-"""
-from pathlib import _Path
-
-from fhir.resources.codesystem import _CodeSystem
+from oops_fhir.utils import CodeSystemConcept
 
 {% if resource.content == 'complete' %}
 
+_resource = CodeSystem.parse_file(Path(__file__).with_suffix(".json"))
+
 {% if resource.concept %}
-__all__ = [{% for concept in resource.concept %}
-'{{ concept.code | snake_case }}',
-{% endfor %}]
+
+__all__ = ['{{ resource.name | camel_case }}']
+
+
+class {{ resource.name | camel_case }}:
+    """
+    {{ resource.title }}
+
+    {{ resource.description | wrap }}
+
+    Status: {{ resource.status }} - Version: {{ resource.version }}
+
+    Copyright {{ resource.copyright }}
+
+    {{ resource.url }}
+    """
+
+    {% for concept in resource.concept %}
+    {{ concept.code | snake_case }} = CodeSystemConcept({{ concept.json() | json_to_py }})
+    """
+    {{ concept.display }}
+
+    {{ concept.definition or '' }}
+    """
+    {% endfor %}
+
+    class Meta:
+        resource = _resource
+
 {% endif %}
 
-{% for concept in resource.concept %}
-{{ concept.code | snake_case }} = {{ concept.json() | json_to_py }}
-"""
-{{ concept.display }}
-
-{{ concept.definition or '' }}
-"""
-{% endfor %}
-
 {% endif %}
-
-__resource = _CodeSystem.parse_file(_Path(__file__).with_suffix(".json"))
