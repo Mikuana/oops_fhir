@@ -27,3 +27,9 @@ Features
 * Code System Factory
 * Value System Reference Resolver
 * Bundle Resource Parser
+
+
+ToDo
+--------
+
+- oops_fhir/r4/code_system/quantity_comparator.py GreaterThanEqual broken

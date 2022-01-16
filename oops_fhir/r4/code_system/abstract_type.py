@@ -1,40 +1,55 @@
-"""
-AbstractType
-
-A list of the base types defined by this version of the FHIR
-specification - types that are defined, but for which only
-specializations actually are created.
-
-Status: active - Version: 4.0.1
-
-Copyright None
-
-http://hl7.org/fhir/abstract-types
-"""
 from pathlib import Path
 
 from fhir.resources.codesystem import CodeSystem
 
-
-__all__ = [
-    "v_type",
-    "v_any",
-]
+from oops_fhir.utils import CodeSystemConcept
 
 
-v_type = {
-    "code": "Type",
-    "definition": "A place holder that means any kind of data type",
-    "display": "Type",
-}
-""" A place holder that means any kind of data type """
+__all__ = ["AbstractType"]
 
-v_any = {
-    "code": "Any",
-    "definition": "A place holder that means any kind of resource",
-    "display": "Any",
-}
-""" A place holder that means any kind of resource """
+_resource = CodeSystem.parse_file(Path(__file__).with_suffix(".json"))
 
 
-resource = CodeSystem.parse_file(Path(__file__).with_suffix(".json"))
+class AbstractType:
+    """
+    AbstractType
+
+    A list of the base types defined by this version of the FHIR
+specification - types that are defined, but for which only
+specializations actually are created.
+
+    Status: active - Version: 4.0.1
+
+    Copyright None
+
+    http://hl7.org/fhir/abstract-types
+    """
+
+    type_ = CodeSystemConcept(
+        {
+            "code": "Type",
+            "definition": "A place holder that means any kind of data type",
+            "display": "Type",
+        }
+    )
+    """
+    Type
+
+    A place holder that means any kind of data type
+    """
+
+    any_ = CodeSystemConcept(
+        {
+            "code": "Any",
+            "definition": "A place holder that means any kind of resource",
+            "display": "Any",
+        }
+    )
+    """
+    Any
+
+    A place holder that means any kind of resource
+    """
+
+    class Meta:
+        resource = _resource

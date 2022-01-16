@@ -57,8 +57,8 @@ for o in build_order:
         bundle: Union[Bundle, None] = None
         resources = []
         for bj in Path(bp, *source).glob("*.json"):
-            if bj.name != 'valuesets.json':
-                continue  # TODO: remove this break
+            # if bj.name != 'valuesets.json':
+            #     continue  # TODO: remove this break
 
             logging.info(f'Parsing source file {bj.relative_to(Path(__file__).parent)}')
             try:
@@ -108,8 +108,8 @@ for o in build_order:
                         f'CodeSystem is missing from bundles, so ValueSet fails'
                     )
                     continue
-                elif resource.name != "Yes/No/Don't Know":  # TODO: this is temp
-                    continue
+                # elif resource.name != "Yes/No/Don't Know":  # TODO: this is temp
+                #     continue
 
                 resource.text = None  # remove text to reduce size
                 rtp = Path(sp, snake_case(resource.resource_type))

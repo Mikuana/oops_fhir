@@ -1,6 +1,10 @@
 from fhir.resources.codesystem import CodeSystemConcept as _CodeSystemConcept
 
 
+class CodeSystem:
+    pass
+
+
 class CodeSystemConcept:
     def __init__(self, definition: dict):
         self._resource = _CodeSystemConcept.parse_obj(definition)
