@@ -1,12 +1,9 @@
-import logging
 import builtins
 import json
 import keyword
+import logging
 import re
 import textwrap
-import types
-from collections import Counter
-from hashlib import sha1
 from importlib import import_module
 from pathlib import Path
 from typing import List, Dict, Tuple
@@ -170,10 +167,12 @@ def register_urls(sources: List[Tuple[str]]):
 # noinspection PyUnresolvedReferences
 class ValueSetStager:
     def __init__(self, value_set: ValueSet, registry: dict):
+        self.passthrough = None
         self.resource = value_set
         self.concepts = dict()
-        self.namespaces = dict()
+        self.systems = dict()
         self.imports = dict()
+        self.namespaces = 0
 
         if self.resource.expansion:
             self.concepts = {
@@ -184,18 +183,35 @@ class ValueSetStager:
         else:
             for i in self.resource.compose.include:
                 if i.concept:
-                    self.namespaces[i.system] = {
+                    self.systems[i.system] = {
                         snake_case(x.code): x for x in i.concept
                     }
+                    self.namespaces += 1
                 else:  # import module
                     try:
                         ref = registry[i.system]
-                        self.imports[import_module(ref)] = all_imps(ref)
+                        imps = {'original': all_imps(ref)}
+                        imps['aliases'] = [
+                            f'{x}_' if x == camel_case(self.resource.name)
+                            else x for x in imps['original']
+                        ]
+                        imps['statement'] = [
+                            f'{k} as {v}'
+                            if k != v else k for k, v in
+                            dict(zip(imps['original'], imps['aliases'])).items()
+                        ]
+                        self.imports[import_module(ref)] = imps
+                        self.namespaces += 1
                     except KeyError:
                         logging.warning(
                             f'ValueSet {self.resource.name} failed to import '
                             f'system reference {i.system}'
                         )
+
+        if self.namespaces == 1 and self.imports:
+            aliases = list(self.imports.values())[0]['aliases']
+            if len(aliases) == 1:
+                self.passthrough = aliases[0]
 
 
 def stage_values(value_set, registry) -> ValueSetStager:
@@ -205,11 +221,3 @@ def stage_values(value_set, registry) -> ValueSetStager:
 
 def json_to_py(x: str):
     return json.loads(x)
-
-
-if __name__ == '__main__':
-    rp = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
-    r = json.loads(rp.read_text())
-    v1 = ValueSet.parse_file('/home/chris/PycharmProjects/oops_fhir/oops_fhir/r4/value_set/security_role_type.json')
-    z = ValueSetStager(v1, r)
-    print(z.all_member)
