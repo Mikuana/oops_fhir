@@ -8,6 +8,26 @@ from oops_fhir.r4.value_set.mime_types import MimeTypes
 from oops_fhir.r4.value_set.name_use import NameUse
 from oops_fhir.r4.value_set.quantity_comparator import QuantityComparator
 
+__all__ = [
+    'Attachment',
+    'Coding',
+    'CodeableConcept',
+    'Quantity',
+    'SimpleQuantity',
+    'Range',
+    'Ratio',
+    'Period',
+    'SampledData',
+    'Identifier',
+    'HumanName',
+    'Address',
+    'ContactPoint',
+    'Timing',
+    'Signature',
+    'Annotation',
+    'OpenTypeElement',
+]
+
 
 class Attachment:
     """
@@ -483,3 +503,27 @@ class HumanName:
     """ Parts that come after the name """
     period: Optional[Period] = None
     """ Time period when name was/is in use """
+
+
+class Address:
+    pass  # TODO: this
+
+
+class ContactPoint:
+    pass  # TODO: this
+
+
+class Timing:
+    pass  # TODO: this
+
+
+class Signature:
+    pass  # TODO: this
+
+
+class Annotation:
+    pass  # TODO: this
+
+
+class OpenTypeElement:
+    pass  # TODO: this
