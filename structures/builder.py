@@ -108,7 +108,7 @@ for o in build_order:
                         f'CodeSystem is missing from bundles, so ValueSet fails'
                     )
                     continue
-                elif resource.name != 'AdministrativeGender':  # TODO: this is temp
+                elif resource.name != "Yes/No/Don't Know":  # TODO: this is temp
                     continue
 
                 resource.text = None  # remove text to reduce size

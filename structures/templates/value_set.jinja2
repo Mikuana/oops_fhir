@@ -1,7 +1,12 @@
 {% set values = resource | get_values %}
 from pathlib import Path
 
-from fhir.resources.valueset import ValueSet
+from fhir.resources.valueset import ValueSet as _ValueSet
+
+from oops_fhir.utils import (
+    ValueSet,
+    {% if values.concepts %} CodeSystemConcept {% endif %}
+)
 
 {% for i, e in values.imports.items() %}
 from {{ i.__name__ }} import {{ ','.join(e['statement']) }}
@@ -10,7 +15,7 @@ from {{ i.__name__ }} import {{ ','.join(e['statement']) }}
 
 __all__ = ['{{ resource.name | camel_case }}']
 
-_resource = ValueSet.parse_file(Path(__file__).with_suffix(".json"))
+_resource = _ValueSet.parse_file(Path(__file__).with_suffix(".json"))
 
 
 {% if values.passthrough %}
@@ -31,7 +36,7 @@ class {{ resource.name | camel_case }} ({{ values.passthrough }}):
 
 {% else %}
 
-class {{ resource.name | camel_case }}:
+class {{ resource.name | camel_case }}(ValueSet):
     """
     {{ resource.title or resource.name}}
 
@@ -48,7 +53,7 @@ class {{ resource.name | camel_case }}:
     {% endfor %}
 
     {% for k, v in values.concepts.items() %}
-    {{ k }} = {{ v.json() | json_to_py}}
+    {{ k }} = CodeSystemConcept({{ v.json() | json_to_py}})
     """ {{ v.definition or v.display }} """
     {% endfor %}
 

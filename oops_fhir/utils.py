@@ -10,5 +10,5 @@ class CodeSystemConcept:
         return self._resource.json()
 
 
-class ValueSetConcept:
+class ValueSet:
     pass
