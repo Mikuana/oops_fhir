@@ -1,7 +1,13 @@
 from typing import Optional, List, Union
 
 from oops_fhir.r4.data_type import primitive as p
+from oops_fhir.r4.value_set.address_type import AddressType
+from oops_fhir.r4.value_set.address_use import AddressUse
 from oops_fhir.r4.value_set.common_languages import CommonLanguages
+from oops_fhir.r4.value_set.contact_point_system import ContactPointSystem
+from oops_fhir.r4.value_set.contact_point_use import ContactPointUse
+from oops_fhir.r4.value_set.days_of_week import DaysOfWeek
+from oops_fhir.r4.value_set.event_timing import EventTiming
 from oops_fhir.r4.value_set.identifier_type_codes import IdentifierTypeCodes
 from oops_fhir.r4.value_set.identifier_use import IdentifierUse
 from oops_fhir.r4.value_set.mime_types import MimeTypes
@@ -28,12 +34,18 @@ __all__ = [
     'OpenTypeElement',
 ]
 
+from oops_fhir.r4.value_set.signature_type_codes import SignatureTypeCodes
+
+from oops_fhir.r4.value_set.timing_abbreviation import TimingAbbreviation
+
+from oops_fhir.r4.value_set.units_of_time import UnitsOfTime
+
 
 class Attachment:
     """
     This type is for containing or referencing attachments - additional data
     content defined in other formats. The most common use of this type is to
-    include images or reports in some report format such as PDF. However it can
+    include images or reports in some reports format such as PDF. However, it can
     be used for any data that has a MIME type.
 
     The actual content of an Attachment can be conveyed directly using the data
@@ -46,7 +58,7 @@ class Attachment:
     resource reference.
 
     The contentType element SHALL always be populated when an Attachment
-    contains data, and MAY be populated when there is a url. It can include
+    contains data, and MAY be populated when there is an url. It can include
     charset information and other mime type extensions as appropriate. If there
     is no character set in the contentType then the correct course of action is
     undefined, though some media types may define a default character set and/or
@@ -64,7 +76,7 @@ class Attachment:
     references this type. The language element describes the language of the
     attachment using the codes defined in BCP 47.
     """
-    content_type: Optional[MimeTypes] = None
+    content_type: Optional[MimeTypes] = MimeTypes
     """ Mime type of the content, with charset etc. """
     language: Optional[CommonLanguages] = CommonLanguages
     """ Human language of the content (BCP-47) """
@@ -119,7 +131,7 @@ class Coding:
     If present, the code SHALL be a syntactically correct symbol as defined by
     the system. In some code systems such as SNOMED CT, the symbol may be an
     expression composed of other predefined symbol (e.g. post-coordination).
-    Note that codes are case sensitive unless specified otherwise by the code
+    Note that codes are case-sensitive unless specified otherwise by the code
     system. The display is a text representation of the code defined by the
     system and is used to display the meaning of the code by an application
     that is not aware of the system.
@@ -182,7 +194,7 @@ class CodeableConcept:
     codes is useful and important for the purposes of debugging and integrity
     auditing.
 
-    Whether or not coding elements are present, the text is the representation
+    Whether coding elements are present, the text is the representation
     of the concept as entered or chosen by the user, and which most closely
     represents the intended meaning of the user or concept. Very often the text
     is the same as a display of one of the codings. One of the codings may be
@@ -218,7 +230,7 @@ class Quantity:
     """
     value: Optional[p.decimal] = None
     """ Numerical value (with implicit precision) """
-    comparator: Optional[QuantityComparator] = None
+    comparator: Optional[QuantityComparator] = QuantityComparator
     """ "< | <= | >= | > - how to understand the value """
     unit: Optional[p.string] = None
     """ Unit representation """
@@ -253,9 +265,9 @@ class Range:
     arbitrarily high precision; e.g. the range 1.5 to 2.5 includes 1.50, and
     2.50 but not 1.49 or 2.51.
     """
-    low: Optional[SimpleQuantity] = None
+    low: Optional[SimpleQuantity] = SimpleQuantity
     """ Low limit """
-    high: Optional[SimpleQuantity] = None
+    high: Optional[SimpleQuantity] = SimpleQuantity
     """ High limit """
 
 
@@ -277,9 +289,9 @@ class Ratio:
     mandatory in order to allow an invalid ratio with an extension with further
     information.
     """
-    numerator: Optional[Quantity] = None
+    numerator: Optional[Quantity] = Quantity
     """ Numerator value """
-    denominator: Optional[Quantity] = None
+    denominator: Optional[Quantity] = Quantity
     """ Denominator value """
 
 
@@ -328,7 +340,7 @@ class SampledData:
     are interlaced - all the data points for a particular time are represented
     together. The default value for factor is 1.
     """
-    origin: [SimpleQuantity] = None
+    origin: [SimpleQuantity] = SimpleQuantity
     """ Zero value and units """
     period: p.decimal = None
     """ Number of milliseconds between samples """
@@ -403,7 +415,7 @@ class Identifier:
     In addition to the system (which provides a uniqueness scope) and the value,
     identifiers may also have a type, which may be useful when a system
     encounters identifiers with unknown system values. Note, however, that the
-    type of an identifier is not a well-controlled vocabulary with wide
+    type of identifier is not a well-controlled vocabulary with wide
     variations in practice. The type deals only with general categories of
     identifiers and SHOULD not be used for codes that correspond 1..1 with the
     Identifier.system. Some identifiers may fall into multiple categories due to
@@ -413,15 +425,15 @@ class Identifier:
     the identifier. As a Reference, the assigner can include just a text
     description in the display.
     """
-    use: Optional[IdentifierUse] = None
+    use: Optional[IdentifierUse] = IdentifierUse
     """ usual | official | temp | secondary (If known) """
-    type: Optional[IdentifierTypeCodes] = None
+    type: Optional[IdentifierTypeCodes] = IdentifierTypeCodes
     """ Description of identifier """
     system: Optional[p.uri] = None
     """ The namespace for the identifier value """
     value: Optional[p.string] = None
     """ The value that is unique """
-    period: Optional[Period] = None
+    period: Optional[Period] = Period
     """ Time period when id is/was valid for use """
     assigner = None  # TODO: reference type needs to be implemented
     """ Organization that issued id (may be just text) """
@@ -474,7 +486,7 @@ class HumanName:
     Initials may be used in place of the full name if that is all that is
     recorded. Systems that operate across cultures should generally rely on the
     text form for presentation, and use the parts for index/search functionality.
-    For this reasons, applications SHOULD populate the text element for future
+    For these reasons, applications SHOULD populate the text element for future
     robustness.
 
     In some cultures (e.g. German, Dutch, Spanish, Portuguese), family names are
@@ -489,7 +501,7 @@ class HumanName:
     family name of "Carreno Quinones". HL7 affiliates may make more specific
     recommendations about how search should work in their specific culture.
     """
-    use: Optional[NameUse] = None
+    use: Optional[NameUse] = NameUse
     """ usual | official | temp | nickname | anonymous | old | maiden """
     text: Optional[p.string] = None
     """ Text representation of the full name """
@@ -501,29 +513,247 @@ class HumanName:
     """ Parts that come before the name """
     suffix: Union[p.string, List[p.string], None] = None
     """ Parts that come after the name """
-    period: Optional[Period] = None
+    period: Optional[Period] = Period
     """ Time period when name was/is in use """
 
 
 class Address:
-    pass  # TODO: this
+    """
+    An address expressed using postal conventions (as opposed to GPS or other
+    location definition formats). This data type may be used to convey addresses
+    for use in delivering mail as well as for visiting locations which might not
+    be valid for mail delivery. There are a variety of postal address formats
+    defined around the world.
+
+    The text element specifies the entire address as it should be represented.
+    This may be provided instead of or as well as the specific parts.
+    Applications updating an address SHALL ensure either that the text and the
+    parts are in agreement, or that only one of the two is present.
+    """
+    use: Optional[AddressUse] = AddressUse
+    """ home | work | temp | old - purpose of this address """
+    type: Optional[AddressType] = AddressType
+    """ postal | physical | both """
+    text: Optional[p.string] = None
+    """ Text representation of the address """
+    line: Union[p.string, List[p.string], None] = None
+    """ Street name, number, direction & P.O. Box etc ."""
+    city: Optional[p.string] = None
+    """ Name of city, town etc ."""
+    district: Optional[p.string] = None
+    """ District name (aka county )"""
+    state: Optional[p.string] = None
+    """ Sub-unit of country (abbreviations ok )"""
+    postalCode: Optional[p.string] = None
+    """ Postal code for area """
+    country: Optional[p.string] = None
+    """ Country (e.g. can be ISO 3166 2 or 3 letter code )"""
+    period: Optional[Period] = Period
+    """ Time period when address was/is in use """
 
 
 class ContactPoint:
-    pass  # TODO: this
+    """
+    Details for all kinds of technology-mediated contact points for a person or
+    organization, including telephone, email, etc.
+
+    If capturing a phone, fax or similar contact point, the value should be a
+    properly formatted telephone number according to ITU-T E.123 . However, this
+    is frequently not possible due to legacy data and/or clerical practices when
+    recording contact details. For this reason, phone, fax, pager, and email
+    addresses are not handled as formal URLs. For other kinds of contact points,
+    the system is "other" and the value SHOULD be a URL so that its use can be
+    determined automatically. Typical URL schemes used in the value are http(s):
+    for web addresses, and URL schemes for various kinds of messaging systems.
+    If the value is not a URL, then human interpretation will be required.
+
+    The rank element can be used to specify a preference for the order in which
+    a set of contacts is used. Contacts are ranked with lower values coming
+    before higher values. Note that rank does not necessarily follow the order
+    in which the contacts are represented in the instance.
+    """
+    system: Optional[ContactPointSystem] = ContactPointSystem
+    """ phone | fax | email | pager | url | sms | other """
+    value: Optional[p.string] = None
+    """ The actual contact point details """
+    use: Optional[ContactPointUse] = ContactPointUse
+    """ home | work | temp | old | mobile - purpose of this contact point """
+    rank: Optional[p.positive_int] = None
+    """ Specify preferred order of use (1 = highest )"""
+    period: Optional[Period] = Period
+    """ Time period when the contact point was/is in use """
+
+
+class _Bounds:
+    bounds_duration = None  # TODO: this
+    bounds_range: Range = Range
+    bounds_period: Period = Period
+
+
+class _Repeat:
+    """
+    Specifies repetition of an event
+    """
+    bounds: Optional[_Bounds] = _Bounds
+    count: Optional[p.integer] = None
+    """ Number of times to repeat """
+    count_max: Optional[p.integer] = None
+    """ Maximum number of times to repeat """
+    duration: Optional[p.decimal] = None
+    """ How long when it happens """
+    duration_max: Optional[p.decimal] = None
+    """ How long when it happens (Max )"""
+    duration_unit: Optional[UnitsOfTime] = UnitsOfTime
+    """ s | min | h | d | wk | mo | a - unit of time (UCUM )"""
+    frequency: Optional[p.integer] = None
+    """ Event occurs frequency times per period """
+    frequency_max: Optional[p.integer] = None
+    """ Event occurs up to frequencyMax times per period """
+    period: Optional[p.decimal] = None
+    """ Event occurs frequency times per period """
+    period_max: Optional[p.decimal] = None
+    """ Upper limit of period (3-4 hours )"""
+    period_unit: Optional[UnitsOfTime] = UnitsOfTime
+    """ s | min | h | d | wk | mo | a - unit of time (UCUM )"""
+    day_of_week: Union[DaysOfWeek, List[DaysOfWeek], None] = DaysOfWeek
+    """ mon | tue | wed | thu | fri | sat | sun """
+    time_of_day: Union[p.time, List[p.time], None] = None
+    """ Time of day for action """
+    when: Union[EventTiming, List[EventTiming], None] = EventTiming
+    """ Regular life events the event is tied to """
+    offset: Optional[p.unsigned_int] = None
+    """ Minutes from event (before or after )"""
 
 
 class Timing:
-    pass  # TODO: this
+    """
+    Specifies an event that may occur multiple times. Timing schedules are used
+    for specifying when events are expected or requested to occur, and may also
+    be used to represent a schedule that was followed for past events. A Timing
+    schedule can be a list of events and/or criteria for when the event happens,
+    which can be expressed in a structured form and/or as a code. When both
+    event and a repeating specification are provided, the list of events should
+    be understood as an interpretation of the information in the repeat
+    structure.
+
+    If the timing schedule has repeating criteria, the repeat can occur a given
+    number of times per the specified duration or in relation to some repeating
+    real world event. If no end condition is specified, the schedule will
+    terminate on some criteria that are expressed elsewhere.
+
+    Many systems avoid the complexity of the Timing structure by using a text
+    field for these things (e.g. "Dosage Text"). Those systems do not use the
+    Timing data type. Other systems use a set of 'common' codes - including,
+    but usually not limited to, widely understood acronyms such as "BID". If a
+    code is provided, the code is understood to be a complete statement of
+    whatever is specified in the structured timing data (except for
+    Timing.repeat.bounds, which applies to the code), and either the code or the
+    data may be used to interpret the Timing. A structured timing specification
+    SHOULD be provided whenever possible, unless the code is BID, TID, QID, AM
+    or PM, which have a ubiquitous meaning.
+
+    These codes SHALL be understood as having the formal meanings documented in
+    this table. Note that BID, etc. are defined as 'at institutionally specified
+    times'. For example, an institution may choose that BID is "always at 7am
+    and 6pm". If it is inappropriate for this choice to be made, the code BID
+    should not be used. Instead, a distinct organization-specific code should be
+    used in place of the HL7-defined BID code and/or a structured representation
+    should be used (in this case, timeOfDay).
+    """
+    event: Union[p.datetime, List[p.datetime, None]]
+    """ When the event occurs """
+    repeat: Optional[_Repeat] = _Repeat
+    """
+    When the event is to occur
+
+    + If there's an offset, there must be a when (and not C, CM, CD, CV)
+    + period SHALL be a non-negative value
+    + If there's a periodMax, there must be a period
+    + If there's a durationMax, there must be a duration
+    + If there's a countMax, there must be a count
+    + if there's a duration, there needs to be duration units
+    + If there's a timeOfDay, there cannot be be a when, or vice versa
+    + if there's a period, there needs to be period units
+    + duration SHALL be a non-negative value
+    """
+    code: Optional[TimingAbbreviation] = TimingAbbreviation
+    """ BID | TID | QID | AM | PM | QD | QOD | Q4H | Q6H + """
+
+
+class _Who:
+    who_uri: p.uri = None
+    who_reference = None  # TODO: this
+
+
+class _OnBehalfOf:
+    on_behalf_of_uri: p.uri = None
+    on_behalf_of_reference = None  # TODO: this
 
 
 class Signature:
-    pass  # TODO: this
+    """
+    A Signature holds an electronic representation of a signature and its
+    supporting context in a FHIR accessible form. The signature may either be
+    a cryptographic type (XML DigSig or a JWT), which is able to provide
+    non-repudiation proof, or it may be a graphical image that represents a
+    signature or a signature process.
+
+    Note: One consequence of signing the document is that URLs, identifiers and
+    internal references are frozen and cannot be changed. This might be a
+    desired feature, but it may also cripple interoperability between closed
+    ecosystems where re-identification frequently occurs. For this reason, it is
+    recommended that systems consider carefully the impact of any signature
+    processes. The impact of signatures on Document bundles and their related
+    processes is the most well understood use of digital signatures.
+    """
+    type: SignatureTypeCodes = SignatureTypeCodes
+    """ Indication of the reason the entity signed the object(s )"""
+    when: p.instant = None
+    """ When the signature was created """
+    who: _Who = _Who
+    """ Who signed """
+    on_behalf_of: Optional[_OnBehalfOf] = _OnBehalfOf
+    """ The part represented """
+    content_type: Optional[MimeTypes] = MimeTypes
+    """ The technical format of the signature """
+    blob: Optional[p.base_64_binary] = None
+    """ The actual signature content (XML DigSig. JWT, picture, etc .)"""
+
+
+class _Author:
+    author_reference = None  # TODO: this
+    author_string: p.string = None
 
 
 class Annotation:
-    pass  # TODO: this
+    """
+    A text note which also contains information about who made the statement and
+    when.
+
+    Systems that do not have structured annotations simply communicate a single
+    annotation with no author or time.
+
+    This element may need to be included in narrative because of the potential
+    for modifying information.
+
+    Annotations SHOULD NOT be used to communicate "modifying" information that
+    could be computable (this is a SHOULD because enforcing user behavior is
+    nearly impossible).
+    """
+    author: Optional[_Author] = _Author
+    """ Individual responsible for the annotation """
+    time: Optional[p.datetime] = None
+    """ When the annotation was made """
+    text: p.string = None
+    """ The annotation - text content """
 
 
-class OpenTypeElement:
-    pass  # TODO: this
+OpenTypeElement = Union[
+    p.boolean, p.integer, p.decimal, p.base_64_binary, p.instant, p.string, p.uri,
+    p.date, p.datetime, p.time, p.code, p.oid, p.id_, p.unsigned_int, p.positive_int,
+    p.markdown, Annotation, Attachment, Identifier, CodeableConcept, Coding, Quantity,
+    Range, Period, Ratio, SampledData, Signature, HumanName, Address, ContactPoint,
+    Timing,
+    # Reference,  # TODO: add this
+    # Meta  # TODO: add this
+]
