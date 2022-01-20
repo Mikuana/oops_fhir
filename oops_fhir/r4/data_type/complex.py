@@ -660,7 +660,7 @@ class Timing:
     used in place of the HL7-defined BID code and/or a structured representation
     should be used (in this case, timeOfDay).
     """
-    event: Union[p.datetime, List[p.datetime, None]]
+    event: Union[p.datetime, List[p.datetime], None]
     """ When the event occurs """
     repeat: Optional[_Repeat] = _Repeat
     """
