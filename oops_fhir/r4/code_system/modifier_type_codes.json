@@ -1,0 +1,84 @@
+{
+  "id": "claim-modifiers",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "a",
+      "definition": "Repair of prior service or installation.",
+      "display": "Repair of prior service or installation"
+    },
+    {
+      "code": "b",
+      "definition": "Temporary service or installation.",
+      "display": "Temporary service or installation"
+    },
+    {
+      "code": "c",
+      "definition": "Treatment associated with TMJ.",
+      "display": "TMJ treatment"
+    },
+    {
+      "code": "e",
+      "definition": "Implant or associated with an implant.",
+      "display": "Implant or associated with an implant"
+    },
+    {
+      "code": "rooh",
+      "definition": "A Rush service or service performed outside of normal office hours.",
+      "display": "Rush or Outside of office hours"
+    },
+    {
+      "code": "x",
+      "definition": "None.",
+      "display": "None"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an example set.",
+  "description": "This value set includes sample Modifier type codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1151"
+    }
+  ],
+  "name": "ModifierTypeCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Modifier type Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/modifiers",
+  "valueSet": "http://hl7.org/fhir/ValueSet/claim-modifiers",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

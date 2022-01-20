@@ -1,0 +1,65 @@
+{
+  "id": "supplyrequest-reason",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "patient-care",
+      "definition": "The supply has been requested for use in direct patient care.",
+      "display": "Patient Care"
+    },
+    {
+      "code": "ward-stock",
+      "definition": "The supply has been requested for creating or replenishing ward stock.",
+      "display": "Ward Stock"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The reason why the supply item was requested.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1193"
+    }
+  ],
+  "name": "SupplyRequestReason",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "SupplyRequestReason",
+  "url": "http://terminology.hl7.org/CodeSystem/supplyrequest-reason",
+  "valueSet": "http://hl7.org/fhir/ValueSet/supplyrequest-reason",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

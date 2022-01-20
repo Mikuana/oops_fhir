@@ -1,0 +1,70 @@
+{
+  "id": "encounter-special-arrangements",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "wheel",
+      "definition": "The patient requires a wheelchair to be made available for the encounter.",
+      "display": "Wheelchair"
+    },
+    {
+      "code": "add-bed",
+      "definition": "An additional bed made available for a person accompanying the patient, for example a parent accompanying a child.",
+      "display": "Additional bedding"
+    },
+    {
+      "code": "int",
+      "definition": "The patient is not fluent in the local language and requires an interpreter to be available. Refer to the Patient.Language property for the type of interpreter required.",
+      "display": "Interpreter"
+    },
+    {
+      "code": "att",
+      "definition": "A person who accompanies a patient to provide assistive services necessary for the patient's care during the encounter.",
+      "display": "Attendant"
+    },
+    {
+      "code": "dog",
+      "definition": "The patient has a guide dog and the location used for the encounter should be able to support the presence of the service animal.",
+      "display": "Guide dog"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1090"
+    }
+  ],
+  "name": "SpecialArrangements",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Special arrangements",
+  "url": "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
+  "valueSet": "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

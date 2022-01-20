@@ -1,0 +1,90 @@
+{
+  "id": "questionnaire-enable-operator",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "exists",
+      "definition": "True if whether an answer exists is equal to the enableWhen answer (which must be a boolean).",
+      "display": "Exists"
+    },
+    {
+      "code": "=",
+      "definition": "True if whether at least one answer has a value that is equal to the enableWhen answer.",
+      "display": "Equals"
+    },
+    {
+      "code": "!=",
+      "definition": "True if whether at least no answer has a value that is equal to the enableWhen answer.",
+      "display": "Not Equals"
+    },
+    {
+      "code": ">",
+      "definition": "True if whether at least no answer has a value that is greater than the enableWhen answer.",
+      "display": "Greater Than"
+    },
+    {
+      "code": "<",
+      "definition": "True if whether at least no answer has a value that is less than the enableWhen answer.",
+      "display": "Less Than"
+    },
+    {
+      "code": ">=",
+      "definition": "True if whether at least no answer has a value that is greater or equal to the enableWhen answer.",
+      "display": "Greater or Equals"
+    },
+    {
+      "code": "<=",
+      "definition": "True if whether at least no answer has a value that is less or equal to the enableWhen answer.",
+      "display": "Less or Equals"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The criteria by which a question is enabled.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1006"
+    }
+  ],
+  "name": "QuestionnaireItemOperator",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "QuestionnaireItemOperator",
+  "url": "http://hl7.org/fhir/questionnaire-enable-operator",
+  "valueSet": "http://hl7.org/fhir/ValueSet/questionnaire-enable-operator",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

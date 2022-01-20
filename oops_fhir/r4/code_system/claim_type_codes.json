@@ -1,0 +1,79 @@
+{
+  "id": "claim-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "institutional",
+      "definition": "Hospital, clinic and typically inpatient claims.",
+      "display": "Institutional"
+    },
+    {
+      "code": "oral",
+      "definition": "Dental, Denture and Hygiene claims.",
+      "display": "Oral"
+    },
+    {
+      "code": "pharmacy",
+      "definition": "Pharmacy claims for goods and services.",
+      "display": "Pharmacy"
+    },
+    {
+      "code": "professional",
+      "definition": "Typically, outpatient claims from Physician, Psychological, Chiropractor, Physiotherapy, Speech Pathology, rehabilitative, consulting.",
+      "display": "Professional"
+    },
+    {
+      "code": "vision",
+      "definition": "Vision claims for professional services and products such as glasses and contact lenses.",
+      "display": "Vision"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "HL7 Inc.",
+  "description": "This value set includes Claim Type codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1156"
+    }
+  ],
+  "name": "ClaimTypeCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Claim Type Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/claim-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/claim-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "binding-strength",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "required",
+      "definition": "To be conformant, the concept in this element SHALL be from the specified value set.",
+      "display": "Required"
+    },
+    {
+      "code": "extensible",
+      "definition": "To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.",
+      "display": "Extensible"
+    },
+    {
+      "code": "preferred",
+      "definition": "Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.",
+      "display": "Preferred"
+    },
+    {
+      "code": "example",
+      "definition": "Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.",
+      "display": "Example"
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Indication of the degree of conformance expectations associated with a binding.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.44"
+    }
+  ],
+  "name": "BindingStrength",
+  "status": "active",
+  "title": "BindingStrength",
+  "url": "http://hl7.org/fhir/binding-strength",
+  "valueSet": "http://hl7.org/fhir/ValueSet/binding-strength",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

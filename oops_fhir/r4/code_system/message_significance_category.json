@@ -1,0 +1,70 @@
+{
+  "id": "message-significance-category",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "inm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "consequence",
+      "definition": "The message represents/requests a change that should not be processed more than once; e.g., making a booking for an appointment.",
+      "display": "Consequence"
+    },
+    {
+      "code": "currency",
+      "definition": "The message represents a response to query for current information. Retrospective processing is wrong and/or wasteful.",
+      "display": "Currency"
+    },
+    {
+      "code": "notification",
+      "definition": "The content is not necessarily intended to be current, and it can be reprocessed, though there may be version issues created by processing old notifications.",
+      "display": "Notification"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The impact of the content of a message.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.189"
+    }
+  ],
+  "name": "MessageSignificanceCategory",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "MessageSignificanceCategory",
+  "url": "http://hl7.org/fhir/message-significance-category",
+  "valueSet": "http://hl7.org/fhir/ValueSet/message-significance-category",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

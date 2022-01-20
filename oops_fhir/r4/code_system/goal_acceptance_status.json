@@ -1,0 +1,56 @@
+{
+  "id": "goal-acceptance-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "agree",
+      "definition": "Stakeholder supports pursuit of the goal.",
+      "display": "Agree"
+    },
+    {
+      "code": "disagree",
+      "definition": "Stakeholder is not in support of the pursuit of the goal.",
+      "display": "Disagree"
+    },
+    {
+      "code": "pending",
+      "definition": "Stakeholder has not yet made a decision on whether they support the goal.",
+      "display": "Pending"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes indicating whether the goal has been accepted by a stakeholder.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1270"
+    }
+  ],
+  "name": "GoalAcceptanceStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "GoalAcceptanceStatus",
+  "url": "http://terminology.hl7.org/CodeSystem/goal-acceptance-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/goal-acceptance-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

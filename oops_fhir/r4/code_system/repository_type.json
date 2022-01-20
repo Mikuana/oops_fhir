@@ -1,0 +1,80 @@
+{
+  "id": "repository-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cg"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "directlink",
+      "definition": "When URL is clicked, the resource can be seen directly (by webpage or by download link format).",
+      "display": "Click and see"
+    },
+    {
+      "code": "openapi",
+      "definition": "When the API method (e.g. [base_url]/[parameter]) related with the URL of the website is executed, the resource can be seen directly (usually in JSON or XML format).",
+      "display": "The URL is the RESTful or other kind of API that can access to the result."
+    },
+    {
+      "code": "login",
+      "definition": "When logged into the website, the resource can be seen.",
+      "display": "Result cannot be access unless an account is logged in"
+    },
+    {
+      "code": "oauth",
+      "definition": "When logged in and  follow the API in the website related with URL, the resource can be seen.",
+      "display": "Result need to be fetched with API and need LOGIN( or cookies are required when visiting the link of resource)"
+    },
+    {
+      "code": "other",
+      "definition": "Some other complicated or particular way to get resource from URL.",
+      "display": "Some other complicated or particular way to get resource from URL."
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Type for access of external URI.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.231"
+    }
+  ],
+  "name": "repositoryType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "repositoryType",
+  "url": "http://hl7.org/fhir/repository-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/repository-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

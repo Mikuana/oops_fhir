@@ -1,0 +1,57 @@
+{
+  "id": "med-admin-perform-function",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/med-admin-perform-function"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "MedicationAdministration Performer Function Codes",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.349"
+    }
+  ],
+  "immutable": true,
+  "name": "MedicationAdministration Performer Function Codes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Medication administration  performer  function  codes",
+  "url": "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

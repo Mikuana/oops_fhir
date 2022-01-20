@@ -1,0 +1,65 @@
+{
+  "id": "vision-eye-codes",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "right",
+      "definition": "Right Eye.",
+      "display": "Right Eye"
+    },
+    {
+      "code": "left",
+      "definition": "Left Eye.",
+      "display": "Left Eye"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A coded concept listing the eye codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.661"
+    }
+  ],
+  "name": "VisionEyes",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "VisionEyes",
+  "url": "http://hl7.org/fhir/vision-eye-codes",
+  "valueSet": "http://hl7.org/fhir/ValueSet/vision-eye-codes",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

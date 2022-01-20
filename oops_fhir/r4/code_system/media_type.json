@@ -1,0 +1,85 @@
+{
+  "id": "media-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "image",
+      "definition": "The media consists of one or more unmoving images, including photographs, computer-generated graphs and charts, and scanned documents",
+      "display": "Image"
+    },
+    {
+      "code": "video",
+      "definition": "The media consists of a series of frames that capture a moving image",
+      "display": "Video"
+    },
+    {
+      "code": "audio",
+      "definition": "The media consists of a sound recording",
+      "display": "Audio"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2017-12-08T12:32:59+10:00",
+  "description": "Codes for high level media categories.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.326"
+    }
+  ],
+  "name": "MediaType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "Media Type",
+  "url": "http://terminology.hl7.org/CodeSystem/media-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/media-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

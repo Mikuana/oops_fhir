@@ -1,0 +1,64 @@
+{
+  "id": "related-claim-relationship",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "prior",
+      "definition": "A prior claim instance for the same intended suite of services.",
+      "display": "Prior Claim"
+    },
+    {
+      "code": "associated",
+      "definition": "A claim for a different suite of services which is related the suite claimed here.",
+      "display": "Associated Claim"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an example set.",
+  "description": "This value set includes sample Related Claim Relationship codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1159"
+    }
+  ],
+  "name": "ExampleRelatedClaimRelationshipCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Example Related Claim Relationship Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship",
+  "valueSet": "http://hl7.org/fhir/ValueSet/related-claim-relationship",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "condition-ver-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "unconfirmed",
+      "concept": [
+        {
+          "code": "provisional",
+          "definition": "This is a tentative diagnosis - still a candidate that is under consideration.",
+          "display": "Provisional"
+        },
+        {
+          "code": "differential",
+          "definition": "One of a set of potential (and typically mutually exclusive) diagnoses asserted to further guide the diagnostic process and preliminary treatment.",
+          "display": "Differential"
+        }
+      ],
+      "definition": "There is not sufficient diagnostic and/or clinical evidence to treat this as a confirmed condition.",
+      "display": "Unconfirmed"
+    },
+    {
+      "code": "confirmed",
+      "definition": "There is sufficient diagnostic and/or clinical evidence to treat this as a confirmed condition.",
+      "display": "Confirmed"
+    },
+    {
+      "code": "refuted",
+      "definition": "This condition has been ruled out by diagnostic and clinical evidence.",
+      "display": "Refuted"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "The statement was entered in error and is not valid.",
+      "display": "Entered in Error"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The verification status to support or decline the clinical status of the condition or diagnosis.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1075"
+    }
+  ],
+  "name": "ConditionVerificationStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ConditionVerificationStatus",
+  "url": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/condition-ver-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

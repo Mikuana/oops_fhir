@@ -1,0 +1,78 @@
+{
+  "id": "immunization-recommendation-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pher"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "due",
+      "definition": "The patient is due for their next vaccination.",
+      "display": "Due"
+    },
+    {
+      "code": "overdue",
+      "definition": "The patient is considered overdue for their next vaccination.",
+      "display": "Overdue"
+    },
+    {
+      "code": "immune",
+      "definition": "The patient is immune to the target disease and further immunization against the disease is not likely to provide benefit.",
+      "display": "Immune"
+    },
+    {
+      "code": "contraindicated",
+      "definition": "The patient is contraindicated for futher doses.",
+      "display": "Contraindicated"
+    },
+    {
+      "code": "complete",
+      "definition": "The patient is fully protected and no further doses are recommended.",
+      "display": "Complete"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the status of the patient towards perceived immunity against a vaccine preventable disease. This value set is provided as a suggestive example.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1104"
+    }
+  ],
+  "name": "ImmunizationRecommendationStatusCodes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Immunization Recommendation Status Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/immunization-recommendation-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

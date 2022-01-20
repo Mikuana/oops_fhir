@@ -1,0 +1,161 @@
+{
+  "id": "hl7-work-group",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "cbcc",
+      "definition": "Community Based Collaborative Care (http://www.hl7.org/Special/committees/cbcc/index.cfm).",
+      "display": "Community Based Collaborative Care"
+    },
+    {
+      "code": "cds",
+      "definition": "Clinical Decision Support (http://www.hl7.org/Special/committees/dss/index.cfm).",
+      "display": "Clinical Decision Support"
+    },
+    {
+      "code": "cqi",
+      "definition": "Clinical Quality Information (http://www.hl7.org/Special/committees/cqi/index.cfm).",
+      "display": "Clinical Quality Information"
+    },
+    {
+      "code": "cg",
+      "definition": "Clinical Genomics (http://www.hl7.org/Special/committees/clingenomics/index.cfm).",
+      "display": "Clinical Genomics"
+    },
+    {
+      "code": "dev",
+      "definition": "Health Care Devices (http://www.hl7.org/Special/committees/healthcaredevices/index.cfm).",
+      "display": "Health Care Devices"
+    },
+    {
+      "code": "ehr",
+      "definition": "Electronic Health Records (http://www.hl7.org/special/committees/ehr/index.cfm).",
+      "display": "Electronic Health Records"
+    },
+    {
+      "code": "fhir",
+      "definition": "FHIR Infrastructure (http://www.hl7.org/Special/committees/fiwg/index.cfm).",
+      "display": "FHIR Infrastructure"
+    },
+    {
+      "code": "fm",
+      "definition": "Financial Management (http://www.hl7.org/Special/committees/fm/index.cfm).",
+      "display": "Financial Management"
+    },
+    {
+      "code": "hsi",
+      "definition": "Health Standards Integration (http://www.hl7.org/Special/committees/hsi/index.cfm).",
+      "display": "Health Standards Integration"
+    },
+    {
+      "code": "ii",
+      "definition": "Imaging Integration (http://www.hl7.org/Special/committees/imagemgt/index.cfm).",
+      "display": "Imaging Integration"
+    },
+    {
+      "code": "inm",
+      "definition": "Infrastructure And Messaging (http://www.hl7.org/special/committees/inm/index.cfm).",
+      "display": "Infrastructure And Messaging"
+    },
+    {
+      "code": "its",
+      "definition": "Implementable Technology Specifications (http://www.hl7.org/special/committees/xml/index.cfm).",
+      "display": "Implementable Technology Specifications"
+    },
+    {
+      "code": "mnm",
+      "definition": "Modeling and Methodology (http://www.hl7.org/Special/committees/mnm/index.cfm).",
+      "display": "Modeling and Methodology"
+    },
+    {
+      "code": "oo",
+      "definition": "Orders and Observations (http://www.hl7.org/Special/committees/orders/index.cfm).",
+      "display": "Orders and Observations"
+    },
+    {
+      "code": "pa",
+      "definition": "Patient Administration (http://www.hl7.org/Special/committees/pafm/index.cfm).",
+      "display": "Patient Administration"
+    },
+    {
+      "code": "pc",
+      "definition": "Patient Care (http://www.hl7.org/Special/committees/patientcare/index.cfm).",
+      "display": "Patient Care"
+    },
+    {
+      "code": "pher",
+      "definition": "Public Health and Emergency Response (http://www.hl7.org/Special/committees/pher/index.cfm).",
+      "display": "Public Health and Emergency Response"
+    },
+    {
+      "code": "phx",
+      "definition": "Pharmacy (http://www.hl7.org/Special/committees/medication/index.cfm).",
+      "display": "Pharmacy"
+    },
+    {
+      "code": "brr",
+      "definition": "Biomedical Research and Regulation (http://www.hl7.org/Special/committees/rcrim/index.cfm).",
+      "display": "Biomedical Research and Regulation"
+    },
+    {
+      "code": "sd",
+      "definition": "Structured Documents (http://www.hl7.org/Special/committees/structure/index.cfm).",
+      "display": "Structured Documents"
+    },
+    {
+      "code": "sec",
+      "definition": "Security (http://www.hl7.org/Special/committees/secure/index.cfm).",
+      "display": "Security"
+    },
+    {
+      "code": "us",
+      "definition": "US Realm Taskforce (http://www.hl7.org/Special/committees/usrealm/index.cfm).",
+      "display": "US Realm Taskforce"
+    },
+    {
+      "code": "vocab",
+      "definition": "Vocabulary (http://www.hl7.org/Special/committees/Vocab/index.cfm).",
+      "display": "Vocabulary"
+    },
+    {
+      "code": "aid",
+      "definition": "Application Implementation and Design (http://www.hl7.org/Special/committees/java/index.cfm).",
+      "display": "Application Implementation and Design"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "An HL7 administrative unit that owns artifacts in the FHIR specification.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1277"
+    }
+  ],
+  "name": "HL7Workgroup",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "HL7Workgroup",
+  "url": "http://terminology.hl7.org/CodeSystem/hl7-work-group",
+  "valueSet": "http://hl7.org/fhir/ValueSet/hl7-work-group",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

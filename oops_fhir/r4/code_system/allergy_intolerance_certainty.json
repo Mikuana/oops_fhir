@@ -1,0 +1,61 @@
+{
+  "id": "reaction-event-certainty",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "unlikely",
+      "definition": "There is a low level of clinical certainty that the reaction was caused by the identified substance.",
+      "display": "Unlikely"
+    },
+    {
+      "code": "likely",
+      "definition": "There is a high level of clinical certainty that the reaction was caused by the identified substance.",
+      "display": "Likely"
+    },
+    {
+      "code": "confirmed",
+      "definition": "There is a very high level of clinical certainty that the reaction was due to the identified substance, which may include clinical evidence by testing or rechallenge.",
+      "display": "Confirmed"
+    },
+    {
+      "code": "unknown",
+      "definition": "The clinical certainty that the reaction was caused by the identified substance is unknown.  It is an explicit assertion that certainty is not known.",
+      "display": "Unknown"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Statement about the degree of clinical certainty that a specific substance was the cause of the manifestation in a reaction event.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1276"
+    }
+  ],
+  "name": "AllergyIntoleranceCertainty",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "AllergyIntoleranceCertainty",
+  "url": "http://terminology.hl7.org/CodeSystem/reaction-event-certainty",
+  "valueSet": "http://hl7.org/fhir/ValueSet/reaction-event-certainty",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

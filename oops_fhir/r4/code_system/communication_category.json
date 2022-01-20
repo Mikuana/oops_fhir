@@ -1,0 +1,75 @@
+{
+  "id": "communication-category",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "alert",
+      "definition": "The communication conveys an alert.",
+      "display": "Alert"
+    },
+    {
+      "code": "notification",
+      "definition": "The communication conveys a notification.",
+      "display": "Notification"
+    },
+    {
+      "code": "reminder",
+      "definition": "The communication conveys a reminder.",
+      "display": "Reminder"
+    },
+    {
+      "code": "instruction",
+      "definition": "The communication conveys an instruction.",
+      "display": "Instruction"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes for general categories of communications such as alerts, instructions, etc.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1076"
+    }
+  ],
+  "name": "CommunicationCategory",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "CommunicationCategory",
+  "url": "http://terminology.hl7.org/CodeSystem/communication-category",
+  "valueSet": "http://hl7.org/fhir/ValueSet/communication-category",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

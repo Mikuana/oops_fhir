@@ -1,0 +1,196 @@
+{
+  "id": "v3-HL7UpdateMode",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "A",
+      "definition": "Description:The item was (or is to be) added, having not been present immediately before. (If it is already present, this may be treated as an error condition.)",
+      "display": "Add"
+    },
+    {
+      "code": "AR",
+      "definition": "Description:The item was (or is to be) either added or replaced.",
+      "display": "Add or Replace"
+    },
+    {
+      "code": "D",
+      "definition": "Description:The item was (or is to be) removed (sometimes referred to as deleted). If the item is part of a collection, delete any matching items.",
+      "display": "Remove"
+    },
+    {
+      "code": "K",
+      "definition": "Description:This item is part of the identifying information for this object.",
+      "display": "Key"
+    },
+    {
+      "code": "N",
+      "definition": "Description:There was (or is to be) no change to the item. This is primarily used when this element has not changed, but other attributes in the instance have changed.",
+      "display": "No Change"
+    },
+    {
+      "code": "R",
+      "definition": "Description:The item existed previously and has (or is to be) revised. (If an item does not already exist, this may be treated as an error condition.)",
+      "display": "Replace"
+    },
+    {
+      "code": "REF",
+      "definition": "Description:This item provides enough information to allow a processing system to locate the full applicable record by identifying the object.",
+      "display": "Reference"
+    },
+    {
+      "code": "U",
+      "definition": "Description:Description:</b>It is not specified whether or what kind of change has occurred to the item, or whether the item is present as a reference or identifying property.",
+      "display": "Unknown"
+    },
+    {
+      "code": "_SetUpdateMode",
+      "concept": [
+        {
+          "code": "ESA",
+          "definition": "Add the message element to the collection of items on the receiving system that correspond to the message element.",
+          "display": "Set Add",
+          "property": [
+            {
+              "code": "status",
+              "valueCode": "retired"
+            }
+          ]
+        },
+        {
+          "code": "ESAC",
+          "definition": "Change the item on the receiving system that corresponds to this message element; if a matching element does not exist, add a new one created with the values in the message.",
+          "display": "Set Add or Change",
+          "property": [
+            {
+              "code": "status",
+              "valueCode": "retired"
+            }
+          ]
+        },
+        {
+          "code": "ESC",
+          "definition": "Change the item on the receiving system that corresponds to this message element; do not process if a matching element does not exist.",
+          "display": "Set Change",
+          "property": [
+            {
+              "code": "status",
+              "valueCode": "retired"
+            }
+          ]
+        },
+        {
+          "code": "ESD",
+          "definition": "Delete the item on the receiving system that corresponds to this message element.",
+          "display": "Set Delete",
+          "property": [
+            {
+              "code": "status",
+              "valueCode": "retired"
+            }
+          ]
+        }
+      ],
+      "definition": "These concepts apply when the element and/or message is updating a set of items.",
+      "display": "SetUpdateMode",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        },
+        {
+          "code": "status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "AU",
+      "definition": "Description: AU: If this item exists, update it with these values. If it does not exist, create it with these values. If the item is part of the collection, update each item that matches this item, and if no items match, add a new item to the collection.",
+      "display": "Add or Update",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "I",
+      "definition": "Ignore this role, it is not relevant to the update.",
+      "display": "Ignore",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "V",
+      "definition": "Verify - this message element must match a value already in the receiving systems database in order to process the message.",
+      "display": "Verify",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "retired"
+        }
+      ]
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": " The possible modes of updating that occur when an attribute is received by a system that already contains values for that attribute.",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.57"
+    }
+  ],
+  "name": "v3.HL7UpdateMode",
+  "property": [
+    {
+      "code": "notSelectable",
+      "description": "Indicates that the code is abstract - only intended to be used as a selector for other concepts",
+      "type": "boolean",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable"
+    },
+    {
+      "code": "status",
+      "description": "A property that indicates the status of the concept. One of active, experimental, deprecated, retired",
+      "type": "code",
+      "uri": "http://hl7.org/fhir/concept-properties#status"
+    }
+  ],
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System HL7UpdateMode",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-HL7UpdateMode",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-HL7UpdateMode",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

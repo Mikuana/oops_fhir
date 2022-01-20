@@ -1,0 +1,96 @@
+{
+  "id": "name-use",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "usual",
+      "definition": "Known as/conventional/the one you normally use.",
+      "display": "Usual"
+    },
+    {
+      "code": "official",
+      "definition": "The formal name as registered in an official (government) registry, but which name might not be commonly used. May be called \"legal name\".",
+      "display": "Official"
+    },
+    {
+      "code": "temp",
+      "definition": "A temporary name. Name.period can provide more detailed information. This may also be used for temporary names assigned at birth or in emergency situations.",
+      "display": "Temp"
+    },
+    {
+      "code": "nickname",
+      "definition": "A name that is used to address the person in an informal manner, but is not part of their formal or usual name.",
+      "display": "Nickname"
+    },
+    {
+      "code": "anonymous",
+      "definition": "Anonymous assigned name, alias, or pseudonym (used to protect a person's identity for privacy reasons).",
+      "display": "Anonymous"
+    },
+    {
+      "code": "old",
+      "concept": [
+        {
+          "code": "maiden",
+          "definition": "A name used prior to changing name because of marriage. This name use is for use by applications that collect and store names that were used prior to a marriage. Marriage naming customs vary greatly around the world, and are constantly changing. This term is not gender specific. The use of this term does not imply any particular history for a person's name.",
+          "display": "Name changed for Marriage"
+        }
+      ],
+      "definition": "This name is no longer in use (or was never correct, but retained for records).",
+      "display": "Old"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The use of a human name.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.66"
+    }
+  ],
+  "name": "NameUse",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "NameUse",
+  "url": "http://hl7.org/fhir/name-use",
+  "valueSet": "http://hl7.org/fhir/ValueSet/name-use",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

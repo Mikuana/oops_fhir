@@ -1,0 +1,83 @@
+{
+  "id": "v3-ResponseLevel",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "C",
+      "definition": "Respond with exceptions and a notification of completion",
+      "display": "completion"
+    },
+    {
+      "code": "D",
+      "definition": "Respond with exceptions, completion, modifications and include more detail information (if applicable)",
+      "display": "detail"
+    },
+    {
+      "code": "E",
+      "definition": "Respond with exceptions only",
+      "display": "exception"
+    },
+    {
+      "code": "F",
+      "definition": "Respond with exceptions, completion, and modification with detail (as above), and send positive confirmations even if no modifications are being made.",
+      "display": "confirmation"
+    },
+    {
+      "code": "N",
+      "definition": "Respond only with message level acknowledgements, i.e., only notify acceptance or rejection of the message, do not include any application-level detail",
+      "display": "message-control"
+    },
+    {
+      "code": "R",
+      "definition": "Respond with exceptions, completions and modifications or revisions done before completion",
+      "display": "modification"
+    },
+    {
+      "code": "X",
+      "definition": "Do not send any kind of response",
+      "display": "none"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": " Specifies whether a response is expected from the addressee of this interaction and what level of detail that response should include",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.108"
+    }
+  ],
+  "name": "v3.ResponseLevel",
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System ResponseLevel",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-ResponseLevel",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-ResponseLevel",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

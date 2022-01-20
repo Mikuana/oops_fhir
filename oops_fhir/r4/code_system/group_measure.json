@@ -1,0 +1,85 @@
+{
+  "id": "group-measure",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "mean",
+      "definition": "Aggregated using Mean of participant values.",
+      "display": "Mean"
+    },
+    {
+      "code": "median",
+      "definition": "Aggregated using Median of participant values.",
+      "display": "Median"
+    },
+    {
+      "code": "mean-of-mean",
+      "definition": "Aggregated using Mean of study mean values.",
+      "display": "Mean of Study Means"
+    },
+    {
+      "code": "mean-of-median",
+      "definition": "Aggregated using Mean of study median values.",
+      "display": "Mean of Study Medins"
+    },
+    {
+      "code": "median-of-mean",
+      "definition": "Aggregated using Median of study mean values.",
+      "display": "Median of Study Means"
+    },
+    {
+      "code": "median-of-median",
+      "definition": "Aggregated using Median of study median values.",
+      "display": "Median of Study Medians"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Possible group measure aggregates (E.g. Mean, Median).",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1346"
+    }
+  ],
+  "name": "GroupMeasure",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "GroupMeasure",
+  "url": "http://hl7.org/fhir/group-measure",
+  "valueSet": "http://hl7.org/fhir/ValueSet/group-measure",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

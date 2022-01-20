@@ -1,0 +1,80 @@
+{
+  "id": "invoice-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "draft",
+      "definition": "the invoice has been prepared but not yet finalized.",
+      "display": "draft"
+    },
+    {
+      "code": "issued",
+      "definition": "the invoice has been finalized and sent to the recipient.",
+      "display": "issued"
+    },
+    {
+      "code": "balanced",
+      "definition": "the invoice has been balaced / completely paid.",
+      "display": "balanced"
+    },
+    {
+      "code": "cancelled",
+      "definition": "the invoice was cancelled.",
+      "display": "cancelled"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "the invoice was determined as entered in error before it was issued.",
+      "display": "entered in error"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes identifying the lifecycle stage of an Invoice.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.867"
+    }
+  ],
+  "name": "InvoiceStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "InvoiceStatus",
+  "url": "http://hl7.org/fhir/invoice-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/invoice-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

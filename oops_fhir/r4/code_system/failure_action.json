@@ -1,0 +1,78 @@
+{
+  "id": "verificationresult-failure-action",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "fatal",
+      "display": "Fatal"
+    },
+    {
+      "code": "warn",
+      "display": "Warning"
+    },
+    {
+      "code": "rec-only",
+      "display": "Record only"
+    },
+    {
+      "code": "none",
+      "display": "None"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-06-05T14:06:02+00:00",
+  "description": "The result if validation fails",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.891"
+    }
+  ],
+  "name": "failure-action",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "Failure-action",
+  "url": "http://terminology.hl7.org/CodeSystem/failure-action",
+  "valueSet": "http://hl7.org/fhir/ValueSet/verificationresult-failure-action",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

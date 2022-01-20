@@ -1,0 +1,53 @@
+{
+  "id": "coverage-selfpay",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "pay",
+      "definition": "An individual or organization is paying directly for goods and services.",
+      "display": "Pay"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "HL7 International.",
+  "description": "This value set includes Coverage SelfPay codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1148"
+    }
+  ],
+  "name": "CoverageSelfPayCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Coverage SelfPay Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/coverage-selfpay",
+  "valueSet": "http://hl7.org/fhir/ValueSet/coverage-selfpay",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

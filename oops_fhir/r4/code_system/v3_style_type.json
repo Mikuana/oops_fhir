@@ -1,0 +1,201 @@
+{
+  "id": "v3-styleType",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "_FontStyle",
+      "concept": [
+        {
+          "code": "bold",
+          "definition": "Render with a bold font",
+          "display": "Bold Font"
+        },
+        {
+          "code": "emphasis",
+          "definition": "Render with with some type of emphasis",
+          "display": "Emphasised Font"
+        },
+        {
+          "code": "italics",
+          "definition": "Render italicized",
+          "display": "Italics Font"
+        },
+        {
+          "code": "underline",
+          "definition": "Render with an underline font",
+          "display": "Underline Font"
+        }
+      ],
+      "definition": "Defines font rendering characteristics",
+      "display": "Font Style",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "_ListStyle",
+      "concept": [
+        {
+          "code": "_OrderedListStyle",
+          "concept": [
+            {
+              "code": "Arabic",
+              "definition": "List is ordered using Arabic numerals: 1, 2, 3",
+              "display": "Arabic"
+            },
+            {
+              "code": "BigAlpha",
+              "definition": "List is ordered using big alpha characters: A, B, C",
+              "display": "Big Alpha"
+            },
+            {
+              "code": "BigRoman",
+              "definition": "List is ordered using big Roman numerals: I, II, III",
+              "display": "Big Roman"
+            },
+            {
+              "code": "LittleAlpha",
+              "definition": "List is order using little alpha characters: a, b, c",
+              "display": "Little Alpha"
+            },
+            {
+              "code": "LittleRoman",
+              "definition": "List is ordered using little Roman numerals: i, ii, iii",
+              "display": "Little Roman"
+            }
+          ],
+          "definition": "Defines rendering characteristics for ordered lists",
+          "display": "Ordered List Style",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_UnorderedListStyle",
+          "concept": [
+            {
+              "code": "Circle",
+              "definition": "List bullets are hollow discs",
+              "display": "Circle"
+            },
+            {
+              "code": "Disc",
+              "definition": "List bullets are simple solid discs",
+              "display": "Disc"
+            },
+            {
+              "code": "Square",
+              "definition": "List bullets are solid squares",
+              "display": "Square"
+            }
+          ],
+          "definition": "Defines rendering characteristics for unordered lists",
+          "display": "Unordered List Style",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        }
+      ],
+      "definition": "Defines list rendering characteristics",
+      "display": "List Style",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "_TableRuleStyle",
+      "concept": [
+        {
+          "code": "Botrule",
+          "definition": "Render cell with rule on bottom",
+          "display": "Bottom Rule"
+        },
+        {
+          "code": "Lrule",
+          "definition": "Render cell with left-sided rule",
+          "display": "Left-sided rule"
+        },
+        {
+          "code": "Rrule",
+          "definition": "Render cell with right-sided rule",
+          "display": "Right-sided rule"
+        },
+        {
+          "code": "Toprule",
+          "definition": "Render cell with rule on top",
+          "display": "Top Rule"
+        }
+      ],
+      "definition": "Defines table cell rendering characteristics",
+      "display": "Table Rule Style",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": " <ns1:p>The style code is used within the CDA/SPL narrative block to give the instance author some control over various aspects of style</ns1:p>",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.1095"
+    }
+  ],
+  "name": "v3.styleType",
+  "property": [
+    {
+      "code": "notSelectable",
+      "description": "Indicates that the code is abstract - only intended to be used as a selector for other concepts",
+      "type": "boolean",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable"
+    }
+  ],
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System styleType",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-styleType",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-styleType",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

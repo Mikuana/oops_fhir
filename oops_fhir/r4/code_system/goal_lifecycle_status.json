@@ -1,0 +1,102 @@
+{
+  "id": "goal-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "proposed",
+      "definition": "A goal is proposed for this patient.",
+      "display": "Proposed"
+    },
+    {
+      "code": "planned",
+      "definition": "A goal is planned for this patient.",
+      "display": "Planned"
+    },
+    {
+      "code": "accepted",
+      "concept": [
+        {
+          "code": "active",
+          "definition": "The goal is being sought actively.",
+          "display": "Active"
+        },
+        {
+          "code": "on-hold",
+          "definition": "The goal remains a long term objective but is no longer being actively pursued for a temporary period of time.",
+          "display": "On Hold"
+        },
+        {
+          "code": "completed",
+          "definition": "The goal is no longer being sought.",
+          "display": "Completed"
+        }
+      ],
+      "definition": "A proposed goal was accepted or acknowledged.",
+      "display": "Accepted"
+    },
+    {
+      "code": "cancelled",
+      "definition": "The goal has been abandoned.",
+      "display": "Cancelled"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "The goal was entered in error and voided.",
+      "display": "Entered in Error"
+    },
+    {
+      "code": "rejected",
+      "definition": "A proposed goal was rejected.",
+      "display": "Rejected"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes that reflect the current state of a goal and whether the goal is still being targeted.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.272"
+    }
+  ],
+  "name": "GoalLifecycleStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "GoalLifecycleStatus",
+  "url": "http://hl7.org/fhir/goal-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/goal-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

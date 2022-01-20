@@ -1,0 +1,70 @@
+{
+  "id": "sequence-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cg"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "aa",
+      "definition": "Amino acid sequence.",
+      "display": "AA Sequence"
+    },
+    {
+      "code": "dna",
+      "definition": "DNA Sequence.",
+      "display": "DNA Sequence"
+    },
+    {
+      "code": "rna",
+      "definition": "RNA Sequence.",
+      "display": "RNA Sequence"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Type if a sequence -- DNA, RNA, or amino acid sequence.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.220"
+    }
+  ],
+  "name": "sequenceType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "sequenceType",
+  "url": "http://hl7.org/fhir/sequence-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/sequence-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

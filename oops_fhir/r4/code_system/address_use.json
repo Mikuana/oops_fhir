@@ -1,0 +1,84 @@
+{
+  "id": "address-use",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "home",
+      "definition": "A communication address at a home.",
+      "display": "Home"
+    },
+    {
+      "code": "work",
+      "definition": "An office address. First choice for business related contacts during business hours.",
+      "display": "Work"
+    },
+    {
+      "code": "temp",
+      "definition": "A temporary address. The period can provide more detailed information.",
+      "display": "Temporary"
+    },
+    {
+      "code": "old",
+      "definition": "This address is no longer in use (or was never correct but retained for records).",
+      "display": "Old / Incorrect"
+    },
+    {
+      "code": "billing",
+      "definition": "An address to be used to send bills, invoices, receipts etc.",
+      "display": "Billing"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The use of an address.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.68"
+    }
+  ],
+  "name": "AddressUse",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "AddressUse",
+  "url": "http://hl7.org/fhir/address-use",
+  "valueSet": "http://hl7.org/fhir/ValueSet/address-use",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

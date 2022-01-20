@@ -1,0 +1,102 @@
+{
+  "id": "coverageeligibilityresponse-ex-auth-support",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "laborder",
+      "definition": "A request or authorization for laboratory diagnostic tests.",
+      "display": "Lab Order"
+    },
+    {
+      "code": "labreport",
+      "definition": "A report on laboratory diagnostic test(s).",
+      "display": "Lab Report"
+    },
+    {
+      "code": "diagnosticimageorder",
+      "definition": "A request or authorization for diagnostic imaging.",
+      "display": "Diagnostic Image Order"
+    },
+    {
+      "code": "diagnosticimagereport",
+      "definition": "A report on diagnostic image(s).",
+      "display": "Diagnostic Image Report"
+    },
+    {
+      "code": "professionalreport",
+      "definition": "A report from a licensed professional regarding the siutation, condition or proposed treatment.",
+      "display": "Professional Report"
+    },
+    {
+      "code": "accidentreport",
+      "definition": "A formal accident report as would be filed with police or a simlar official body.",
+      "display": "Accident Report"
+    },
+    {
+      "code": "model",
+      "definition": "A physical model of the affected area.",
+      "display": "Model"
+    },
+    {
+      "code": "picture",
+      "definition": "A photograph of the affected area.",
+      "display": "Picture"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "HL7 Inc.",
+  "description": "This value set includes CoverageEligibilityResponse Auth Support codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1394"
+    }
+  ],
+  "name": "CoverageEligibilityResponseAuthSupportCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "CoverageEligibilityResponse Auth Support Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/coverageeligibilityresponse-ex-auth-support",
+  "valueSet": "http://hl7.org/fhir/ValueSet/coverageeligibilityresponse-ex-auth-support",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

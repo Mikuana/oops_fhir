@@ -1,0 +1,75 @@
+{
+  "id": "evidence-quality",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "high",
+      "definition": "High quality evidence.",
+      "display": "High quality"
+    },
+    {
+      "code": "moderate",
+      "definition": "Moderate quality evidence.",
+      "display": "Moderate quality"
+    },
+    {
+      "code": "low",
+      "definition": "Low quality evidence.",
+      "display": "Low quality"
+    },
+    {
+      "code": "very-low",
+      "definition": "Very low quality evidence.",
+      "display": "Very low quality"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A rating system that describes the quality of evidence such as the GRADE, DynaMed, or Oxford CEBM systems.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1267"
+    }
+  ],
+  "name": "QualityOfEvidenceRating",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "QualityOfEvidenceRating",
+  "url": "http://terminology.hl7.org/CodeSystem/evidence-quality",
+  "valueSet": "http://hl7.org/fhir/ValueSet/evidence-quality",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

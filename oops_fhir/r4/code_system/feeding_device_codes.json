@@ -1,0 +1,149 @@
+{
+  "id": "feeding-device",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "standard-nipple",
+      "definition": "Standard nipple definition:",
+      "display": "Standard nipple"
+    },
+    {
+      "code": "preemie-nipple",
+      "definition": "Preemie nipple definition:",
+      "display": "Preemie nipple"
+    },
+    {
+      "code": "ortho-nipple",
+      "definition": "Orthodontic nipple definition:",
+      "display": "Orthodontic nipple"
+    },
+    {
+      "code": "sloflo-nipple",
+      "definition": "Slow flow nipple definition:",
+      "display": "Slow flow nipple"
+    },
+    {
+      "code": "midflo-nipple",
+      "definition": "Middle flow nipple definition:",
+      "display": "Middle flow nipple"
+    },
+    {
+      "code": "bigcut-nipple",
+      "definition": "Enlarged, cross-cut nipple definition:",
+      "display": "Enlarged, cross-cut nipple"
+    },
+    {
+      "code": "haberman-bottle",
+      "definition": "Haberman bottle definition:",
+      "display": "Haberman bottle"
+    },
+    {
+      "code": "sippy-valve",
+      "definition": "Sippy cup with valve definition:",
+      "display": "Sippy cup with valve"
+    },
+    {
+      "code": "sippy-no-valve",
+      "definition": "Sippy cup without valve definition:",
+      "display": "Sippy cup without valve"
+    },
+    {
+      "code": "provale-cup",
+      "definition": "Provale Cup definition:",
+      "display": "Provale Cup"
+    },
+    {
+      "code": "glass-lid",
+      "definition": "Glass with lid/sippy cup definition:",
+      "display": "Glass with lid/sippy cup"
+    },
+    {
+      "code": "handhold-cup",
+      "definition": "Double handhold on glass/cup definition:",
+      "display": "Double handhold on glass/cup"
+    },
+    {
+      "code": "rubber-mat",
+      "definition": "Rubber matting under tray definition:",
+      "display": "Rubber matting under tray"
+    },
+    {
+      "code": "straw",
+      "definition": "Straw definition:",
+      "display": "Straw"
+    },
+    {
+      "code": "nose-cup",
+      "definition": "Nose cup definition:",
+      "display": "Nose cup"
+    },
+    {
+      "code": "scoop-plate",
+      "definition": "Scoop plate definition:",
+      "display": "Scoop plate"
+    },
+    {
+      "code": "utensil-holder",
+      "definition": "Hand wrap utensil holder definition:",
+      "display": "Hand wrap utensil holder"
+    },
+    {
+      "code": "foam-handle",
+      "definition": "Foam handle utensils definition:",
+      "display": "Foam handle utensils"
+    },
+    {
+      "code": "angled-utensil",
+      "definition": "Angled utensils definition:",
+      "display": "Angled utensils"
+    },
+    {
+      "code": "spout-cup",
+      "definition": "Spout cup definition:",
+      "display": "Spout cup"
+    },
+    {
+      "code": "autofeeding-device",
+      "definition": "Automated feeding devices definition:",
+      "display": "Automated feeding devices"
+    },
+    {
+      "code": "rocker-knife",
+      "definition": "Rocker knife definition:",
+      "display": "Rocker knife"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This resource includes content from SNOMED Clinical Terms\u00ae (SNOMED CT\u00ae) which is copyright   of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers   of these specifications must have the appropriate SNOMED CT Affiliate license - for more   information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org",
+  "description": "Materials used or needed to feed the patient.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.962"
+    }
+  ],
+  "name": "FeedingDeviceCodes",
+  "publisher": "FHIR NutritionOrder team",
+  "status": "draft",
+  "title": "Feeding Device Codes",
+  "url": "http://hl7.org/fhir/feeding-device",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

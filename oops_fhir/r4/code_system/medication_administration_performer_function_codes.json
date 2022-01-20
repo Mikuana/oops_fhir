@@ -1,0 +1,68 @@
+{
+  "id": "med-admin-perform-function",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "performer",
+      "definition": "A person, non-person living subject, organization or device that who actually and principally carries out the action",
+      "display": "Performer"
+    },
+    {
+      "code": "verifier",
+      "definition": "A person who verifies the correctness and appropriateness of the service (plan, order, event, etc.) and hence takes on accountability.",
+      "display": "Verifier"
+    },
+    {
+      "code": "witness",
+      "definition": "A person witnessing the action happening without doing anything. A witness is not necessarily aware, much less approves of anything stated in the service event. Example for a witness is students watching an operation or an advanced directive witness.",
+      "display": "Witness"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "MedicationAdministration Performer Function Codes",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1112"
+    }
+  ],
+  "name": "MedicationAdministration Performer Function Codes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Medication administration  performer  function  codes",
+  "url": "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+  "valueSet": "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

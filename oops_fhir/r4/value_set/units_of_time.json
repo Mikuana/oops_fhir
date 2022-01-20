@@ -1,0 +1,179 @@
+{
+  "id": "units-of-time",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+                "valueString": "second"
+              }
+            ],
+            "code": "s",
+            "designation": [
+              {
+                "language": "zh",
+                "value": "\u79d2"
+              }
+            ],
+            "display": "second"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+                "valueString": "minute"
+              }
+            ],
+            "code": "min",
+            "designation": [
+              {
+                "language": "zh",
+                "value": "\u5206\u949f"
+              }
+            ],
+            "display": "minute"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+                "valueString": "hour"
+              }
+            ],
+            "code": "h",
+            "designation": [
+              {
+                "language": "zh",
+                "value": "\u5c0f\u65f6"
+              }
+            ],
+            "display": "hour"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+                "valueString": "day"
+              }
+            ],
+            "code": "d",
+            "designation": [
+              {
+                "language": "zh",
+                "value": "\u5929"
+              }
+            ],
+            "display": "day"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+                "valueString": "week"
+              }
+            ],
+            "code": "wk",
+            "designation": [
+              {
+                "language": "zh",
+                "value": "\u661f\u671f"
+              }
+            ],
+            "display": "week"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+                "valueString": "month"
+              }
+            ],
+            "code": "mo",
+            "designation": [
+              {
+                "language": "zh",
+                "value": "\u6708"
+              }
+            ],
+            "display": "month"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-definition",
+                "valueString": "year"
+              }
+            ],
+            "code": "a",
+            "designation": [
+              {
+                "language": "zh",
+                "value": "\u5e74"
+              }
+            ],
+            "display": "year"
+          }
+        ],
+        "system": "http://unitsofmeasure.org"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "These codes are excerpted from UCUM (THE UNIFIED CODE FOR UNITS OF MEASURE). UCUM is Copyright \u00a9 1989-2013 Regenstrief Institute, Inc. and The UCUM Organization, Indianapolis, IN. All rights reserved. See http://unitsofmeasure.org/trac//wiki/TermsOfUse for details.",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A unit of time (units from UCUM).",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.77"
+    }
+  ],
+  "name": "UnitsOfTime",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "UnitsOfTime",
+  "url": "http://hl7.org/fhir/ValueSet/units-of-time",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

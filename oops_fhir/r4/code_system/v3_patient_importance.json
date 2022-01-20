@@ -1,0 +1,93 @@
+{
+  "id": "v3-PatientImportance",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "BM",
+      "definition": "Board member of health care organization",
+      "display": "Board Member"
+    },
+    {
+      "code": "DFM",
+      "definition": "Family member of staff physician",
+      "display": "Physician Family Member"
+    },
+    {
+      "code": "DR",
+      "definition": "Member of the health care organization physician staff",
+      "display": "Staff Physician"
+    },
+    {
+      "code": "FD",
+      "definition": "Financial donor to the health care organization",
+      "display": "Financial Donor"
+    },
+    {
+      "code": "FOR",
+      "definition": "Foreign citizen dignitary of interest to the health care organization",
+      "display": "Foreign Dignitary"
+    },
+    {
+      "code": "GOVT",
+      "definition": "Government dignitary of interest to the organization",
+      "display": "Government Dignitary"
+    },
+    {
+      "code": "SFM",
+      "definition": "Family member of staff member",
+      "display": "Staff Family Member"
+    },
+    {
+      "code": "STF",
+      "definition": "Staff member of the health care organization",
+      "display": "Staff Member"
+    },
+    {
+      "code": "VIP",
+      "definition": "Very important person of interest to the health care organization",
+      "display": "Very Important Person"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": " Patient VIP code",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.1075"
+    }
+  ],
+  "name": "v3.PatientImportance",
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System PatientImportance",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-PatientImportance",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-PatientImportance",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

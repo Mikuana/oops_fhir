@@ -1,0 +1,115 @@
+{
+  "id": "request-resource-types",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "Appointment",
+      "definition": "A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s).",
+      "display": "Appointment"
+    },
+    {
+      "code": "AppointmentResponse",
+      "definition": "A reply to an appointment request for a patient and/or practitioner(s), such as a confirmation or rejection.",
+      "display": "AppointmentResponse"
+    },
+    {
+      "code": "CarePlan",
+      "definition": "Healthcare plan for patient or group.",
+      "display": "CarePlan"
+    },
+    {
+      "code": "Claim",
+      "definition": "Claim, Pre-determination or Pre-authorization.",
+      "display": "Claim"
+    },
+    {
+      "code": "CommunicationRequest",
+      "definition": "A request for information to be sent to a receiver.",
+      "display": "CommunicationRequest"
+    },
+    {
+      "code": "Contract",
+      "definition": "Legal Agreement.",
+      "display": "Contract"
+    },
+    {
+      "code": "DeviceRequest",
+      "definition": "Medical device request.",
+      "display": "DeviceRequest"
+    },
+    {
+      "code": "EnrollmentRequest",
+      "definition": "Enrollment request.",
+      "display": "EnrollmentRequest"
+    },
+    {
+      "code": "ImmunizationRecommendation",
+      "definition": "Guidance or advice relating to an immunization.",
+      "display": "ImmunizationRecommendation"
+    },
+    {
+      "code": "MedicationRequest",
+      "definition": "Ordering of medication for patient or group.",
+      "display": "MedicationRequest"
+    },
+    {
+      "code": "NutritionOrder",
+      "definition": "Diet, formula or nutritional supplement request.",
+      "display": "NutritionOrder"
+    },
+    {
+      "code": "ServiceRequest",
+      "definition": "A record of a request for service such as diagnostic investigations, treatments, or operations to be performed.",
+      "display": "ServiceRequest"
+    },
+    {
+      "code": "SupplyRequest",
+      "definition": "Request for a medication, substance or device.",
+      "display": "SupplyRequest"
+    },
+    {
+      "code": "Task",
+      "definition": "A task to be performed.",
+      "display": "Task"
+    },
+    {
+      "code": "VisionPrescription",
+      "definition": "Prescription for vision correction products for a patient.",
+      "display": "VisionPrescription"
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A list of all the request resource types defined in this version of the FHIR specification.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1059"
+    }
+  ],
+  "name": "RequestResourceType",
+  "status": "draft",
+  "title": "RequestResourceType",
+  "url": "http://hl7.org/fhir/request-resource-types",
+  "valueSet": "http://hl7.org/fhir/ValueSet/request-resource-types",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

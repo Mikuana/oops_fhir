@@ -1,0 +1,48 @@
+{
+  "id": "language-preference-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "verbal",
+      "definition": "The patient prefers to verbally communicate with the associated language.",
+      "display": "verbal"
+    },
+    {
+      "code": "written",
+      "definition": "The patient prefers to communicate in writing with the associated language.",
+      "display": "written"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "This value set defines the set of codes for describing the type or mode of the patient's preferred language.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1023"
+    }
+  ],
+  "name": "LanguagePreferenceType",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Language preference type",
+  "url": "http://hl7.org/fhir/language-preference-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,458 @@
+{
+  "id": "v3-ReligiousAffiliation",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "1001",
+      "definition": "Adventist",
+      "display": "Adventist"
+    },
+    {
+      "code": "1002",
+      "definition": "African Religions",
+      "display": "African Religions"
+    },
+    {
+      "code": "1003",
+      "definition": "Afro-Caribbean Religions",
+      "display": "Afro-Caribbean Religions"
+    },
+    {
+      "code": "1004",
+      "definition": "Agnosticism",
+      "display": "Agnosticism"
+    },
+    {
+      "code": "1005",
+      "definition": "Anglican",
+      "display": "Anglican"
+    },
+    {
+      "code": "1006",
+      "definition": "Animism",
+      "display": "Animism"
+    },
+    {
+      "code": "1007",
+      "definition": "Atheism",
+      "display": "Atheism"
+    },
+    {
+      "code": "1008",
+      "definition": "Babi & Baha'I faiths",
+      "display": "Babi & Baha'I faiths"
+    },
+    {
+      "code": "1009",
+      "definition": "Baptist",
+      "display": "Baptist"
+    },
+    {
+      "code": "1010",
+      "definition": "Bon",
+      "display": "Bon"
+    },
+    {
+      "code": "1011",
+      "definition": "Cao Dai",
+      "display": "Cao Dai"
+    },
+    {
+      "code": "1012",
+      "definition": "Celticism",
+      "display": "Celticism"
+    },
+    {
+      "code": "1013",
+      "definition": "Christian (non-Catholic, non-specific)",
+      "display": "Christian (non-Catholic, non-specific)"
+    },
+    {
+      "code": "1014",
+      "definition": "Confucianism",
+      "display": "Confucianism"
+    },
+    {
+      "code": "1015",
+      "definition": "Cyberculture Religions",
+      "display": "Cyberculture Religions"
+    },
+    {
+      "code": "1016",
+      "definition": "Divination",
+      "display": "Divination"
+    },
+    {
+      "code": "1017",
+      "definition": "Fourth Way",
+      "display": "Fourth Way"
+    },
+    {
+      "code": "1018",
+      "definition": "Free Daism",
+      "display": "Free Daism"
+    },
+    {
+      "code": "1019",
+      "definition": "Gnosis",
+      "display": "Gnosis"
+    },
+    {
+      "code": "1020",
+      "definition": "Hinduism",
+      "display": "Hinduism"
+    },
+    {
+      "code": "1021",
+      "definition": "Humanism",
+      "display": "Humanism"
+    },
+    {
+      "code": "1022",
+      "definition": "Independent",
+      "display": "Independent"
+    },
+    {
+      "code": "1023",
+      "definition": "Islam",
+      "display": "Islam"
+    },
+    {
+      "code": "1024",
+      "definition": "Jainism",
+      "display": "Jainism"
+    },
+    {
+      "code": "1025",
+      "definition": "Jehovah's Witnesses",
+      "display": "Jehovah's Witnesses"
+    },
+    {
+      "code": "1026",
+      "definition": "Judaism",
+      "display": "Judaism"
+    },
+    {
+      "code": "1027",
+      "definition": "Latter Day Saints",
+      "display": "Latter Day Saints"
+    },
+    {
+      "code": "1028",
+      "definition": "Lutheran",
+      "display": "Lutheran"
+    },
+    {
+      "code": "1029",
+      "definition": "Mahayana",
+      "display": "Mahayana"
+    },
+    {
+      "code": "1030",
+      "definition": "Meditation",
+      "display": "Meditation"
+    },
+    {
+      "code": "1031",
+      "definition": "Messianic Judaism",
+      "display": "Messianic Judaism"
+    },
+    {
+      "code": "1032",
+      "definition": "Mitraism",
+      "display": "Mitraism"
+    },
+    {
+      "code": "1033",
+      "definition": "New Age",
+      "display": "New Age"
+    },
+    {
+      "code": "1034",
+      "definition": "non-Roman Catholic",
+      "display": "non-Roman Catholic"
+    },
+    {
+      "code": "1035",
+      "definition": "Occult",
+      "display": "Occult"
+    },
+    {
+      "code": "1036",
+      "definition": "Orthodox",
+      "display": "Orthodox"
+    },
+    {
+      "code": "1037",
+      "definition": "Paganism",
+      "display": "Paganism"
+    },
+    {
+      "code": "1038",
+      "definition": "Pentecostal",
+      "display": "Pentecostal"
+    },
+    {
+      "code": "1039",
+      "definition": "Process, The",
+      "display": "Process, The"
+    },
+    {
+      "code": "1040",
+      "definition": "Reformed/Presbyterian",
+      "display": "Reformed/Presbyterian"
+    },
+    {
+      "code": "1041",
+      "definition": "Roman Catholic Church",
+      "display": "Roman Catholic Church"
+    },
+    {
+      "code": "1042",
+      "definition": "Satanism",
+      "display": "Satanism"
+    },
+    {
+      "code": "1043",
+      "definition": "Scientology",
+      "display": "Scientology"
+    },
+    {
+      "code": "1044",
+      "definition": "Shamanism",
+      "display": "Shamanism"
+    },
+    {
+      "code": "1045",
+      "definition": "Shiite (Islam)",
+      "display": "Shiite (Islam)"
+    },
+    {
+      "code": "1046",
+      "definition": "Shinto",
+      "display": "Shinto"
+    },
+    {
+      "code": "1047",
+      "definition": "Sikism",
+      "display": "Sikism"
+    },
+    {
+      "code": "1048",
+      "definition": "Spiritualism",
+      "display": "Spiritualism"
+    },
+    {
+      "code": "1049",
+      "definition": "Sunni (Islam)",
+      "display": "Sunni (Islam)"
+    },
+    {
+      "code": "1050",
+      "definition": "Taoism",
+      "display": "Taoism"
+    },
+    {
+      "code": "1051",
+      "definition": "Theravada",
+      "display": "Theravada"
+    },
+    {
+      "code": "1052",
+      "definition": "Unitarian-Universalism",
+      "display": "Unitarian-Universalism"
+    },
+    {
+      "code": "1053",
+      "definition": "Universal Life Church",
+      "display": "Universal Life Church"
+    },
+    {
+      "code": "1054",
+      "definition": "Vajrayana (Tibetan)",
+      "display": "Vajrayana (Tibetan)"
+    },
+    {
+      "code": "1055",
+      "definition": "Veda",
+      "display": "Veda"
+    },
+    {
+      "code": "1056",
+      "definition": "Voodoo",
+      "display": "Voodoo"
+    },
+    {
+      "code": "1057",
+      "definition": "Wicca",
+      "display": "Wicca"
+    },
+    {
+      "code": "1058",
+      "definition": "Yaohushua",
+      "display": "Yaohushua"
+    },
+    {
+      "code": "1059",
+      "definition": "Zen Buddhism",
+      "display": "Zen Buddhism"
+    },
+    {
+      "code": "1060",
+      "definition": "Zoroastrianism",
+      "display": "Zoroastrianism"
+    },
+    {
+      "code": "1061",
+      "definition": "Assembly of God",
+      "display": "Assembly of God"
+    },
+    {
+      "code": "1062",
+      "definition": "Brethren",
+      "display": "Brethren"
+    },
+    {
+      "code": "1063",
+      "definition": "Christian Scientist",
+      "display": "Christian Scientist"
+    },
+    {
+      "code": "1064",
+      "definition": "Church of Christ",
+      "display": "Church of Christ"
+    },
+    {
+      "code": "1065",
+      "definition": "Church of God",
+      "display": "Church of God"
+    },
+    {
+      "code": "1066",
+      "definition": "Congregational",
+      "display": "Congregational"
+    },
+    {
+      "code": "1067",
+      "definition": "Disciples of Christ",
+      "display": "Disciples of Christ"
+    },
+    {
+      "code": "1068",
+      "definition": "Eastern Orthodox",
+      "display": "Eastern Orthodox"
+    },
+    {
+      "code": "1069",
+      "definition": "Episcopalian",
+      "display": "Episcopalian"
+    },
+    {
+      "code": "1070",
+      "definition": "Evangelical Covenant",
+      "display": "Evangelical Covenant"
+    },
+    {
+      "code": "1071",
+      "definition": "Friends",
+      "display": "Friends"
+    },
+    {
+      "code": "1072",
+      "definition": "Full Gospel",
+      "display": "Full Gospel"
+    },
+    {
+      "code": "1073",
+      "definition": "Methodist",
+      "display": "Methodist"
+    },
+    {
+      "code": "1074",
+      "definition": "Native American",
+      "display": "Native American"
+    },
+    {
+      "code": "1075",
+      "definition": "Nazarene",
+      "display": "Nazarene"
+    },
+    {
+      "code": "1076",
+      "definition": "Presbyterian",
+      "display": "Presbyterian"
+    },
+    {
+      "code": "1077",
+      "definition": "Protestant",
+      "display": "Protestant"
+    },
+    {
+      "code": "1078",
+      "definition": "Protestant, No Denomination",
+      "display": "Protestant, No Denomination"
+    },
+    {
+      "code": "1079",
+      "definition": "Reformed",
+      "display": "Reformed"
+    },
+    {
+      "code": "1080",
+      "definition": "Salvation Army",
+      "display": "Salvation Army"
+    },
+    {
+      "code": "1081",
+      "definition": "Unitarian Universalist",
+      "display": "Unitarian Universalist"
+    },
+    {
+      "code": "1082",
+      "definition": "United Church of Christ",
+      "display": "United Church of Christ"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": " Assigment of spiritual faith affiliation",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.1076"
+    }
+  ],
+  "name": "v3.ReligiousAffiliation",
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System ReligiousAffiliation",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

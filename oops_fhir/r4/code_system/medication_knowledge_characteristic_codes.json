@@ -1,0 +1,88 @@
+{
+  "id": "medicationknowledge-characteristic",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "imprintcd",
+      "definition": "Identyifying marks on product",
+      "display": "Imprint Code"
+    },
+    {
+      "code": "size",
+      "definition": "Description of size of the product",
+      "display": "Size"
+    },
+    {
+      "code": "shape",
+      "definition": "Description of the shape of the product",
+      "display": "Shape"
+    },
+    {
+      "code": "color",
+      "definition": "Description of the color of the product",
+      "display": "Color"
+    },
+    {
+      "code": "coating",
+      "definition": "Description of the coating of the product",
+      "display": "Coating"
+    },
+    {
+      "code": "scoring",
+      "definition": "Description of the scoring of the product",
+      "display": "Scoring"
+    },
+    {
+      "code": "logo",
+      "definition": "Description of the Logo of the product",
+      "display": "Logo"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "MedicationKnowledge Characteristic Codes",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1338"
+    }
+  ],
+  "name": "medicationKnowledge Characteristic Codes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Medication knowledge  characteristic  codes",
+  "url": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
+  "valueSet": "http://hl7.org/fhir/ValueSet/medicationknowledge-characteristic",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "claim-subtype",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "ortho",
+      "definition": "A claim for Orthodontic Services.",
+      "display": "Orthodontic Claim"
+    },
+    {
+      "code": "emergency",
+      "definition": "A claim for emergency services.",
+      "display": "Emergency Claim"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an example set.",
+  "description": "This value set includes sample Claim SubType codes which are used to distinguish the claim types for example within type institutional there may be subtypes for emergency services, bed stay and transportation.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1158"
+    }
+  ],
+  "name": "ExampleClaimSubTypeCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Example Claim SubType Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/ex-claimsubtype",
+  "valueSet": "http://hl7.org/fhir/ValueSet/claim-subtype",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

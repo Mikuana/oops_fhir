@@ -1,0 +1,80 @@
+{
+  "id": "map-source-list-mode",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "first",
+      "definition": "Only process this rule for the first in the list.",
+      "display": "First"
+    },
+    {
+      "code": "not_first",
+      "definition": "Process this rule for all but the first.",
+      "display": "All but the first"
+    },
+    {
+      "code": "last",
+      "definition": "Only process this rule for the last in the list.",
+      "display": "Last"
+    },
+    {
+      "code": "not_last",
+      "definition": "Process this rule for all but the last.",
+      "display": "All but the last"
+    },
+    {
+      "code": "only_one",
+      "definition": "Only process this rule is there is only item.",
+      "display": "Enforce only one"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "If field is a list, how to manage the source.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.684"
+    }
+  ],
+  "name": "StructureMapSourceListMode",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "StructureMapSourceListMode",
+  "url": "http://hl7.org/fhir/map-source-list-mode",
+  "valueSet": "http://hl7.org/fhir/ValueSet/map-source-list-mode",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

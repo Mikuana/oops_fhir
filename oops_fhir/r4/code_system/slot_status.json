@@ -1,0 +1,80 @@
+{
+  "id": "slotstatus",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "busy",
+      "definition": "Indicates that the time interval is busy because one  or more events have been scheduled for that interval.",
+      "display": "Busy"
+    },
+    {
+      "code": "free",
+      "definition": "Indicates that the time interval is free for scheduling.",
+      "display": "Free"
+    },
+    {
+      "code": "busy-unavailable",
+      "definition": "Indicates that the time interval is busy and that the interval cannot be scheduled.",
+      "display": "Busy (Unavailable)"
+    },
+    {
+      "code": "busy-tentative",
+      "definition": "Indicates that the time interval is busy because one or more events have been tentatively scheduled for that interval.",
+      "display": "Busy (Tentative)"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "This instance should not have been part of this patient's medical record.",
+      "display": "Entered in error"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The free/busy status of the slot.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.483"
+    }
+  ],
+  "name": "SlotStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "SlotStatus",
+  "url": "http://hl7.org/fhir/slotstatus",
+  "valueSet": "http://hl7.org/fhir/ValueSet/slotstatus",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

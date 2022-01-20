@@ -1,0 +1,59 @@
+{
+  "id": "practitioner-specialty",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "cardio",
+      "display": "Cardiologist"
+    },
+    {
+      "code": "dent",
+      "display": "Dentist"
+    },
+    {
+      "code": "dietary",
+      "display": "Dietary consultant"
+    },
+    {
+      "code": "midw",
+      "display": "Midwife"
+    },
+    {
+      "code": "sysarch",
+      "display": "Systems architect"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "This example value set defines a set of codes that can be used to indicate the specialty of a Practitioner.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.442"
+    }
+  ],
+  "name": "PractitionerSpecialty",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Practitioner specialty",
+  "url": "http://hl7.org/fhir/practitioner-specialty",
+  "valueSet": "http://hl7.org/fhir/ValueSet/practitioner-specialty",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

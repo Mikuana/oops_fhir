@@ -1,0 +1,70 @@
+{
+  "id": "report-participant-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "test-engine",
+      "definition": "The test execution engine.",
+      "display": "Test Engine"
+    },
+    {
+      "code": "client",
+      "definition": "A FHIR Client.",
+      "display": "Client"
+    },
+    {
+      "code": "server",
+      "definition": "A FHIR Server.",
+      "display": "Server"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The type of participant.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.723"
+    }
+  ],
+  "name": "TestReportParticipantType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "TestReportParticipantType",
+  "url": "http://hl7.org/fhir/report-participant-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/report-participant-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

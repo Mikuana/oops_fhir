@@ -1,0 +1,70 @@
+{
+  "id": "variable-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "dichotomous",
+      "definition": "The variable is dichotomous, such as present or absent.",
+      "display": "Dichotomous"
+    },
+    {
+      "code": "continuous",
+      "definition": "The variable is a continuous result such as a quantity.",
+      "display": "Continuous"
+    },
+    {
+      "code": "descriptive",
+      "definition": "The variable is described narratively rather than quantitatively.",
+      "display": "Descriptive"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The possible types of variables for exposures or outcomes (E.g. Dichotomous, Continuous, Descriptive).",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1344"
+    }
+  ],
+  "name": "EvidenceVariableType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "EvidenceVariableType",
+  "url": "http://hl7.org/fhir/variable-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/variable-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

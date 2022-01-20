@@ -1,0 +1,61 @@
+{
+  "id": "messageheader-response-request",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "inm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/messageheader-response-request"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "HL7-defined table of codes which identify conditions under which acknowledgments are required to be returned in response to a message.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.924"
+    }
+  ],
+  "immutable": true,
+  "name": "messageheader-response-request",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "messageheader-response-request",
+  "url": "http://hl7.org/fhir/ValueSet/messageheader-response-request",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

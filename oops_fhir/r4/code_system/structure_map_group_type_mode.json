@@ -1,0 +1,70 @@
+{
+  "id": "map-group-type-mode",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "none",
+      "definition": "This group is not a default group for the types.",
+      "display": "Not a Default"
+    },
+    {
+      "code": "types",
+      "definition": "This group is a default mapping group for the specified types and for the primary source type.",
+      "display": "Default for Type Combination"
+    },
+    {
+      "code": "type-and-types",
+      "definition": "This group is a default mapping group for the specified types.",
+      "display": "Default for type + combination"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "If this is the default rule set to apply for the source type, or this combination of types.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.688"
+    }
+  ],
+  "name": "StructureMapGroupTypeMode",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "StructureMapGroupTypeMode",
+  "url": "http://hl7.org/fhir/map-group-type-mode",
+  "valueSet": "http://hl7.org/fhir/ValueSet/map-group-type-mode",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

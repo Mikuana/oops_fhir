@@ -1,0 +1,85 @@
+{
+  "id": "synthesis-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "std-MA",
+      "definition": "A meta-analysis of the summary data of estimates from individual studies or data sets.",
+      "display": "summary data meta-analysis"
+    },
+    {
+      "code": "IPD-MA",
+      "definition": "A meta-analysis of the individual participant data from individual studies or data sets.",
+      "display": "individual patient data meta-analysis"
+    },
+    {
+      "code": "indirect-NMA",
+      "definition": "An indirect meta-analysis derived from 2 or more direct comparisons in a network meta-analysis.",
+      "display": "indirect network meta-analysis"
+    },
+    {
+      "code": "combined-NMA",
+      "definition": "An composite meta-analysis derived from direct comparisons and indirect comparisons in a network meta-analysis.",
+      "display": "combined direct plus indirect network meta-analysis"
+    },
+    {
+      "code": "range",
+      "definition": "A range of results across a body of evidence.",
+      "display": "range of results"
+    },
+    {
+      "code": "classification",
+      "definition": "An approach describing a body of evidence by categorically classifying individual studies (eg 3 studies showed beneft and 2 studied found no effect).",
+      "display": "classifcation of results"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Types of combining results from a body of evidence (eg. summary data meta-analysis).",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1348"
+    }
+  ],
+  "name": "SynthesisType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "SynthesisType",
+  "url": "http://terminology.hl7.org/CodeSystem/synthesis-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/synthesis-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

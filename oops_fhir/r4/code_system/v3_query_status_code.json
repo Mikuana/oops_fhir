@@ -1,0 +1,73 @@
+{
+  "id": "v3-QueryStatusCode",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "aborted",
+      "definition": "Query status aborted",
+      "display": "aborted"
+    },
+    {
+      "code": "deliveredResponse",
+      "definition": "Query Status delivered response",
+      "display": "deliveredResponse"
+    },
+    {
+      "code": "executing",
+      "definition": "Query Status executing",
+      "display": "executing"
+    },
+    {
+      "code": "new",
+      "definition": "Query Status new",
+      "display": "new"
+    },
+    {
+      "code": "waitContinuedQueryResponse",
+      "definition": "Query Status wait continued",
+      "display": "waitContinuedQueryResponse"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": " A code specifying the state of the Query.",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.103"
+    }
+  ],
+  "name": "v3.QueryStatusCode",
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System QueryStatusCode",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-QueryStatusCode",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-QueryStatusCode",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

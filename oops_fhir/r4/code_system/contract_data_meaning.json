@@ -1,0 +1,61 @@
+{
+  "id": "contract-data-meaning",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "instance",
+      "definition": "The consent applies directly to the instance of the resource.",
+      "display": "Instance"
+    },
+    {
+      "code": "related",
+      "definition": "The consent applies directly to the instance of the resource and instances it refers to.",
+      "display": "Related"
+    },
+    {
+      "code": "dependents",
+      "definition": "The consent applies directly to the instance of the resource and instances that refer to it.",
+      "display": "Dependents"
+    },
+    {
+      "code": "authoredby",
+      "definition": "The consent applies to instances of resources that are authored by.",
+      "display": "AuthoredBy"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "How a resource reference is interpreted when evaluating contract offers.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1205"
+    }
+  ],
+  "name": "ContractDataMeaning",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ContractDataMeaning",
+  "url": "http://terminology.hl7.org/CodeSystem/contract-data-meaning",
+  "valueSet": "http://hl7.org/fhir/ValueSet/contract-data-meaning",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

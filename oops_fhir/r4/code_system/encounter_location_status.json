@@ -1,0 +1,75 @@
+{
+  "id": "encounter-location-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "planned",
+      "definition": "The patient is planned to be moved to this location at some point in the future.",
+      "display": "Planned"
+    },
+    {
+      "code": "active",
+      "definition": "The patient is currently at this location, or was between the period specified.\r\rA system may update these records when the patient leaves the location to either reserved, or completed.",
+      "display": "Active"
+    },
+    {
+      "code": "reserved",
+      "definition": "This location is held empty for this patient.",
+      "display": "Reserved"
+    },
+    {
+      "code": "completed",
+      "definition": "The patient was at this location during the period specified.\r\rNot to be used when the patient is currently at the location.",
+      "display": "Completed"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The status of the location.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.263"
+    }
+  ],
+  "name": "EncounterLocationStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "EncounterLocationStatus",
+  "url": "http://hl7.org/fhir/encounter-location-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/encounter-location-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

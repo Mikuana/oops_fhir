@@ -1,0 +1,110 @@
+{
+  "id": "assert-operator-codes",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "equals",
+      "definition": "Default value. Equals comparison.",
+      "display": "equals"
+    },
+    {
+      "code": "notEquals",
+      "definition": "Not equals comparison.",
+      "display": "notEquals"
+    },
+    {
+      "code": "in",
+      "definition": "Compare value within a known set of values.",
+      "display": "in"
+    },
+    {
+      "code": "notIn",
+      "definition": "Compare value not within a known set of values.",
+      "display": "notIn"
+    },
+    {
+      "code": "greaterThan",
+      "definition": "Compare value to be greater than a known value.",
+      "display": "greaterThan"
+    },
+    {
+      "code": "lessThan",
+      "definition": "Compare value to be less than a known value.",
+      "display": "lessThan"
+    },
+    {
+      "code": "empty",
+      "definition": "Compare value is empty.",
+      "display": "empty"
+    },
+    {
+      "code": "notEmpty",
+      "definition": "Compare value is not empty.",
+      "display": "notEmpty"
+    },
+    {
+      "code": "contains",
+      "definition": "Compare value string contains a known value.",
+      "display": "contains"
+    },
+    {
+      "code": "notContains",
+      "definition": "Compare value string does not contain a known value.",
+      "display": "notContains"
+    },
+    {
+      "code": "eval",
+      "definition": "Evaluate the FHIRPath expression as a boolean condition.",
+      "display": "evaluate"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The type of operator to use for assertion.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.709"
+    }
+  ],
+  "name": "AssertionOperatorType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "AssertionOperatorType",
+  "url": "http://hl7.org/fhir/assert-operator-codes",
+  "valueSet": "http://hl7.org/fhir/ValueSet/assert-operator-codes",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

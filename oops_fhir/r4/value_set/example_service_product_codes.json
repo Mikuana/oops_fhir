@@ -1,0 +1,50 @@
+{
+  "id": "service-product",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/ex-serviceproduct"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "copyright": "This is an example set.",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "This value set includes a smattering of Service/Product codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.560"
+    }
+  ],
+  "immutable": true,
+  "name": "ExampleService/ProductCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Example Service/Product Codes",
+  "url": "http://hl7.org/fhir/ValueSet/service-product",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

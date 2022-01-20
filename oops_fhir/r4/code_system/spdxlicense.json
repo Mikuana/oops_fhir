@@ -1,0 +1,1785 @@
+{
+  "id": "spdx-license",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "not-open-source",
+      "definition": "Not an open source license.",
+      "display": "Not open source"
+    },
+    {
+      "code": "0BSD",
+      "definition": "BSD Zero Clause License.",
+      "display": "BSD Zero Clause License"
+    },
+    {
+      "code": "AAL",
+      "definition": "Attribution Assurance License.",
+      "display": "Attribution Assurance License"
+    },
+    {
+      "code": "Abstyles",
+      "definition": "Abstyles License.",
+      "display": "Abstyles License"
+    },
+    {
+      "code": "Adobe-2006",
+      "definition": "Adobe Systems Incorporated Source Code License Agreement.",
+      "display": "Adobe Systems Incorporated Source Code License Agreement"
+    },
+    {
+      "code": "Adobe-Glyph",
+      "definition": "Adobe Glyph List License.",
+      "display": "Adobe Glyph List License"
+    },
+    {
+      "code": "ADSL",
+      "definition": "Amazon Digital Services License.",
+      "display": "Amazon Digital Services License"
+    },
+    {
+      "code": "AFL-1.1",
+      "definition": "Academic Free License v1.1.",
+      "display": "Academic Free License v1.1"
+    },
+    {
+      "code": "AFL-1.2",
+      "definition": "Academic Free License v1.2.",
+      "display": "Academic Free License v1.2"
+    },
+    {
+      "code": "AFL-2.0",
+      "definition": "Academic Free License v2.0.",
+      "display": "Academic Free License v2.0"
+    },
+    {
+      "code": "AFL-2.1",
+      "definition": "Academic Free License v2.1.",
+      "display": "Academic Free License v2.1"
+    },
+    {
+      "code": "AFL-3.0",
+      "definition": "Academic Free License v3.0.",
+      "display": "Academic Free License v3.0"
+    },
+    {
+      "code": "Afmparse",
+      "definition": "Afmparse License.",
+      "display": "Afmparse License"
+    },
+    {
+      "code": "AGPL-1.0-only",
+      "definition": "Affero General Public License v1.0 only.",
+      "display": "Affero General Public License v1.0 only"
+    },
+    {
+      "code": "AGPL-1.0-or-later",
+      "definition": "Affero General Public License v1.0 or later.",
+      "display": "Affero General Public License v1.0 or later"
+    },
+    {
+      "code": "AGPL-3.0-only",
+      "definition": "GNU Affero General Public License v3.0 only.",
+      "display": "GNU Affero General Public License v3.0 only"
+    },
+    {
+      "code": "AGPL-3.0-or-later",
+      "definition": "GNU Affero General Public License v3.0 or later.",
+      "display": "GNU Affero General Public License v3.0 or later"
+    },
+    {
+      "code": "Aladdin",
+      "definition": "Aladdin Free Public License.",
+      "display": "Aladdin Free Public License"
+    },
+    {
+      "code": "AMDPLPA",
+      "definition": "AMD's plpa_map.c License.",
+      "display": "AMD's plpa_map.c License"
+    },
+    {
+      "code": "AML",
+      "definition": "Apple MIT License.",
+      "display": "Apple MIT License"
+    },
+    {
+      "code": "AMPAS",
+      "definition": "Academy of Motion Picture Arts and Sciences BSD.",
+      "display": "Academy of Motion Picture Arts and Sciences BSD"
+    },
+    {
+      "code": "ANTLR-PD",
+      "definition": "ANTLR Software Rights Notice.",
+      "display": "ANTLR Software Rights Notice"
+    },
+    {
+      "code": "Apache-1.0",
+      "definition": "Apache License 1.0.",
+      "display": "Apache License 1.0"
+    },
+    {
+      "code": "Apache-1.1",
+      "definition": "Apache License 1.1.",
+      "display": "Apache License 1.1"
+    },
+    {
+      "code": "Apache-2.0",
+      "definition": "Apache License 2.0.",
+      "display": "Apache License 2.0"
+    },
+    {
+      "code": "APAFML",
+      "definition": "Adobe Postscript AFM License.",
+      "display": "Adobe Postscript AFM License"
+    },
+    {
+      "code": "APL-1.0",
+      "definition": "Adaptive Public License 1.0.",
+      "display": "Adaptive Public License 1.0"
+    },
+    {
+      "code": "APSL-1.0",
+      "definition": "Apple Public Source License 1.0.",
+      "display": "Apple Public Source License 1.0"
+    },
+    {
+      "code": "APSL-1.1",
+      "definition": "Apple Public Source License 1.1.",
+      "display": "Apple Public Source License 1.1"
+    },
+    {
+      "code": "APSL-1.2",
+      "definition": "Apple Public Source License 1.2.",
+      "display": "Apple Public Source License 1.2"
+    },
+    {
+      "code": "APSL-2.0",
+      "definition": "Apple Public Source License 2.0.",
+      "display": "Apple Public Source License 2.0"
+    },
+    {
+      "code": "Artistic-1.0-cl8",
+      "definition": "Artistic License 1.0 w/clause 8.",
+      "display": "Artistic License 1.0 w/clause 8"
+    },
+    {
+      "code": "Artistic-1.0-Perl",
+      "definition": "Artistic License 1.0 (Perl).",
+      "display": "Artistic License 1.0 (Perl)"
+    },
+    {
+      "code": "Artistic-1.0",
+      "definition": "Artistic License 1.0.",
+      "display": "Artistic License 1.0"
+    },
+    {
+      "code": "Artistic-2.0",
+      "definition": "Artistic License 2.0.",
+      "display": "Artistic License 2.0"
+    },
+    {
+      "code": "Bahyph",
+      "definition": "Bahyph License.",
+      "display": "Bahyph License"
+    },
+    {
+      "code": "Barr",
+      "definition": "Barr License.",
+      "display": "Barr License"
+    },
+    {
+      "code": "Beerware",
+      "definition": "Beerware License.",
+      "display": "Beerware License"
+    },
+    {
+      "code": "BitTorrent-1.0",
+      "definition": "BitTorrent Open Source License v1.0.",
+      "display": "BitTorrent Open Source License v1.0"
+    },
+    {
+      "code": "BitTorrent-1.1",
+      "definition": "BitTorrent Open Source License v1.1.",
+      "display": "BitTorrent Open Source License v1.1"
+    },
+    {
+      "code": "Borceux",
+      "definition": "Borceux license.",
+      "display": "Borceux license"
+    },
+    {
+      "code": "BSD-1-Clause",
+      "definition": "BSD 1-Clause License.",
+      "display": "BSD 1-Clause License"
+    },
+    {
+      "code": "BSD-2-Clause-FreeBSD",
+      "definition": "BSD 2-Clause FreeBSD License.",
+      "display": "BSD 2-Clause FreeBSD License"
+    },
+    {
+      "code": "BSD-2-Clause-NetBSD",
+      "definition": "BSD 2-Clause NetBSD License.",
+      "display": "BSD 2-Clause NetBSD License"
+    },
+    {
+      "code": "BSD-2-Clause-Patent",
+      "definition": "BSD-2-Clause Plus Patent License.",
+      "display": "BSD-2-Clause Plus Patent License"
+    },
+    {
+      "code": "BSD-2-Clause",
+      "definition": "BSD 2-Clause \"Simplified\" License.",
+      "display": "BSD 2-Clause \"Simplified\" License"
+    },
+    {
+      "code": "BSD-3-Clause-Attribution",
+      "definition": "BSD with attribution.",
+      "display": "BSD with attribution"
+    },
+    {
+      "code": "BSD-3-Clause-Clear",
+      "definition": "BSD 3-Clause Clear License.",
+      "display": "BSD 3-Clause Clear License"
+    },
+    {
+      "code": "BSD-3-Clause-LBNL",
+      "definition": "Lawrence Berkeley National Labs BSD variant license.",
+      "display": "Lawrence Berkeley National Labs BSD variant license"
+    },
+    {
+      "code": "BSD-3-Clause-No-Nuclear-License-2014",
+      "definition": "BSD 3-Clause No Nuclear License 2014.",
+      "display": "BSD 3-Clause No Nuclear License 2014"
+    },
+    {
+      "code": "BSD-3-Clause-No-Nuclear-License",
+      "definition": "BSD 3-Clause No Nuclear License.",
+      "display": "BSD 3-Clause No Nuclear License"
+    },
+    {
+      "code": "BSD-3-Clause-No-Nuclear-Warranty",
+      "definition": "BSD 3-Clause No Nuclear Warranty.",
+      "display": "BSD 3-Clause No Nuclear Warranty"
+    },
+    {
+      "code": "BSD-3-Clause",
+      "definition": "BSD 3-Clause \"New\" or \"Revised\" License.",
+      "display": "BSD 3-Clause \"New\" or \"Revised\" License"
+    },
+    {
+      "code": "BSD-4-Clause-UC",
+      "definition": "BSD-4-Clause (University of California-Specific).",
+      "display": "BSD-4-Clause (University of California-Specific)"
+    },
+    {
+      "code": "BSD-4-Clause",
+      "definition": "BSD 4-Clause \"Original\" or \"Old\" License.",
+      "display": "BSD 4-Clause \"Original\" or \"Old\" License"
+    },
+    {
+      "code": "BSD-Protection",
+      "definition": "BSD Protection License.",
+      "display": "BSD Protection License"
+    },
+    {
+      "code": "BSD-Source-Code",
+      "definition": "BSD Source Code Attribution.",
+      "display": "BSD Source Code Attribution"
+    },
+    {
+      "code": "BSL-1.0",
+      "definition": "Boost Software License 1.0.",
+      "display": "Boost Software License 1.0"
+    },
+    {
+      "code": "bzip2-1.0.5",
+      "definition": "bzip2 and libbzip2 License v1.0.5.",
+      "display": "bzip2 and libbzip2 License v1.0.5"
+    },
+    {
+      "code": "bzip2-1.0.6",
+      "definition": "bzip2 and libbzip2 License v1.0.6.",
+      "display": "bzip2 and libbzip2 License v1.0.6"
+    },
+    {
+      "code": "Caldera",
+      "definition": "Caldera License.",
+      "display": "Caldera License"
+    },
+    {
+      "code": "CATOSL-1.1",
+      "definition": "Computer Associates Trusted Open Source License 1.1.",
+      "display": "Computer Associates Trusted Open Source License 1.1"
+    },
+    {
+      "code": "CC-BY-1.0",
+      "definition": "Creative Commons Attribution 1.0 Generic.",
+      "display": "Creative Commons Attribution 1.0 Generic"
+    },
+    {
+      "code": "CC-BY-2.0",
+      "definition": "Creative Commons Attribution 2.0 Generic.",
+      "display": "Creative Commons Attribution 2.0 Generic"
+    },
+    {
+      "code": "CC-BY-2.5",
+      "definition": "Creative Commons Attribution 2.5 Generic.",
+      "display": "Creative Commons Attribution 2.5 Generic"
+    },
+    {
+      "code": "CC-BY-3.0",
+      "definition": "Creative Commons Attribution 3.0 Unported.",
+      "display": "Creative Commons Attribution 3.0 Unported"
+    },
+    {
+      "code": "CC-BY-4.0",
+      "definition": "Creative Commons Attribution 4.0 International.",
+      "display": "Creative Commons Attribution 4.0 International"
+    },
+    {
+      "code": "CC-BY-NC-1.0",
+      "definition": "Creative Commons Attribution Non Commercial 1.0 Generic.",
+      "display": "Creative Commons Attribution Non Commercial 1.0 Generic"
+    },
+    {
+      "code": "CC-BY-NC-2.0",
+      "definition": "Creative Commons Attribution Non Commercial 2.0 Generic.",
+      "display": "Creative Commons Attribution Non Commercial 2.0 Generic"
+    },
+    {
+      "code": "CC-BY-NC-2.5",
+      "definition": "Creative Commons Attribution Non Commercial 2.5 Generic.",
+      "display": "Creative Commons Attribution Non Commercial 2.5 Generic"
+    },
+    {
+      "code": "CC-BY-NC-3.0",
+      "definition": "Creative Commons Attribution Non Commercial 3.0 Unported.",
+      "display": "Creative Commons Attribution Non Commercial 3.0 Unported"
+    },
+    {
+      "code": "CC-BY-NC-4.0",
+      "definition": "Creative Commons Attribution Non Commercial 4.0 International.",
+      "display": "Creative Commons Attribution Non Commercial 4.0 International"
+    },
+    {
+      "code": "CC-BY-NC-ND-1.0",
+      "definition": "Creative Commons Attribution Non Commercial No Derivatives 1.0 Generic.",
+      "display": "Creative Commons Attribution Non Commercial No Derivatives 1.0 Generic"
+    },
+    {
+      "code": "CC-BY-NC-ND-2.0",
+      "definition": "Creative Commons Attribution Non Commercial No Derivatives 2.0 Generic.",
+      "display": "Creative Commons Attribution Non Commercial No Derivatives 2.0 Generic"
+    },
+    {
+      "code": "CC-BY-NC-ND-2.5",
+      "definition": "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic.",
+      "display": "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic"
+    },
+    {
+      "code": "CC-BY-NC-ND-3.0",
+      "definition": "Creative Commons Attribution Non Commercial No Derivatives 3.0 Unported.",
+      "display": "Creative Commons Attribution Non Commercial No Derivatives 3.0 Unported"
+    },
+    {
+      "code": "CC-BY-NC-ND-4.0",
+      "definition": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International.",
+      "display": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International"
+    },
+    {
+      "code": "CC-BY-NC-SA-1.0",
+      "definition": "Creative Commons Attribution Non Commercial Share Alike 1.0 Generic.",
+      "display": "Creative Commons Attribution Non Commercial Share Alike 1.0 Generic"
+    },
+    {
+      "code": "CC-BY-NC-SA-2.0",
+      "definition": "Creative Commons Attribution Non Commercial Share Alike 2.0 Generic.",
+      "display": "Creative Commons Attribution Non Commercial Share Alike 2.0 Generic"
+    },
+    {
+      "code": "CC-BY-NC-SA-2.5",
+      "definition": "Creative Commons Attribution Non Commercial Share Alike 2.5 Generic.",
+      "display": "Creative Commons Attribution Non Commercial Share Alike 2.5 Generic"
+    },
+    {
+      "code": "CC-BY-NC-SA-3.0",
+      "definition": "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported.",
+      "display": "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported"
+    },
+    {
+      "code": "CC-BY-NC-SA-4.0",
+      "definition": "Creative Commons Attribution Non Commercial Share Alike 4.0 International.",
+      "display": "Creative Commons Attribution Non Commercial Share Alike 4.0 International"
+    },
+    {
+      "code": "CC-BY-ND-1.0",
+      "definition": "Creative Commons Attribution No Derivatives 1.0 Generic.",
+      "display": "Creative Commons Attribution No Derivatives 1.0 Generic"
+    },
+    {
+      "code": "CC-BY-ND-2.0",
+      "definition": "Creative Commons Attribution No Derivatives 2.0 Generic.",
+      "display": "Creative Commons Attribution No Derivatives 2.0 Generic"
+    },
+    {
+      "code": "CC-BY-ND-2.5",
+      "definition": "Creative Commons Attribution No Derivatives 2.5 Generic.",
+      "display": "Creative Commons Attribution No Derivatives 2.5 Generic"
+    },
+    {
+      "code": "CC-BY-ND-3.0",
+      "definition": "Creative Commons Attribution No Derivatives 3.0 Unported.",
+      "display": "Creative Commons Attribution No Derivatives 3.0 Unported"
+    },
+    {
+      "code": "CC-BY-ND-4.0",
+      "definition": "Creative Commons Attribution No Derivatives 4.0 International.",
+      "display": "Creative Commons Attribution No Derivatives 4.0 International"
+    },
+    {
+      "code": "CC-BY-SA-1.0",
+      "definition": "Creative Commons Attribution Share Alike 1.0 Generic.",
+      "display": "Creative Commons Attribution Share Alike 1.0 Generic"
+    },
+    {
+      "code": "CC-BY-SA-2.0",
+      "definition": "Creative Commons Attribution Share Alike 2.0 Generic.",
+      "display": "Creative Commons Attribution Share Alike 2.0 Generic"
+    },
+    {
+      "code": "CC-BY-SA-2.5",
+      "definition": "Creative Commons Attribution Share Alike 2.5 Generic.",
+      "display": "Creative Commons Attribution Share Alike 2.5 Generic"
+    },
+    {
+      "code": "CC-BY-SA-3.0",
+      "definition": "Creative Commons Attribution Share Alike 3.0 Unported.",
+      "display": "Creative Commons Attribution Share Alike 3.0 Unported"
+    },
+    {
+      "code": "CC-BY-SA-4.0",
+      "definition": "Creative Commons Attribution Share Alike 4.0 International.",
+      "display": "Creative Commons Attribution Share Alike 4.0 International"
+    },
+    {
+      "code": "CC0-1.0",
+      "definition": "Creative Commons Zero v1.0 Universal.",
+      "display": "Creative Commons Zero v1.0 Universal"
+    },
+    {
+      "code": "CDDL-1.0",
+      "definition": "Common Development and Distribution License 1.0.",
+      "display": "Common Development and Distribution License 1.0"
+    },
+    {
+      "code": "CDDL-1.1",
+      "definition": "Common Development and Distribution License 1.1.",
+      "display": "Common Development and Distribution License 1.1"
+    },
+    {
+      "code": "CDLA-Permissive-1.0",
+      "definition": "Community Data License Agreement Permissive 1.0.",
+      "display": "Community Data License Agreement Permissive 1.0"
+    },
+    {
+      "code": "CDLA-Sharing-1.0",
+      "definition": "Community Data License Agreement Sharing 1.0.",
+      "display": "Community Data License Agreement Sharing 1.0"
+    },
+    {
+      "code": "CECILL-1.0",
+      "definition": "CeCILL Free Software License Agreement v1.0.",
+      "display": "CeCILL Free Software License Agreement v1.0"
+    },
+    {
+      "code": "CECILL-1.1",
+      "definition": "CeCILL Free Software License Agreement v1.1.",
+      "display": "CeCILL Free Software License Agreement v1.1"
+    },
+    {
+      "code": "CECILL-2.0",
+      "definition": "CeCILL Free Software License Agreement v2.0.",
+      "display": "CeCILL Free Software License Agreement v2.0"
+    },
+    {
+      "code": "CECILL-2.1",
+      "definition": "CeCILL Free Software License Agreement v2.1.",
+      "display": "CeCILL Free Software License Agreement v2.1"
+    },
+    {
+      "code": "CECILL-B",
+      "definition": "CeCILL-B Free Software License Agreement.",
+      "display": "CeCILL-B Free Software License Agreement"
+    },
+    {
+      "code": "CECILL-C",
+      "definition": "CeCILL-C Free Software License Agreement.",
+      "display": "CeCILL-C Free Software License Agreement"
+    },
+    {
+      "code": "ClArtistic",
+      "definition": "Clarified Artistic License.",
+      "display": "Clarified Artistic License"
+    },
+    {
+      "code": "CNRI-Jython",
+      "definition": "CNRI Jython License.",
+      "display": "CNRI Jython License"
+    },
+    {
+      "code": "CNRI-Python-GPL-Compatible",
+      "definition": "CNRI Python Open Source GPL Compatible License Agreement.",
+      "display": "CNRI Python Open Source GPL Compatible License Agreement"
+    },
+    {
+      "code": "CNRI-Python",
+      "definition": "CNRI Python License.",
+      "display": "CNRI Python License"
+    },
+    {
+      "code": "Condor-1.1",
+      "definition": "Condor Public License v1.1.",
+      "display": "Condor Public License v1.1"
+    },
+    {
+      "code": "CPAL-1.0",
+      "definition": "Common Public Attribution License 1.0.",
+      "display": "Common Public Attribution License 1.0"
+    },
+    {
+      "code": "CPL-1.0",
+      "definition": "Common Public License 1.0.",
+      "display": "Common Public License 1.0"
+    },
+    {
+      "code": "CPOL-1.02",
+      "definition": "Code Project Open License 1.02.",
+      "display": "Code Project Open License 1.02"
+    },
+    {
+      "code": "Crossword",
+      "definition": "Crossword License.",
+      "display": "Crossword License"
+    },
+    {
+      "code": "CrystalStacker",
+      "definition": "CrystalStacker License.",
+      "display": "CrystalStacker License"
+    },
+    {
+      "code": "CUA-OPL-1.0",
+      "definition": "CUA Office Public License v1.0.",
+      "display": "CUA Office Public License v1.0"
+    },
+    {
+      "code": "Cube",
+      "definition": "Cube License.",
+      "display": "Cube License"
+    },
+    {
+      "code": "curl",
+      "definition": "curl License.",
+      "display": "curl License"
+    },
+    {
+      "code": "D-FSL-1.0",
+      "definition": "Deutsche Freie Software Lizenz.",
+      "display": "Deutsche Freie Software Lizenz"
+    },
+    {
+      "code": "diffmark",
+      "definition": "diffmark license.",
+      "display": "diffmark license"
+    },
+    {
+      "code": "DOC",
+      "definition": "DOC License.",
+      "display": "DOC License"
+    },
+    {
+      "code": "Dotseqn",
+      "definition": "Dotseqn License.",
+      "display": "Dotseqn License"
+    },
+    {
+      "code": "DSDP",
+      "definition": "DSDP License.",
+      "display": "DSDP License"
+    },
+    {
+      "code": "dvipdfm",
+      "definition": "dvipdfm License.",
+      "display": "dvipdfm License"
+    },
+    {
+      "code": "ECL-1.0",
+      "definition": "Educational Community License v1.0.",
+      "display": "Educational Community License v1.0"
+    },
+    {
+      "code": "ECL-2.0",
+      "definition": "Educational Community License v2.0.",
+      "display": "Educational Community License v2.0"
+    },
+    {
+      "code": "EFL-1.0",
+      "definition": "Eiffel Forum License v1.0.",
+      "display": "Eiffel Forum License v1.0"
+    },
+    {
+      "code": "EFL-2.0",
+      "definition": "Eiffel Forum License v2.0.",
+      "display": "Eiffel Forum License v2.0"
+    },
+    {
+      "code": "eGenix",
+      "definition": "eGenix.com Public License 1.1.0.",
+      "display": "eGenix.com Public License 1.1.0"
+    },
+    {
+      "code": "Entessa",
+      "definition": "Entessa Public License v1.0.",
+      "display": "Entessa Public License v1.0"
+    },
+    {
+      "code": "EPL-1.0",
+      "definition": "Eclipse Public License 1.0.",
+      "display": "Eclipse Public License 1.0"
+    },
+    {
+      "code": "EPL-2.0",
+      "definition": "Eclipse Public License 2.0.",
+      "display": "Eclipse Public License 2.0"
+    },
+    {
+      "code": "ErlPL-1.1",
+      "definition": "Erlang Public License v1.1.",
+      "display": "Erlang Public License v1.1"
+    },
+    {
+      "code": "EUDatagrid",
+      "definition": "EU DataGrid Software License.",
+      "display": "EU DataGrid Software License"
+    },
+    {
+      "code": "EUPL-1.0",
+      "definition": "European Union Public License 1.0.",
+      "display": "European Union Public License 1.0"
+    },
+    {
+      "code": "EUPL-1.1",
+      "definition": "European Union Public License 1.1.",
+      "display": "European Union Public License 1.1"
+    },
+    {
+      "code": "EUPL-1.2",
+      "definition": "European Union Public License 1.2.",
+      "display": "European Union Public License 1.2"
+    },
+    {
+      "code": "Eurosym",
+      "definition": "Eurosym License.",
+      "display": "Eurosym License"
+    },
+    {
+      "code": "Fair",
+      "definition": "Fair License.",
+      "display": "Fair License"
+    },
+    {
+      "code": "Frameworx-1.0",
+      "definition": "Frameworx Open License 1.0.",
+      "display": "Frameworx Open License 1.0"
+    },
+    {
+      "code": "FreeImage",
+      "definition": "FreeImage Public License v1.0.",
+      "display": "FreeImage Public License v1.0"
+    },
+    {
+      "code": "FSFAP",
+      "definition": "FSF All Permissive License.",
+      "display": "FSF All Permissive License"
+    },
+    {
+      "code": "FSFUL",
+      "definition": "FSF Unlimited License.",
+      "display": "FSF Unlimited License"
+    },
+    {
+      "code": "FSFULLR",
+      "definition": "FSF Unlimited License (with License Retention).",
+      "display": "FSF Unlimited License (with License Retention)"
+    },
+    {
+      "code": "FTL",
+      "definition": "Freetype Project License.",
+      "display": "Freetype Project License"
+    },
+    {
+      "code": "GFDL-1.1-only",
+      "definition": "GNU Free Documentation License v1.1 only.",
+      "display": "GNU Free Documentation License v1.1 only"
+    },
+    {
+      "code": "GFDL-1.1-or-later",
+      "definition": "GNU Free Documentation License v1.1 or later.",
+      "display": "GNU Free Documentation License v1.1 or later"
+    },
+    {
+      "code": "GFDL-1.2-only",
+      "definition": "GNU Free Documentation License v1.2 only.",
+      "display": "GNU Free Documentation License v1.2 only"
+    },
+    {
+      "code": "GFDL-1.2-or-later",
+      "definition": "GNU Free Documentation License v1.2 or later.",
+      "display": "GNU Free Documentation License v1.2 or later"
+    },
+    {
+      "code": "GFDL-1.3-only",
+      "definition": "GNU Free Documentation License v1.3 only.",
+      "display": "GNU Free Documentation License v1.3 only"
+    },
+    {
+      "code": "GFDL-1.3-or-later",
+      "definition": "GNU Free Documentation License v1.3 or later.",
+      "display": "GNU Free Documentation License v1.3 or later"
+    },
+    {
+      "code": "Giftware",
+      "definition": "Giftware License.",
+      "display": "Giftware License"
+    },
+    {
+      "code": "GL2PS",
+      "definition": "GL2PS License.",
+      "display": "GL2PS License"
+    },
+    {
+      "code": "Glide",
+      "definition": "3dfx Glide License.",
+      "display": "3dfx Glide License"
+    },
+    {
+      "code": "Glulxe",
+      "definition": "Glulxe License.",
+      "display": "Glulxe License"
+    },
+    {
+      "code": "gnuplot",
+      "definition": "gnuplot License.",
+      "display": "gnuplot License"
+    },
+    {
+      "code": "GPL-1.0-only",
+      "definition": "GNU General Public License v1.0 only.",
+      "display": "GNU General Public License v1.0 only"
+    },
+    {
+      "code": "GPL-1.0-or-later",
+      "definition": "GNU General Public License v1.0 or later.",
+      "display": "GNU General Public License v1.0 or later"
+    },
+    {
+      "code": "GPL-2.0-only",
+      "definition": "GNU General Public License v2.0 only.",
+      "display": "GNU General Public License v2.0 only"
+    },
+    {
+      "code": "GPL-2.0-or-later",
+      "definition": "GNU General Public License v2.0 or later.",
+      "display": "GNU General Public License v2.0 or later"
+    },
+    {
+      "code": "GPL-3.0-only",
+      "definition": "GNU General Public License v3.0 only.",
+      "display": "GNU General Public License v3.0 only"
+    },
+    {
+      "code": "GPL-3.0-or-later",
+      "definition": "GNU General Public License v3.0 or later.",
+      "display": "GNU General Public License v3.0 or later"
+    },
+    {
+      "code": "gSOAP-1.3b",
+      "definition": "gSOAP Public License v1.3b.",
+      "display": "gSOAP Public License v1.3b"
+    },
+    {
+      "code": "HaskellReport",
+      "definition": "Haskell Language Report License.",
+      "display": "Haskell Language Report License"
+    },
+    {
+      "code": "HPND",
+      "definition": "Historical Permission Notice and Disclaimer.",
+      "display": "Historical Permission Notice and Disclaimer"
+    },
+    {
+      "code": "IBM-pibs",
+      "definition": "IBM PowerPC Initialization and Boot Software.",
+      "display": "IBM PowerPC Initialization and Boot Software"
+    },
+    {
+      "code": "ICU",
+      "definition": "ICU License.",
+      "display": "ICU License"
+    },
+    {
+      "code": "IJG",
+      "definition": "Independent JPEG Group License.",
+      "display": "Independent JPEG Group License"
+    },
+    {
+      "code": "ImageMagick",
+      "definition": "ImageMagick License.",
+      "display": "ImageMagick License"
+    },
+    {
+      "code": "iMatix",
+      "definition": "iMatix Standard Function Library Agreement.",
+      "display": "iMatix Standard Function Library Agreement"
+    },
+    {
+      "code": "Imlib2",
+      "definition": "Imlib2 License.",
+      "display": "Imlib2 License"
+    },
+    {
+      "code": "Info-ZIP",
+      "definition": "Info-ZIP License.",
+      "display": "Info-ZIP License"
+    },
+    {
+      "code": "Intel-ACPI",
+      "definition": "Intel ACPI Software License Agreement.",
+      "display": "Intel ACPI Software License Agreement"
+    },
+    {
+      "code": "Intel",
+      "definition": "Intel Open Source License.",
+      "display": "Intel Open Source License"
+    },
+    {
+      "code": "Interbase-1.0",
+      "definition": "Interbase Public License v1.0.",
+      "display": "Interbase Public License v1.0"
+    },
+    {
+      "code": "IPA",
+      "definition": "IPA Font License.",
+      "display": "IPA Font License"
+    },
+    {
+      "code": "IPL-1.0",
+      "definition": "IBM Public License v1.0.",
+      "display": "IBM Public License v1.0"
+    },
+    {
+      "code": "ISC",
+      "definition": "ISC License.",
+      "display": "ISC License"
+    },
+    {
+      "code": "JasPer-2.0",
+      "definition": "JasPer License.",
+      "display": "JasPer License"
+    },
+    {
+      "code": "JSON",
+      "definition": "JSON License.",
+      "display": "JSON License"
+    },
+    {
+      "code": "LAL-1.2",
+      "definition": "Licence Art Libre 1.2.",
+      "display": "Licence Art Libre 1.2"
+    },
+    {
+      "code": "LAL-1.3",
+      "definition": "Licence Art Libre 1.3.",
+      "display": "Licence Art Libre 1.3"
+    },
+    {
+      "code": "Latex2e",
+      "definition": "Latex2e License.",
+      "display": "Latex2e License"
+    },
+    {
+      "code": "Leptonica",
+      "definition": "Leptonica License.",
+      "display": "Leptonica License"
+    },
+    {
+      "code": "LGPL-2.0-only",
+      "definition": "GNU Library General Public License v2 only.",
+      "display": "GNU Library General Public License v2 only"
+    },
+    {
+      "code": "LGPL-2.0-or-later",
+      "definition": "GNU Library General Public License v2 or later.",
+      "display": "GNU Library General Public License v2 or later"
+    },
+    {
+      "code": "LGPL-2.1-only",
+      "definition": "GNU Lesser General Public License v2.1 only.",
+      "display": "GNU Lesser General Public License v2.1 only"
+    },
+    {
+      "code": "LGPL-2.1-or-later",
+      "definition": "GNU Lesser General Public License v2.1 or later.",
+      "display": "GNU Lesser General Public License v2.1 or later"
+    },
+    {
+      "code": "LGPL-3.0-only",
+      "definition": "GNU Lesser General Public License v3.0 only.",
+      "display": "GNU Lesser General Public License v3.0 only"
+    },
+    {
+      "code": "LGPL-3.0-or-later",
+      "definition": "GNU Lesser General Public License v3.0 or later.",
+      "display": "GNU Lesser General Public License v3.0 or later"
+    },
+    {
+      "code": "LGPLLR",
+      "definition": "Lesser General Public License For Linguistic Resources.",
+      "display": "Lesser General Public License For Linguistic Resources"
+    },
+    {
+      "code": "Libpng",
+      "definition": "libpng License.",
+      "display": "libpng License"
+    },
+    {
+      "code": "libtiff",
+      "definition": "libtiff License.",
+      "display": "libtiff License"
+    },
+    {
+      "code": "LiLiQ-P-1.1",
+      "definition": "Licence Libre du Qu\u00e9bec \u2013 Permissive version 1.1.",
+      "display": "Licence Libre du Qu\u00e9bec \u2013 Permissive version 1.1"
+    },
+    {
+      "code": "LiLiQ-R-1.1",
+      "definition": "Licence Libre du Qu\u00e9bec \u2013 R\u00e9ciprocit\u00e9 version 1.1.",
+      "display": "Licence Libre du Qu\u00e9bec \u2013 R\u00e9ciprocit\u00e9 version 1.1"
+    },
+    {
+      "code": "LiLiQ-Rplus-1.1",
+      "definition": "Licence Libre du Qu\u00e9bec \u2013 R\u00e9ciprocit\u00e9 forte version 1.1.",
+      "display": "Licence Libre du Qu\u00e9bec \u2013 R\u00e9ciprocit\u00e9 forte version 1.1"
+    },
+    {
+      "code": "Linux-OpenIB",
+      "definition": "Linux Kernel Variant of OpenIB.org license.",
+      "display": "Linux Kernel Variant of OpenIB.org license"
+    },
+    {
+      "code": "LPL-1.0",
+      "definition": "Lucent Public License Version 1.0.",
+      "display": "Lucent Public License Version 1.0"
+    },
+    {
+      "code": "LPL-1.02",
+      "definition": "Lucent Public License v1.02.",
+      "display": "Lucent Public License v1.02"
+    },
+    {
+      "code": "LPPL-1.0",
+      "definition": "LaTeX Project Public License v1.0.",
+      "display": "LaTeX Project Public License v1.0"
+    },
+    {
+      "code": "LPPL-1.1",
+      "definition": "LaTeX Project Public License v1.1.",
+      "display": "LaTeX Project Public License v1.1"
+    },
+    {
+      "code": "LPPL-1.2",
+      "definition": "LaTeX Project Public License v1.2.",
+      "display": "LaTeX Project Public License v1.2"
+    },
+    {
+      "code": "LPPL-1.3a",
+      "definition": "LaTeX Project Public License v1.3a.",
+      "display": "LaTeX Project Public License v1.3a"
+    },
+    {
+      "code": "LPPL-1.3c",
+      "definition": "LaTeX Project Public License v1.3c.",
+      "display": "LaTeX Project Public License v1.3c"
+    },
+    {
+      "code": "MakeIndex",
+      "definition": "MakeIndex License.",
+      "display": "MakeIndex License"
+    },
+    {
+      "code": "MirOS",
+      "definition": "MirOS License.",
+      "display": "MirOS License"
+    },
+    {
+      "code": "MIT-0",
+      "definition": "MIT No Attribution.",
+      "display": "MIT No Attribution"
+    },
+    {
+      "code": "MIT-advertising",
+      "definition": "Enlightenment License (e16).",
+      "display": "Enlightenment License (e16)"
+    },
+    {
+      "code": "MIT-CMU",
+      "definition": "CMU License.",
+      "display": "CMU License"
+    },
+    {
+      "code": "MIT-enna",
+      "definition": "enna License.",
+      "display": "enna License"
+    },
+    {
+      "code": "MIT-feh",
+      "definition": "feh License.",
+      "display": "feh License"
+    },
+    {
+      "code": "MIT",
+      "definition": "MIT License.",
+      "display": "MIT License"
+    },
+    {
+      "code": "MITNFA",
+      "definition": "MIT +no-false-attribs license.",
+      "display": "MIT +no-false-attribs license"
+    },
+    {
+      "code": "Motosoto",
+      "definition": "Motosoto License.",
+      "display": "Motosoto License"
+    },
+    {
+      "code": "mpich2",
+      "definition": "mpich2 License.",
+      "display": "mpich2 License"
+    },
+    {
+      "code": "MPL-1.0",
+      "definition": "Mozilla Public License 1.0.",
+      "display": "Mozilla Public License 1.0"
+    },
+    {
+      "code": "MPL-1.1",
+      "definition": "Mozilla Public License 1.1.",
+      "display": "Mozilla Public License 1.1"
+    },
+    {
+      "code": "MPL-2.0-no-copyleft-exception",
+      "definition": "Mozilla Public License 2.0 (no copyleft exception).",
+      "display": "Mozilla Public License 2.0 (no copyleft exception)"
+    },
+    {
+      "code": "MPL-2.0",
+      "definition": "Mozilla Public License 2.0.",
+      "display": "Mozilla Public License 2.0"
+    },
+    {
+      "code": "MS-PL",
+      "definition": "Microsoft Public License.",
+      "display": "Microsoft Public License"
+    },
+    {
+      "code": "MS-RL",
+      "definition": "Microsoft Reciprocal License.",
+      "display": "Microsoft Reciprocal License"
+    },
+    {
+      "code": "MTLL",
+      "definition": "Matrix Template Library License.",
+      "display": "Matrix Template Library License"
+    },
+    {
+      "code": "Multics",
+      "definition": "Multics License.",
+      "display": "Multics License"
+    },
+    {
+      "code": "Mup",
+      "definition": "Mup License.",
+      "display": "Mup License"
+    },
+    {
+      "code": "NASA-1.3",
+      "definition": "NASA Open Source Agreement 1.3.",
+      "display": "NASA Open Source Agreement 1.3"
+    },
+    {
+      "code": "Naumen",
+      "definition": "Naumen Public License.",
+      "display": "Naumen Public License"
+    },
+    {
+      "code": "NBPL-1.0",
+      "definition": "Net Boolean Public License v1.",
+      "display": "Net Boolean Public License v1"
+    },
+    {
+      "code": "NCSA",
+      "definition": "University of Illinois/NCSA Open Source License.",
+      "display": "University of Illinois/NCSA Open Source License"
+    },
+    {
+      "code": "Net-SNMP",
+      "definition": "Net-SNMP License.",
+      "display": "Net-SNMP License"
+    },
+    {
+      "code": "NetCDF",
+      "definition": "NetCDF license.",
+      "display": "NetCDF license"
+    },
+    {
+      "code": "Newsletr",
+      "definition": "Newsletr License.",
+      "display": "Newsletr License"
+    },
+    {
+      "code": "NGPL",
+      "definition": "Nethack General Public License.",
+      "display": "Nethack General Public License"
+    },
+    {
+      "code": "NLOD-1.0",
+      "definition": "Norwegian Licence for Open Government Data.",
+      "display": "Norwegian Licence for Open Government Data"
+    },
+    {
+      "code": "NLPL",
+      "definition": "No Limit Public License.",
+      "display": "No Limit Public License"
+    },
+    {
+      "code": "Nokia",
+      "definition": "Nokia Open Source License.",
+      "display": "Nokia Open Source License"
+    },
+    {
+      "code": "NOSL",
+      "definition": "Netizen Open Source License.",
+      "display": "Netizen Open Source License"
+    },
+    {
+      "code": "Noweb",
+      "definition": "Noweb License.",
+      "display": "Noweb License"
+    },
+    {
+      "code": "NPL-1.0",
+      "definition": "Netscape Public License v1.0.",
+      "display": "Netscape Public License v1.0"
+    },
+    {
+      "code": "NPL-1.1",
+      "definition": "Netscape Public License v1.1.",
+      "display": "Netscape Public License v1.1"
+    },
+    {
+      "code": "NPOSL-3.0",
+      "definition": "Non-Profit Open Software License 3.0.",
+      "display": "Non-Profit Open Software License 3.0"
+    },
+    {
+      "code": "NRL",
+      "definition": "NRL License.",
+      "display": "NRL License"
+    },
+    {
+      "code": "NTP",
+      "definition": "NTP License.",
+      "display": "NTP License"
+    },
+    {
+      "code": "OCCT-PL",
+      "definition": "Open CASCADE Technology Public License.",
+      "display": "Open CASCADE Technology Public License"
+    },
+    {
+      "code": "OCLC-2.0",
+      "definition": "OCLC Research Public License 2.0.",
+      "display": "OCLC Research Public License 2.0"
+    },
+    {
+      "code": "ODbL-1.0",
+      "definition": "ODC Open Database License v1.0.",
+      "display": "ODC Open Database License v1.0"
+    },
+    {
+      "code": "OFL-1.0",
+      "definition": "SIL Open Font License 1.0.",
+      "display": "SIL Open Font License 1.0"
+    },
+    {
+      "code": "OFL-1.1",
+      "definition": "SIL Open Font License 1.1.",
+      "display": "SIL Open Font License 1.1"
+    },
+    {
+      "code": "OGTSL",
+      "definition": "Open Group Test Suite License.",
+      "display": "Open Group Test Suite License"
+    },
+    {
+      "code": "OLDAP-1.1",
+      "definition": "Open LDAP Public License v1.1.",
+      "display": "Open LDAP Public License v1.1"
+    },
+    {
+      "code": "OLDAP-1.2",
+      "definition": "Open LDAP Public License v1.2.",
+      "display": "Open LDAP Public License v1.2"
+    },
+    {
+      "code": "OLDAP-1.3",
+      "definition": "Open LDAP Public License v1.3.",
+      "display": "Open LDAP Public License v1.3"
+    },
+    {
+      "code": "OLDAP-1.4",
+      "definition": "Open LDAP Public License v1.4.",
+      "display": "Open LDAP Public License v1.4"
+    },
+    {
+      "code": "OLDAP-2.0.1",
+      "definition": "Open LDAP Public License v2.0.1.",
+      "display": "Open LDAP Public License v2.0.1"
+    },
+    {
+      "code": "OLDAP-2.0",
+      "definition": "Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B).",
+      "display": "Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)"
+    },
+    {
+      "code": "OLDAP-2.1",
+      "definition": "Open LDAP Public License v2.1.",
+      "display": "Open LDAP Public License v2.1"
+    },
+    {
+      "code": "OLDAP-2.2.1",
+      "definition": "Open LDAP Public License v2.2.1.",
+      "display": "Open LDAP Public License v2.2.1"
+    },
+    {
+      "code": "OLDAP-2.2.2",
+      "definition": "Open LDAP Public License 2.2.2.",
+      "display": "Open LDAP Public License 2.2.2"
+    },
+    {
+      "code": "OLDAP-2.2",
+      "definition": "Open LDAP Public License v2.2.",
+      "display": "Open LDAP Public License v2.2"
+    },
+    {
+      "code": "OLDAP-2.3",
+      "definition": "Open LDAP Public License v2.3.",
+      "display": "Open LDAP Public License v2.3"
+    },
+    {
+      "code": "OLDAP-2.4",
+      "definition": "Open LDAP Public License v2.4.",
+      "display": "Open LDAP Public License v2.4"
+    },
+    {
+      "code": "OLDAP-2.5",
+      "definition": "Open LDAP Public License v2.5.",
+      "display": "Open LDAP Public License v2.5"
+    },
+    {
+      "code": "OLDAP-2.6",
+      "definition": "Open LDAP Public License v2.6.",
+      "display": "Open LDAP Public License v2.6"
+    },
+    {
+      "code": "OLDAP-2.7",
+      "definition": "Open LDAP Public License v2.7.",
+      "display": "Open LDAP Public License v2.7"
+    },
+    {
+      "code": "OLDAP-2.8",
+      "definition": "Open LDAP Public License v2.8.",
+      "display": "Open LDAP Public License v2.8"
+    },
+    {
+      "code": "OML",
+      "definition": "Open Market License.",
+      "display": "Open Market License"
+    },
+    {
+      "code": "OpenSSL",
+      "definition": "OpenSSL License.",
+      "display": "OpenSSL License"
+    },
+    {
+      "code": "OPL-1.0",
+      "definition": "Open Public License v1.0.",
+      "display": "Open Public License v1.0"
+    },
+    {
+      "code": "OSET-PL-2.1",
+      "definition": "OSET Public License version 2.1.",
+      "display": "OSET Public License version 2.1"
+    },
+    {
+      "code": "OSL-1.0",
+      "definition": "Open Software License 1.0.",
+      "display": "Open Software License 1.0"
+    },
+    {
+      "code": "OSL-1.1",
+      "definition": "Open Software License 1.1.",
+      "display": "Open Software License 1.1"
+    },
+    {
+      "code": "OSL-2.0",
+      "definition": "Open Software License 2.0.",
+      "display": "Open Software License 2.0"
+    },
+    {
+      "code": "OSL-2.1",
+      "definition": "Open Software License 2.1.",
+      "display": "Open Software License 2.1"
+    },
+    {
+      "code": "OSL-3.0",
+      "definition": "Open Software License 3.0.",
+      "display": "Open Software License 3.0"
+    },
+    {
+      "code": "PDDL-1.0",
+      "definition": "ODC Public Domain Dedication & License 1.0.",
+      "display": "ODC Public Domain Dedication & License 1.0"
+    },
+    {
+      "code": "PHP-3.0",
+      "definition": "PHP License v3.0.",
+      "display": "PHP License v3.0"
+    },
+    {
+      "code": "PHP-3.01",
+      "definition": "PHP License v3.01.",
+      "display": "PHP License v3.01"
+    },
+    {
+      "code": "Plexus",
+      "definition": "Plexus Classworlds License.",
+      "display": "Plexus Classworlds License"
+    },
+    {
+      "code": "PostgreSQL",
+      "definition": "PostgreSQL License.",
+      "display": "PostgreSQL License"
+    },
+    {
+      "code": "psfrag",
+      "definition": "psfrag License.",
+      "display": "psfrag License"
+    },
+    {
+      "code": "psutils",
+      "definition": "psutils License.",
+      "display": "psutils License"
+    },
+    {
+      "code": "Python-2.0",
+      "definition": "Python License 2.0.",
+      "display": "Python License 2.0"
+    },
+    {
+      "code": "Qhull",
+      "definition": "Qhull License.",
+      "display": "Qhull License"
+    },
+    {
+      "code": "QPL-1.0",
+      "definition": "Q Public License 1.0.",
+      "display": "Q Public License 1.0"
+    },
+    {
+      "code": "Rdisc",
+      "definition": "Rdisc License.",
+      "display": "Rdisc License"
+    },
+    {
+      "code": "RHeCos-1.1",
+      "definition": "Red Hat eCos Public License v1.1.",
+      "display": "Red Hat eCos Public License v1.1"
+    },
+    {
+      "code": "RPL-1.1",
+      "definition": "Reciprocal Public License 1.1.",
+      "display": "Reciprocal Public License 1.1"
+    },
+    {
+      "code": "RPL-1.5",
+      "definition": "Reciprocal Public License 1.5.",
+      "display": "Reciprocal Public License 1.5"
+    },
+    {
+      "code": "RPSL-1.0",
+      "definition": "RealNetworks Public Source License v1.0.",
+      "display": "RealNetworks Public Source License v1.0"
+    },
+    {
+      "code": "RSA-MD",
+      "definition": "RSA Message-Digest License.",
+      "display": "RSA Message-Digest License"
+    },
+    {
+      "code": "RSCPL",
+      "definition": "Ricoh Source Code Public License.",
+      "display": "Ricoh Source Code Public License"
+    },
+    {
+      "code": "Ruby",
+      "definition": "Ruby License.",
+      "display": "Ruby License"
+    },
+    {
+      "code": "SAX-PD",
+      "definition": "Sax Public Domain Notice.",
+      "display": "Sax Public Domain Notice"
+    },
+    {
+      "code": "Saxpath",
+      "definition": "Saxpath License.",
+      "display": "Saxpath License"
+    },
+    {
+      "code": "SCEA",
+      "definition": "SCEA Shared Source License.",
+      "display": "SCEA Shared Source License"
+    },
+    {
+      "code": "Sendmail",
+      "definition": "Sendmail License.",
+      "display": "Sendmail License"
+    },
+    {
+      "code": "SGI-B-1.0",
+      "definition": "SGI Free Software License B v1.0.",
+      "display": "SGI Free Software License B v1.0"
+    },
+    {
+      "code": "SGI-B-1.1",
+      "definition": "SGI Free Software License B v1.1.",
+      "display": "SGI Free Software License B v1.1"
+    },
+    {
+      "code": "SGI-B-2.0",
+      "definition": "SGI Free Software License B v2.0.",
+      "display": "SGI Free Software License B v2.0"
+    },
+    {
+      "code": "SimPL-2.0",
+      "definition": "Simple Public License 2.0.",
+      "display": "Simple Public License 2.0"
+    },
+    {
+      "code": "SISSL-1.2",
+      "definition": "Sun Industry Standards Source License v1.2.",
+      "display": "Sun Industry Standards Source License v1.2"
+    },
+    {
+      "code": "SISSL",
+      "definition": "Sun Industry Standards Source License v1.1.",
+      "display": "Sun Industry Standards Source License v1.1"
+    },
+    {
+      "code": "Sleepycat",
+      "definition": "Sleepycat License.",
+      "display": "Sleepycat License"
+    },
+    {
+      "code": "SMLNJ",
+      "definition": "Standard ML of New Jersey License.",
+      "display": "Standard ML of New Jersey License"
+    },
+    {
+      "code": "SMPPL",
+      "definition": "Secure Messaging Protocol Public License.",
+      "display": "Secure Messaging Protocol Public License"
+    },
+    {
+      "code": "SNIA",
+      "definition": "SNIA Public License 1.1.",
+      "display": "SNIA Public License 1.1"
+    },
+    {
+      "code": "Spencer-86",
+      "definition": "Spencer License 86.",
+      "display": "Spencer License 86"
+    },
+    {
+      "code": "Spencer-94",
+      "definition": "Spencer License 94.",
+      "display": "Spencer License 94"
+    },
+    {
+      "code": "Spencer-99",
+      "definition": "Spencer License 99.",
+      "display": "Spencer License 99"
+    },
+    {
+      "code": "SPL-1.0",
+      "definition": "Sun Public License v1.0.",
+      "display": "Sun Public License v1.0"
+    },
+    {
+      "code": "SugarCRM-1.1.3",
+      "definition": "SugarCRM Public License v1.1.3.",
+      "display": "SugarCRM Public License v1.1.3"
+    },
+    {
+      "code": "SWL",
+      "definition": "Scheme Widget Library (SWL) Software License Agreement.",
+      "display": "Scheme Widget Library (SWL) Software License Agreement"
+    },
+    {
+      "code": "TCL",
+      "definition": "TCL/TK License.",
+      "display": "TCL/TK License"
+    },
+    {
+      "code": "TCP-wrappers",
+      "definition": "TCP Wrappers License.",
+      "display": "TCP Wrappers License"
+    },
+    {
+      "code": "TMate",
+      "definition": "TMate Open Source License.",
+      "display": "TMate Open Source License"
+    },
+    {
+      "code": "TORQUE-1.1",
+      "definition": "TORQUE v2.5+ Software License v1.1.",
+      "display": "TORQUE v2.5+ Software License v1.1"
+    },
+    {
+      "code": "TOSL",
+      "definition": "Trusster Open Source License.",
+      "display": "Trusster Open Source License"
+    },
+    {
+      "code": "Unicode-DFS-2015",
+      "definition": "Unicode License Agreement - Data Files and Software (2015).",
+      "display": "Unicode License Agreement - Data Files and Software (2015)"
+    },
+    {
+      "code": "Unicode-DFS-2016",
+      "definition": "Unicode License Agreement - Data Files and Software (2016).",
+      "display": "Unicode License Agreement - Data Files and Software (2016)"
+    },
+    {
+      "code": "Unicode-TOU",
+      "definition": "Unicode Terms of Use.",
+      "display": "Unicode Terms of Use"
+    },
+    {
+      "code": "Unlicense",
+      "definition": "The Unlicense.",
+      "display": "The Unlicense"
+    },
+    {
+      "code": "UPL-1.0",
+      "definition": "Universal Permissive License v1.0.",
+      "display": "Universal Permissive License v1.0"
+    },
+    {
+      "code": "Vim",
+      "definition": "Vim License.",
+      "display": "Vim License"
+    },
+    {
+      "code": "VOSTROM",
+      "definition": "VOSTROM Public License for Open Source.",
+      "display": "VOSTROM Public License for Open Source"
+    },
+    {
+      "code": "VSL-1.0",
+      "definition": "Vovida Software License v1.0.",
+      "display": "Vovida Software License v1.0"
+    },
+    {
+      "code": "W3C-19980720",
+      "definition": "W3C Software Notice and License (1998-07-20).",
+      "display": "W3C Software Notice and License (1998-07-20)"
+    },
+    {
+      "code": "W3C-20150513",
+      "definition": "W3C Software Notice and Document License (2015-05-13).",
+      "display": "W3C Software Notice and Document License (2015-05-13)"
+    },
+    {
+      "code": "W3C",
+      "definition": "W3C Software Notice and License (2002-12-31).",
+      "display": "W3C Software Notice and License (2002-12-31)"
+    },
+    {
+      "code": "Watcom-1.0",
+      "definition": "Sybase Open Watcom Public License 1.0.",
+      "display": "Sybase Open Watcom Public License 1.0"
+    },
+    {
+      "code": "Wsuipa",
+      "definition": "Wsuipa License.",
+      "display": "Wsuipa License"
+    },
+    {
+      "code": "WTFPL",
+      "definition": "Do What The F*ck You Want To Public License.",
+      "display": "Do What The F*ck You Want To Public License"
+    },
+    {
+      "code": "X11",
+      "definition": "X11 License.",
+      "display": "X11 License"
+    },
+    {
+      "code": "Xerox",
+      "definition": "Xerox License.",
+      "display": "Xerox License"
+    },
+    {
+      "code": "XFree86-1.1",
+      "definition": "XFree86 License 1.1.",
+      "display": "XFree86 License 1.1"
+    },
+    {
+      "code": "xinetd",
+      "definition": "xinetd License.",
+      "display": "xinetd License"
+    },
+    {
+      "code": "Xnet",
+      "definition": "X.Net License.",
+      "display": "X.Net License"
+    },
+    {
+      "code": "xpp",
+      "definition": "XPP License.",
+      "display": "XPP License"
+    },
+    {
+      "code": "XSkat",
+      "definition": "XSkat License.",
+      "display": "XSkat License"
+    },
+    {
+      "code": "YPL-1.0",
+      "definition": "Yahoo! Public License v1.0.",
+      "display": "Yahoo! Public License v1.0"
+    },
+    {
+      "code": "YPL-1.1",
+      "definition": "Yahoo! Public License v1.1.",
+      "display": "Yahoo! Public License v1.1"
+    },
+    {
+      "code": "Zed",
+      "definition": "Zed License.",
+      "display": "Zed License"
+    },
+    {
+      "code": "Zend-2.0",
+      "definition": "Zend License v2.0.",
+      "display": "Zend License v2.0"
+    },
+    {
+      "code": "Zimbra-1.3",
+      "definition": "Zimbra Public License v1.3.",
+      "display": "Zimbra Public License v1.3"
+    },
+    {
+      "code": "Zimbra-1.4",
+      "definition": "Zimbra Public License v1.4.",
+      "display": "Zimbra Public License v1.4"
+    },
+    {
+      "code": "zlib-acknowledgement",
+      "definition": "zlib/libpng License with Acknowledgement.",
+      "display": "zlib/libpng License with Acknowledgement"
+    },
+    {
+      "code": "Zlib",
+      "definition": "zlib License.",
+      "display": "zlib License"
+    },
+    {
+      "code": "ZPL-1.1",
+      "definition": "Zope Public License 1.1.",
+      "display": "Zope Public License 1.1"
+    },
+    {
+      "code": "ZPL-2.0",
+      "definition": "Zope Public License 2.0.",
+      "display": "Zope Public License 2.0"
+    },
+    {
+      "code": "ZPL-2.1",
+      "definition": "Zope Public License 2.1.",
+      "display": "Zope Public License 2.1"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The license that applies to an Implementation Guide (using an SPDX license Identifiers, or 'not-open-source'). The binding is required but new SPDX license Identifiers are allowed to be used (https://spdx.org/licenses/).",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1027"
+    }
+  ],
+  "name": "SPDXLicense",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "SPDXLicense",
+  "url": "http://hl7.org/fhir/spdx-license",
+  "valueSet": "http://hl7.org/fhir/ValueSet/spdx-license",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

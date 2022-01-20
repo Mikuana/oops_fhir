@@ -1,0 +1,65 @@
+{
+  "id": "dose-rate-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "calculated",
+      "definition": "The dose specified is calculated by the prescriber or the system.",
+      "display": "Calculated"
+    },
+    {
+      "code": "ordered",
+      "definition": "The dose specified is as ordered by the prescriber.",
+      "display": "Ordered"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The kind of dose or rate specified.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1069"
+    }
+  ],
+  "name": "DoseAndRateType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "DoseAndRateType",
+  "url": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/dose-rate-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

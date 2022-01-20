@@ -1,0 +1,164 @@
+{
+  "id": "v3-EntityNameUseR2",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "Assumed",
+      "concept": [
+        {
+          "code": "A",
+          "definition": "Description:A name used in a Professional or Business context .  Examples: Continuing to use a maiden name in a professional context, or using a stage performing name (some of these names are also pseudonyms)",
+          "display": "business name"
+        },
+        {
+          "code": "ANON",
+          "definition": "Description:Anonymous assigned name (used to protect a persons identity for privacy reasons)",
+          "display": "Anonymous"
+        },
+        {
+          "code": "I",
+          "definition": "Description:e.g .  Chief Red Cloud",
+          "display": "Indigenous/Tribal"
+        },
+        {
+          "code": "P",
+          "definition": "Description:A non-official name by which the person is sometimes known.  (This may also be used to record informal names such as a nickname)",
+          "display": "Other/Pseudonym/Alias"
+        },
+        {
+          "code": "R",
+          "definition": "Description:A name assumed as part of a religious vocation .  e.g .  Sister Mary Francis, Brother John",
+          "display": "religious"
+        }
+      ],
+      "definition": "Description:A name that a person has assumed or has been assumed to them.",
+      "display": "Assumed",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "definition": "Description:Known as/conventional/the one you normally use",
+      "display": "customary"
+    },
+    {
+      "code": "M",
+      "definition": "Description:A name used prior to marriage.Note that marriage naming customs vary greatly around the world.  This name use is for use by applications that collect and store maiden names.  Though the concept of maiden name is often gender specific, the use of this term is not gender specific.  The use of this term does not imply any particular history for a person's name, nor should the maiden name be determined algorithmically",
+      "display": "maiden name"
+    },
+    {
+      "code": "NameRepresentationUse",
+      "concept": [
+        {
+          "code": "ABC",
+          "definition": "Description:Alphabetic transcription of name in latin alphabet (Japanese: romaji)",
+          "display": "alphabetic"
+        },
+        {
+          "code": "IDE",
+          "definition": "Description:Ideographic representation of name (e.g., Japanese kanji, Chinese characters)",
+          "display": "ideographic"
+        },
+        {
+          "code": "SYL",
+          "definition": "Description:Syllabic transcription of name (e.g., Japanese kana, Korean hangul)",
+          "display": "syllabic"
+        }
+      ],
+      "definition": "Description:Identifies the different representations of a name .  The representation may affect how the name is used .  (E.g .  use of Ideographic for formal communications.)",
+      "display": "NameRepresentationUse",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "OLD",
+      "concept": [
+        {
+          "code": "DN",
+          "definition": "Description:This name should no longer be used when interacting with the person (i.e .  in addition to no longer being used, the name should not be even mentioned when interacting with the person)Note: applications are not required to compare names labeled \"Do Not Use\" and other names in order to eliminate name parts that are common between the other name and a name labeled \"Do Not Use\".",
+          "display": "do not use"
+        }
+      ],
+      "definition": "Description:This name is no longer in use (note: Names may also carry valid time ranges .  This code is used to cover the situations where it is known that the name is no longer valid, but no particular time range for its use is known)",
+      "display": "no longer in use"
+    },
+    {
+      "code": "OR",
+      "definition": "Description:The formal name as registered in an official (government) registry, but which name might not be commonly used .  May correspond to the concept of legal name",
+      "display": "official registry name"
+    },
+    {
+      "code": "PHON",
+      "definition": "Description:The name as understood by the data enterer, i.e. a close approximation of a phonetic spelling of the name, not based on a phonetic algorithm.",
+      "display": "phonetic"
+    },
+    {
+      "code": "SRCH",
+      "definition": "Description:A name intended for use in searching or matching.  This is used when the name is incomplete and contains enough details for search matching, but not enough for other uses.",
+      "display": "search"
+    },
+    {
+      "code": "T",
+      "definition": "Description:A temporary name.  Note that a name valid time can provide more detailed information.  This may also be used for temporary names assigned at birth or in emergency situations.",
+      "display": "temporary"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": "  Description:\r\nA set of codes advising a system or user which name in a set of names to select for a given purpose.",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.1120"
+    }
+  ],
+  "name": "v3.EntityNameUseR2",
+  "property": [
+    {
+      "code": "notSelectable",
+      "description": "Indicates that the code is abstract - only intended to be used as a selector for other concepts",
+      "type": "boolean",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable"
+    }
+  ],
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System EntityNameUseR2",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-EntityNameUseR2",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "research-study-prim-purp-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "brr"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "treatment",
+      "definition": "One or more interventions are being evaluated for treating a disease, syndrome, or condition.",
+      "display": "Treatment"
+    },
+    {
+      "code": "prevention",
+      "definition": "One or more interventions are being assessed for preventing the development of a specific disease or health condition.",
+      "display": "Prevention"
+    },
+    {
+      "code": "diagnostic",
+      "definition": "One or more interventions are being evaluated for identifying a disease or health condition.",
+      "display": "Diagnostic"
+    },
+    {
+      "code": "supportive-care",
+      "definition": "One or more interventions are evaluated for maximizing comfort, minimizing side effects, or mitigating against a decline in the participant's health or function.",
+      "display": "Supportive Care"
+    },
+    {
+      "code": "screening",
+      "definition": "One or more interventions are assessed or examined for identifying a condition, or risk factors for a condition, in people who are not yet known to have the condition or risk factor.",
+      "display": "Screening"
+    },
+    {
+      "code": "health-services-research",
+      "definition": "One or more interventions for evaluating the delivery, processes, management, organization, or financing of healthcare.",
+      "display": "Health Services Research"
+    },
+    {
+      "code": "basic-science",
+      "definition": "One or more interventions for examining the basic mechanism of action (for example, physiology or biomechanics of an intervention).",
+      "display": "Basic Science"
+    },
+    {
+      "code": "device-feasibility",
+      "definition": "An intervention of a device product is being evaluated to determine the feasibility of the product or to test a prototype device and not health outcomes. Such studies are conducted to confirm the design and operating specifications of a device before beginning a full clinical trial.",
+      "display": "Device Feasibility"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes for the main intent of the study.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1250"
+    }
+  ],
+  "name": "ResearchStudyPrimaryPurposeType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ResearchStudyPrimaryPurposeType",
+  "url": "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "medicationrequest-course-of-therapy",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "continuous",
+      "definition": "A medication which is expected to be continued beyond the present order and which the patient should be assumed to be taking unless explicitly stopped.",
+      "display": "Continuous long term therapy"
+    },
+    {
+      "code": "acute",
+      "definition": "A medication which the patient is only expected to consume for the duration of the current order and which is not expected to be renewed.",
+      "display": "Short course (acute) therapy"
+    },
+    {
+      "code": "seasonal",
+      "definition": "A medication which is expected to be used on a part time basis at certain times of the year",
+      "display": "Seasonal"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "MedicationRequest Course of Therapy Codes",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1327"
+    }
+  ],
+  "name": "medicationRequest Course of Therapy Codes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Medication request  course of  therapy  codes",
+  "url": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+  "valueSet": "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

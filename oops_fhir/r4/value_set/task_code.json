@@ -1,0 +1,58 @@
+{
+  "id": "task-code",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/CodeSystem/task-code",
+        "version": "3.6.0"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes indicating the type of action that is expected to be performed",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.1396"
+    }
+  ],
+  "immutable": true,
+  "name": "TaskCode",
+  "publisher": "FHIR Project team",
+  "status": "active",
+  "title": "Task Codes",
+  "url": "http://hl7.org/fhir/ValueSet/task-code",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "common-tags",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "actionable",
+      "definition": "This request is intended to be acted upon, not merely stored",
+      "display": "Actionable"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "Common Tag Codes defined by FHIR project",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1067"
+    }
+  ],
+  "name": "CommonTags",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Common Tags",
+  "url": "http://terminology.hl7.org/CodeSystem/common-tags",
+  "valueSet": "http://hl7.org/fhir/ValueSet/common-tags",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

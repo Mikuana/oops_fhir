@@ -1,0 +1,89 @@
+{
+  "id": "search-param-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "number",
+      "definition": "Search parameter SHALL be a number (a whole number, or a decimal).",
+      "display": "Number"
+    },
+    {
+      "code": "date",
+      "definition": "Search parameter is on a date/time. The date format is the standard XML format, though other formats may be supported.",
+      "display": "Date/DateTime"
+    },
+    {
+      "code": "string",
+      "definition": "Search parameter is a simple string, like a name part. Search is case-insensitive and accent-insensitive. May match just the start of a string. String parameters may contain spaces.",
+      "display": "String"
+    },
+    {
+      "code": "token",
+      "definition": "Search parameter on a coded element or identifier. May be used to search through the text, display, code and code/codesystem (for codes) and label, system and key (for identifier). Its value is either a string or a pair of namespace and value, separated by a \"|\", depending on the modifier used.",
+      "display": "Token"
+    },
+    {
+      "code": "reference",
+      "definition": "A reference to another resource (Reference or canonical).",
+      "display": "Reference"
+    },
+    {
+      "code": "composite",
+      "definition": "A composite search parameter that combines a search on two values together.",
+      "display": "Composite"
+    },
+    {
+      "code": "quantity",
+      "definition": "A search parameter that searches on a quantity.",
+      "display": "Quantity"
+    },
+    {
+      "code": "uri",
+      "definition": "A search parameter that searches on a URI (RFC 3986).",
+      "display": "URI"
+    },
+    {
+      "code": "special",
+      "definition": "Special logic applies to this parameter per the description of the search parameter.",
+      "display": "Special"
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Data types allowed to be used for search parameters.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.12"
+    }
+  ],
+  "name": "SearchParamType",
+  "status": "active",
+  "title": "SearchParamType",
+  "url": "http://hl7.org/fhir/search-param-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/search-param-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

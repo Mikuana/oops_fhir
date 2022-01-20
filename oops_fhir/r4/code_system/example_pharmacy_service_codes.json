@@ -1,0 +1,70 @@
+{
+  "id": "service-pharmacy",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "smokecess",
+      "definition": "Smoking cessation",
+      "display": "Smoking cessation"
+    },
+    {
+      "code": "flushot",
+      "definition": "Flu Shot",
+      "display": "Flu Shot"
+    },
+    {
+      "code": "drugcost",
+      "definition": "The wholesale price of the medication.",
+      "display": "Drug Cost"
+    },
+    {
+      "code": "markup",
+      "definition": "The additional cost assessed on the drug.",
+      "display": "Markup"
+    },
+    {
+      "code": "dispensefee",
+      "definition": "The professional fee charged for dispensing the product or service.",
+      "display": "Dispense Fee"
+    },
+    {
+      "code": "compoundfee",
+      "definition": "The professional fee charged for compounding the medication.",
+      "display": "Compounding Fee"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an example set.",
+  "description": "This value set includes a smattering of Pharmacy Service codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.563"
+    }
+  ],
+  "name": "ExamplePharmacyServiceCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Example Pharmacy Service Codes",
+  "url": "http://hl7.org/fhir/ex-pharmaservice",
+  "valueSet": "http://hl7.org/fhir/ValueSet/service-pharmacy",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

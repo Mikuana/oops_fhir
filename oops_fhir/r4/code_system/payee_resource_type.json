@@ -1,0 +1,61 @@
+{
+  "id": "resource-type-link",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "organization",
+      "definition": "Organization resource.",
+      "display": "Organization"
+    },
+    {
+      "code": "patient",
+      "definition": "Patient resource.",
+      "display": "Patient"
+    },
+    {
+      "code": "practitioner",
+      "definition": "Practitioner resource.",
+      "display": "Practitioner"
+    },
+    {
+      "code": "relatedperson",
+      "definition": "RelatedPerson resource.",
+      "display": "RelatedPerson"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The type of payee Resource.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1180"
+    }
+  ],
+  "name": "PayeeResourceType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "PayeeResourceType",
+  "url": "http://terminology.hl7.org/CodeSystem/resource-type-link",
+  "valueSet": "http://hl7.org/fhir/ValueSet/resource-type-link",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

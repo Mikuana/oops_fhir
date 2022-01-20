@@ -1,0 +1,100 @@
+{
+  "id": "encounter-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "planned",
+      "definition": "The Encounter has not yet started.",
+      "display": "Planned"
+    },
+    {
+      "code": "arrived",
+      "definition": "The Patient is present for the encounter, however is not currently meeting with a practitioner.",
+      "display": "Arrived"
+    },
+    {
+      "code": "triaged",
+      "definition": "The patient has been assessed for the priority of their treatment based on the severity of their condition.",
+      "display": "Triaged"
+    },
+    {
+      "code": "in-progress",
+      "definition": "The Encounter has begun and the patient is present / the practitioner and the patient are meeting.",
+      "display": "In Progress"
+    },
+    {
+      "code": "onleave",
+      "definition": "The Encounter has begun, but the patient is temporarily on leave.",
+      "display": "On Leave"
+    },
+    {
+      "code": "finished",
+      "definition": "The Encounter has ended.",
+      "display": "Finished"
+    },
+    {
+      "code": "cancelled",
+      "definition": "The Encounter has ended before it has begun.",
+      "display": "Cancelled"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "This instance should not have been part of this patient's medical record.",
+      "display": "Entered in Error"
+    },
+    {
+      "code": "unknown",
+      "definition": "The encounter status is unknown. Note that \"unknown\" is a value of last resort and every attempt should be made to provide a meaningful value other than \"unknown\".",
+      "display": "Unknown"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Current state of the encounter.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.247"
+    }
+  ],
+  "name": "EncounterStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "EncounterStatus",
+  "url": "http://hl7.org/fhir/encounter-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/encounter-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

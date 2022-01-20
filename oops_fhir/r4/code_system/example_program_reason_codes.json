@@ -1,0 +1,74 @@
+{
+  "id": "ex-program-code",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "as",
+      "definition": "Child Asthma Program",
+      "display": "Child Asthma"
+    },
+    {
+      "code": "hd",
+      "definition": "Hemodialysis Program.",
+      "display": "Hemodialysis"
+    },
+    {
+      "code": "auscr",
+      "definition": "Autism Screening Program.",
+      "display": "Autism Screening"
+    },
+    {
+      "code": "none",
+      "definition": "No program code applies.",
+      "display": "None"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an example set.",
+  "description": "This value set includes sample Program Reason Span codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1161"
+    }
+  ],
+  "name": "ExampleProgramReasonCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Example Program Reason Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/ex-programcode",
+  "valueSet": "http://hl7.org/fhir/ValueSet/ex-program-code",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

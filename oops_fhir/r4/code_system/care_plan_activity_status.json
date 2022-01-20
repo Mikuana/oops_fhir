@@ -1,0 +1,102 @@
+{
+  "id": "care-plan-activity-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "not-started",
+      "definition": "Care plan activity is planned but no action has yet been taken.",
+      "display": "Not Started"
+    },
+    {
+      "code": "scheduled",
+      "definition": "Appointment or other booking has occurred but activity has not yet begun.",
+      "display": "Scheduled"
+    },
+    {
+      "code": "in-progress",
+      "definition": "Care plan activity has been started but is not yet complete.",
+      "display": "In Progress"
+    },
+    {
+      "code": "on-hold",
+      "definition": "Care plan activity was started but has temporarily ceased with an expectation of resumption at a future time.",
+      "display": "On Hold"
+    },
+    {
+      "code": "completed",
+      "definition": "Care plan activity has been completed (more or less) as planned.",
+      "display": "Completed"
+    },
+    {
+      "code": "cancelled",
+      "concept": [
+        {
+          "code": "stopped",
+          "definition": "The planned care plan activity has been ended prior to completion after the activity was started.",
+          "display": "Stopped"
+        }
+      ],
+      "definition": "The planned care plan activity has been withdrawn.",
+      "display": "Cancelled"
+    },
+    {
+      "code": "unknown",
+      "definition": "The current state of the care plan activity is not known.  Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which one.",
+      "display": "Unknown"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "Care plan activity was entered in error and voided.",
+      "display": "Entered in Error"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.147"
+    }
+  ],
+  "name": "CarePlanActivityStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "CarePlanActivityStatus",
+  "url": "http://hl7.org/fhir/care-plan-activity-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "coverage-class",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "group",
+      "definition": "An employee group",
+      "display": "Group"
+    },
+    {
+      "code": "subgroup",
+      "definition": "A sub-group of an employee group",
+      "display": "SubGroup"
+    },
+    {
+      "code": "plan",
+      "definition": "A specific suite of benefits.",
+      "display": "Plan"
+    },
+    {
+      "code": "subplan",
+      "definition": "A subset of a specific suite of benefits.",
+      "display": "SubPlan"
+    },
+    {
+      "code": "class",
+      "definition": "A class of benefits.",
+      "display": "Class"
+    },
+    {
+      "code": "subclass",
+      "definition": "A subset of a class of benefits.",
+      "display": "SubClass"
+    },
+    {
+      "code": "sequence",
+      "definition": "A sequence number associated with a short-term continuance of the coverage.",
+      "display": "Sequence"
+    },
+    {
+      "code": "rxbin",
+      "definition": "Pharmacy benefit manager's Business Identification Number.",
+      "display": "RX BIN"
+    },
+    {
+      "code": "rxpcn",
+      "definition": "A Pharmacy Benefit Manager specified Processor Control Number.",
+      "display": "RX PCN"
+    },
+    {
+      "code": "rxid",
+      "definition": "A Pharmacy Benefit Manager specified Member ID.",
+      "display": "RX Id"
+    },
+    {
+      "code": "rxgroup",
+      "definition": "A Pharmacy Benefit Manager specified Group number.",
+      "display": "RX Group"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "HL7 Inc.",
+  "description": "This value set includes Coverage Class codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1147"
+    }
+  ],
+  "name": "CoverageClassCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Coverage Class Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/coverage-class",
+  "valueSet": "http://hl7.org/fhir/ValueSet/coverage-class",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

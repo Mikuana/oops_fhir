@@ -1,0 +1,88 @@
+{
+  "id": "medication-admin-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "in-progress",
+      "definition": "The administration has started but has not yet completed.",
+      "display": "In Progress"
+    },
+    {
+      "code": "not-done",
+      "definition": "The administration was terminated prior to any impact on the subject (though preparatory actions may have been taken)",
+      "display": "Not Done"
+    },
+    {
+      "code": "on-hold",
+      "definition": "Actions implied by the administration have been temporarily halted, but are expected to continue later. May also be called 'suspended'.",
+      "display": "On Hold"
+    },
+    {
+      "code": "completed",
+      "definition": "All actions that are implied by the administration have occurred.",
+      "display": "Completed"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "The administration was entered in error and therefore nullified.",
+      "display": "Entered in Error"
+    },
+    {
+      "code": "stopped",
+      "definition": "Actions implied by the administration have been permanently halted, before all of them occurred.",
+      "display": "Stopped"
+    },
+    {
+      "code": "unknown",
+      "definition": "The authoring system does not know which of the status values currently applies for this request. Note: This concept is not to be used for 'other' - one of the listed statuses is presumed to apply, it's just not known which one.",
+      "display": "Unknown"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "MedicationAdministration Status Codes",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1311"
+    }
+  ],
+  "name": "MedicationAdministration Status Codes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Medication administration  status  codes",
+  "url": "http://terminology.hl7.org/CodeSystem/medication-admin-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/medication-admin-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

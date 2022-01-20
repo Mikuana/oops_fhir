@@ -1,0 +1,56 @@
+{
+  "id": "expansion-processing-rule",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "all-codes",
+      "definition": "The expansion (when in UI mode) includes all codes *and* any defined groups (in extensions).",
+      "display": "All Codes"
+    },
+    {
+      "code": "ungrouped",
+      "definition": "The expanion (when in UI mode) lists the groups, and then any codes that have not been included in a group.",
+      "display": "Groups + Ungrouped codes"
+    },
+    {
+      "code": "groups-only",
+      "definition": "The expansion (when in UI mode) only includes the defined groups.",
+      "display": "Groups Only"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Defines how concepts are processed into the expansion when it's for UI presentation.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1281"
+    }
+  ],
+  "name": "ExpansionProcessingRule",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ExpansionProcessingRule",
+  "url": "http://terminology.hl7.org/CodeSystem/expansion-processing-rule",
+  "valueSet": "http://hl7.org/fhir/ValueSet/expansion-processing-rule",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

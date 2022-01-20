@@ -1,0 +1,84 @@
+{
+  "id": "discriminator-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "value",
+      "definition": "The slices have different values in the nominated element.",
+      "display": "Value"
+    },
+    {
+      "code": "exists",
+      "definition": "The slices are differentiated by the presence or absence of the nominated element.",
+      "display": "Exists"
+    },
+    {
+      "code": "pattern",
+      "definition": "The slices have different values in the nominated element, as determined by testing them against the applicable ElementDefinition.pattern[x].",
+      "display": "Pattern"
+    },
+    {
+      "code": "type",
+      "definition": "The slices are differentiated by type of the nominated element.",
+      "display": "Type"
+    },
+    {
+      "code": "profile",
+      "definition": "The slices are differentiated by conformance of the nominated element to a specified profile. Note that if the path specifies .resolve() then the profile is the target profile on the reference. In this case, validation by the possible profiles is required to differentiate the slices.",
+      "display": "Profile"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "How an element value is interpreted when discrimination is evaluated.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.92"
+    }
+  ],
+  "name": "DiscriminatorType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "DiscriminatorType",
+  "url": "http://hl7.org/fhir/discriminator-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/discriminator-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

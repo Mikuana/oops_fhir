@@ -1,0 +1,56 @@
+{
+  "id": "copy-number-event",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "amp",
+      "definition": "amplification.",
+      "display": "amplification"
+    },
+    {
+      "code": "del",
+      "definition": "deletion.",
+      "display": "deletion"
+    },
+    {
+      "code": "lof",
+      "definition": "loss of function.",
+      "display": "loss of function"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Copy Number Event.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1087"
+    }
+  ],
+  "name": "CopyNumberEvent",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "CopyNumberEvent",
+  "url": "http://terminology.hl7.org/CodeSystem/copy-number-event",
+  "valueSet": "http://hl7.org/fhir/ValueSet/copy-number-event",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

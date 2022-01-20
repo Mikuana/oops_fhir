@@ -1,0 +1,97 @@
+{
+  "id": "adverse-event-seriousness",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "Non-serious",
+      "definition": "Non-serious.",
+      "display": "Non-serious"
+    },
+    {
+      "code": "Serious",
+      "concept": [
+        {
+          "code": "SeriousResultsInDeath",
+          "definition": "Results in death.",
+          "display": "Results in death"
+        },
+        {
+          "code": "SeriousIsLifeThreatening",
+          "definition": "Is Life-threatening.",
+          "display": "Is Life-threatening"
+        },
+        {
+          "code": "SeriousResultsInHospitalization",
+          "definition": "Requires inpatient hospitalization or causes prolongation of existing hospitalization.",
+          "display": "Requires or prolongs inpatient hospitalization"
+        },
+        {
+          "code": "SeriousResultsInDisability",
+          "definition": "Results in persistent or significant disability/incapacity.",
+          "display": "Results in persistent or significant disability/incapacity"
+        },
+        {
+          "code": "SeriousIsBirthDefect",
+          "definition": "Is a congenital anomaly/birth defect.",
+          "display": "Is a congenital anomaly/birth defect"
+        },
+        {
+          "code": "SeriousRequiresPreventImpairment",
+          "definition": "Requires intervention to prevent permanent impairment or damage (i.e., an important medical event that requires medical judgement).",
+          "display": "Requires intervention to prevent permanent impairment"
+        }
+      ],
+      "definition": "Serious.",
+      "display": "Serious"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Overall seriousness of this event for the patient.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1253"
+    }
+  ],
+  "name": "AdverseEventSeriousness",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "AdverseEventSeriousness",
+  "url": "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness",
+  "valueSet": "http://hl7.org/fhir/ValueSet/adverse-event-seriousness",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

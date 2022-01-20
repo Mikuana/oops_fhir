@@ -1,0 +1,66 @@
+{
+  "id": "codesystem-altcode-kind",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "alternate",
+      "definition": "The code is an alternative code that can be used in any of the circumstances that the primary code can be used.",
+      "display": "Alternate Code"
+    },
+    {
+      "code": "deprecated",
+      "definition": "The code should no longer be used, but was used in the past.",
+      "display": "Deprecated"
+    },
+    {
+      "code": "case-insensitive",
+      "definition": "The code is an alternative to be used when a case insensitive code is required (when the primary codes are case sensitive).",
+      "display": "Case Insensitive"
+    },
+    {
+      "code": "case-sensitive",
+      "definition": "The code is an alternative to be used when a case sensitive code is required (when the primary codes are case insensitive).",
+      "display": "Case Sensitive"
+    },
+    {
+      "code": "expression",
+      "definition": "The code is an alternative for the primary code that is built using the expression grammar defined by the code system.",
+      "display": "Expression"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Indicates the type of use for which the code is defined.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1284"
+    }
+  ],
+  "name": "AlternativeCodeKind",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "AlternativeCodeKind",
+  "url": "http://terminology.hl7.org/CodeSystem/codesystem-altcode-kind",
+  "valueSet": "http://hl7.org/fhir/ValueSet/codesystem-altcode-kind",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

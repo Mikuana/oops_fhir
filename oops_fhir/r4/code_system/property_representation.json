@@ -1,0 +1,84 @@
+{
+  "id": "property-representation",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "xmlAttr",
+      "definition": "In XML, this property is represented as an attribute not an element.",
+      "display": "XML Attribute"
+    },
+    {
+      "code": "xmlText",
+      "definition": "This element is represented using the XML text attribute (primitives only).",
+      "display": "XML Text"
+    },
+    {
+      "code": "typeAttr",
+      "definition": "The type of this element is indicated using xsi:type.",
+      "display": "Type Attribute"
+    },
+    {
+      "code": "cdaText",
+      "definition": "Use CDA narrative instead of XHTML.",
+      "display": "CDA Text Format"
+    },
+    {
+      "code": "xhtml",
+      "definition": "The property is represented using XHTML.",
+      "display": "XHTML"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "How a property is represented when serialized.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.88"
+    }
+  ],
+  "name": "PropertyRepresentation",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "PropertyRepresentation",
+  "url": "http://hl7.org/fhir/property-representation",
+  "valueSet": "http://hl7.org/fhir/ValueSet/property-representation",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

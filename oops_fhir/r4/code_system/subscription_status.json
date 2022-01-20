@@ -1,0 +1,75 @@
+{
+  "id": "subscription-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "requested",
+      "definition": "The client has requested the subscription, and the server has not yet set it up.",
+      "display": "Requested"
+    },
+    {
+      "code": "active",
+      "definition": "The subscription is active.",
+      "display": "Active"
+    },
+    {
+      "code": "error",
+      "definition": "The server has an error executing the notification.",
+      "display": "Error"
+    },
+    {
+      "code": "off",
+      "definition": "Too many errors have occurred or the subscription has expired.",
+      "display": "Off"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The status of a subscription.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.503"
+    }
+  ],
+  "name": "SubscriptionStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "SubscriptionStatus",
+  "url": "http://hl7.org/fhir/subscription-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/subscription-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

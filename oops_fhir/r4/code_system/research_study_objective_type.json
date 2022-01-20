@@ -1,0 +1,62 @@
+{
+  "id": "research-study-objective-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "brr"
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "primary",
+      "definition": "The main question to be answered, and the one that drives any statistical planning for the study\u2014e.g., calculation of the sample size to provide the appropriate power for statistical testing.",
+      "display": "Primary"
+    },
+    {
+      "code": "secondary",
+      "definition": "Question to be answered in the study that is of lesser importance than the primary objective.",
+      "display": "Secondary"
+    },
+    {
+      "code": "exploratory",
+      "definition": "Exploratory questions to be answered in the study.",
+      "display": "Exploratory"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes for the kind of study objective.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1248"
+    }
+  ],
+  "name": "ResearchStudyObjectiveType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ResearchStudyObjectiveType",
+  "url": "http://terminology.hl7.org/CodeSystem/research-study-objective-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/research-study-objective-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

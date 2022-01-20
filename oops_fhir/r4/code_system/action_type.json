@@ -1,0 +1,75 @@
+{
+  "id": "action-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "create",
+      "definition": "The action is to create a new resource.",
+      "display": "Create"
+    },
+    {
+      "code": "update",
+      "definition": "The action is to update an existing resource.",
+      "display": "Update"
+    },
+    {
+      "code": "remove",
+      "definition": "The action is to remove an existing resource.",
+      "display": "Remove"
+    },
+    {
+      "code": "fire-event",
+      "definition": "The action is to fire a specific event.",
+      "display": "Fire Event"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The type of action to be performed.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1246"
+    }
+  ],
+  "name": "ActionType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ActionType",
+  "url": "http://terminology.hl7.org/CodeSystem/action-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/action-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

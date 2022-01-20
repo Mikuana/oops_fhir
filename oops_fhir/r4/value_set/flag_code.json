@@ -1,0 +1,64 @@
+{
+  "id": "flag-code",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "filter": [
+          {
+            "op": "is-a",
+            "property": "concept",
+            "value": "404684003"
+          }
+        ],
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        }
+      ]
+    }
+  ],
+  "copyright": "This resource includes content from SNOMED Clinical Terms\u00ae (SNOMED CT\u00ae) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Example list of detail codes for flagged issues.  (Not complete or necessarily appropriate.)",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.124"
+    }
+  ],
+  "name": "FlagCode",
+  "publisher": "HL7 International - Patient Care WG",
+  "status": "draft",
+  "title": "Flag Code",
+  "url": "http://hl7.org/fhir/ValueSet/flag-code",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

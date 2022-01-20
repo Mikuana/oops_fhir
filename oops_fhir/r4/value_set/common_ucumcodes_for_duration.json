@@ -1,0 +1,95 @@
+{
+  "id": "duration-units",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "code": "ms",
+            "display": "milliseconds"
+          },
+          {
+            "code": "s",
+            "display": "seconds"
+          },
+          {
+            "code": "min",
+            "display": "minutes"
+          },
+          {
+            "code": "h",
+            "display": "hours"
+          },
+          {
+            "code": "d",
+            "display": "days"
+          },
+          {
+            "code": "wk",
+            "display": "weeks"
+          },
+          {
+            "code": "mo",
+            "display": "months"
+          },
+          {
+            "code": "a",
+            "display": "years"
+          }
+        ],
+        "system": "http://unitsofmeasure.org"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "copyright": "The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright \u00a9 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.61"
+    }
+  ],
+  "name": "CommonUCUMCodesForDuration",
+  "publisher": "FHIR Project team",
+  "status": "active",
+  "title": "Common UCUM Codes for Duration",
+  "url": "http://hl7.org/fhir/ValueSet/duration-units",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "abstract-types",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-special-status",
+      "valueString": "This Code System is normative - it is generated based on the information defined in this specification. The definition will remain fixed  across versions, but the actual contents will change from version to version"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "Type",
+      "definition": "A place holder that means any kind of data type",
+      "display": "Type"
+    },
+    {
+      "code": "Any",
+      "definition": "A place holder that means any kind of resource",
+      "display": "Any"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A list of the base types defined by this version of the FHIR specification - types that are defined, but for which only specializations actually are created.",
+  "experimental": false,
+  "name": "AbstractType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "AbstractType",
+  "url": "http://hl7.org/fhir/abstract-types",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

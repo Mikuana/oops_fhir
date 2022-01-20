@@ -1,0 +1,70 @@
+{
+  "id": "measure-report-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cqi"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "complete",
+      "definition": "The report is complete and ready for use.",
+      "display": "Complete"
+    },
+    {
+      "code": "pending",
+      "definition": "The report is currently being generated.",
+      "display": "Pending"
+    },
+    {
+      "code": "error",
+      "definition": "An error occurred attempting to generate the report.",
+      "display": "Error"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The status of the measure report.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.777"
+    }
+  ],
+  "name": "MeasureReportStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "MeasureReportStatus",
+  "url": "http://hl7.org/fhir/measure-report-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/measure-report-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

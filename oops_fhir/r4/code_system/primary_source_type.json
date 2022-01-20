@@ -1,0 +1,106 @@
+{
+  "id": "verificationresult-primary-source-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "lic-board",
+      "display": "License Board"
+    },
+    {
+      "code": "prim",
+      "display": "Primary Education"
+    },
+    {
+      "code": "cont-ed",
+      "display": "Continuing Education"
+    },
+    {
+      "code": "post-serv",
+      "display": "Postal Service"
+    },
+    {
+      "code": "rel-own",
+      "display": "Relationship owner"
+    },
+    {
+      "code": "reg-auth",
+      "display": "Registration Authority"
+    },
+    {
+      "code": "legal",
+      "display": "Legal source"
+    },
+    {
+      "code": "issuer",
+      "display": "Issuing source"
+    },
+    {
+      "code": "auth-source",
+      "display": "Authoritative source"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-06-05T14:06:02+00:00",
+  "description": "Type of the validation primary source",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.893"
+    }
+  ],
+  "name": "primary-source-type",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "Primary-source-type",
+  "url": "http://terminology.hl7.org/CodeSystem/primary-source-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/verificationresult-primary-source-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

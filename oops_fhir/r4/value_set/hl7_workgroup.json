@@ -1,0 +1,53 @@
+{
+  "id": "hl7-work-group",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/hl7-work-group"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "An HL7 administrative unit that owns artifacts in the FHIR specification.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.944"
+    }
+  ],
+  "immutable": true,
+  "name": "HL7Workgroup",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "HL7Workgroup",
+  "url": "http://hl7.org/fhir/ValueSet/hl7-work-group",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

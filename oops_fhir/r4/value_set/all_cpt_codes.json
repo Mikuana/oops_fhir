@@ -1,0 +1,55 @@
+{
+  "id": "cpt-all",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt"
+      }
+    ]
+  },
+  "copyright": "CPT Copyright \u00a9 2014 American Medical Association. All rights reserved.",
+  "date": "2015-03-12",
+  "description": "A value set that includes all CPT codes",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "name": "All CPT codes",
+  "publisher": "Health Level Seven International (Vocabulary)",
+  "status": "active",
+  "url": "http://hl7.org/fhir/ValueSet/cpt-all",
+  "useContext": [
+    {
+      "code": {
+        "code": "species",
+        "system": "http://example.org/fhir/CodeSystem/use-contexts"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "337915000",
+            "display": "Homo sapiens (organism)",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      }
+    }
+  ],
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

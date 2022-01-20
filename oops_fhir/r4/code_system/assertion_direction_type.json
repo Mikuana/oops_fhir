@@ -1,0 +1,65 @@
+{
+  "id": "assert-direction-codes",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "response",
+      "definition": "The assertion is evaluated on the response. This is the default value.",
+      "display": "response"
+    },
+    {
+      "code": "request",
+      "definition": "The assertion is evaluated on the request.",
+      "display": "request"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The type of direction to use for assertion.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.707"
+    }
+  ],
+  "name": "AssertionDirectionType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "AssertionDirectionType",
+  "url": "http://hl7.org/fhir/assert-direction-codes",
+  "valueSet": "http://hl7.org/fhir/ValueSet/assert-direction-codes",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

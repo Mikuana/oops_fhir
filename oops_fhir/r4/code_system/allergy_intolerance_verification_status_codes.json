@@ -1,0 +1,73 @@
+{
+  "id": "allergyintolerance-verification",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "unconfirmed",
+      "definition": "A low level of certainty about the propensity for a reaction to the identified substance.",
+      "display": "Unconfirmed"
+    },
+    {
+      "code": "confirmed",
+      "definition": "A high level of certainty about the propensity for a reaction to the identified substance, which may include clinical evidence by testing or rechallenge.",
+      "display": "Confirmed"
+    },
+    {
+      "code": "refuted",
+      "definition": "A propensity for a reaction to the identified substance has been disputed or disproven with a sufficient level of clinical certainty to justify invalidating the assertion. This might or might not include testing or rechallenge.",
+      "display": "Refuted"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "The statement was entered in error and is not valid.",
+      "display": "Entered in Error"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "Preferred value set for AllergyIntolerance Verification Status.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1371"
+    }
+  ],
+  "name": "AllergyIntoleranceVerificationStatusCodes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "AllergyIntolerance Verification Status Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+  "valueSet": "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

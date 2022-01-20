@@ -1,0 +1,89 @@
+{
+  "id": "restful-security-service",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "OAuth",
+      "definition": "OAuth (unspecified version see oauth.net).",
+      "display": "OAuth"
+    },
+    {
+      "code": "SMART-on-FHIR",
+      "definition": "OAuth2 using SMART-on-FHIR profile (see http://docs.smarthealthit.org/).",
+      "display": "SMART-on-FHIR"
+    },
+    {
+      "code": "NTLM",
+      "definition": "Microsoft NTLM Authentication.",
+      "display": "NTLM"
+    },
+    {
+      "code": "Basic",
+      "definition": "Basic authentication defined in HTTP specification.",
+      "display": "Basic"
+    },
+    {
+      "code": "Kerberos",
+      "definition": "see http://www.ietf.org/rfc/rfc4120.txt.",
+      "display": "Kerberos"
+    },
+    {
+      "code": "Certificates",
+      "definition": "SSL where client must have a certificate registered with the server.",
+      "display": "Certificates"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Types of security services used with FHIR.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1079"
+    }
+  ],
+  "name": "RestfulSecurityService",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "RestfulSecurityService",
+  "url": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+  "valueSet": "http://hl7.org/fhir/ValueSet/restful-security-service",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

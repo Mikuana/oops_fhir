@@ -1,0 +1,62 @@
+{
+  "id": "encounter-participant-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "translator",
+      "definition": "A translator who is facilitating communication with the patient during the encounter.",
+      "display": "Translator"
+    },
+    {
+      "code": "emergency",
+      "definition": "A person to be contacted in case of an emergency during the encounter.",
+      "display": "Emergency"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1089"
+    }
+  ],
+  "name": "ParticipantType",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Participant type",
+  "url": "http://terminology.hl7.org/CodeSystem/participant-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

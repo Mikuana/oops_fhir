@@ -1,0 +1,85 @@
+{
+  "id": "guidance-response-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "success",
+      "definition": "The request was processed successfully.",
+      "display": "Success"
+    },
+    {
+      "code": "data-requested",
+      "definition": "The request was processed successfully, but more data may result in a more complete evaluation.",
+      "display": "Data Requested"
+    },
+    {
+      "code": "data-required",
+      "definition": "The request was processed, but more data is required to complete the evaluation.",
+      "display": "Data Required"
+    },
+    {
+      "code": "in-progress",
+      "definition": "The request is currently being processed.",
+      "display": "In Progress"
+    },
+    {
+      "code": "failure",
+      "definition": "The request was not processed successfully.",
+      "display": "Failure"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "The response was entered in error.",
+      "display": "Entered In Error"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The status of a guidance response.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.818"
+    }
+  ],
+  "name": "GuidanceResponseStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "GuidanceResponseStatus",
+  "url": "http://hl7.org/fhir/guidance-response-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/guidance-response-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

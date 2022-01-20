@@ -1,0 +1,79 @@
+{
+  "id": "consent-action",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cbcc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "collect",
+      "definition": "Gather retrieved information for storage",
+      "display": "Collect"
+    },
+    {
+      "code": "access",
+      "definition": "Retrieval without permitting collection, use or disclosure. e.g., no screen-scraping for collection, use or disclosure (view-only access)",
+      "display": "Access"
+    },
+    {
+      "code": "use",
+      "definition": "Utilize the retrieved information",
+      "display": "Use"
+    },
+    {
+      "code": "disclose",
+      "definition": "Transfer retrieved information",
+      "display": "Disclose"
+    },
+    {
+      "code": "correct",
+      "definition": "Allow retrieval of a patient's information for the purpose of update or rectify",
+      "display": "Access and Correct"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an example set.",
+  "description": "This value set includes sample Consent Action codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1227"
+    }
+  ],
+  "name": "ConsentActionCodes",
+  "publisher": "CBCC",
+  "status": "draft",
+  "title": "Consent Action Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/consentaction",
+  "valueSet": "http://hl7.org/fhir/ValueSet/consent-action",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

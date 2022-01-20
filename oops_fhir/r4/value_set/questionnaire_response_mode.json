@@ -1,0 +1,59 @@
+{
+  "id": "questionnaireresponse-mode",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "code": "ELECTRONIC"
+          },
+          {
+            "code": "VERBAL"
+          },
+          {
+            "code": "WRITTEN"
+          }
+        ],
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes describing how the QuestionnaireResponse was populated",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.1290"
+    }
+  ],
+  "name": "QuestionnaireResponseMode",
+  "publisher": "HL7 International - FHIR Infrastructure",
+  "status": "draft",
+  "title": "Questionnaire Response Mode",
+  "url": "http://hl7.org/fhir/ValueSet/questionnaireresponse-mode",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "research-study-reason-stopped",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "brr"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "accrual-goal-met",
+      "definition": "The study prematurely ended because the accrual goal was met.",
+      "display": "Accrual Goal Met"
+    },
+    {
+      "code": "closed-due-to-toxicity",
+      "definition": "The study prematurely ended due to toxicity.",
+      "display": "Closed due to toxicity"
+    },
+    {
+      "code": "closed-due-to-lack-of-study-progress",
+      "definition": "The study prematurely ended due to lack of study progress.",
+      "display": "Closed due to lack of study progress"
+    },
+    {
+      "code": "temporarily-closed-per-study-design",
+      "definition": "The study prematurely ended temporarily per study design.",
+      "display": "Temporarily closed per study design"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes for why the study ended prematurely.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1249"
+    }
+  ],
+  "name": "ResearchStudyReasonStopped",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ResearchStudyReasonStopped",
+  "url": "http://terminology.hl7.org/CodeSystem/research-study-reason-stopped",
+  "valueSet": "http://hl7.org/fhir/ValueSet/research-study-reason-stopped",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

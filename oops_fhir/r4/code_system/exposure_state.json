@@ -1,0 +1,65 @@
+{
+  "id": "exposure-state",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "exposure",
+      "definition": "used when the results by exposure is describing the results for the primary exposure of interest.",
+      "display": "Exposure"
+    },
+    {
+      "code": "exposure-alternative",
+      "definition": "used when the results by exposure is describing the results for the alternative exposure state, control state or comparator state.",
+      "display": "Exposure Alternative"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Whether the results by exposure is describing the results for the primary exposure of interest (exposure) or the alternative state (exposureAlternative).",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1352"
+    }
+  ],
+  "name": "ExposureState",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ExposureState",
+  "url": "http://hl7.org/fhir/exposure-state",
+  "valueSet": "http://hl7.org/fhir/ValueSet/exposure-state",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

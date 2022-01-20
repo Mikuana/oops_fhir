@@ -1,0 +1,61 @@
+{
+  "id": "unknown-content-code",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "no",
+      "definition": "The application does not accept either unknown elements or extensions.",
+      "display": "Neither Elements or Extensions"
+    },
+    {
+      "code": "extensions",
+      "definition": "The application accepts unknown extensions, but not unknown elements.",
+      "display": "Unknown Extensions"
+    },
+    {
+      "code": "elements",
+      "definition": "The application accepts unknown elements, but not unknown extensions.",
+      "display": "Unknown Elements"
+    },
+    {
+      "code": "both",
+      "definition": "The application accepts unknown elements and extensions.",
+      "display": "Unknown Elements and Extensions"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A code that indicates whether an application accepts unknown elements or extensions when reading resources.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.197"
+    }
+  ],
+  "name": "UnknownContentCode",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "UnknownContentCode",
+  "url": "http://hl7.org/fhir/unknown-content-code",
+  "valueSet": "http://hl7.org/fhir/ValueSet/unknown-content-code",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "communication-not-done-reason",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "unknown",
+      "definition": "The communication was not done due to an unknown reason.",
+      "display": "Unknown"
+    },
+    {
+      "code": "system-error",
+      "definition": "The communication was not done due to a system error.",
+      "display": "System Error"
+    },
+    {
+      "code": "invalid-phone-number",
+      "definition": "The communication was not done due to an invalid phone number.",
+      "display": "Invalid Phone Number"
+    },
+    {
+      "code": "recipient-unavailable",
+      "definition": "The communication was not done due to the recipient being unavailable.",
+      "display": "Recipient Unavailable"
+    },
+    {
+      "code": "family-objection",
+      "definition": "The communication was not done due to a family objection.",
+      "display": "Family Objection"
+    },
+    {
+      "code": "patient-objection",
+      "definition": "The communication was not done due to a patient objection.",
+      "display": "Patient Objection"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes for the reason why a communication did not happen.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1077"
+    }
+  ],
+  "name": "CommunicationNotDoneReason",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "CommunicationNotDoneReason",
+  "url": "http://terminology.hl7.org/CodeSystem/communication-not-done-reason",
+  "valueSet": "http://hl7.org/fhir/ValueSet/communication-not-done-reason",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

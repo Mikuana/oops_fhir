@@ -1,0 +1,53 @@
+{
+  "id": "reaction-event-certainty",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/reaction-event-certainty"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Statement about the degree of clinical certainty that a specific substance was the cause of the manifestation in a reaction event.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.942"
+    }
+  ],
+  "immutable": true,
+  "name": "AllergyIntoleranceCertainty",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "AllergyIntoleranceCertainty",
+  "url": "http://hl7.org/fhir/ValueSet/reaction-event-certainty",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

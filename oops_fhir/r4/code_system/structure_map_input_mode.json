@@ -1,0 +1,65 @@
+{
+  "id": "map-input-mode",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "source",
+      "definition": "Names an input instance used a source for mapping.",
+      "display": "Source Instance"
+    },
+    {
+      "code": "target",
+      "definition": "Names an instance that is being populated.",
+      "display": "Target Instance"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Mode for this instance of data.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.678"
+    }
+  ],
+  "name": "StructureMapInputMode",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "StructureMapInputMode",
+  "url": "http://hl7.org/fhir/map-input-mode",
+  "valueSet": "http://hl7.org/fhir/ValueSet/map-input-mode",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

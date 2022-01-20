@@ -1,0 +1,70 @@
+{
+  "id": "action-grouping-behavior",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "visual-group",
+      "definition": "Any group marked with this behavior should be displayed as a visual group to the end user.",
+      "display": "Visual Group"
+    },
+    {
+      "code": "logical-group",
+      "definition": "A group with this behavior logically groups its sub-elements, and may be shown as a visual group to the end user, but it is not required to do so.",
+      "display": "Logical Group"
+    },
+    {
+      "code": "sentence-group",
+      "definition": "A group of related alternative actions is a sentence group if the target referenced by the action is the same in all the actions and each action simply constitutes a different variation on how to specify the details for the target. For example, two actions that could be in a SentenceGroup are \"aspirin, 500 mg, 2 times per day\" and \"aspirin, 300 mg, 3 times per day\". In both cases, aspirin is the target referenced by the action, and the two actions represent different options for how aspirin might be ordered for the patient. Note that a SentenceGroup would almost always have an associated selection behavior of \"AtMostOne\", unless it's a required action, in which case, it would be \"ExactlyOne\".",
+      "display": "Sentence Group"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Defines organization behavior of a group.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.800"
+    }
+  ],
+  "name": "ActionGroupingBehavior",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ActionGroupingBehavior",
+  "url": "http://hl7.org/fhir/action-grouping-behavior",
+  "valueSet": "http://hl7.org/fhir/ValueSet/action-grouping-behavior",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

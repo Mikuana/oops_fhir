@@ -1,0 +1,63 @@
+{
+  "id": "immunization-evaluation-dose-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pher"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "valid",
+      "definition": "The dose counts toward fulfilling a path to immunity for a patient, providing protection against the target disease.",
+      "display": "Valid"
+    },
+    {
+      "code": "notvalid",
+      "definition": "The dose does not count toward fulfilling a path to immunity for a patient.",
+      "display": "Not valid"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the validity of a dose relative to a particular recommended schedule. This value set is provided as a suggestive example.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1102"
+    }
+  ],
+  "name": "ImmunizationEvaluationDoseStatusCodes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Immunization Evaluation Dose Status codes",
+  "url": "http://terminology.hl7.org/CodeSystem/immunization-evaluation-dose-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/immunization-evaluation-dose-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

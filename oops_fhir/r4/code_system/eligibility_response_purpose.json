@@ -1,0 +1,75 @@
+{
+  "id": "eligibilityresponse-purpose",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "auth-requirements",
+      "definition": "The prior authorization requirements for the listed, or discovered if specified, converages for the categories of service and/or specifed biling codes are requested.",
+      "display": "Coverage auth-requirements"
+    },
+    {
+      "code": "benefits",
+      "definition": "The plan benefits and optionally benefits consumed  for the listed, or discovered if specified, converages are requested.",
+      "display": "Coverage benefits"
+    },
+    {
+      "code": "discovery",
+      "definition": "The insurer is requested to report on any coverages which they are aware of in addition to any specifed.",
+      "display": "Coverage Discovery"
+    },
+    {
+      "code": "validation",
+      "definition": "A check that the specified coverages are in-force is requested.",
+      "display": "Coverage Validation"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A code specifying the types of information being requested.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1185"
+    }
+  ],
+  "name": "EligibilityResponsePurpose",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "EligibilityResponsePurpose",
+  "url": "http://hl7.org/fhir/eligibilityresponse-purpose",
+  "valueSet": "http://hl7.org/fhir/ValueSet/eligibilityresponse-purpose",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

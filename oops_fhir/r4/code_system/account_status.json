@@ -1,0 +1,80 @@
+{
+  "id": "account-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "active",
+      "definition": "This account is active and may be used.",
+      "display": "Active"
+    },
+    {
+      "code": "inactive",
+      "definition": "This account is inactive and should not be used to track financial information.",
+      "display": "Inactive"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "This instance should not have been part of this patient's medical record.",
+      "display": "Entered in error"
+    },
+    {
+      "code": "on-hold",
+      "definition": "This account is on hold.",
+      "display": "On Hold"
+    },
+    {
+      "code": "unknown",
+      "definition": "The account status is unknown.",
+      "display": "Unknown"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Indicates whether the account is available to be used.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.727"
+    }
+  ],
+  "name": "AccountStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "AccountStatus",
+  "url": "http://hl7.org/fhir/account-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/account-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

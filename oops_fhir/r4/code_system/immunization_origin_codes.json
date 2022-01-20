@@ -1,0 +1,77 @@
+{
+  "id": "immunization-origin",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pher"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "provider",
+      "definition": "The data for the immunization event originated with another provider.",
+      "display": "Other Provider"
+    },
+    {
+      "code": "record",
+      "definition": "The data for the immunization event originated with a written record for the patient.",
+      "display": "Written Record"
+    },
+    {
+      "code": "recall",
+      "definition": "The data for the immunization event originated from the recollection of the patient or parent/guardian of the patient.",
+      "display": "Parent/Guardian/Patient Recall"
+    },
+    {
+      "code": "school",
+      "definition": "The data for the immunization event originated with a school record for the patient.",
+      "display": "School Record"
+    },
+    {
+      "code": "jurisdiction",
+      "definition": "The data for the immunization event originated with an immunization information system (IIS) or registry operating within the jurisdiction.",
+      "display": "Jurisdictional IIS"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine. This value set is provided as a suggestive example.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1101"
+    }
+  ],
+  "name": "ImmunizationOriginCodes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Immunization Origin Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/immunization-origin",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,146 @@
+{
+  "id": "observation-statistics",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "average",
+      "definition": "The [mean](https://en.wikipedia.org/wiki/Arithmetic_mean) of N measurements over the stated period.",
+      "display": "Average"
+    },
+    {
+      "code": "maximum",
+      "definition": "The [maximum](https://en.wikipedia.org/wiki/Maximal_element) value of N measurements over the stated period.",
+      "display": "Maximum"
+    },
+    {
+      "code": "minimum",
+      "definition": "The [minimum](https://en.wikipedia.org/wiki/Minimal_element) value of N measurements over the stated period.",
+      "display": "Minimum"
+    },
+    {
+      "code": "count",
+      "definition": "The [number] of valid measurements over the stated period that contributed to the other statistical outputs.",
+      "display": "Count"
+    },
+    {
+      "code": "total-count",
+      "definition": "The total [number] of valid measurements over the stated period, including observations that were ignored because they did not contain valid result values.",
+      "display": "Total Count"
+    },
+    {
+      "code": "median",
+      "definition": "The [median](https://en.wikipedia.org/wiki/Median) of N measurements over the stated period.",
+      "display": "Median"
+    },
+    {
+      "code": "std-dev",
+      "definition": "The [standard deviation](https://en.wikipedia.org/wiki/Standard_deviation) of N measurements over the stated period.",
+      "display": "Standard Deviation"
+    },
+    {
+      "code": "sum",
+      "definition": "The [sum](https://en.wikipedia.org/wiki/Summation) of N measurements over the stated period.",
+      "display": "Sum"
+    },
+    {
+      "code": "variance",
+      "definition": "The [variance](https://en.wikipedia.org/wiki/Variance) of N measurements over the stated period.",
+      "display": "Variance"
+    },
+    {
+      "code": "20-percent",
+      "definition": "The 20th [Percentile](https://en.wikipedia.org/wiki/Percentile) of N measurements over the stated period.",
+      "display": "20th Percentile"
+    },
+    {
+      "code": "80-percent",
+      "definition": "The 80th [Percentile](https://en.wikipedia.org/wiki/Percentile) of N measurements over the stated period.",
+      "display": "80th Percentile"
+    },
+    {
+      "code": "4-lower",
+      "definition": "The lower [Quartile](https://en.wikipedia.org/wiki/Quartile) Boundary of N measurements over the stated period.",
+      "display": "Lower Quartile"
+    },
+    {
+      "code": "4-upper",
+      "definition": "The upper [Quartile](https://en.wikipedia.org/wiki/Quartile) Boundary of N measurements over the stated period.",
+      "display": "Upper Quartile"
+    },
+    {
+      "code": "4-dev",
+      "definition": "The difference between the upper and lower [Quartiles](https://en.wikipedia.org/wiki/Quartile) is called the Interquartile range. (IQR = Q3-Q1) Quartile deviation or Semi-interquartile range is one-half the difference between the first and the third quartiles.",
+      "display": "Quartile Deviation"
+    },
+    {
+      "code": "5-1",
+      "definition": "The lowest of four values that divide the N measurements into a frequency distribution of five classes with each containing one fifth of the total population.",
+      "display": "1st Quintile"
+    },
+    {
+      "code": "5-2",
+      "definition": "The second of four values that divide the N measurements into a frequency distribution of five classes with each containing one fifth of the total population.",
+      "display": "2nd Quintile"
+    },
+    {
+      "code": "5-3",
+      "definition": "The third of four values that divide the N measurements into a frequency distribution of five classes with each containing one fifth of the total population.",
+      "display": "3rd Quintile"
+    },
+    {
+      "code": "5-4",
+      "definition": "The fourth of four values that divide the N measurements into a frequency distribution of five classes with each containing one fifth of the total population.",
+      "display": "4th Quintile"
+    },
+    {
+      "code": "skew",
+      "definition": "Skewness is a measure of the asymmetry of the probability distribution of a real-valued random variable about its mean. The skewness value can be positive or negative, or even undefined.  Source: [Wikipedia](https://en.wikipedia.org/wiki/Skewness).",
+      "display": "Skew"
+    },
+    {
+      "code": "kurtosis",
+      "definition": "Kurtosis  is a measure of the \"tailedness\" of the probability distribution of a real-valued random variable.   Source: [Wikipedia](https://en.wikipedia.org/wiki/Kurtosis).",
+      "display": "Kurtosis"
+    },
+    {
+      "code": "regression",
+      "definition": "Linear regression is an approach for modeling two-dimensional sample points with one independent variable and one dependent variable (conventionally, the x and y coordinates in a Cartesian coordinate system) and finds a linear function (a non-vertical straight line) that, as accurately as possible, predicts the dependent variable values as a function of the independent variables. Source: [Wikipedia](https://en.wikipedia.org/wiki/Simple_linear_regression)  This Statistic code will return both a gradient and an intercept value.",
+      "display": "Regression"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The statistical operation parameter -\"statistic\" codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1126"
+    }
+  ],
+  "name": "StatisticsCode",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "StatisticsCode",
+  "url": "http://terminology.hl7.org/CodeSystem/observation-statistics",
+  "valueSet": "http://hl7.org/fhir/ValueSet/observation-statistics",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,152 @@
+{
+  "id": "iso-21089-lifecycle",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "access",
+      "definition": "Occurs when an agent causes the system to obtain and open a record entry for inspection or review.",
+      "display": "Access/View Record Lifecycle Event"
+    },
+    {
+      "code": "hold",
+      "definition": "Occurs when an agent causes the system to tag or otherwise indicate special access management and suspension of record entry deletion/destruction, if deemed relevant to a lawsuit or which are reasonably anticipated to be relevant or to fulfill organizational policy under the legal doctrine of \u201cduty to preserve\u201d.",
+      "display": "Add Legal Hold Record Lifecycle Event"
+    },
+    {
+      "code": "amend",
+      "definition": "Occurs when an agent makes any change to record entry content currently residing in storage considered permanent (persistent).",
+      "display": "Amend (Update) Record Lifecycle Event"
+    },
+    {
+      "code": "archive",
+      "definition": "Occurs when an agent causes the system to create and move archive artifacts containing record entry content, typically to long-term offline storage.",
+      "display": "Archive Record Lifecycle Event"
+    },
+    {
+      "code": "attest",
+      "definition": "Occurs when an agent causes the system to capture the agent\u2019s digital signature (or equivalent indication) during formal validation of record entry content.",
+      "display": "Attest Record Lifecycle Event"
+    },
+    {
+      "code": "decrypt",
+      "definition": "Occurs when an agent causes the system to decode record entry content from a cipher.",
+      "display": "Decrypt Record Lifecycle Event"
+    },
+    {
+      "code": "deidentify",
+      "definition": "Occurs when an agent causes the system to scrub record entry content to reduce the association between a set of identifying data and the data subject in a way that might or might not be reversible.",
+      "display": "De-Identify (Anononymize) Record Lifecycle Event"
+    },
+    {
+      "code": "deprecate",
+      "definition": "Occurs when an agent causes the system to tag record entry(ies) as obsolete, erroneous or untrustworthy, to warn against its future use.",
+      "display": "Deprecate Record Lifecycle Event"
+    },
+    {
+      "code": "destroy",
+      "definition": "Occurs when an agent causes the system to permanently erase record entry content from the system.",
+      "display": "Destroy/Delete Record Lifecycle Event"
+    },
+    {
+      "code": "disclose",
+      "definition": "Occurs when an agent causes the system to release, transfer, provision access to, or otherwise divulge record entry content.",
+      "display": "Disclose Record Lifecycle Event"
+    },
+    {
+      "code": "encrypt",
+      "definition": "Occurs when an agent causes the system to encode record entry content in a cipher.",
+      "display": "Encrypt Record Lifecycle Event"
+    },
+    {
+      "code": "extract",
+      "definition": "Occurs when an agent causes the system to selectively pull out a subset of record entry content, based on explicit criteria.",
+      "display": "Extract Record Lifecycle Event"
+    },
+    {
+      "code": "link",
+      "definition": "Occurs when an agent causes the system to connect related record entries.",
+      "display": "Link Record Lifecycle Event"
+    },
+    {
+      "code": "merge",
+      "definition": "Occurs when an agent causes the system to combine or join content from two or more record entries, resulting in a single logical record entry.",
+      "display": "Merge Record Lifecycle Event"
+    },
+    {
+      "code": "originate",
+      "definition": "Occurs when an agent causes the system to: a) initiate capture of potential record content, and b) incorporate that content into the storage considered a permanent part of the health record.",
+      "display": "Originate/Retain Record Lifecycle Event"
+    },
+    {
+      "code": "pseudonymize",
+      "definition": "Occurs when an agent causes the system to remove record entry content to reduce the association between a set of identifying data and the data subject in a way that may be reversible.",
+      "display": "Pseudonymize Record Lifecycle Event"
+    },
+    {
+      "code": "reactivate",
+      "definition": "Occurs when an agent causes the system to recreate or restore full status to record entries previously deleted or deprecated.",
+      "display": "Re-activate Record Lifecycle Event"
+    },
+    {
+      "code": "receive",
+      "definition": "Occurs when an agent causes the system to a) initiate capture of data content from elsewhere, and b) incorporate that content into the storage considered a permanent part of the health record.",
+      "display": "Receive/Retain Record Lifecycle Event"
+    },
+    {
+      "code": "reidentify",
+      "definition": "Occurs when an agent causes the system to restore information to data that allows identification of information source and/or information subject.",
+      "display": "Re-identify Record Lifecycle Event"
+    },
+    {
+      "code": "unhold",
+      "definition": "Occurs when an agent causes the system to remove a tag or other cues for special access management had required to fulfill organizational policy under the legal doctrine of \u201cduty to preserve\u201d.",
+      "display": "Remove Legal Hold Record Lifecycle Event"
+    },
+    {
+      "code": "report",
+      "definition": "Occurs when an agent causes the system to produce and deliver record entry content in a particular form and manner.",
+      "display": "Report (Output) Record Lifecycle Event"
+    },
+    {
+      "code": "restore",
+      "definition": "Occurs when an agent causes the system to recreate record entries and their content from a previous created archive artefact.",
+      "display": "Restore Record Lifecycle Event"
+    },
+    {
+      "code": "transform",
+      "definition": "Occurs when an agent causes the system to change the form, language or code system used to represent record entry content.",
+      "display": "Transform/Translate Record Lifecycle Event"
+    },
+    {
+      "code": "transmit",
+      "definition": "Occurs when an agent causes the system to send record entry content from one (EHR/PHR/other) system to another.",
+      "display": "Transmit Record Lifecycle Event"
+    },
+    {
+      "code": "unlink",
+      "definition": "Occurs when an agent causes the system to disconnect two or more record entries previously connected, rendering them separate (disconnected) again.",
+      "display": "Unlink Record Lifecycle Event"
+    },
+    {
+      "code": "unmerge",
+      "definition": "Occurs when an agent causes the system to reverse a previous record entry merge operation, rendering them separate again.",
+      "display": "Unmerge Record Lifecycle Event"
+    },
+    {
+      "code": "verify",
+      "definition": "Occurs when an agent causes the system to confirm compliance of data or data objects with regulations, requirements, specifications, or other imposed conditions based on organizational policy.",
+      "display": "Verify Record Lifecycle Event"
+    }
+  ],
+  "content": "complete",
+  "copyright": "These codes are excerpted from ISO Standard, TS 21089-2017 - Health Informatics - Trusted End-to-End Information Flows, Copyright by ISO International. Copies of this standard are available through the ISO Web Site at www.iso.org.",
+  "description": "Attached is vocabulary for the 27 record lifecycle events, as per ISO TS 21089-2017, Health Informatics - Trusted End-to-End Information Flows, Section 3, Terms and Definitions (2017, at ISO Central Secretariat, passed ballot and ready for publication).  This will also be included in the FHIR EHR Record Lifecycle Event Implementation Guide, balloted and (to be) published with FHIR STU-3.",
+  "experimental": false,
+  "name": "ISO 21089-2017 Health Record Lifecycle Events",
+  "status": "active",
+  "url": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+  "resourceType": "CodeSystem"
+}

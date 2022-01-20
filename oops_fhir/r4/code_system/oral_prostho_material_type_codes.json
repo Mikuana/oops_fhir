@@ -1,0 +1,60 @@
+{
+  "id": "oral-prosthodontic-material",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "1",
+      "definition": "Fixed Bridge",
+      "display": "Fixed Bridge"
+    },
+    {
+      "code": "2",
+      "definition": "Maryland Bridge",
+      "display": "Maryland Bridge"
+    },
+    {
+      "code": "3",
+      "definition": "Denture Acrylic",
+      "display": "Denture Acrylic"
+    },
+    {
+      "code": "4",
+      "definition": "Denture Chrome Cobalt",
+      "display": "Denture Chrome Cobalt"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an example set.",
+  "description": "This value set includes sample Oral Prosthodontic Material type codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.539"
+    }
+  ],
+  "name": "OralProsthoMaterialTypeCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Oral Prostho Material type Codes",
+  "url": "http://hl7.org/fhir/ex-oralprostho",
+  "valueSet": "http://hl7.org/fhir/ValueSet/oral-prosthodontic-material",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

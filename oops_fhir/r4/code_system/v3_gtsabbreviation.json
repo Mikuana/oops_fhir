@@ -1,0 +1,290 @@
+{
+  "id": "v3-GTSAbbreviation",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "AM",
+      "definition": "Every morning at institution specified times.",
+      "display": "AM"
+    },
+    {
+      "code": "BED",
+      "definition": "At bedtime (institution specified time).",
+      "display": "at bedtime"
+    },
+    {
+      "code": "BID",
+      "definition": "Two times a day at institution specified time",
+      "display": "BID"
+    },
+    {
+      "code": "JB",
+      "definition": "Regular business days (Monday to Friday excluding holidays)",
+      "display": "JB"
+    },
+    {
+      "code": "JE",
+      "definition": "Regular weekends (Saturday and Sunday excluding holidays)",
+      "display": "JE"
+    },
+    {
+      "code": "JH",
+      "concept": [
+        {
+          "code": "_GTSAbbreviationHolidaysChristianRoman",
+          "concept": [
+            {
+              "code": "JHCHREAS",
+              "definition": "Easter Sunday.  The Easter date is a rather complex calculation based on Astronomical tables describing full moon dates.  Details can be found at [http://www.assa.org.au/edm.html, and http://aa.usno.navy.mil/AA/faq/docs/easter.html].  Note that the Christian Orthodox Holidays are based on the Julian calendar.",
+              "display": "JHCHREAS"
+            },
+            {
+              "code": "JHCHRGFR",
+              "definition": "Good Friday, is the Friday right before Easter Sunday.",
+              "display": "JHCHRGFR"
+            },
+            {
+              "code": "JHCHRNEW",
+              "definition": "New Year's Day (January 1)",
+              "display": "JHCHRNEW"
+            },
+            {
+              "code": "JHCHRPEN",
+              "definition": "Pentecost Sunday, is seven weeks after Easter (the 50th day of Easter).",
+              "display": "JHCHRPEN"
+            },
+            {
+              "code": "JHCHRXME",
+              "definition": "Christmas Eve (December 24)",
+              "display": "JHCHRXME"
+            },
+            {
+              "code": "JHCHRXMS",
+              "definition": "Christmas Day (December 25)",
+              "display": "JHCHRXMS"
+            }
+          ],
+          "definition": "Christian Holidays (Roman/Gregorian [Western] Tradition.)",
+          "display": "GTSAbbreviationHolidaysChristianRoman",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "JHNNL",
+          "concept": [
+            {
+              "code": "JHNNLLD",
+              "definition": "Description:Liberation day  (May 5 every five years)",
+              "display": "Liberation day (May 5 every five years)"
+            },
+            {
+              "code": "JHNNLQD",
+              "definition": "Description:Queen's day (April 30)",
+              "display": "Queen's day (April 30)"
+            },
+            {
+              "code": "JHNNLSK",
+              "definition": "Description:Sinterklaas (December 5)",
+              "display": "Sinterklaas (December 5)"
+            }
+          ],
+          "definition": "Description:The Netherlands National Holidays.",
+          "display": "The Netherlands National Holidays"
+        },
+        {
+          "code": "JHNUS",
+          "concept": [
+            {
+              "code": "JHNUSCLM",
+              "definition": "Columbus Day, the second Monday in October.",
+              "display": "JHNUSCLM"
+            },
+            {
+              "code": "JHNUSIND",
+              "definition": "Independence Day (4th of July)",
+              "display": "JHNUSIND"
+            },
+            {
+              "code": "JHNUSIND1",
+              "definition": "Alternative Monday after 4th of July Weekend [5 U.S.C. 6103(b)].",
+              "display": "JHNUSIND1"
+            },
+            {
+              "code": "JHNUSIND5",
+              "definition": "Alternative Friday before 4th of July Weekend [5 U.S.C. 6103(b)].",
+              "display": "JHNUSIND5"
+            },
+            {
+              "code": "JHNUSLBR",
+              "definition": "Labor Day, the first Monday in September.",
+              "display": "JHNUSLBR"
+            },
+            {
+              "code": "JHNUSMEM",
+              "definition": "Memorial Day, the last Monday in May.",
+              "display": "JHNUSMEM"
+            },
+            {
+              "code": "JHNUSMEM5",
+              "definition": "Friday before Memorial Day Weekend",
+              "display": "JHNUSMEM5"
+            },
+            {
+              "code": "JHNUSMEM6",
+              "definition": "Saturday of Memorial Day Weekend",
+              "display": "JHNUSMEM6"
+            },
+            {
+              "code": "JHNUSMLK",
+              "definition": "Dr. Martin Luther King, Jr. Day, the third Monday in January.",
+              "display": "JHNUSMLK"
+            },
+            {
+              "code": "JHNUSPRE",
+              "definition": "Washington's Birthday (Presidential Day) the third Monday in February.",
+              "display": "JHNUSPRE"
+            },
+            {
+              "code": "JHNUSTKS",
+              "definition": "Thanksgiving Day, the fourth Thursday in November.",
+              "display": "JHNUSTKS"
+            },
+            {
+              "code": "JHNUSTKS5",
+              "definition": "Friday after Thanksgiving.",
+              "display": "JHNUSTKS5"
+            },
+            {
+              "code": "JHNUSVET",
+              "definition": "Veteran's Day, November 11.",
+              "display": "JHNUSVET"
+            }
+          ],
+          "definition": "United States National Holidays (public holidays for federal employees established by U.S. Federal law 5 U.S.C. 6103).",
+          "display": "GTSAbbreviationHolidaysUSNational"
+        }
+      ],
+      "definition": "Holidays",
+      "display": "GTSAbbreviationHolidays"
+    },
+    {
+      "code": "MO",
+      "definition": "Monthly at institution specified time.",
+      "display": "monthly"
+    },
+    {
+      "code": "PM",
+      "definition": "Every afternoon at institution specified times.",
+      "display": "PM"
+    },
+    {
+      "code": "Q1H",
+      "definition": "Every hour at institution specified times.",
+      "display": "every hour"
+    },
+    {
+      "code": "Q2H",
+      "definition": "Every 2 hours at institution specified times.",
+      "display": "every 2 hours"
+    },
+    {
+      "code": "Q3H",
+      "definition": "Every 3 hours at institution specified times.",
+      "display": "every 3 hours"
+    },
+    {
+      "code": "Q4H",
+      "definition": "Every 4 hours at institution specified time",
+      "display": "Q4H"
+    },
+    {
+      "code": "Q6H",
+      "definition": "Every 6 hours at institution specified time",
+      "display": "Q6H"
+    },
+    {
+      "code": "Q8H",
+      "definition": "Every 8 hours at institution specified times.",
+      "display": "every 8 hours"
+    },
+    {
+      "code": "QD",
+      "definition": "Every day at institution specified times.",
+      "display": "QD"
+    },
+    {
+      "code": "QID",
+      "definition": "Four times a day at institution specified time",
+      "display": "QID"
+    },
+    {
+      "code": "QOD",
+      "definition": "Every other day at institution specified times.",
+      "display": "QOD"
+    },
+    {
+      "code": "TID",
+      "definition": "Three times a day at institution specified time",
+      "display": "TID"
+    },
+    {
+      "code": "WK",
+      "definition": "Weekly at institution specified time.",
+      "display": "weekly"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": "  Open Issue:\r\nIt appears that the printnames are suboptimal and should be improved for many of the existing codes.",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.1022"
+    }
+  ],
+  "name": "v3.GTSAbbreviation",
+  "property": [
+    {
+      "code": "notSelectable",
+      "description": "Indicates that the code is abstract - only intended to be used as a selector for other concepts",
+      "type": "boolean",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable"
+    }
+  ],
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System GTSAbbreviation",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-GTSAbbreviation",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

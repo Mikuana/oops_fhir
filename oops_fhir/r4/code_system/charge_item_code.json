@@ -1,0 +1,70 @@
+{
+  "id": "chargeitem-billingcodes",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "1100",
+      "definition": "From German EBM billing system:\nUnvorhergesehene Inanspruchnahme des Vertragsarztes durch einen Patienten;zwischen 19:00 und 22:00 Uhr;an Samstagen, Sonntagen und gesetzlichen Feiertagen, am 24.12. und 31.12. zwischen 07:00 und 19:00 Uhr.",
+      "display": "Unvorhergesehene Inanspruchnahme"
+    },
+    {
+      "code": "1210",
+      "definition": "From German EBM billing system:\nNotfallpauschale im organisierten Not(-fall)dienst und f\u00fcr nicht an der vertrags\u00e4rztlichen Versorgung teilnehmende \u00c4rzte, Institute und Krankenh\u00e4user bei Inanspruchnahme;zwischen 07:00 und 19:00 Uhr.",
+      "display": "Notfallpauschale"
+    },
+    {
+      "code": "1320",
+      "definition": "From German EBM billing system:\nGrundpauschale f\u00fcr \u00c4rzte, Institute und Krankenh\u00e4user, die zur Erbringung von Leistungen innerhalb mindestens eines der Fachgebiete An\u00e4sthesiologie, Frauenheilkunde und Geburtshilfe, Haut- und Geschlechtskrankheiten, Mund-, Kiefer- und Gesichtschirurgie und Humangenetik erm\u00e4chtigt sind.",
+      "display": "Grundpauschale"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Example set of codes that can be used for billing purposes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1257"
+    }
+  ],
+  "name": "ChargeItemCode",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ChargeItemCode",
+  "url": "http://terminology.hl7.org/CodeSystem/chargeitem-billingcodes",
+  "valueSet": "http://hl7.org/fhir/ValueSet/chargeitem-billingcodes",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

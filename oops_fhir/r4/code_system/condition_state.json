@@ -1,0 +1,56 @@
+{
+  "id": "condition-state",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "active",
+      "definition": "The condition is active.",
+      "display": "Active"
+    },
+    {
+      "code": "inactive",
+      "definition": "The condition is inactive, but not resolved.",
+      "display": "Inactive"
+    },
+    {
+      "code": "resolved",
+      "definition": "The condition is resolved.",
+      "display": "Resolved"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Enumeration indicating whether the condition is currently active, inactive, or has been resolved.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1287"
+    }
+  ],
+  "name": "ConditionState",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ConditionState",
+  "url": "http://terminology.hl7.org/CodeSystem/condition-state",
+  "valueSet": "http://hl7.org/fhir/ValueSet/condition-state",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

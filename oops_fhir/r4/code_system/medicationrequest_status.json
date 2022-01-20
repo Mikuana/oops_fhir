@@ -1,0 +1,93 @@
+{
+  "id": "medicationrequest-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "active",
+      "definition": "The prescription is 'actionable', but not all actions that are implied by it have occurred yet.",
+      "display": "Active"
+    },
+    {
+      "code": "on-hold",
+      "definition": "Actions implied by the prescription are to be temporarily halted, but are expected to continue later.  May also be called 'suspended'.",
+      "display": "On Hold"
+    },
+    {
+      "code": "cancelled",
+      "definition": "The prescription has been withdrawn before any administrations have occurred",
+      "display": "Cancelled"
+    },
+    {
+      "code": "completed",
+      "definition": "All actions that are implied by the prescription have occurred.",
+      "display": "Completed"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "Some of the actions that are implied by the medication request may have occurred.  For example, the medication may have been dispensed and the patient may have taken some of the medication.  Clinical decision support systems should take this status into account",
+      "display": "Entered in Error"
+    },
+    {
+      "code": "stopped",
+      "definition": "Actions implied by the prescription are to be permanently halted, before all of the administrations occurred. This should not be used if the original order was entered in error",
+      "display": "Stopped"
+    },
+    {
+      "code": "draft",
+      "definition": "The prescription is not yet 'actionable', e.g. it is a work in progress, requires sign-off, verification\u00a0or\u00a0needs to be run through decision support process.",
+      "display": "Draft"
+    },
+    {
+      "code": "unknown",
+      "definition": "The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for 'other' - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.",
+      "display": "Unknown"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "MedicationRequest Status Codes",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1377"
+    }
+  ],
+  "name": "medicationrequest Status",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Medicationrequest  status",
+  "url": "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,194 @@
+{
+  "id": "ex-benefitcategory",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "1",
+      "definition": "Medical Care.",
+      "display": "Medical Care"
+    },
+    {
+      "code": "2",
+      "definition": "Surgical.",
+      "display": "Surgical"
+    },
+    {
+      "code": "3",
+      "definition": "Consultation.",
+      "display": "Consultation"
+    },
+    {
+      "code": "4",
+      "definition": "Diagnostic XRay.",
+      "display": "Diagnostic XRay"
+    },
+    {
+      "code": "5",
+      "definition": "Diagnostic Lab.",
+      "display": "Diagnostic Lab"
+    },
+    {
+      "code": "14",
+      "definition": "Renal Supplies excluding Dialysis.",
+      "display": "Renal Supplies"
+    },
+    {
+      "code": "23",
+      "definition": "Diagnostic Dental.",
+      "display": "Diagnostic Dental"
+    },
+    {
+      "code": "24",
+      "definition": "Periodontics.",
+      "display": "Periodontics"
+    },
+    {
+      "code": "25",
+      "definition": "Restorative.",
+      "display": "Restorative"
+    },
+    {
+      "code": "26",
+      "definition": "Endodontics.",
+      "display": "Endodontics"
+    },
+    {
+      "code": "27",
+      "definition": "Maxillofacial Prosthetics.",
+      "display": "Maxillofacial Prosthetics"
+    },
+    {
+      "code": "28",
+      "definition": "Adjunctive Dental Services.",
+      "display": "Adjunctive Dental Services"
+    },
+    {
+      "code": "30",
+      "definition": "Health Benefit Plan Coverage.",
+      "display": "Health Benefit Plan Coverage"
+    },
+    {
+      "code": "35",
+      "definition": "Dental Care.",
+      "display": "Dental Care"
+    },
+    {
+      "code": "36",
+      "definition": "Dental Crowns.",
+      "display": "Dental Crowns"
+    },
+    {
+      "code": "37",
+      "definition": "Dental Accident.",
+      "display": "Dental Accident"
+    },
+    {
+      "code": "49",
+      "definition": "Hospital Room and Board.",
+      "display": "Hospital Room and Board"
+    },
+    {
+      "code": "55",
+      "definition": "Major Medical.",
+      "display": "Major Medical"
+    },
+    {
+      "code": "56",
+      "definition": "Medically Related Transportation.",
+      "display": "Medically Related Transportation"
+    },
+    {
+      "code": "61",
+      "definition": "In-vitro Fertilization.",
+      "display": "In-vitro Fertilization"
+    },
+    {
+      "code": "62",
+      "definition": "MRI Scan.",
+      "display": "MRI Scan"
+    },
+    {
+      "code": "63",
+      "definition": "Donor Procedures such as organ harvest.",
+      "display": "Donor Procedures"
+    },
+    {
+      "code": "69",
+      "definition": "Maternity.",
+      "display": "Maternity"
+    },
+    {
+      "code": "76",
+      "definition": "Renal dialysis.",
+      "display": "Renal Dialysis"
+    },
+    {
+      "code": "F1",
+      "definition": "Medical Coverage.",
+      "display": "Medical Coverage"
+    },
+    {
+      "code": "F3",
+      "definition": "Dental Coverage.",
+      "display": "Dental Coverage"
+    },
+    {
+      "code": "F4",
+      "definition": "Hearing Coverage.",
+      "display": "Hearing Coverage"
+    },
+    {
+      "code": "F6",
+      "definition": "Vision Coverage.",
+      "display": "Vision Coverage"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an example set.",
+  "description": "This value set includes examples of Benefit Category codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1175"
+    }
+  ],
+  "name": "BenefitCategoryCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Benefit Category Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+  "valueSet": "http://hl7.org/fhir/ValueSet/ex-benefitcategory",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

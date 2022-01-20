@@ -1,0 +1,1626 @@
+{
+  "id": "v3-ObservationMethod",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "_DecisionObservationMethod",
+      "concept": [
+        {
+          "code": "ALGM",
+          "concept": [
+            {
+              "code": "BYCL",
+              "definition": "Reaching a decision through the use of Bayesian statistical analysis.",
+              "display": "bayesian calculation"
+            }
+          ],
+          "definition": "Reaching a decision through the application of an algorithm designed to weigh the different factors involved.",
+          "display": "algorithm"
+        },
+        {
+          "code": "GINT",
+          "definition": "Reaching a decision by consideration of the totality of factors involved in order to reach a judgement.",
+          "display": "global introspection"
+        }
+      ],
+      "definition": "Provides codes for decision methods, initially for assessing the causality of events.",
+      "display": "DecisionObservationMethod",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "_GeneticObservationMethod",
+      "concept": [
+        {
+          "code": "PCR",
+          "definition": "Description: Polymerase Chain Reaction",
+          "display": "PCR"
+        }
+      ],
+      "definition": "A code that provides additional detail about the means or technique used to ascertain the genetic analysis. Example, PCR, Micro Array",
+      "display": "GeneticObservationMethod",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "_ObservationMethodAggregate",
+      "concept": [
+        {
+          "code": "AVERAGE",
+          "definition": "Average of non-null values in the referenced set of values",
+          "display": "average"
+        },
+        {
+          "code": "COUNT",
+          "definition": "Count of non-null values in the referenced set of values",
+          "display": "count"
+        },
+        {
+          "code": "MAX",
+          "definition": "Largest of all non-null values in the referenced set of values.",
+          "display": "maxima"
+        },
+        {
+          "code": "MEDIAN",
+          "definition": "The median of all non-null values in the referenced set of values.",
+          "display": "median"
+        },
+        {
+          "code": "MIN",
+          "definition": "Smallest of all non-null values in the referenced set of values.",
+          "display": "minima"
+        },
+        {
+          "code": "MODE",
+          "definition": "The most common value of all non-null values in the referenced set of values.",
+          "display": "mode"
+        },
+        {
+          "code": "STDEV.P",
+          "definition": "Standard Deviation of the values in the referenced set of values, computed over the population.",
+          "display": "population standard deviation"
+        },
+        {
+          "code": "STDEV.S",
+          "definition": "Standard Deviation of the values in the referenced set of values, computed over a sample of the population.",
+          "display": "sample standard deviation"
+        },
+        {
+          "code": "SUM",
+          "definition": "Sum of non-null values in the referenced set of values",
+          "display": "sum"
+        },
+        {
+          "code": "VARIANCE.P",
+          "definition": "Variance of the values in the referenced set of values, computed over the population.",
+          "display": "population variance"
+        },
+        {
+          "code": "VARIANCE.S",
+          "definition": "Variance of the values in the referenced set of values, computed over a sample of the population.",
+          "display": "sample variance"
+        }
+      ],
+      "definition": "Provides additional detail about the aggregation methods used to compute the aggregated values for an observation. This is an abstract code.",
+      "display": "observation method aggregate",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "_VerificationMethod",
+      "concept": [
+        {
+          "code": "VDOC",
+          "definition": "Verification by means of document.\r\n\n                        \n                           Example: Fax, letter, attachment to e-mail.",
+          "display": "document verification"
+        },
+        {
+          "code": "VREG",
+          "definition": "verification by means of  a response to an electronic query\r\n\n                        \n                           Example: query message to a Covered Party registry application or Coverage Administrator.",
+          "display": "registry verification"
+        },
+        {
+          "code": "VTOKEN",
+          "definition": "Verification by means of electronic token.\r\n\n                        \n                           Example: smartcard, magnetic swipe card, RFID device.",
+          "display": "electronic token verification"
+        },
+        {
+          "code": "VVOICE",
+          "definition": "Verification by means of voice.\r\n\n                        \n                           Example: By speaking with or calling the Coverage Administrator or Covered Party",
+          "display": "voice-based verification"
+        }
+      ],
+      "definition": "VerificationMethod",
+      "display": "VerificationMethod",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "0001",
+      "definition": "Complement fixation",
+      "display": "Complement fixation"
+    },
+    {
+      "code": "0002",
+      "definition": "Computed axial tomography",
+      "display": "Computed axial tomography"
+    },
+    {
+      "code": "0003",
+      "definition": "Susceptibility, High Level Aminoglycoside Resistance agar test",
+      "display": "HLAR agar test"
+    },
+    {
+      "code": "0004",
+      "definition": "Visual, Macroscopic observation",
+      "display": "Macroscopic observation"
+    },
+    {
+      "code": "0005",
+      "definition": "Computed, Magnetic resonance",
+      "display": "Magnetic resonance"
+    },
+    {
+      "code": "0006",
+      "definition": "Computed, Morphometry",
+      "display": "Morphometry"
+    },
+    {
+      "code": "0007",
+      "definition": "Computed, Positron emission tomography",
+      "display": "Positron emission tomography"
+    },
+    {
+      "code": "0008",
+      "definition": "SAMHSA drug assay confirmation",
+      "display": "SAMHSA confirmation"
+    },
+    {
+      "code": "0009",
+      "definition": "SAMHSA drug assay screening",
+      "display": "SAMHSA screening"
+    },
+    {
+      "code": "0010",
+      "definition": "Serum Neutralization",
+      "display": "Serum Neutralization"
+    },
+    {
+      "code": "0011",
+      "definition": "Titration",
+      "display": "Titration"
+    },
+    {
+      "code": "0012",
+      "definition": "Ultrasound",
+      "display": "Ultrasound"
+    },
+    {
+      "code": "0013",
+      "definition": "X-ray crystallography",
+      "display": "X-ray crystallography"
+    },
+    {
+      "code": "0014",
+      "definition": "Agglutination",
+      "display": "Agglutination"
+    },
+    {
+      "code": "0015",
+      "definition": "Agglutination, Buffered acidified plate",
+      "display": "Buffered acidified plate agglutination"
+    },
+    {
+      "code": "0016",
+      "definition": "Agglutination, Card",
+      "display": "Card agglutination"
+    },
+    {
+      "code": "0017",
+      "definition": "Agglutination, Hemagglutination",
+      "display": "Hemagglutination"
+    },
+    {
+      "code": "0018",
+      "definition": "Agglutination, Hemagglutination inhibition",
+      "display": "Hemagglutination inhibition"
+    },
+    {
+      "code": "0019",
+      "definition": "Agglutination, Latex",
+      "display": "Latex agglutination"
+    },
+    {
+      "code": "0020",
+      "definition": "Agglutination, Plate",
+      "display": "Plate agglutination"
+    },
+    {
+      "code": "0021",
+      "definition": "Agglutination, Rapid Plate",
+      "display": "Rapid agglutination"
+    },
+    {
+      "code": "0022",
+      "definition": "Agglutination, RBC",
+      "display": "RBC agglutination"
+    },
+    {
+      "code": "0023",
+      "definition": "Agglutination, Rivanol",
+      "display": "Rivanol agglutination"
+    },
+    {
+      "code": "0024",
+      "definition": "Agglutination, Tube",
+      "display": "Tube agglutination"
+    },
+    {
+      "code": "0025",
+      "definition": "Bioassay",
+      "display": "Bioassay"
+    },
+    {
+      "code": "0026",
+      "definition": "Bioassay, Animal Inoculation",
+      "display": "Animal Inoculation"
+    },
+    {
+      "code": "0027",
+      "definition": "Bioassay, Cytotoxicity",
+      "display": "Cytotoxicity"
+    },
+    {
+      "code": "0028",
+      "definition": "Bioassay, Embryo Infective Dose 50",
+      "display": "Embryo infective dose 50"
+    },
+    {
+      "code": "0029",
+      "definition": "Bioassay, Embryo Lethal Dose 50",
+      "display": "Embryo lethal dose 50"
+    },
+    {
+      "code": "0030",
+      "definition": "Bioassay, Mouse intercerebral inoculation",
+      "display": "Mouse intercerebral inoculation"
+    },
+    {
+      "code": "0031",
+      "definition": "Bioassay, qualitative",
+      "display": "Bioassay, qualitative"
+    },
+    {
+      "code": "0032",
+      "definition": "Bioassay, quantitative",
+      "display": "Bioassay, quantitative"
+    },
+    {
+      "code": "0033",
+      "definition": "Chemical",
+      "display": "Chemical method"
+    },
+    {
+      "code": "0034",
+      "definition": "Chemical, Differential light absorption",
+      "display": "Differential light absorption chemical test"
+    },
+    {
+      "code": "0035",
+      "definition": "Chemical, Dipstick",
+      "display": "Dipstick"
+    },
+    {
+      "code": "0036",
+      "definition": "Chemical, Dipstick colorimetric laboratory test",
+      "display": "Dipstick colorimetric laboratory test"
+    },
+    {
+      "code": "0037",
+      "definition": "Chemical, Test strip",
+      "display": "Test strip"
+    },
+    {
+      "code": "0038",
+      "definition": "Chromatography",
+      "display": "Chromatography"
+    },
+    {
+      "code": "0039",
+      "definition": "Chromatography, Affinity",
+      "display": "Affinity chromatography"
+    },
+    {
+      "code": "0040",
+      "definition": "Chromatography, Gas liquid",
+      "display": "Gas liquid chromatography"
+    },
+    {
+      "code": "0041",
+      "definition": "Chromatography, High performance liquid",
+      "display": "High performance liquid chromatography"
+    },
+    {
+      "code": "0042",
+      "definition": "Chromatography, Liquid",
+      "display": "Liquid Chromatography"
+    },
+    {
+      "code": "0043",
+      "definition": "Chromatography, Protein A affinity",
+      "display": "Protein A affinity chromatography"
+    },
+    {
+      "code": "0044",
+      "definition": "Coagulation",
+      "display": "Coagulation"
+    },
+    {
+      "code": "0045",
+      "definition": "Coagulation, Tilt tube",
+      "display": "Tilt tube coagulation time"
+    },
+    {
+      "code": "0046",
+      "definition": "Coagulation, Tilt tube reptilase induced",
+      "display": "Tilt tube reptilase induced coagulation"
+    },
+    {
+      "code": "0047",
+      "definition": "Count, Automated",
+      "display": "Automated count"
+    },
+    {
+      "code": "0048",
+      "definition": "Count, Manual",
+      "display": "Manual cell count"
+    },
+    {
+      "code": "0049",
+      "definition": "Count, Platelet, Rees-Ecker",
+      "display": "Platelet count, Rees-Ecker"
+    },
+    {
+      "code": "0050",
+      "definition": "Culture, Aerobic",
+      "display": "Aerobic Culture"
+    },
+    {
+      "code": "0051",
+      "definition": "Culture, Anaerobic",
+      "display": "Anaerobic Culture"
+    },
+    {
+      "code": "0052",
+      "definition": "Culture, Chicken Embryo",
+      "display": "Chicken embryo culture"
+    },
+    {
+      "code": "0053",
+      "definition": "Culture, Delayed secondary enrichment",
+      "display": "Delayed secondary enrichment"
+    },
+    {
+      "code": "0054",
+      "definition": "Culture, Microaerophilic",
+      "display": "Microaerophilic Culture"
+    },
+    {
+      "code": "0055",
+      "definition": "Culture, Quantitative microbial, cup",
+      "display": "Quantitative microbial culture, cup"
+    },
+    {
+      "code": "0056",
+      "definition": "Culture, Quantitative microbial, droplet",
+      "display": "Quantitative microbial culture, droplet"
+    },
+    {
+      "code": "0057",
+      "definition": "Culture, Quantitative microbial, filter paper",
+      "display": "Quantitative microbial culture, filter paper"
+    },
+    {
+      "code": "0058",
+      "definition": "Culture, Quantitative microbial, pad",
+      "display": "Quantitative microbial culture, pad culture"
+    },
+    {
+      "code": "0059",
+      "definition": "Culture, Quantitative microbial, pour plate",
+      "display": "Quantitative microbial culture, pour plate"
+    },
+    {
+      "code": "0060",
+      "definition": "Culture, Quantitative microbial, surface streak",
+      "display": "Quantitative microbial culture, surface streak"
+    },
+    {
+      "code": "0061",
+      "definition": "Culture, Somatic Cell",
+      "display": "Somatic Cell culture"
+    },
+    {
+      "code": "0062",
+      "definition": "Diffusion, Agar",
+      "display": "Agar diffusion"
+    },
+    {
+      "code": "0063",
+      "definition": "Diffusion, Agar Gel Immunodiffusion",
+      "display": "Agar Gel Immunodiffusion"
+    },
+    {
+      "code": "0064",
+      "definition": "Electrophoresis",
+      "display": "Electrophoresis"
+    },
+    {
+      "code": "0065",
+      "definition": "Electrophoresis, Agaorse gel",
+      "display": "Agaorse gel electrophoresis"
+    },
+    {
+      "code": "0066",
+      "definition": "Electrophoresis, citrate agar",
+      "display": "Electrophoresis, citrate agar"
+    },
+    {
+      "code": "0067",
+      "definition": "Electrophoresis, Immuno",
+      "display": "Immunoelectrophoresis"
+    },
+    {
+      "code": "0068",
+      "definition": "Electrophoresis, Polyacrylamide gel",
+      "display": "Polyacrylamide gel electrophoresis"
+    },
+    {
+      "code": "0069",
+      "definition": "Electrophoresis, Starch gel",
+      "display": "Starch gel electrophoresis"
+    },
+    {
+      "code": "0070",
+      "definition": "ELISA",
+      "display": "ELISA"
+    },
+    {
+      "code": "0071",
+      "definition": "ELISA, antigen capture",
+      "display": "ELISA, antigen capture"
+    },
+    {
+      "code": "0072",
+      "definition": "ELISA, avidin biotin peroxidase complex",
+      "display": "ELISA, avidin biotin peroxidase complex"
+    },
+    {
+      "code": "0073",
+      "definition": "ELISA, Kinetic",
+      "display": "Kinetic ELISA"
+    },
+    {
+      "code": "0074",
+      "definition": "ELISA, peroxidase-antiperoxidase",
+      "display": "ELISA, peroxidase-antiperoxidase"
+    },
+    {
+      "code": "0075",
+      "definition": "Identification, API 20 Strep",
+      "display": "API 20 Strep"
+    },
+    {
+      "code": "0076",
+      "definition": "Identification, API 20A",
+      "display": "API 20A"
+    },
+    {
+      "code": "0077",
+      "definition": "Identification, API 20C AUX",
+      "display": "API 20C AUX"
+    },
+    {
+      "code": "0078",
+      "definition": "Identification, API 20E",
+      "display": "API 20E"
+    },
+    {
+      "code": "0079",
+      "definition": "Identification, API 20NE",
+      "display": "API 20NE"
+    },
+    {
+      "code": "0080",
+      "definition": "Identification, API 50 CH",
+      "display": "API 50 CH"
+    },
+    {
+      "code": "0081",
+      "definition": "Identification, API An-IDENT",
+      "display": "API An-IDENT"
+    },
+    {
+      "code": "0082",
+      "definition": "Identification, API Coryne",
+      "display": "API Coryne"
+    },
+    {
+      "code": "0083",
+      "definition": "Identification, API Rapid 20E",
+      "display": "API Rapid 20E"
+    },
+    {
+      "code": "0084",
+      "definition": "Identification, API Staph",
+      "display": "API Staph"
+    },
+    {
+      "code": "0085",
+      "definition": "Identification, API ZYM",
+      "display": "API ZYM"
+    },
+    {
+      "code": "0086",
+      "definition": "Identification, Bacterial",
+      "display": "Bacterial identification"
+    },
+    {
+      "code": "0087",
+      "definition": "Identification, mini VIDAS",
+      "display": "mini VIDAS"
+    },
+    {
+      "code": "0088",
+      "definition": "Identification, Phage susceptibility typing",
+      "display": "Phage susceptibility typing"
+    },
+    {
+      "code": "0089",
+      "definition": "Identification, Quad-FERM+",
+      "display": "Quad-FERM+"
+    },
+    {
+      "code": "0090",
+      "definition": "Identification, RAPIDEC Staph",
+      "display": "RAPIDEC Staph"
+    },
+    {
+      "code": "0091",
+      "definition": "Identification, Staphaurex",
+      "display": "Staphaurex"
+    },
+    {
+      "code": "0092",
+      "definition": "Identification, VIDAS",
+      "display": "VIDAS"
+    },
+    {
+      "code": "0093",
+      "definition": "Identification, Vitek",
+      "display": "Vitek"
+    },
+    {
+      "code": "0094",
+      "definition": "Identification, VITEK 2",
+      "display": "VITEK 2"
+    },
+    {
+      "code": "0095",
+      "definition": "Immune stain",
+      "display": "Immune stain"
+    },
+    {
+      "code": "0096",
+      "definition": "Immune stain, Immunofluorescent antibody, direct",
+      "display": "Immunofluorescent antibody, direct"
+    },
+    {
+      "code": "0097",
+      "definition": "Immune stain, Immunofluorescent antibody, indirect",
+      "display": "Immunofluorescent antibody, indirect"
+    },
+    {
+      "code": "0098",
+      "definition": "Immune stain, Immunoperoxidase, Avidin-Biotin Complex",
+      "display": "Immunoperoxidase, Avidin-Biotin Complex"
+    },
+    {
+      "code": "0099",
+      "definition": "Immune stain, Immunoperoxidase, Peroxidase anti-peroxidase complex",
+      "display": "Immunoperoxidase, Peroxidase anti-peroxidase complex"
+    },
+    {
+      "code": "0100",
+      "definition": "Immune stain, Immunoperoxidase, Protein A-peroxidase complex",
+      "display": "Immunoperoxidase, Protein A-peroxidase complex"
+    },
+    {
+      "code": "0101",
+      "definition": "Immunoassay",
+      "display": "Immunoassay"
+    },
+    {
+      "code": "0102",
+      "definition": "Immunoassay, qualitative, multiple step",
+      "display": "Immunoassay, qualitative, multiple step"
+    },
+    {
+      "code": "0103",
+      "definition": "Immunoassay, qualitative, single step",
+      "display": "Immunoassay, qualitative, single step"
+    },
+    {
+      "code": "0104",
+      "definition": "Immunoassay, Radioimmunoassay",
+      "display": "Radioimmunoassay"
+    },
+    {
+      "code": "0105",
+      "definition": "Immunoassay, semi-quantitative, multiple step",
+      "display": "Immunoassay, semi-quantitative, multiple step"
+    },
+    {
+      "code": "0106",
+      "definition": "Immunoassay, semi-quantitative, single step",
+      "display": "Immunoassay, semi-quantitative, single step"
+    },
+    {
+      "code": "0107",
+      "definition": "Microscopy",
+      "display": "Microscopy"
+    },
+    {
+      "code": "0108",
+      "definition": "Microscopy, Darkfield",
+      "display": "Darkfield microscopy"
+    },
+    {
+      "code": "0109",
+      "definition": "Microscopy, Electron",
+      "display": "Electron microscopy"
+    },
+    {
+      "code": "0110",
+      "definition": "Microscopy, Electron microscopy tomography",
+      "display": "Electron microscopy tomography"
+    },
+    {
+      "code": "0111",
+      "definition": "Microscopy, Electron, negative stain",
+      "display": "Electron microscopy, negative stain"
+    },
+    {
+      "code": "0112",
+      "definition": "Microscopy, Electron, thick section transmission",
+      "display": "Electron microscopy, thick section"
+    },
+    {
+      "code": "0113",
+      "definition": "Microscopy, Electron, thin section transmission",
+      "display": "Electron microscopy, thin section"
+    },
+    {
+      "code": "0114",
+      "definition": "Microscopy, Light",
+      "display": "Microscopy, Light"
+    },
+    {
+      "code": "0115",
+      "definition": "Microscopy, Polarized light",
+      "display": "Polarizing light microscopy"
+    },
+    {
+      "code": "0116",
+      "definition": "Microscopy, Scanning electron",
+      "display": "Scanning electron microscopy"
+    },
+    {
+      "code": "0117",
+      "definition": "Microscopy, Transmission electron",
+      "display": "Transmission electron microscopy"
+    },
+    {
+      "code": "0118",
+      "definition": "Microscopy, Transparent tape direct examination",
+      "display": "Transparent tape direct examination"
+    },
+    {
+      "code": "0119",
+      "definition": "Molecular, 3 Self-Sustaining Sequence Replication",
+      "display": "3 Self-Sustaining Sequence Replication"
+    },
+    {
+      "code": "0120",
+      "definition": "Molecular, Branched Chain DNA",
+      "display": "Branched Chain DNA"
+    },
+    {
+      "code": "0121",
+      "definition": "Molecular, Hybridization Protection Assay",
+      "display": "Hybridization Protection Assay"
+    },
+    {
+      "code": "0122",
+      "definition": "Molecular, Immune blot",
+      "display": "Immune blot"
+    },
+    {
+      "code": "0123",
+      "definition": "Molecular, In-situ hybridization",
+      "display": "In-situ hybridization"
+    },
+    {
+      "code": "0124",
+      "definition": "Molecular, Ligase Chain Reaction",
+      "display": "Ligase Chain Reaction"
+    },
+    {
+      "code": "0125",
+      "definition": "Molecular, Ligation Activated Transcription",
+      "display": "Ligation Activated Transcription"
+    },
+    {
+      "code": "0126",
+      "definition": "Molecular, Nucleic Acid Probe",
+      "display": "Nucleic Acid Probe"
+    },
+    {
+      "code": "0128",
+      "definition": "Molecular, Nucleic acid probe with amplification\r\n\n                        \r\n\n                        Rationale: Duplicate of code 0126. Use code 0126 instead.",
+      "display": "Nucleic acid probe with amplification"
+    },
+    {
+      "code": "0129",
+      "definition": "Molecular, Nucleic acid probe with target amplification",
+      "display": "Nucleic acid probe with target amplification"
+    },
+    {
+      "code": "0130",
+      "definition": "Molecular, Nucleic acid reverse transcription",
+      "display": "Nucleic acid reverse transcription"
+    },
+    {
+      "code": "0131",
+      "definition": "Molecular, Nucleic Acid Sequence Based Analysis",
+      "display": "Nucleic Acid Sequence Based Analysis"
+    },
+    {
+      "code": "0132",
+      "definition": "Molecular, Polymerase chain reaction",
+      "display": "Polymerase chain reaction"
+    },
+    {
+      "code": "0133",
+      "definition": "Molecular, Q-Beta Replicase or probe amplification category method",
+      "display": "Q-Beta Replicase or probe amplification category method"
+    },
+    {
+      "code": "0134",
+      "definition": "Molecular, Restriction Fragment Length Polymorphism",
+      "display": "Restriction Fragment Length Polymorphism"
+    },
+    {
+      "code": "0135",
+      "definition": "Molecular, Southern Blot",
+      "display": "Southern Blot"
+    },
+    {
+      "code": "0136",
+      "definition": "Molecular, Strand Displacement Amplification",
+      "display": "Strand Displacement Amplification"
+    },
+    {
+      "code": "0137",
+      "definition": "Molecular, Transcription Mediated Amplification",
+      "display": "Transcription Mediated Amplification"
+    },
+    {
+      "code": "0138",
+      "definition": "Molecular, Western Blot",
+      "display": "Western Blot"
+    },
+    {
+      "code": "0139",
+      "definition": "Precipitation, Flocculation",
+      "display": "Flocculation"
+    },
+    {
+      "code": "0140",
+      "definition": "Precipitation, Immune precipitation",
+      "display": "Immune precipitation"
+    },
+    {
+      "code": "0141",
+      "definition": "Precipitation, Milk ring test",
+      "display": "Milk ring test"
+    },
+    {
+      "code": "0142",
+      "definition": "Precipitation, Precipitin",
+      "display": "Precipitin"
+    },
+    {
+      "code": "0143",
+      "definition": "Stain, Acid fast",
+      "display": "Acid fast stain"
+    },
+    {
+      "code": "0144",
+      "definition": "Stain, Acid fast, fluorochrome",
+      "display": "Acid fast stain, fluorochrome"
+    },
+    {
+      "code": "0145",
+      "definition": "Stain, Acid fast, Kinyoun's cold carbolfuchsin",
+      "display": "Acid fast stain, Kinyoun's cold carbolfuchsin"
+    },
+    {
+      "code": "0146",
+      "definition": "Stain, Acid fast, Ziehl-Neelsen",
+      "display": "Acid fast stain, Ziehl-Neelsen"
+    },
+    {
+      "code": "0147",
+      "definition": "Stain, Acid phosphatase",
+      "display": "Acid phosphatase stain"
+    },
+    {
+      "code": "0148",
+      "definition": "Stain, Acridine orange",
+      "display": "Acridine orange stain"
+    },
+    {
+      "code": "0149",
+      "definition": "Stain, Active brilliant orange KH",
+      "display": "Active brilliant orange KH stain"
+    },
+    {
+      "code": "0150",
+      "definition": "Stain, Alazarin red S",
+      "display": "Alazarin red S stain"
+    },
+    {
+      "code": "0151",
+      "definition": "Stain, Alcian blue",
+      "display": "Alcian blue stain"
+    },
+    {
+      "code": "0152",
+      "definition": "Stain, Alcian blue with Periodic acid Schiff",
+      "display": "Alcian blue with Periodic acid Schiff stain"
+    },
+    {
+      "code": "0153",
+      "definition": "Stain, Argentaffin",
+      "display": "Argentaffin stain"
+    },
+    {
+      "code": "0154",
+      "definition": "Stain, Argentaffin silver",
+      "display": "Argentaffin silver stain"
+    },
+    {
+      "code": "0155",
+      "definition": "Stain, Azure-eosin",
+      "display": "Azure-eosin stain"
+    },
+    {
+      "code": "0156",
+      "definition": "Stain, Basic Fuschin",
+      "display": "Basic Fuschin stain"
+    },
+    {
+      "code": "0157",
+      "definition": "Stain, Bennhold",
+      "display": "Bennhold stain"
+    },
+    {
+      "code": "0158",
+      "definition": "Stain, Bennhold's Congo red",
+      "display": "Bennhold's Congo red stain"
+    },
+    {
+      "code": "0159",
+      "definition": "Stain, Bielschowsky",
+      "display": "Bielschowsky stain"
+    },
+    {
+      "code": "0160",
+      "definition": "Stain, Bielschowsky's silver",
+      "display": "Bielschowsky's silver stain"
+    },
+    {
+      "code": "0161",
+      "definition": "Stain, Bleach",
+      "display": "Bleach stain"
+    },
+    {
+      "code": "0162",
+      "definition": "Stain, Bodian",
+      "display": "Bodian stain"
+    },
+    {
+      "code": "0163",
+      "definition": "Stain, Brown-Brenn",
+      "display": "Brown-Brenn stain"
+    },
+    {
+      "code": "0164",
+      "definition": "Stain, Butyrate-esterase",
+      "display": "Butyrate-esterase stain"
+    },
+    {
+      "code": "0165",
+      "definition": "Stain, Calcofluor white fluorescent",
+      "display": "Calcofluor white fluorescent stain"
+    },
+    {
+      "code": "0166",
+      "definition": "Stain, Carbol-fuchsin",
+      "display": "Carbol-fuchsin stain"
+    },
+    {
+      "code": "0167",
+      "definition": "Stain, Carmine",
+      "display": "Carmine stain"
+    },
+    {
+      "code": "0168",
+      "definition": "Stain, Churukian-Schenk",
+      "display": "Churukian-Schenk stain"
+    },
+    {
+      "code": "0169",
+      "definition": "Stain, Congo red",
+      "display": "Congo red stain"
+    },
+    {
+      "code": "0170",
+      "definition": "Stain, Cresyl echt violet",
+      "display": "Cresyl echt violet stain"
+    },
+    {
+      "code": "0171",
+      "definition": "Stain, Crystal violet",
+      "display": "Crystal violet stain"
+    },
+    {
+      "code": "0172",
+      "definition": "Stain, De Galantha",
+      "display": "De Galantha stain"
+    },
+    {
+      "code": "0173",
+      "definition": "Stain, Dieterle silver impregnation",
+      "display": "Dieterle silver impregnation stain"
+    },
+    {
+      "code": "0174",
+      "definition": "Stain, Fite-Farco",
+      "display": "Fite-Farco stain"
+    },
+    {
+      "code": "0175",
+      "definition": "Stain, Fontana-Masson silver",
+      "display": "Fontana-Masson silver stain"
+    },
+    {
+      "code": "0176",
+      "definition": "Stain, Fouchet",
+      "display": "Fouchet stain"
+    },
+    {
+      "code": "0177",
+      "definition": "Stain, Gomori",
+      "display": "Gomori stain"
+    },
+    {
+      "code": "0178",
+      "definition": "Stain, Gomori methenamine silver",
+      "display": "Gomori methenamine silver stain"
+    },
+    {
+      "code": "0179",
+      "definition": "Stain, Gomori-Wheatly trichrome",
+      "display": "Gomori-Wheatly trichrome stain"
+    },
+    {
+      "code": "0180",
+      "definition": "Stain, Gridley",
+      "display": "Gridley stain"
+    },
+    {
+      "code": "0181",
+      "definition": "Stain, Grimelius silver",
+      "display": "Grimelius silver stain"
+    },
+    {
+      "code": "0182",
+      "definition": "Stain, Grocott",
+      "display": "Grocott stain"
+    },
+    {
+      "code": "0183",
+      "definition": "Stain, Grocott methenamine silver",
+      "display": "Grocott methenamine silver stain"
+    },
+    {
+      "code": "0184",
+      "definition": "Stain, Hale's colloidal ferric oxide",
+      "display": "Hale's colloidal ferric oxide stain"
+    },
+    {
+      "code": "0185",
+      "definition": "Stain, Hale's colloidal iron",
+      "display": "Hale's colloidal iron stain"
+    },
+    {
+      "code": "0186",
+      "definition": "Stain, Hansel",
+      "display": "Hansel stain"
+    },
+    {
+      "code": "0187",
+      "definition": "Stain, Harris regressive hematoxylin and eosin",
+      "display": "Harris regressive hematoxylin and eosin stain"
+    },
+    {
+      "code": "0188",
+      "definition": "Stain, Hematoxylin and eosin",
+      "display": "Hematoxylin and eosin stain"
+    },
+    {
+      "code": "0189",
+      "definition": "Stain, Highman",
+      "display": "Highman stain"
+    },
+    {
+      "code": "0190",
+      "definition": "Stain, Holzer",
+      "display": "Holzer stain"
+    },
+    {
+      "code": "0191",
+      "definition": "Stain, Iron hematoxylin",
+      "display": "Iron hematoxylin stain"
+    },
+    {
+      "code": "0192",
+      "definition": "Stain, Jones",
+      "display": "Jones stain"
+    },
+    {
+      "code": "0193",
+      "definition": "Stain, Jones methenamine silver",
+      "display": "Jones methenamine silver stain"
+    },
+    {
+      "code": "0194",
+      "definition": "Stain, Kossa",
+      "display": "Kossa stain"
+    },
+    {
+      "code": "0195",
+      "definition": "Stain, Lawson-Van Gieson",
+      "display": "Lawson-Van Gieson stain"
+    },
+    {
+      "code": "0196",
+      "definition": "Stain, Loeffler methylene blue",
+      "display": "Loeffler methylene blue stain"
+    },
+    {
+      "code": "0197",
+      "definition": "Stain, Luxol fast blue with cresyl violet",
+      "display": "Luxol fast blue with cresyl violet stain"
+    },
+    {
+      "code": "0198",
+      "definition": "Stain, Luxol fast blue with Periodic acid-Schiff",
+      "display": "Luxol fast blue with Periodic acid-Schiff stain"
+    },
+    {
+      "code": "0199",
+      "definition": "Stain, MacNeal's tetrachrome blood",
+      "display": "MacNeal's tetrachrome blood stain"
+    },
+    {
+      "code": "0200",
+      "definition": "Stain, Mallory-Heidenhain",
+      "display": "Mallory-Heidenhain stain"
+    },
+    {
+      "code": "0201",
+      "definition": "Stain, Masson trichrome",
+      "display": "Masson trichrome stain"
+    },
+    {
+      "code": "0202",
+      "definition": "Stain, Mayer mucicarmine",
+      "display": "Mayer mucicarmine stain"
+    },
+    {
+      "code": "0203",
+      "definition": "Stain, Mayers progressive hematoxylin and eosin",
+      "display": "Mayers progressive hematoxylin and eosin stain"
+    },
+    {
+      "code": "0204",
+      "definition": "Stain, May-Grunwald Giemsa",
+      "display": "May-Grunwald Giemsa stain"
+    },
+    {
+      "code": "0205",
+      "definition": "Stain, Methyl green",
+      "display": "Methyl green stain"
+    },
+    {
+      "code": "0206",
+      "definition": "Stain, Methyl green pyronin",
+      "display": "Methyl green pyronin stain"
+    },
+    {
+      "code": "0207",
+      "definition": "Stain, Modified Gomori-Wheatly trichrome",
+      "display": "Modified Gomori-Wheatly trichrome stain"
+    },
+    {
+      "code": "0208",
+      "definition": "Stain, Modified Masson trichrome",
+      "display": "Modified Masson trichrome stain"
+    },
+    {
+      "code": "0209",
+      "definition": "Stain, Modified trichrome",
+      "display": "Modified trichrome stain"
+    },
+    {
+      "code": "0210",
+      "definition": "Stain, Movat pentachrome",
+      "display": "Movat pentachrome stain"
+    },
+    {
+      "code": "0211",
+      "definition": "Stain, Mucicarmine",
+      "display": "Mucicarmine stain"
+    },
+    {
+      "code": "0212",
+      "definition": "Stain, Neutral red",
+      "display": "Neutral red stain"
+    },
+    {
+      "code": "0213",
+      "definition": "Stain, Night blue",
+      "display": "Night blue stain"
+    },
+    {
+      "code": "0214",
+      "definition": "Stain, Non-specific esterase",
+      "display": "Non-specific esterase stain"
+    },
+    {
+      "code": "0215",
+      "definition": "Stain, Oil red-O",
+      "display": "Oil red-O stain"
+    },
+    {
+      "code": "0216",
+      "definition": "Stain, Orcein",
+      "display": "Orcein stain"
+    },
+    {
+      "code": "0217",
+      "definition": "Stain, Perls'",
+      "display": "Perls' stain"
+    },
+    {
+      "code": "0218",
+      "definition": "Stain, Phosphotungstic acid-hematoxylin",
+      "display": "Phosphotungstic acid-hematoxylin stain"
+    },
+    {
+      "code": "0219",
+      "definition": "Stain, Potassium ferrocyanide",
+      "display": "Potassium ferrocyanide stain"
+    },
+    {
+      "code": "0220",
+      "definition": "Stain, Prussian blue",
+      "display": "Prussian blue stain"
+    },
+    {
+      "code": "0221",
+      "definition": "Stain, Putchler modified Bennhold",
+      "display": "Putchler modified Bennhold stain"
+    },
+    {
+      "code": "0222",
+      "definition": "Stain, Quinacrine fluorescent",
+      "display": "Quinacrine fluorescent stain"
+    },
+    {
+      "code": "0223",
+      "definition": "Stain, Reticulin",
+      "display": "Reticulin stain"
+    },
+    {
+      "code": "0224",
+      "definition": "Stain, Rhodamine",
+      "display": "Rhodamine stain"
+    },
+    {
+      "code": "0225",
+      "definition": "Stain, Safranin",
+      "display": "Safranin stain"
+    },
+    {
+      "code": "0226",
+      "definition": "Stain, Schmorl",
+      "display": "Schmorl stain"
+    },
+    {
+      "code": "0227",
+      "definition": "Stain, Seiver-Munger",
+      "display": "Seiver-Munger stain"
+    },
+    {
+      "code": "0228",
+      "definition": "Stain, Silver",
+      "display": "Silver stain"
+    },
+    {
+      "code": "0229",
+      "definition": "Stain, Specific esterase",
+      "display": "Specific esterase stain"
+    },
+    {
+      "code": "0230",
+      "definition": "Stain, Steiner silver",
+      "display": "Steiner silver stain"
+    },
+    {
+      "code": "0231",
+      "definition": "Stain, Sudan III",
+      "display": "Sudan III stain"
+    },
+    {
+      "code": "0232",
+      "definition": "Stain, Sudan IVI",
+      "display": "Sudan IVI stain"
+    },
+    {
+      "code": "0233",
+      "definition": "Stain, Sulfated alcian blue",
+      "display": "Sulfated alcian blue stain"
+    },
+    {
+      "code": "0234",
+      "definition": "Stain, Supravital",
+      "display": "Supravital stain"
+    },
+    {
+      "code": "0235",
+      "definition": "Stain, Thioflavine-S",
+      "display": "Thioflavine-S stain"
+    },
+    {
+      "code": "0236",
+      "definition": "Stain, Three micron Giemsa",
+      "display": "Three micron Giemsa stain"
+    },
+    {
+      "code": "0237",
+      "definition": "Stain, Vassar-Culling",
+      "display": "Vassar-Culling stain"
+    },
+    {
+      "code": "0238",
+      "definition": "Stain, Vital",
+      "display": "Vital Stain"
+    },
+    {
+      "code": "0239",
+      "definition": "Stain, von Kossa",
+      "display": "von Kossa stain"
+    },
+    {
+      "code": "0243",
+      "definition": "Susceptibility, Minimum bactericidal concentration, macrodilution",
+      "display": "Minimum bactericidal concentration test, macrodilution"
+    },
+    {
+      "code": "0244",
+      "definition": "Susceptibility, Minimum bactericidal concentration, microdilution",
+      "display": "Minimum bactericidal concentration test, microdilution"
+    },
+    {
+      "code": "0247",
+      "definition": "Turbidometric",
+      "display": "Turbidometric"
+    },
+    {
+      "code": "0248",
+      "definition": "Turbidometric, Refractometric",
+      "display": "Refractometric"
+    },
+    {
+      "code": "0249",
+      "definition": "Chromatography, Thin Layer",
+      "display": "Thin layer chromatography (TLC)"
+    },
+    {
+      "code": "0250",
+      "definition": "Immunoassay, enzyme-multiplied technique (EMIT)",
+      "display": "EMIT"
+    },
+    {
+      "code": "0251",
+      "definition": "Flow Cytometry",
+      "display": "Flow cytometry (FC)"
+    },
+    {
+      "code": "0252",
+      "definition": "Radial Immunodiffusion",
+      "display": "Radial immunodiffusion (RID)"
+    },
+    {
+      "code": "0253",
+      "definition": "Immunoassay, Fluorescence Polarization",
+      "display": "Fluorescence polarization immunoassay (FPIA)"
+    },
+    {
+      "code": "0254",
+      "definition": "Electrophoresis, Immunofixation",
+      "display": "Immunofixation electrophoresis (IFE)"
+    },
+    {
+      "code": "0255",
+      "definition": "Dialysis, Direct Equilibrium",
+      "display": "Equilibrium dialysis"
+    },
+    {
+      "code": "0256",
+      "definition": "Acid Elution, Kleihauer-Betke Method",
+      "display": "Kleihauer-Betke acid elution"
+    },
+    {
+      "code": "0257",
+      "definition": "Immunofluorescence, Anti-Complement",
+      "display": "Anti-complement immunofluorescence (ACIF)"
+    },
+    {
+      "code": "0258",
+      "definition": "Gas Chromatography/Mass Spectroscopy",
+      "display": "GC/MS"
+    },
+    {
+      "code": "0259",
+      "definition": "Light Scatter, Nephelometry",
+      "display": "Nephelometry"
+    },
+    {
+      "code": "0260",
+      "definition": "Immunoassay, IgE Antibody Test",
+      "display": "IgE immunoassay antibody"
+    },
+    {
+      "code": "0261",
+      "definition": "Lymphocyte Microcytotoxicity Assay",
+      "display": "Lymphocyte Microcytotoxicity Assay"
+    },
+    {
+      "code": "0262",
+      "definition": "Spectrophotometry",
+      "display": "Spectrophotometry"
+    },
+    {
+      "code": "0263",
+      "definition": "Spectrophotometry, Atomic Absorption",
+      "display": "Atomic absorption spectrophotometry (AAS)"
+    },
+    {
+      "code": "0264",
+      "definition": "Electrochemical, Ion Selective Electrode",
+      "display": "Ion selective electrode (ISE)"
+    },
+    {
+      "code": "0265",
+      "definition": "Chromatography, Gas",
+      "display": "Gas chromatography (GC)"
+    },
+    {
+      "code": "0266",
+      "definition": "Isoelectric Focusing",
+      "display": "Isoelectric focusing (IEF)"
+    },
+    {
+      "code": "0267",
+      "definition": "Immunoassay, Chemiluminescent",
+      "display": "Immunochemiluminescence"
+    },
+    {
+      "code": "0268",
+      "definition": "Immunoassay, Microparticle Enzyme",
+      "display": "Microparticle enzyme immunoassay (MEIA)"
+    },
+    {
+      "code": "0269",
+      "definition": "Inductively-Coupled Plasma/Mass Spectrometry",
+      "display": "ICP/MS"
+    },
+    {
+      "code": "0270",
+      "definition": "Immunoassay, Immunoradiometric Assay",
+      "display": "Immunoradiometric assay (IRMA)"
+    },
+    {
+      "code": "0271",
+      "definition": "Coagulation, Photo Optical Clot Detection",
+      "display": "Photo optical clot detection"
+    },
+    {
+      "code": "0280",
+      "concept": [
+        {
+          "code": "0240",
+          "definition": "Susceptibility, Antibiotic sensitivity, disk",
+          "display": "Antibiotic sensitivity, disk"
+        },
+        {
+          "code": "0241",
+          "definition": "Susceptibility, BACTEC susceptibility test",
+          "display": "BACTEC susceptibility test"
+        },
+        {
+          "code": "0242",
+          "definition": "Susceptibility, Disk dilution",
+          "display": "Disk dilution"
+        },
+        {
+          "code": "0272",
+          "concept": [
+            {
+              "code": "0245",
+              "definition": "Susceptibility, Minimum Inhibitory concentration, macrodilution",
+              "display": "Minimum Inhibitory Concentration, macrodilution"
+            },
+            {
+              "code": "0246",
+              "definition": "Susceptibility, Minimum Inhibitory concentration, microdilution",
+              "display": "Minimum Inhibitory Concentration, microdilution"
+            }
+          ],
+          "definition": "Testing to measure the minimum concentration of the antibacterial agent in a given culture medium below which bacterial growth is not inhibited.",
+          "display": "Minimum Inhibitory Concentration"
+        },
+        {
+          "code": "0273",
+          "definition": "Viral Genotype Susceptibility",
+          "display": "Viral Genotype Susceptibility"
+        },
+        {
+          "code": "0274",
+          "definition": "Viral Phenotype Susceptibility",
+          "display": "Viral Phenotype Susceptibility"
+        },
+        {
+          "code": "0275",
+          "definition": "Gradient Strip",
+          "display": "Gradient Strip"
+        },
+        {
+          "code": "0275a",
+          "definition": "Minimum Lethal Concentration (MLC)",
+          "display": "Minimum Lethal Concentration (MLC)"
+        },
+        {
+          "code": "0276",
+          "definition": "Testing to measure the minimum concentration of the antibacterial agent in a given culture medium below which bacterial growth is not inhibited.",
+          "display": "Slow Mycobacteria Susceptibility"
+        },
+        {
+          "code": "0277",
+          "definition": "Serum bactericidal titer",
+          "display": "Serum bactericidal titer"
+        },
+        {
+          "code": "0278",
+          "definition": "Agar screen",
+          "display": "Agar screen"
+        },
+        {
+          "code": "0279",
+          "definition": "Disk induction",
+          "display": "Disk induction"
+        }
+      ],
+      "definition": "Test methods designed to determine a microorganismaTMs susceptibility to being killed by an antibiotic.",
+      "display": "Susceptibility Testing"
+    },
+    {
+      "code": "0127",
+      "definition": "Molecular, Nucleic acid probe",
+      "display": "Nucleic acid probe",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "retired"
+        }
+      ]
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": " A code that provides additional detail about the means or technique used to ascertain the observation.  Examples:\r\nBlood pressure measurement method: arterial puncture vs. sphygmomanometer (Riva-Rocci), sitting vs. supine position, etc.  OpenIssue:\r\nDescription copied from Concept Domain of same name.  Must be verified.  Note that the Domain has a full discussion about use of the attribute and constraining that is not appropriate for the code system description.  Needs to be improved.",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.84"
+    }
+  ],
+  "name": "v3.ObservationMethod",
+  "property": [
+    {
+      "code": "notSelectable",
+      "description": "Indicates that the code is abstract - only intended to be used as a selector for other concepts",
+      "type": "boolean",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable"
+    },
+    {
+      "code": "status",
+      "description": "A property that indicates the status of the concept. One of active, experimental, deprecated, retired",
+      "type": "code",
+      "uri": "http://hl7.org/fhir/concept-properties#status"
+    }
+  ],
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System ObservationMethod",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-ObservationMethod",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-ObservationMethod",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

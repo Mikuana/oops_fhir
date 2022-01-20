@@ -1,0 +1,72 @@
+{
+  "id": "diagnosis-role",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "AD",
+      "display": "Admission diagnosis"
+    },
+    {
+      "code": "DD",
+      "display": "Discharge diagnosis"
+    },
+    {
+      "code": "CC",
+      "display": "Chief complaint"
+    },
+    {
+      "code": "CM",
+      "display": "Comorbidity diagnosis"
+    },
+    {
+      "code": "pre-op",
+      "display": "pre-op diagnosis"
+    },
+    {
+      "code": "post-op",
+      "display": "post-op diagnosis"
+    },
+    {
+      "code": "billing",
+      "display": "Billing"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1054"
+    }
+  ],
+  "name": "DiagnosisRole",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "url": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+  "valueSet": "http://hl7.org/fhir/ValueSet/diagnosis-role",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

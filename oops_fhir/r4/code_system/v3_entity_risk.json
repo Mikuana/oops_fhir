@@ -1,0 +1,107 @@
+{
+  "id": "v3-EntityRisk",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "AGG",
+      "definition": "A danger that can be associated with certain living subjects, including humans.",
+      "display": "aggressive"
+    },
+    {
+      "code": "BIO",
+      "definition": "The dangers associated with normal biological materials. I.e. potential risk of unknown infections.  Routine biological materials from living subjects.",
+      "display": "Biological"
+    },
+    {
+      "code": "COR",
+      "definition": "Material is corrosive and may cause severe injury to skin, mucous membranes and eyes. Avoid any unprotected contact.",
+      "display": "Corrosive"
+    },
+    {
+      "code": "ESC",
+      "definition": "The entity is at risk for escaping from containment or control.",
+      "display": "Escape Risk"
+    },
+    {
+      "code": "IFL",
+      "concept": [
+        {
+          "code": "EXP",
+          "definition": "Material is an explosive mixture.  Keep away from fire, sparks, and heat.",
+          "display": "explosive"
+        }
+      ],
+      "definition": "Material is highly inflammable and in certain mixtures (with air) may lead to explosions.  Keep away from fire, sparks and excessive heat.",
+      "display": "inflammable"
+    },
+    {
+      "code": "INF",
+      "concept": [
+        {
+          "code": "BHZ",
+          "definition": "Material contains microorganisms that is an environmental hazard.  Must be handled with special care.",
+          "display": "biohazard"
+        }
+      ],
+      "definition": "Material known to be infectious with human pathogenic microorganisms.  Those who handle this material must take precautions for their protection.",
+      "display": "infectious"
+    },
+    {
+      "code": "INJ",
+      "definition": "Material is solid and sharp (e.g., cannulas).  Dispose in hard container.",
+      "display": "injury hazard"
+    },
+    {
+      "code": "POI",
+      "definition": "Material is poisonous to humans and/or animals.  Special care must be taken to avoid incorporation, even of small amounts.",
+      "display": "poison"
+    },
+    {
+      "code": "RAD",
+      "definition": "Material is a source for ionizing radiation and must be handled with special care to avoid injury of those who handle it and to avoid environmental hazards.",
+      "display": "radioactive"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": " Kinds of risks associated with the handling of the material..",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.46"
+    }
+  ],
+  "name": "v3.EntityRisk",
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System EntityRisk",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-EntityRisk",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-EntityRisk",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

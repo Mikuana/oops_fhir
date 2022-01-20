@@ -1,0 +1,93 @@
+{
+  "id": "medicationrequest-intent",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "proposal",
+      "definition": "The request is a suggestion made by someone/something that doesn't have an intention to ensure it occurs and without providing an authorization to act",
+      "display": "Proposal"
+    },
+    {
+      "code": "plan",
+      "definition": "The request represents an intention to ensure something occurs without providing an authorization for others to act.",
+      "display": "Plan"
+    },
+    {
+      "code": "order",
+      "definition": "The request represents a request/demand and authorization for action",
+      "display": "Order"
+    },
+    {
+      "code": "original-order",
+      "definition": "The request represents the original authorization for the medication request.",
+      "display": "Original Order"
+    },
+    {
+      "code": "reflex-order",
+      "definition": "The request represents an automatically generated supplemental authorization for action based on a parent authorization together with initial results of the action taken against that parent authorization..",
+      "display": "Reflex Order"
+    },
+    {
+      "code": "filler-order",
+      "definition": "The request represents the view of an authorization instantiated by a fulfilling system representing the details of the fulfiller's intention to act upon a submitted order.",
+      "display": "Filler Order"
+    },
+    {
+      "code": "instance-order",
+      "definition": "The request represents an instance for the particular order, for example a medication administration record.",
+      "display": "Instance Order"
+    },
+    {
+      "code": "option",
+      "definition": "The request represents a component or option for a RequestGroup that establishes timing, conditionality and/or  other constraints among a set of requests.",
+      "display": "Option"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "MedicationRequest Intent Codes",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1378"
+    }
+  ],
+  "name": "medicationRequest Intent",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Medication request  intent",
+  "url": "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+  "valueSet": "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

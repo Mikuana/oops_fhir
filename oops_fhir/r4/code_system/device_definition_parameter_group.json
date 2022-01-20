@@ -1,0 +1,86 @@
+{
+  "id": "parameter-group",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "haemodynamic",
+      "definition": "Haemodynamic Parameter Group - MDC_PGRP_HEMO.",
+      "display": "Haemodynamic Parameter Group"
+    },
+    {
+      "code": "ecg",
+      "definition": "ECG Parameter Group - MDC_PGRP_ECG.",
+      "display": "ECG Parameter Group"
+    },
+    {
+      "code": "respiratory",
+      "definition": "Respiratory Parameter Group - MDC_PGRP_RESP.",
+      "display": "Respiratory Parameter Group"
+    },
+    {
+      "code": "ventilation",
+      "definition": "Ventilation Parameter Group - MDC_PGRP_VENT.",
+      "display": "Ventilation Parameter Group"
+    },
+    {
+      "code": "neurological",
+      "definition": "Neurological Parameter Group - MDC_PGRP_NEURO.",
+      "display": "Neurological Parameter Group"
+    },
+    {
+      "code": "drug-delivery",
+      "definition": "Drug Delivery Parameter Group - MDC_PGRP_DRUG.",
+      "display": "Drug Delivery Parameter Group"
+    },
+    {
+      "code": "fluid-chemistry",
+      "definition": "Fluid Chemistry Parameter Group - MDC_PGRP_FLUID.",
+      "display": "Fluid Chemistry Parameter Group"
+    },
+    {
+      "code": "blood-chemistry",
+      "definition": "Blood Chemistry Parameter Group - MDC_PGRP_BLOOD_CHEM.",
+      "display": "Blood Chemistry Parameter Group"
+    },
+    {
+      "code": "miscellaneous",
+      "definition": "Miscellaneous Parameter Group - MDC_PGRP_MISC.",
+      "display": "Miscellaneous Parameter Group"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes identifying groupings of parameters; e.g. Cardiovascular.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1264"
+    }
+  ],
+  "name": "DeviceDefinitionParameterGroup",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "DeviceDefinitionParameterGroup",
+  "url": "http://terminology.hl7.org/CodeSystem/parameter-group",
+  "valueSet": "http://hl7.org/fhir/ValueSet/parameter-group",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

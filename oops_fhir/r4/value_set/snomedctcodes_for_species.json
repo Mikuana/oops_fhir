@@ -1,0 +1,49 @@
+{
+  "id": "sequence-species",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cg"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "copyright": "This value set includes content from SNOMED CT, which is copyright \u00a9 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes identifying atomic results of observations when value is type codeableConcept. This value set includes all the children of SNOMED CT Concepts from SCTIDs 404684003 Clinical finding (finding), 410607006 Organism (organism),362981000 Qualifier value (qualifier value), 105590001 Substance (substance), and 123037004 Body structure (body structure).  It is provided as a suggestive example",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.216"
+    }
+  ],
+  "name": "SNOMEDCTCodesForSpecies",
+  "publisher": "HL7 Clinical Genomics Team",
+  "status": "draft",
+  "title": "SNOMED CT Codes for species",
+  "url": "http://hl7.org/fhir/ValueSet/sequence-species",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

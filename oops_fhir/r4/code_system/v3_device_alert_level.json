@@ -1,0 +1,68 @@
+{
+  "id": "v3-DeviceAlertLevel",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "C",
+      "definition": "Shut Down, Fix Problem and Re-initialize",
+      "display": "Critical"
+    },
+    {
+      "code": "N",
+      "definition": "No Corrective Action Needed",
+      "display": "Normal"
+    },
+    {
+      "code": "S",
+      "definition": "Corrective Action Required",
+      "display": "Serious"
+    },
+    {
+      "code": "W",
+      "definition": "Corrective Action Anticipated",
+      "display": "Warning"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": " Domain values for the Device.Alert_levelCode",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.31"
+    }
+  ],
+  "name": "v3.DeviceAlertLevel",
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System DeviceAlertLevel",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-DeviceAlertLevel",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-DeviceAlertLevel",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

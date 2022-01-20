@@ -1,0 +1,75 @@
+{
+  "id": "library-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "logic-library",
+      "definition": "The resource is a shareable library of formalized knowledge.",
+      "display": "Logic Library"
+    },
+    {
+      "code": "model-definition",
+      "definition": "The resource is a definition of an information model.",
+      "display": "Model Definition"
+    },
+    {
+      "code": "asset-collection",
+      "definition": "The resource is a collection of knowledge assets.",
+      "display": "Asset Collection"
+    },
+    {
+      "code": "module-definition",
+      "definition": "The resource defines the dependencies, parameters, and data requirements for a particular module or evaluation context.",
+      "display": "Module Definition"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The type of knowledge asset this library contains.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1230"
+    }
+  ],
+  "name": "LibraryType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "LibraryType",
+  "url": "http://terminology.hl7.org/CodeSystem/library-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/library-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "v3-TargetAwareness",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "D",
+      "definition": "Target person has been informed about the issue but currently denies it.",
+      "display": "denying"
+    },
+    {
+      "code": "F",
+      "definition": "Target person is fully aware of the issue.",
+      "display": "full awareness"
+    },
+    {
+      "code": "I",
+      "definition": "Target person is not capable of comprehending the issue.",
+      "display": "incapable"
+    },
+    {
+      "code": "M",
+      "definition": "Target person is marginally aware of the issue.",
+      "display": "marginal"
+    },
+    {
+      "code": "P",
+      "definition": "Target person is partially aware of the issue.",
+      "display": "partial"
+    },
+    {
+      "code": "U",
+      "definition": "Target person has not yet been informed of the issue.",
+      "display": "uninformed"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": "**** MISSING DEFINITIONS ****",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.137"
+    }
+  ],
+  "name": "v3.TargetAwareness",
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System TargetAwareness",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-TargetAwareness",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-TargetAwareness",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

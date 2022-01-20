@@ -1,0 +1,64 @@
+{
+  "id": "payment-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "paid",
+      "definition": "The payment has been sent physically or electronically.",
+      "display": "Paid"
+    },
+    {
+      "code": "cleared",
+      "definition": "The payment has been received by the payee.",
+      "display": "Cleared"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an example set.",
+  "description": "This value set includes a sample set of Payment Status codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1187"
+    }
+  ],
+  "name": "PaymentStatusCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Payment Status Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/paymentstatus",
+  "valueSet": "http://hl7.org/fhir/ValueSet/payment-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "name-assembly-order",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "NL1",
+      "display": "Own Name"
+    },
+    {
+      "code": "NL2",
+      "display": "Partner Name"
+    },
+    {
+      "code": "NL3",
+      "display": "Partner Name followed by Maiden Name"
+    },
+    {
+      "code": "NL4",
+      "display": "Own Name followed by Partner Name"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A code that represents the preferred display order of the components of a human name.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1266"
+    }
+  ],
+  "name": "HumanNameAssemblyOrder",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "HumanNameAssemblyOrder",
+  "url": "http://terminology.hl7.org/CodeSystem/name-assembly-order",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

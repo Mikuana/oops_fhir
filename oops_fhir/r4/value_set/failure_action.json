@@ -1,0 +1,53 @@
+{
+  "id": "verificationresult-failure-action",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/failure-action"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-06-05T14:06:02+00:00",
+  "description": "The result if validation fails",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.890"
+    }
+  ],
+  "immutable": true,
+  "name": "failure-action",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "Failure-action",
+  "url": "http://hl7.org/fhir/ValueSet/verificationresult-failure-action",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

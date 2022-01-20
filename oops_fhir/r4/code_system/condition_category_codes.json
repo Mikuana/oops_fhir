@@ -1,0 +1,63 @@
+{
+  "id": "condition-category",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "problem-list-item",
+      "definition": "An item on a problem list that can be managed over time and can be expressed by a practitioner (e.g. physician, nurse), patient, or related person.",
+      "display": "Problem List Item"
+    },
+    {
+      "code": "encounter-diagnosis",
+      "definition": "A point in time diagnosis (e.g. from a physician or nurse) in context of an encounter.",
+      "display": "Encounter Diagnosis"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "Preferred value set for Condition Categories.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1073"
+    }
+  ],
+  "name": "ConditionCategoryCodes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Condition Category Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/condition-category",
+  "valueSet": "http://hl7.org/fhir/ValueSet/condition-category",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

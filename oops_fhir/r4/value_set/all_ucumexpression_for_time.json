@@ -1,0 +1,39 @@
+{
+  "id": "all-time-units",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "compose": {
+    "include": [
+      {
+        "filter": [
+          {
+            "op": "=",
+            "property": "canonical",
+            "value": "a"
+          }
+        ],
+        "system": "http://unitsofmeasure.org"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "copyright": "The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright \u00a9 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.",
+  "description": "Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes for units of time",
+  "name": "AllUCUMExpressionForTime",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "All UCUM Expression for Time",
+  "url": "http://hl7.org/fhir/ValueSet/all-time-units",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "definition-resource-types",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "vocab"
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "ActivityDefinition",
+      "definition": "This resource allows for the definition of some activity to be performed, independent of a particular patient, practitioner, or other performance context.",
+      "display": "ActivityDefinition"
+    },
+    {
+      "code": "EventDefinition",
+      "definition": "The EventDefinition resource provides a reusable description of when a particular event can occur.",
+      "display": "EventDefinition"
+    },
+    {
+      "code": "Measure",
+      "definition": "The Measure resource provides the definition of a quality measure.",
+      "display": "Measure"
+    },
+    {
+      "code": "OperationDefinition",
+      "definition": "A formal computable definition of an operation (on the RESTful interface) or a named query (using the search interaction).",
+      "display": "OperationDefinition"
+    },
+    {
+      "code": "PlanDefinition",
+      "definition": "This resource allows for the definition of various types of plans as a sharable, consumable, and executable artifact. The resource is general enough to support the description of a broad range of clinical artifacts such as clinical decision support rules, order sets and protocols.",
+      "display": "PlanDefinition"
+    },
+    {
+      "code": "Questionnaire",
+      "definition": "A structured set of questions intended to guide the collection of answers from end-users. Questionnaires provide detailed control over order, presentation, phraseology and grouping to allow coherent, consistent data collection.",
+      "display": "Questionnaire"
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A list of all the definition resource types defined in this version of the FHIR specification.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1057"
+    }
+  ],
+  "name": "DefinitionResourceType",
+  "status": "draft",
+  "title": "DefinitionResourceType",
+  "url": "http://hl7.org/fhir/definition-resource-types",
+  "valueSet": "http://hl7.org/fhir/ValueSet/definition-resource-types",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

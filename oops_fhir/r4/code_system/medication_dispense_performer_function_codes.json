@@ -1,0 +1,73 @@
+{
+  "id": "medicationdispense-performer-function",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "dataenterer",
+      "definition": "Recorded the details of the request",
+      "display": "Data Enterer"
+    },
+    {
+      "code": "packager",
+      "definition": "Prepared the medication.",
+      "display": "Packager"
+    },
+    {
+      "code": "checker",
+      "definition": "Performed initial quality assurance on the prepared medication",
+      "display": "Checker"
+    },
+    {
+      "code": "finalchecker",
+      "definition": "Performed the final quality assurance on the prepared medication against the request. Typically, this is a pharmacist function.",
+      "display": "Final Checker"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "MedicationDispense Performer Function Codes",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1319"
+    }
+  ],
+  "name": "MedicationDispense Performer Function Codes",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Medication dispense  performer  function  codes",
+  "url": "http://terminology.hl7.org/CodeSystem/medicationdispense-performer-function",
+  "valueSet": "http://hl7.org/fhir/ValueSet/medicationdispense-performer-function",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,138 @@
+{
+  "id": "v3-EntityHandling",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "AMB",
+      "definition": "Keep at ambient temperature, 22 +/- 2C",
+      "display": "Ambient Temperature"
+    },
+    {
+      "code": "C37",
+      "definition": "Critical to keep at body temperature 36-38C",
+      "display": "Body Temperature"
+    },
+    {
+      "code": "CAMB",
+      "definition": "Critical ambient - must not be refrigerated or frozen.",
+      "display": "Critical Ambient temperature"
+    },
+    {
+      "code": "CATM",
+      "definition": "Critical. Do not expose to atmosphere.  Do not uncap.",
+      "display": "Protect from Air"
+    },
+    {
+      "code": "CFRZ",
+      "definition": "Critical frozen. Specimen must not be allowed to thaw until immediately prior to testing.",
+      "display": "Critical frozen"
+    },
+    {
+      "code": "CREF",
+      "definition": "Critical refrigerated - must not be allowed to freeze or warm until imediately prior to testing.",
+      "display": "Critical refrigerated temperature"
+    },
+    {
+      "code": "DFRZ",
+      "definition": "Deep Frozen -16 to -20C.",
+      "display": "Deep Frozen"
+    },
+    {
+      "code": "DRY",
+      "definition": "Keep in a dry environment",
+      "display": "dry"
+    },
+    {
+      "code": "FRZ",
+      "definition": "Keep frozen below 0 ?C",
+      "display": "frozen"
+    },
+    {
+      "code": "MTLF",
+      "definition": "Container is free of heavy metals, including lead.",
+      "display": "Metal Free"
+    },
+    {
+      "code": "NTR",
+      "definition": "Keep in liquid nitrogen",
+      "display": "nitrogen"
+    },
+    {
+      "code": "PRTL",
+      "definition": "Protect from light (eg. Wrap in aluminum foil).",
+      "display": "Protect from Light"
+    },
+    {
+      "code": "PSA",
+      "definition": "Do not shake",
+      "display": "do not shake"
+    },
+    {
+      "code": "PSO",
+      "definition": "Protect against shock",
+      "display": "no shock"
+    },
+    {
+      "code": "REF",
+      "definition": "Keep at refrigerated temperature:4-8C Accidental warming or freezing is of little consequence.",
+      "display": "Refrigerated temperature"
+    },
+    {
+      "code": "SBU",
+      "definition": "Shake thoroughly before using",
+      "display": "Shake before use"
+    },
+    {
+      "code": "UFRZ",
+      "definition": "Ultra cold frozen -75 to -85C.  Ultra cold freezer is typically at temperature of dry ice.",
+      "display": "Ultra frozen"
+    },
+    {
+      "code": "UPR",
+      "definition": "Keep upright, do not turn upside down",
+      "display": "upright"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": "**** MISSING DEFINITIONS ****",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.42"
+    }
+  ],
+  "name": "v3.EntityHandling",
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System EntityHandling",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-EntityHandling",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-EntityHandling",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

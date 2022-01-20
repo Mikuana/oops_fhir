@@ -1,0 +1,75 @@
+{
+  "id": "composite-measure-scoring",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cqi"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "opportunity",
+      "definition": "Opportunity scoring combines the scores from component measures by combining the numerators and denominators for each component.",
+      "display": "Opportunity"
+    },
+    {
+      "code": "all-or-nothing",
+      "definition": "All-or-nothing scoring includes an individual in the numerator of the composite measure if they are in the numerators of all of the component measures in which they are in the denominator.",
+      "display": "All-or-nothing"
+    },
+    {
+      "code": "linear",
+      "definition": "Linear scoring gives an individual a score based on the number of numerators in which they appear.",
+      "display": "Linear"
+    },
+    {
+      "code": "weighted",
+      "definition": "Weighted scoring gives an individual a score based on a weighted factor for each component numerator in which they appear.",
+      "display": "Weighted"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The composite scoring method of the measure.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1235"
+    }
+  ],
+  "name": "CompositeMeasureScoring",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "CompositeMeasureScoring",
+  "url": "http://terminology.hl7.org/CodeSystem/composite-measure-scoring",
+  "valueSet": "http://hl7.org/fhir/ValueSet/composite-measure-scoring",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "allerg-intol-substance-exp-risk",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "known-reaction-risk",
+      "definition": "Known risk of allergy or intolerance reaction upon exposure to the specified substance.",
+      "display": "Known Reaction Risk"
+    },
+    {
+      "code": "no-known-reaction-risk",
+      "definition": "No known risk of allergy or intolerance reaction upon exposure to the specified substance.",
+      "display": "No Known Reaction Risk"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The risk of an adverse reaction (allergy or intolerance) for this patient upon exposure to the substance (including pharmaceutical products).",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1275"
+    }
+  ],
+  "name": "AllergyIntoleranceSubstanceExposureRisk",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "AllergyIntoleranceSubstanceExposureRisk",
+  "url": "http://terminology.hl7.org/CodeSystem/allerg-intol-substance-exp-risk",
+  "valueSet": "http://hl7.org/fhir/ValueSet/allerg-intol-substance-exp-risk",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

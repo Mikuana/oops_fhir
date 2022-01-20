@@ -1,0 +1,87 @@
+{
+  "id": "definition-use",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "fhir-structure",
+      "definition": "This structure is defined as part of the base FHIR Specification",
+      "display": "FHIR Structure"
+    },
+    {
+      "code": "custom-resource",
+      "definition": "This structure is intended to be treated like a FHIR resource (e.g. on the FHIR API)",
+      "display": "Custom Resource"
+    },
+    {
+      "code": "dam",
+      "definition": "This structure captures an analysis of a domain",
+      "display": "Domain Analysis Model"
+    },
+    {
+      "code": "wire-format",
+      "definition": "This structure represents and existing structure (e.g. CDA, HL7 v2)",
+      "display": "Wire Format"
+    },
+    {
+      "code": "archetype",
+      "definition": "This structure captures an analysis of a domain",
+      "display": "Domain Analysis Model"
+    },
+    {
+      "code": "template",
+      "definition": "This structure is a template (n.b: 'template' has many meanings)",
+      "display": "Template"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "Structure Definition Use Codes / Keywords",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1191"
+    }
+  ],
+  "name": "DefinitionUseCodes",
+  "publisher": "FHIR Project team",
+  "status": "active",
+  "title": "Structure Definition Use Codes / Keywords",
+  "url": "http://terminology.hl7.org/CodeSystem/definition-use",
+  "valueSet": "http://hl7.org/fhir/ValueSet/definition-use",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

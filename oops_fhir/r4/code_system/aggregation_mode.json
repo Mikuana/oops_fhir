@@ -1,0 +1,76 @@
+{
+  "id": "resource-aggregation-mode",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "contained",
+      "definition": "The reference is a local reference to a contained resource.",
+      "display": "Contained"
+    },
+    {
+      "code": "referenced",
+      "concept": [
+        {
+          "code": "bundled",
+          "definition": "The resource the reference points to will be found in the same bundle as the resource that includes the reference.",
+          "display": "Bundled"
+        }
+      ],
+      "definition": "The reference to a resource that has to be resolved externally to the resource that includes the reference.",
+      "display": "Referenced"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "How resource references can be aggregated.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.86"
+    }
+  ],
+  "name": "AggregationMode",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "AggregationMode",
+  "url": "http://hl7.org/fhir/resource-aggregation-mode",
+  "valueSet": "http://hl7.org/fhir/ValueSet/resource-aggregation-mode",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

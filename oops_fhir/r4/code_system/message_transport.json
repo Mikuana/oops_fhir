@@ -1,0 +1,74 @@
+{
+  "id": "message-transport",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "http",
+      "definition": "The application sends or receives messages using HTTP POST (may be over http: or https:).",
+      "display": "HTTP"
+    },
+    {
+      "code": "ftp",
+      "definition": "The application sends or receives messages using File Transfer Protocol.",
+      "display": "FTP"
+    },
+    {
+      "code": "mllp",
+      "definition": "The application sends or receives messages using HL7's Minimal Lower Level Protocol.",
+      "display": "MLLP"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The protocol used for message transport.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1080"
+    }
+  ],
+  "name": "MessageTransport",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "MessageTransport",
+  "url": "http://terminology.hl7.org/CodeSystem/message-transport",
+  "valueSet": "http://hl7.org/fhir/ValueSet/message-transport",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

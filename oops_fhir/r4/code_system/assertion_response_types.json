@@ -1,0 +1,115 @@
+{
+  "id": "assert-response-code-types",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "okay",
+      "definition": "Response code is 200.",
+      "display": "okay"
+    },
+    {
+      "code": "created",
+      "definition": "Response code is 201.",
+      "display": "created"
+    },
+    {
+      "code": "noContent",
+      "definition": "Response code is 204.",
+      "display": "noContent"
+    },
+    {
+      "code": "notModified",
+      "definition": "Response code is 304.",
+      "display": "notModified"
+    },
+    {
+      "code": "bad",
+      "definition": "Response code is 400.",
+      "display": "bad"
+    },
+    {
+      "code": "forbidden",
+      "definition": "Response code is 403.",
+      "display": "forbidden"
+    },
+    {
+      "code": "notFound",
+      "definition": "Response code is 404.",
+      "display": "notFound"
+    },
+    {
+      "code": "methodNotAllowed",
+      "definition": "Response code is 405.",
+      "display": "methodNotAllowed"
+    },
+    {
+      "code": "conflict",
+      "definition": "Response code is 409.",
+      "display": "conflict"
+    },
+    {
+      "code": "gone",
+      "definition": "Response code is 410.",
+      "display": "gone"
+    },
+    {
+      "code": "preconditionFailed",
+      "definition": "Response code is 412.",
+      "display": "preconditionFailed"
+    },
+    {
+      "code": "unprocessable",
+      "definition": "Response code is 422.",
+      "display": "unprocessable"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The type of response code to use for assertion.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.711"
+    }
+  ],
+  "name": "AssertionResponseTypes",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "AssertionResponseTypes",
+  "url": "http://hl7.org/fhir/assert-response-code-types",
+  "valueSet": "http://hl7.org/fhir/ValueSet/assert-response-code-types",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

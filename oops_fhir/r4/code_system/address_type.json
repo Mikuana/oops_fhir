@@ -1,0 +1,74 @@
+{
+  "id": "address-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "postal",
+      "definition": "Mailing addresses - PO Boxes and care-of addresses.",
+      "display": "Postal"
+    },
+    {
+      "code": "physical",
+      "definition": "A physical address that can be visited.",
+      "display": "Physical"
+    },
+    {
+      "code": "both",
+      "definition": "An address that is both physical and postal.",
+      "display": "Postal & Physical"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The type of an address (physical / postal).",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.70"
+    }
+  ],
+  "name": "AddressType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "AddressType",
+  "url": "http://hl7.org/fhir/address-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/address-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

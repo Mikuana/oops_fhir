@@ -1,0 +1,74 @@
+{
+  "id": "special-values",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "true",
+      "definition": "Boolean true.",
+      "display": "true"
+    },
+    {
+      "code": "false",
+      "definition": "Boolean false.",
+      "display": "false"
+    },
+    {
+      "code": "trace",
+      "definition": "The content is greater than zero, but too small to be quantified.",
+      "display": "Trace Amount Detected"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/codesystem-concept-comments",
+          "valueString": "used in formulations (e.g. 'Add 10mg of ingredient X, 50mg of ingredient Y, and sufficient quantity of water to 100mL.' This code would be used to express the quantity of water. )"
+        }
+      ],
+      "code": "sufficient",
+      "definition": "The specific quantity is not known, but is known to be non-zero and is not specified because it makes up the bulk of the material.",
+      "display": "Sufficient Quantity"
+    },
+    {
+      "code": "withdrawn",
+      "definition": "The value is no longer available.",
+      "display": "Value Withdrawn"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/codesystem-concept-comments",
+          "valueString": "The existence of this subject to review"
+        }
+      ],
+      "code": "nil-known",
+      "definition": "The are no known applicable values in this context.",
+      "display": "Nil Known"
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A set of generally useful codes defined so they can be included in value sets.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1049"
+    }
+  ],
+  "name": "SpecialValues",
+  "status": "draft",
+  "title": "SpecialValues",
+  "url": "http://terminology.hl7.org/CodeSystem/special-values",
+  "valueSet": "http://hl7.org/fhir/ValueSet/special-values",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

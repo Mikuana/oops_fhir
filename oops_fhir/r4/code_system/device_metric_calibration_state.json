@@ -1,0 +1,75 @@
+{
+  "id": "metric-calibration-state",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "dev"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "not-calibrated",
+      "definition": "The metric has not been calibrated.",
+      "display": "Not Calibrated"
+    },
+    {
+      "code": "calibration-required",
+      "definition": "The metric needs to be calibrated.",
+      "display": "Calibration Required"
+    },
+    {
+      "code": "calibrated",
+      "definition": "The metric has been calibrated.",
+      "display": "Calibrated"
+    },
+    {
+      "code": "unspecified",
+      "definition": "The state of calibration of this metric is unspecified.",
+      "display": "Unspecified"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Describes the state of a metric calibration.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.653"
+    }
+  ],
+  "name": "DeviceMetricCalibrationState",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "DeviceMetricCalibrationState",
+  "url": "http://hl7.org/fhir/metric-calibration-state",
+  "valueSet": "http://hl7.org/fhir/ValueSet/metric-calibration-state",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

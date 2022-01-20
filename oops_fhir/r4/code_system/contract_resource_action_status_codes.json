@@ -1,0 +1,68 @@
+{
+  "id": "contract-actionstatus",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "complete",
+      "definition": "To be completed",
+      "display": "Complete"
+    }
+  ],
+  "contact": [
+    {
+      "name": "FHIR project team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "HL7 International.",
+  "description": "This value set contract specific codes for action status.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1304"
+    }
+  ],
+  "name": "ContractResourceActionStatusCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "Contract Resource Action Status codes",
+  "url": "http://hl7.org/fhir/contract-action-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/contract-actionstatus",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

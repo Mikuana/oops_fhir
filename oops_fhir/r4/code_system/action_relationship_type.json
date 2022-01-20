@@ -1,0 +1,100 @@
+{
+  "id": "action-relationship-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "before-start",
+      "definition": "The action must be performed before the start of the related action.",
+      "display": "Before Start"
+    },
+    {
+      "code": "before",
+      "definition": "The action must be performed before the related action.",
+      "display": "Before"
+    },
+    {
+      "code": "before-end",
+      "definition": "The action must be performed before the end of the related action.",
+      "display": "Before End"
+    },
+    {
+      "code": "concurrent-with-start",
+      "definition": "The action must be performed concurrent with the start of the related action.",
+      "display": "Concurrent With Start"
+    },
+    {
+      "code": "concurrent",
+      "definition": "The action must be performed concurrent with the related action.",
+      "display": "Concurrent"
+    },
+    {
+      "code": "concurrent-with-end",
+      "definition": "The action must be performed concurrent with the end of the related action.",
+      "display": "Concurrent With End"
+    },
+    {
+      "code": "after-start",
+      "definition": "The action must be performed after the start of the related action.",
+      "display": "After Start"
+    },
+    {
+      "code": "after",
+      "definition": "The action must be performed after the related action.",
+      "display": "After"
+    },
+    {
+      "code": "after-end",
+      "definition": "The action must be performed after the end of the related action.",
+      "display": "After End"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Defines the types of relationships between actions.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.814"
+    }
+  ],
+  "name": "ActionRelationshipType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ActionRelationshipType",
+  "url": "http://hl7.org/fhir/action-relationship-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/action-relationship-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

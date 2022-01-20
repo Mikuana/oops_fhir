@@ -1,0 +1,104 @@
+{
+  "id": "bundle-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "document",
+      "definition": "The bundle is a document. The first resource is a Composition.",
+      "display": "Document"
+    },
+    {
+      "code": "message",
+      "definition": "The bundle is a message. The first resource is a MessageHeader.",
+      "display": "Message"
+    },
+    {
+      "code": "transaction",
+      "definition": "The bundle is a transaction - intended to be processed by a server as an atomic commit.",
+      "display": "Transaction"
+    },
+    {
+      "code": "transaction-response",
+      "definition": "The bundle is a transaction response. Because the response is a transaction response, the transaction has succeeded, and all responses are error free.",
+      "display": "Transaction Response"
+    },
+    {
+      "code": "batch",
+      "definition": "The bundle is a set of actions - intended to be processed by a server as a group of independent actions.",
+      "display": "Batch"
+    },
+    {
+      "code": "batch-response",
+      "definition": "The bundle is a batch response. Note that as a batch, some responses may indicate failure and others success.",
+      "display": "Batch Response"
+    },
+    {
+      "code": "history",
+      "definition": "The bundle is a list of resources from a history interaction on a server.",
+      "display": "History List"
+    },
+    {
+      "code": "searchset",
+      "definition": "The bundle is a list of resources returned as a result of a search/query interaction, operation, or message.",
+      "display": "Search Results"
+    },
+    {
+      "code": "collection",
+      "definition": "The bundle is a set of resources collected into a single package for ease of distribution that imposes no processing obligations or behavioral rules beyond persistence.",
+      "display": "Collection"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Indicates the purpose of a bundle - how it is intended to be used.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.621"
+    }
+  ],
+  "name": "BundleType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "active",
+  "title": "BundleType",
+  "url": "http://hl7.org/fhir/bundle-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/bundle-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

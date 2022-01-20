@@ -1,0 +1,49 @@
+{
+  "id": "list-order",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/list-order"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Base values for the order of the items in a list resource.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.324"
+    }
+  ],
+  "immutable": true,
+  "name": "ListOrderCodes",
+  "publisher": "FHIR Project",
+  "status": "draft",
+  "title": "List Order Codes",
+  "url": "http://hl7.org/fhir/ValueSet/list-order",
+  "version": "4.0.1",
+  "resourceType": "ValueSet"
+}

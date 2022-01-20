@@ -1,0 +1,61 @@
+{
+  "id": "match-grade",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "certain",
+      "definition": "This record meets the matching criteria to be automatically considered as a full match.",
+      "display": "Certain Match"
+    },
+    {
+      "code": "probable",
+      "definition": "This record is a close match, but not a certain match. Additional review (e.g. by a human) may be required before using this as a match.",
+      "display": "Probable Match"
+    },
+    {
+      "code": "possible",
+      "definition": "This record may be a matching one. Additional review (e.g. by a human) SHOULD be performed before using this as a match.",
+      "display": "Possible Match"
+    },
+    {
+      "code": "certainly-not",
+      "definition": "This record is known not to be a match. Note that usually non-matching records are not returned, but in some cases records previously or likely considered as a match may specifically be negated by the matching engine.",
+      "display": "Certainly Not a Match"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A Master Patient Index (MPI) assessment of whether a candidate patient record is a match or not.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1289"
+    }
+  ],
+  "name": "MatchGrade",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "MatchGrade",
+  "url": "http://terminology.hl7.org/CodeSystem/match-grade",
+  "valueSet": "http://hl7.org/fhir/ValueSet/match-grade",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

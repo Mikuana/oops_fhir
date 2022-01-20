@@ -1,0 +1,110 @@
+{
+  "id": "certainty-subcomponent-rating",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "no-change",
+      "definition": "no change to quality rating.",
+      "display": "no change to rating"
+    },
+    {
+      "code": "downcode1",
+      "definition": "reduce quality rating by 1.",
+      "display": "reduce rating: -1"
+    },
+    {
+      "code": "downcode2",
+      "definition": "reduce quality rating by 2.",
+      "display": "reduce rating: -2"
+    },
+    {
+      "code": "downcode3",
+      "definition": "reduce quality rating by 3.",
+      "display": "reduce rating: -3"
+    },
+    {
+      "code": "upcode1",
+      "definition": "increase quality rating by 1.",
+      "display": "increase rating: +1"
+    },
+    {
+      "code": "upcode2",
+      "definition": "increase quality rating by 2.",
+      "display": "increase rating: +2"
+    },
+    {
+      "code": "no-concern",
+      "definition": "no serious concern.",
+      "display": "no serious concern"
+    },
+    {
+      "code": "serious-concern",
+      "definition": "serious concern.",
+      "display": "serious concern"
+    },
+    {
+      "code": "critical-concern",
+      "definition": "critical concern.",
+      "display": "critical concern"
+    },
+    {
+      "code": "present",
+      "definition": "possible reason for increasing quality rating was checked and found to bepresent.",
+      "display": "present"
+    },
+    {
+      "code": "absent",
+      "definition": "possible reason for increasing quality rating was checked and found to be absent.",
+      "display": "absent"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The quality rating of the subcomponent of a quality of evidence rating.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1362"
+    }
+  ],
+  "name": "CertaintySubcomponentRating",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "CertaintySubcomponentRating",
+  "url": "http://terminology.hl7.org/CodeSystem/certainty-subcomponent-rating",
+  "valueSet": "http://hl7.org/fhir/ValueSet/certainty-subcomponent-rating",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "adverse-event-severity",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "mild",
+      "display": "Mild"
+    },
+    {
+      "code": "moderate",
+      "display": "Moderate"
+    },
+    {
+      "code": "severe",
+      "display": "Severe"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The severity of the adverse event itself, in direct relation to the subject.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1256"
+    }
+  ],
+  "name": "AdverseEventSeverity",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "AdverseEventSeverity",
+  "url": "http://terminology.hl7.org/CodeSystem/adverse-event-severity",
+  "valueSet": "http://hl7.org/fhir/ValueSet/adverse-event-severity",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

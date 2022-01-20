@@ -1,0 +1,65 @@
+{
+  "id": "specimen-contained-preference",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "preferred",
+      "definition": "This type of contained specimen is preferred to collect this kind of specimen.",
+      "display": "Preferred"
+    },
+    {
+      "code": "alternate",
+      "definition": "This type of conditioned specimen is an alternate.",
+      "display": "Alternate"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Degree of preference of a type of conditioned specimen.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.853"
+    }
+  ],
+  "name": "SpecimenContainedPreference",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "SpecimenContainedPreference",
+  "url": "http://hl7.org/fhir/specimen-contained-preference",
+  "valueSet": "http://hl7.org/fhir/ValueSet/specimen-contained-preference",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

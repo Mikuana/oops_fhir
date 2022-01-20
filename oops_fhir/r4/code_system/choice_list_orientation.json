@@ -1,0 +1,51 @@
+{
+  "id": "choice-list-orientation",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "horizontal",
+      "definition": "List choices along the horizontal axis.",
+      "display": "Horizontal"
+    },
+    {
+      "code": "vertical",
+      "definition": "List choices down the vertical axis.",
+      "display": "Vertical"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Direction in which lists of possible answers should be displayed.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1273"
+    }
+  ],
+  "name": "ChoiceListOrientation",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ChoiceListOrientation",
+  "url": "http://terminology.hl7.org/CodeSystem/choice-list-orientation",
+  "valueSet": "http://hl7.org/fhir/ValueSet/choice-list-orientation",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

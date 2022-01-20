@@ -1,0 +1,103 @@
+{
+  "id": "flag-category",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "diet",
+      "definition": "Flags related to the subject's dietary needs.",
+      "display": "Diet"
+    },
+    {
+      "code": "drug",
+      "definition": "Flags related to the subject's medications.",
+      "display": "Drug"
+    },
+    {
+      "code": "lab",
+      "definition": "Flags related to performing laboratory tests and related processes (e.g. phlebotomy).",
+      "display": "Lab"
+    },
+    {
+      "code": "admin",
+      "definition": "Flags related to administrative and financial processes.",
+      "display": "Administrative"
+    },
+    {
+      "code": "contact",
+      "definition": "Flags related to coming into contact with the patient.",
+      "display": "Subject Contact"
+    },
+    {
+      "code": "clinical",
+      "definition": "Flags related to the subject's clinical data.",
+      "display": "Clinical"
+    },
+    {
+      "code": "behavioral",
+      "definition": "Flags related to behavior.",
+      "display": "Behavioral"
+    },
+    {
+      "code": "research",
+      "definition": "Flags related to research.",
+      "display": "Research"
+    },
+    {
+      "code": "advance-directive",
+      "definition": "Flags related to subject's advance directives.",
+      "display": "Advance Directive"
+    },
+    {
+      "code": "safety",
+      "definition": "Flags related to safety precautions.",
+      "display": "Safety"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "Example list of general categories for flagged issues. (Not complete or necessarily appropriate.)",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1071"
+    }
+  ],
+  "name": "FlagCategory",
+  "publisher": "HL7 International - Patient Care WG",
+  "status": "draft",
+  "title": "Flag Category",
+  "url": "http://terminology.hl7.org/CodeSystem/flag-category",
+  "valueSet": "http://hl7.org/fhir/ValueSet/flag-category",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

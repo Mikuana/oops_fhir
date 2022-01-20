@@ -1,0 +1,49 @@
+{
+  "id": "audit-event-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "sec"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "rest",
+      "definition": "Audit Event: Execution of a RESTful operation as defined by FHIR.",
+      "display": "RESTful Operation"
+    }
+  ],
+  "content": "complete",
+  "copyright": "These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright \u00a9 2011 by the National Electrical Manufacturers Association.",
+  "date": "2015-03-26T00:00:00+11:00",
+  "description": "Event Types for Audit Events - defined by DICOM with some FHIR specific additions.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1136"
+    }
+  ],
+  "name": "AuditEventID",
+  "publisher": "NEMA/DICOM",
+  "status": "active",
+  "title": "Audit Event ID",
+  "url": "http://terminology.hl7.org/CodeSystem/audit-event-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

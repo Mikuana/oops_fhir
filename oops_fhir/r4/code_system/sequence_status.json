@@ -1,0 +1,56 @@
+{
+  "id": "variant-state",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "positive",
+      "definition": "the variant is detected.",
+      "display": "positive"
+    },
+    {
+      "code": "negative",
+      "definition": "no variant is detected.",
+      "display": "negative"
+    },
+    {
+      "code": "absent",
+      "definition": "result of the variant is missing.",
+      "display": "absent"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Codes providing the status of the variant test result.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1085"
+    }
+  ],
+  "name": "sequenceStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "sequenceStatus",
+  "url": "http://terminology.hl7.org/CodeSystem/variant-state",
+  "valueSet": "http://hl7.org/fhir/ValueSet/variant-state",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "search-xpath-usage",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "normal",
+      "definition": "The search parameter is derived directly from the selected nodes based on the type definitions.",
+      "display": "Normal"
+    },
+    {
+      "code": "phonetic",
+      "definition": "The search parameter is derived by a phonetic transform from the selected nodes.",
+      "display": "Phonetic"
+    },
+    {
+      "code": "nearby",
+      "definition": "The search parameter is based on a spatial transform of the selected nodes.",
+      "display": "Nearby"
+    },
+    {
+      "code": "distance",
+      "definition": "The search parameter is based on a spatial transform of the selected nodes, using physical distance from the middle.",
+      "display": "Distance"
+    },
+    {
+      "code": "other",
+      "definition": "The interpretation of the xpath statement is unknown (and can't be automated).",
+      "display": "Other"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "How a search parameter relates to the set of elements returned by evaluating its xpath query.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.636"
+    }
+  ],
+  "name": "XPathUsageType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "XPathUsageType",
+  "url": "http://hl7.org/fhir/search-xpath-usage",
+  "valueSet": "http://hl7.org/fhir/ValueSet/search-xpath-usage",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

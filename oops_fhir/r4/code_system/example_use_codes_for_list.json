@@ -1,0 +1,98 @@
+{
+  "id": "list-example-codes",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "alerts",
+      "definition": "A list of alerts for the patient.",
+      "display": "Alerts"
+    },
+    {
+      "code": "adverserxns",
+      "definition": "A list of part adverse reactions.",
+      "display": "Adverse Reactions"
+    },
+    {
+      "code": "allergies",
+      "definition": "A list of Allergies for the patient.",
+      "display": "Allergies"
+    },
+    {
+      "code": "medications",
+      "definition": "A list of medication statements for the patient.",
+      "display": "Medication List"
+    },
+    {
+      "code": "problems",
+      "definition": "A list of problems that the patient is known of have (or have had in the past).",
+      "display": "Problem List"
+    },
+    {
+      "code": "worklist",
+      "definition": "A list of items that constitute a set of work to be performed (typically this code would be specialized for more specific uses, such as a ward round list).",
+      "display": "Worklist"
+    },
+    {
+      "code": "waiting",
+      "definition": "A list of items waiting for an event (perhaps a surgical patient waiting list).",
+      "display": "Waiting List"
+    },
+    {
+      "code": "protocols",
+      "definition": "A set of protocols to be followed.",
+      "display": "Protocols"
+    },
+    {
+      "code": "plans",
+      "definition": "A set of care plans that apply in a particular context of care.",
+      "display": "Care Plans"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "Example use codes for the List resource - typical kinds of use.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1105"
+    }
+  ],
+  "name": "ExampleUseCodesForList",
+  "publisher": "FHIR Project",
+  "status": "draft",
+  "title": "Example Use Codes for List",
+  "url": "http://terminology.hl7.org/CodeSystem/list-example-use-codes",
+  "valueSet": "http://hl7.org/fhir/ValueSet/list-example-codes",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "action-participant-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "patient",
+      "definition": "The participant is the patient under evaluation.",
+      "display": "Patient"
+    },
+    {
+      "code": "practitioner",
+      "definition": "The participant is a practitioner involved in the patient's care.",
+      "display": "Practitioner"
+    },
+    {
+      "code": "related-person",
+      "definition": "The participant is a person related to the patient.",
+      "display": "Related Person"
+    },
+    {
+      "code": "device",
+      "definition": "The participant is a system or device used in the care of the patient.",
+      "display": "Device"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The type of participant for the action.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.812"
+    }
+  ],
+  "name": "ActionParticipantType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ActionParticipantType",
+  "url": "http://hl7.org/fhir/action-participant-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/action-participant-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

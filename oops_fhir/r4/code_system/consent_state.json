@@ -1,0 +1,85 @@
+{
+  "id": "consent-state-codes",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cbcc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "draft",
+      "definition": "The consent is in development or awaiting use but is not yet intended to be acted upon.",
+      "display": "Pending"
+    },
+    {
+      "code": "proposed",
+      "definition": "The consent has been proposed but not yet agreed to by all parties. The negotiation stage.",
+      "display": "Proposed"
+    },
+    {
+      "code": "active",
+      "definition": "The consent is to be followed and enforced.",
+      "display": "Active"
+    },
+    {
+      "code": "rejected",
+      "definition": "The consent has been rejected by one or more of the parties.",
+      "display": "Rejected"
+    },
+    {
+      "code": "inactive",
+      "definition": "The consent is terminated or replaced.",
+      "display": "Inactive"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "The consent was created wrongly (e.g. wrong patient) and should be ignored.",
+      "display": "Entered in Error"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Indicates the state of the consent.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.756"
+    }
+  ],
+  "name": "ConsentState",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ConsentState",
+  "url": "http://hl7.org/fhir/consent-state-codes",
+  "valueSet": "http://hl7.org/fhir/ValueSet/consent-state-codes",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

@@ -1,0 +1,83 @@
+{
+  "id": "contactentity-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "BILL",
+      "definition": "Contact details for information regarding to billing/general finance enquiries.",
+      "display": "Billing"
+    },
+    {
+      "code": "ADMIN",
+      "definition": "Contact details for administrative enquiries.",
+      "display": "Administrative"
+    },
+    {
+      "code": "HR",
+      "definition": "Contact details for issues related to Human Resources, such as staff matters, OH&S etc.",
+      "display": "Human Resource"
+    },
+    {
+      "code": "PAYOR",
+      "definition": "Contact details for dealing with issues related to insurance claims/adjudication/payment.",
+      "display": "Payor"
+    },
+    {
+      "code": "PATINF",
+      "definition": "Generic information contact for patients.",
+      "display": "Patient"
+    },
+    {
+      "code": "PRESS",
+      "definition": "Dedicated contact point for matters relating to press enquiries.",
+      "display": "Press"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1129"
+    }
+  ],
+  "name": "ContactEntityType",
+  "publisher": "FHIR Project team",
+  "status": "draft",
+  "title": "Contact entity type",
+  "url": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/contactentity-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

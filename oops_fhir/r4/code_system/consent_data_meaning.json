@@ -1,0 +1,75 @@
+{
+  "id": "consent-data-meaning",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cbcc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "instance",
+      "definition": "The consent applies directly to the instance of the resource.",
+      "display": "Instance"
+    },
+    {
+      "code": "related",
+      "definition": "The consent applies directly to the instance of the resource and instances it refers to.",
+      "display": "Related"
+    },
+    {
+      "code": "dependents",
+      "definition": "The consent applies directly to the instance of the resource and instances that refer to it.",
+      "display": "Dependents"
+    },
+    {
+      "code": "authoredby",
+      "definition": "The consent applies to instances of resources that are authored by.",
+      "display": "AuthoredBy"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "How a resource reference is interpreted when testing consent restrictions.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.760"
+    }
+  ],
+  "name": "ConsentDataMeaning",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "ConsentDataMeaning",
+  "url": "http://hl7.org/fhir/consent-data-meaning",
+  "valueSet": "http://hl7.org/fhir/ValueSet/consent-data-meaning",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

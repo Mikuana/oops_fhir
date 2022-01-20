@@ -1,0 +1,97 @@
+{
+  "id": "subscriber-relationship",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "child",
+      "definition": "The Beneficiary is a child of the Subscriber",
+      "display": "Child"
+    },
+    {
+      "code": "parent",
+      "definition": "The Beneficiary is a parent of the Subscriber",
+      "display": "Parent"
+    },
+    {
+      "code": "spouse",
+      "definition": "The Beneficiary is a spouse or equivalent of the Subscriber",
+      "display": "Spouse"
+    },
+    {
+      "code": "common",
+      "definition": "The Beneficiary is a common law spouse or equivalent of the Subscriber",
+      "display": "Common Law Spouse"
+    },
+    {
+      "code": "other",
+      "definition": "The Beneficiary has some other relationship the Subscriber",
+      "display": "Other"
+    },
+    {
+      "code": "self",
+      "definition": "The Beneficiary is the Subscriber",
+      "display": "Self"
+    },
+    {
+      "code": "injured",
+      "definition": "The Beneficiary is covered under insurance of the subscriber due to an injury.",
+      "display": "Injured Party"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an extensible set.",
+  "description": "This value set includes codes for the relationship between the Subscriber and the Beneficiary (insured/covered party/patient).",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1386"
+    }
+  ],
+  "name": "SubscriberRelationshipCodes",
+  "publisher": "Financial Management",
+  "status": "draft",
+  "title": "SubscriberPolicyholder Relationship Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+  "valueSet": "http://hl7.org/fhir/ValueSet/subscriber-relationship",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

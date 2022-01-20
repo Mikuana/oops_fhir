@@ -1,0 +1,74 @@
+{
+  "id": "consent-scope",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cbcc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "adr",
+      "definition": "Actions to be taken if they are no longer able to make decisions for themselves",
+      "display": "Advanced Care Directive"
+    },
+    {
+      "code": "research",
+      "definition": "Consent to participate in research protocol and information sharing required",
+      "display": "Research"
+    },
+    {
+      "code": "patient-privacy",
+      "definition": "Agreement to collect, access, use or disclose (share) information",
+      "display": "Privacy Consent"
+    },
+    {
+      "code": "treatment",
+      "definition": "Consent to undergo a specific treatment",
+      "display": "Treatment"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "copyright": "This is an example set.",
+  "description": "This value set includes the four Consent scope codes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1228"
+    }
+  ],
+  "name": "ConsentScopeCodes",
+  "publisher": "CBCC",
+  "status": "draft",
+  "title": "Consent Scope Codes",
+  "url": "http://terminology.hl7.org/CodeSystem/consentscope",
+  "valueSet": "http://hl7.org/fhir/ValueSet/consent-scope",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

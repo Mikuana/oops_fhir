@@ -1,0 +1,75 @@
+{
+  "id": "history-status",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "partial",
+      "definition": "Some health information is known and captured, but not complete - see notes for details.",
+      "display": "Partial"
+    },
+    {
+      "code": "completed",
+      "definition": "All available related health information is captured as of the date (and possibly time) when the family member history was taken.",
+      "display": "Completed"
+    },
+    {
+      "code": "entered-in-error",
+      "definition": "This instance should not have been part of this patient's medical record.",
+      "display": "Entered in Error"
+    },
+    {
+      "code": "health-unknown",
+      "definition": "Health information for this family member is unavailable/unknown.",
+      "display": "Health Unknown"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "A code that identifies the status of the family history record.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.268"
+    }
+  ],
+  "name": "FamilyHistoryStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "FamilyHistoryStatus",
+  "url": "http://hl7.org/fhir/history-status",
+  "valueSet": "http://hl7.org/fhir/ValueSet/history-status",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

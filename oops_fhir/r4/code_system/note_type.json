@@ -1,0 +1,55 @@
+{
+  "id": "note-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "display",
+      "definition": "Display the note.",
+      "display": "Display"
+    },
+    {
+      "code": "print",
+      "definition": "Print the note on the form.",
+      "display": "Print (Form)"
+    },
+    {
+      "code": "printoper",
+      "definition": "Print the note for the operator.",
+      "display": "Print (Operator)"
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "The presentation types of notes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.16"
+    }
+  ],
+  "name": "NoteType",
+  "status": "draft",
+  "title": "NoteType",
+  "url": "http://hl7.org/fhir/note-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/note-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

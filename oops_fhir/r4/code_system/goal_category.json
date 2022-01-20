@@ -1,0 +1,78 @@
+{
+  "id": "goal-category",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "dietary",
+      "definition": "Goals related to the consumption of food and/or beverages.",
+      "display": "Dietary"
+    },
+    {
+      "code": "safety",
+      "definition": "Goals related to the personal protection of the subject.",
+      "display": "Safety"
+    },
+    {
+      "code": "behavioral",
+      "definition": "Goals related to the manner in which the subject acts.",
+      "display": "Behavioral"
+    },
+    {
+      "code": "nursing",
+      "definition": "Goals related to the practice of nursing or established by nurses.",
+      "display": "Nursing"
+    },
+    {
+      "code": "physiotherapy",
+      "definition": "Goals related to the mobility and/or motor capability of the subject.",
+      "display": "Physiotherapy"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare/"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "description": "Example codes for grouping goals to use for filtering or presentation.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1097"
+    }
+  ],
+  "name": "GoalCategory",
+  "publisher": "HL7 International - Patient Care WG",
+  "status": "draft",
+  "title": "Goal category",
+  "url": "http://terminology.hl7.org/CodeSystem/goal-category",
+  "valueSet": "http://hl7.org/fhir/ValueSet/goal-category",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}

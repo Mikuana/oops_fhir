@@ -1,0 +1,145 @@
+{
+  "id": "v3-EntityNameUse",
+  "meta": {
+    "lastUpdated": "2018-08-12T00:00:00+10:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "external"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "_NameRepresentationUse",
+      "concept": [
+        {
+          "code": "ABC",
+          "definition": "Alphabetic transcription of name (Japanese: romaji)",
+          "display": "Alphabetic"
+        },
+        {
+          "code": "IDE",
+          "definition": "Ideographic representation of name (e.g., Japanese kanji, Chinese characters)",
+          "display": "Ideographic"
+        },
+        {
+          "code": "SYL",
+          "definition": "Syllabic transcription of name (e.g., Japanese kana, Korean hangul)",
+          "display": "Syllabic"
+        }
+      ],
+      "definition": "Identifies the different representations of a name.  The representation may affect how the name is used.  (E.g. use of Ideographic for formal communications.)",
+      "display": "NameRepresentationUse",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "ASGN",
+      "definition": "A name assigned to a person. Reasons some organizations assign alternate names may include not knowing the person's name, or to maintain anonymity. Some, but not necessarily all, of the name types that people call \"alias\" may fit into this category.",
+      "display": "assigned"
+    },
+    {
+      "code": "C",
+      "definition": "As recorded on a license, record, certificate, etc. (only if different from legal name)",
+      "display": "License"
+    },
+    {
+      "code": "I",
+      "definition": "e.g. Chief Red Cloud",
+      "display": "Indigenous/Tribal"
+    },
+    {
+      "code": "L",
+      "concept": [
+        {
+          "code": "OR",
+          "definition": "Definition:The formal name as registered in an official (government) registry, but which name might not be commonly used. Particularly used in countries with a law system based on Napoleonic law.",
+          "display": "official registry"
+        }
+      ],
+      "definition": "Known as/conventional/the one you use",
+      "display": "Legal"
+    },
+    {
+      "code": "P",
+      "concept": [
+        {
+          "code": "A",
+          "definition": "Includes writer's pseudonym, stage name, etc",
+          "display": "Artist/Stage"
+        }
+      ],
+      "definition": "A self asserted name that the person is using or has used.",
+      "display": "pseudonym"
+    },
+    {
+      "code": "R",
+      "definition": "e.g. Sister Mary Francis, Brother John",
+      "display": "Religious"
+    },
+    {
+      "code": "SRCH",
+      "concept": [
+        {
+          "code": "PHON",
+          "definition": "A name spelled phonetically.\r\n\n                        There are a variety of phonetic spelling algorithms. This code value does not distinguish between these.Discussion:",
+          "display": "phonetic"
+        },
+        {
+          "code": "SNDX",
+          "definition": "A name spelled according to the SoundEx algorithm.",
+          "display": "Soundex"
+        }
+      ],
+      "definition": "A name intended for use in searching or matching.",
+      "display": "search"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2018-08-12T00:00:00+10:00",
+  "description": "**** MISSING DEFINITIONS ****",
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.45"
+    }
+  ],
+  "name": "v3.EntityNameUse",
+  "property": [
+    {
+      "code": "notSelectable",
+      "description": "Indicates that the code is abstract - only intended to be used as a selector for other concepts",
+      "type": "boolean",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable"
+    }
+  ],
+  "publisher": "HL7, Inc",
+  "status": "active",
+  "title": "v3 Code System EntityNameUse",
+  "url": "http://terminology.hl7.org/CodeSystem/v3-EntityNameUse",
+  "valueSet": "http://terminology.hl7.org/ValueSet/v3-EntityNameUse",
+  "version": "2018-08-12",
+  "resourceType": "CodeSystem"
+}

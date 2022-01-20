@@ -1,0 +1,78 @@
+{
+  "id": "dicom-audit-lifecycle",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Origination / Creation"
+    },
+    {
+      "code": "2",
+      "display": "Import / Copy"
+    },
+    {
+      "code": "3",
+      "display": "Amendment"
+    },
+    {
+      "code": "4",
+      "display": "Verification"
+    },
+    {
+      "code": "5",
+      "display": "Translation"
+    },
+    {
+      "code": "6",
+      "display": "Access / Use"
+    },
+    {
+      "code": "7",
+      "display": "De-identification"
+    },
+    {
+      "code": "8",
+      "display": "Aggregation / summarization / derivation"
+    },
+    {
+      "code": "9",
+      "display": "Report"
+    },
+    {
+      "code": "10",
+      "display": "Export"
+    },
+    {
+      "code": "11",
+      "display": "Disclosure"
+    },
+    {
+      "code": "12",
+      "display": "Receipt of disclosure"
+    },
+    {
+      "code": "13",
+      "display": "Archiving"
+    },
+    {
+      "code": "14",
+      "display": "Logical deletion"
+    },
+    {
+      "code": "15",
+      "display": "Permanent erasure / Physical destruction"
+    }
+  ],
+  "content": "complete",
+  "copyright": "These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright \u00a9 2011 by the National Electrical Manufacturers Association.",
+  "description": "Attached is vocabulary for the record lifecycle events, as per DICOM Audit Message, ",
+  "experimental": false,
+  "name": "DICOM Audit Message Record Lifecycle Events",
+  "status": "active",
+  "url": "http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle",
+  "version": "20100826",
+  "resourceType": "CodeSystem"
+}

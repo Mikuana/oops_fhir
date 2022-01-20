@@ -1,0 +1,80 @@
+{
+  "id": "compartment-type",
+  "meta": {
+    "lastUpdated": "2019-11-01T09:29:23.356000+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "caseSensitive": true,
+  "concept": [
+    {
+      "code": "Patient",
+      "definition": "The compartment definition is for the patient compartment.",
+      "display": "Patient"
+    },
+    {
+      "code": "Encounter",
+      "definition": "The compartment definition is for the encounter compartment.",
+      "display": "Encounter"
+    },
+    {
+      "code": "RelatedPerson",
+      "definition": "The compartment definition is for the related-person compartment.",
+      "display": "RelatedPerson"
+    },
+    {
+      "code": "Practitioner",
+      "definition": "The compartment definition is for the practitioner compartment.",
+      "display": "Practitioner"
+    },
+    {
+      "code": "Device",
+      "definition": "The compartment definition is for the device compartment.",
+      "display": "Device"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "date": "2019-11-01T09:29:23+11:00",
+  "description": "Which type a compartment definition describes.",
+  "experimental": false,
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.787"
+    }
+  ],
+  "name": "CompartmentType",
+  "publisher": "HL7 (FHIR Project)",
+  "status": "draft",
+  "title": "CompartmentType",
+  "url": "http://hl7.org/fhir/compartment-type",
+  "valueSet": "http://hl7.org/fhir/ValueSet/compartment-type",
+  "version": "4.0.1",
+  "resourceType": "CodeSystem"
+}
