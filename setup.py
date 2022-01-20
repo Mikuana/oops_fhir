@@ -7,7 +7,7 @@ from pathlib import Path
 
 from setuptools import setup, find_packages
 
-readme = Path("README.rst").read_text()
+readme = Path("README.md").read_text()
 
 
 def read_version():
