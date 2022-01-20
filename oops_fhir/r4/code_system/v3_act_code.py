@@ -3334,40 +3334,40 @@ not permitted.
 
     Identifies the type of verification investigation being undertaken with respect to the subject of the verification activity.
 
-                        
-                           Examples:
-                        
 
-                        
-                           
+                           Examples:
+
+
+
+
                               Verification of eligibility for coverage under a policy or program - aka enrolled/covered by a policy or program
 
-                           
-                           
+
+
                               Verification of record - e.g., person has record in an immunization registry
 
-                           
-                           
+
+
                               Verification of enumeration - e.g. NPI
 
-                           
-                           
+
+
                               Verification of Board Certification - provider specific
 
-                           
-                           
+
+
                               Verification of Certification - e.g. JAHCO, NCQA, URAC
 
-                           
-                           
+
+
                               Verification of Conformance - e.g. entity use with HIPAA, conformant to the CCHIT EHR system criteria
 
-                           
-                           
+
+
                               Verification of Provider Credentials
 
-                           
-                           
+
+
                               Verification of no adverse findings - e.g. on National Provider Data Bank, Health Integrity Protection Data Base (HIPDB)
     """
 
@@ -3863,7 +3863,7 @@ not permitted.
                                     "concept": [
                                         {
                                             "code": "B",
-                                            "definition": "Policy for handling trade secrets such as financial information or intellectual property, which will be afforded heightened confidentiality.  Description:  Since the service class can represent knowledge structures that may be considered a trade or business secret, there is sometimes (though rarely) the need to flag those items as of business level confidentiality.\r\n\n                        \n                           Usage Notes: No patient related information may ever be of this confidentiality level.   If there is a jurisdictional mandate, then use the applicable ActPrivacyLaw code system, and specify the law rather than or in addition to this more generic code.",
+                                            "definition": "Policy for handling trade secrets such as financial information or intellectual property, which will be afforded heightened confidentiality.  Description:  Since the service class can represent knowledge factory that may be considered a trade or business secret, there is sometimes (though rarely) the need to flag those items as of business level confidentiality.\r\n\n                        \n                           Usage Notes: No patient related information may ever be of this confidentiality level.   If there is a jurisdictional mandate, then use the applicable ActPrivacyLaw code system, and specify the law rather than or in addition to this more generic code.",
                                             "display": "business information sensitivity",
                                         },
                                         {
@@ -4765,7 +4765,7 @@ not permitted.
 
     Characterizes how a transportation act was or will be carried out.
 
-                        
+
                            Examples: Via private transport, via public transit, via courier.
     """
 
@@ -6664,27 +6664,27 @@ not permitted.
     """
     SecurityObservationType
 
-    An observation identifying security metadata about an IT resource (data, information object, service, or system capability), which may be used to make access control decisions.  Security metadata are used to name security labels.  
+    An observation identifying security metadata about an IT resource (data, information object, service, or system capability), which may be used to make access control decisions.  Security metadata are used to name security labels.
 
-                        
+
                            Rationale: According to ISO/TS 22600-3:2009(E) A.9.1.7 SECURITY LABEL MATCHING, Security label matching compares the initiator's clearance to the target's security label.  All of the following must be true for authorization to be granted:
 
-                        
+
                            The security policy identifiers shall be identical
-                           The classification level of the initiator shall be greater than or equal to that of the target (that is, there shall be at least one value in the classification list of the clearance greater than or equal to the classification of the target), and 
+                           The classification level of the initiator shall be greater than or equal to that of the target (that is, there shall be at least one value in the classification list of the clearance greater than or equal to the classification of the target), and
                            For each security category in the target label, there shall be a security category of the same type in the initiator's clearance and the initiator's classification level shall dominate that of the target.
-                        
-                        
+
+
                            Examples: SecurityObservationType  security label fields include:
 
-                        
+
                            Confidentiality classification
                            Compartment category
                            Sensitivity category
                            Security mechanisms used to ensure data integrity or to perform authorized data transformation
                            Indicators of an IT resource completeness, veracity, reliability, trustworthiness, or provenance.
-                        
-                        
+
+
                            Usage Note: SecurityObservationType codes designate security label field types, which are valued with an applicable SecurityObservationValue code as the "security label tag".
     """
 
@@ -6700,7 +6700,7 @@ not permitted.
 
     Definition: A government health program that provides coverage on a fee for service basis for health services to persons meeting eligibility criteria such as income, location of residence, access to other coverages, health condition, and age, the cost of which is to some extent subsidized by public funds.
 
-                        
+
                            Discussion: The structure and business processes for underwriting and administering a subsidized fee for service program is further specified by the Underwriter and Payer Role.class and Role.code.
     """
 
@@ -6768,7 +6768,7 @@ not permitted.
     """
     None
 
-    
+
     """
 
     deduct = CodeSystemConcept(
@@ -6777,7 +6777,7 @@ not permitted.
     """
     None
 
-    
+
     """
 
     doseind = CodeSystemConcept(
@@ -6786,7 +6786,7 @@ not permitted.
     """
     None
 
-    
+
     """
 
     pra = CodeSystemConcept(
@@ -6795,7 +6795,7 @@ not permitted.
     """
     None
 
-    
+
     """
 
     store = CodeSystemConcept(

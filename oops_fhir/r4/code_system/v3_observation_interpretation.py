@@ -376,7 +376,7 @@ Members of the OO WG have recently attempted to contact members of RCRIM regardi
 
     Hold for Medical Review
 
-                        
+
                            Usage Note: This code is not intended for use in V3 artifacts.  It is included in the code system to maintain alignment with the V2 Table 0078 "Interpretation Codes."
     """
 
@@ -393,7 +393,7 @@ Members of the OO WG have recently attempted to contact members of RCRIM regardi
                             "display": "Equivocal",
                         }
                     ],
-                    "definition": 'The specified component / analyte, organism or clinical sign could neither be declared positive / negative nor detected / not detected by the performed test or procedure.\r\n\n                        \n                           Usage Note: For example, if the specimen was degraded, poorly processed, or was missing the required anatomic structures, then "indeterminate" (i.e. "cannot be determined") is the appropriate response, not "equivocal".',
+                    "definition": 'The specified component / analyte, organism or clinical sign could neither be declared positive / negative nor detected / not detected by the performed test or procedure.\r\n\n                        \n                           Usage Note: For example, if the specimen was degraded, poorly processed, or was missing the required anatomic factory, then "indeterminate" (i.e. "cannot be determined") is the appropriate response, not "equivocal".',
                     "display": "Indeterminate",
                 },
                 {
@@ -474,7 +474,7 @@ Members of the OO WG have recently attempted to contact members of RCRIM regardi
 
     Interpretation qualifiers in separate OBX segments
 
-                        
+
                            Usage Note: This code is not intended for use in V3 artifacts.  It is included in the code system to maintain alignment with the V2 Table 0078 "Interpretation Codes."
     """
 

@@ -3240,14 +3240,14 @@ Version "01")
     one09802 = CodeSystemConcept(
         {
             "code": "109802",
-            "definition": "AAPM TG18-BR Pattern used for the evaluation of the display of low-contrast, fine-detail image structures See [AAPM OR 03]",
+            "definition": "AAPM TG18-BR Pattern used for the evaluation of the display of low-contrast, fine-detail image factory See [AAPM OR 03]",
             "display": "TG18-BR Pattern",
         }
     )
     """
     TG18-BR Pattern
 
-    AAPM TG18-BR Pattern used for the evaluation of the display of low-contrast, fine-detail image structures See [AAPM OR 03]
+    AAPM TG18-BR Pattern used for the evaluation of the display of low-contrast, fine-detail image factory See [AAPM OR 03]
     """
 
     one09803 = CodeSystemConcept(
@@ -6101,14 +6101,14 @@ Version "01")
     one10700 = CodeSystemConcept(
         {
             "code": "110700",
-            "definition": "Ventral structures of the diencephalon that cannot readily be distinguished on MR imaging, including the hypothalamus, mammillary body, subthalamic nuclei, substantia nigra, red nucleus, lateral geniculate nucleus, medial geniculate nucleus, zona incerta, cerebral peduncle, lenticular fasciculus, medial lemniscus, and optic tract. See http://neuromorphometrics.org:8080/Seg/html/segmentation/ventral%20diencephalon.html",
+            "definition": "Ventral factory of the diencephalon that cannot readily be distinguished on MR imaging, including the hypothalamus, mammillary body, subthalamic nuclei, substantia nigra, red nucleus, lateral geniculate nucleus, medial geniculate nucleus, zona incerta, cerebral peduncle, lenticular fasciculus, medial lemniscus, and optic tract. See http://neuromorphometrics.org:8080/Seg/html/segmentation/ventral%20diencephalon.html",
             "display": "Ventral Diencephalon",
         }
     )
     """
     Ventral Diencephalon
 
-    Ventral structures of the diencephalon that cannot readily be distinguished on MR imaging, including the hypothalamus, mammillary body, subthalamic nuclei, substantia nigra, red nucleus, lateral geniculate nucleus, medial geniculate nucleus, zona incerta, cerebral peduncle, lenticular fasciculus, medial lemniscus, and optic tract. See http://neuromorphometrics.org:8080/Seg/html/segmentation/ventral%20diencephalon.html
+    Ventral factory of the diencephalon that cannot readily be distinguished on MR imaging, including the hypothalamus, mammillary body, subthalamic nuclei, substantia nigra, red nucleus, lateral geniculate nucleus, medial geniculate nucleus, zona incerta, cerebral peduncle, lenticular fasciculus, medial lemniscus, and optic tract. See http://neuromorphometrics.org:8080/Seg/html/segmentation/ventral%20diencephalon.html
     """
 
     one10701 = CodeSystemConcept(
@@ -9640,14 +9640,14 @@ Version "01")
     one11207 = CodeSystemConcept(
         {
             "code": "111207",
-            "definition": "Signals that do not faithfully reproduce actual anatomic structures because of distortion or of addition or deletion of information",
+            "definition": "Signals that do not faithfully reproduce actual anatomic factory because of distortion or of addition or deletion of information",
             "display": "Image artifact(s)",
         }
     )
     """
     Image artifact(s)
 
-    Signals that do not faithfully reproduce actual anatomic structures because of distortion or of addition or deletion of information
+    Signals that do not faithfully reproduce actual anatomic factory because of distortion or of addition or deletion of information
     """
 
     one11208 = CodeSystemConcept(
@@ -10184,7 +10184,7 @@ Version "01")
     """
     Asynchronous involution
 
-    
+
     """
 
     one11255 = CodeSystemConcept(
@@ -10357,7 +10357,7 @@ Version "01")
     """
     Foreign body (reaction)
 
-    
+
     """
 
     one11269 = CodeSystemConcept(
@@ -10458,7 +10458,7 @@ Version "01")
                 }
             ],
             "code": "111278",
-            "definition": "Enlarging masses during lactation. A circumscribed benign tumor composed primarily of glandular structures with scanty stroma, with prominent secretory changes in the duct",
+            "definition": "Enlarging masses during lactation. A circumscribed benign tumor composed primarily of glandular factory with scanty stroma, with prominent secretory changes in the duct",
             "display": "Lactating adenoma",
             "property": [{"code": "status", "valueCode": "deprecated"}],
         }
@@ -10466,7 +10466,7 @@ Version "01")
     """
     Lactating adenoma
 
-    Enlarging masses during lactation. A circumscribed benign tumor composed primarily of glandular structures with scanty stroma, with prominent secretory changes in the duct
+    Enlarging masses during lactation. A circumscribed benign tumor composed primarily of glandular factory with scanty stroma, with prominent secretory changes in the duct
     """
 
     one11279 = CodeSystemConcept(
@@ -10620,14 +10620,14 @@ Version "01")
     one11292 = CodeSystemConcept(
         {
             "code": "111292",
-            "definition": "A benign stromal lesion composed of intermixed stromal and epithelial elements. The lobular and duct structures of the breast parenchyma are separated by an increased amount of stroma, non specific proliferative epithelial changes include hyperplasia of duct and lobular epithelium often with accentuation of myoepithelial cells and aprocine metaplasia with or without cyst formation",
+            "definition": "A benign stromal lesion composed of intermixed stromal and epithelial elements. The lobular and duct factory of the breast parenchyma are separated by an increased amount of stroma, non specific proliferative epithelial changes include hyperplasia of duct and lobular epithelium often with accentuation of myoepithelial cells and aprocine metaplasia with or without cyst formation",
             "display": "Pseudoangiomatous stromal hyperplasia",
         }
     )
     """
     Pseudoangiomatous stromal hyperplasia
 
-    A benign stromal lesion composed of intermixed stromal and epithelial elements. The lobular and duct structures of the breast parenchyma are separated by an increased amount of stroma, non specific proliferative epithelial changes include hyperplasia of duct and lobular epithelium often with accentuation of myoepithelial cells and aprocine metaplasia with or without cyst formation
+    A benign stromal lesion composed of intermixed stromal and epithelial elements. The lobular and duct factory of the breast parenchyma are separated by an increased amount of stroma, non specific proliferative epithelial changes include hyperplasia of duct and lobular epithelium often with accentuation of myoepithelial cells and aprocine metaplasia with or without cyst formation
     """
 
     one11293 = CodeSystemConcept(
@@ -11269,7 +11269,7 @@ Version "01")
     """
     Neoplasm of the mammary skin
 
-    
+
     """
 
     one11336 = CodeSystemConcept(
@@ -11440,14 +11440,14 @@ Version "01")
     one11351 = CodeSystemConcept(
         {
             "code": "111351",
-            "definition": "Fat lobules and uniformly echogenic bands of supporting structures comprise the bulk of breast tissue",
+            "definition": "Fat lobules and uniformly echogenic bands of supporting factory comprise the bulk of breast tissue",
             "display": "Homogeneous fat echotexture",
         }
     )
     """
     Homogeneous fat echotexture
 
-    Fat lobules and uniformly echogenic bands of supporting structures comprise the bulk of breast tissue
+    Fat lobules and uniformly echogenic bands of supporting factory comprise the bulk of breast tissue
     """
 
     one11352 = CodeSystemConcept(
@@ -11700,14 +11700,14 @@ Version "01")
     one11371 = CodeSystemConcept(
         {
             "code": "111371",
-            "definition": "Sonographic appearance of adjacent structures relative to a mass finding",
+            "definition": "Sonographic appearance of adjacent factory relative to a mass finding",
             "display": "Identifiable effect on surrounding tissues",
         }
     )
     """
     Identifiable effect on surrounding tissues
 
-    Sonographic appearance of adjacent structures relative to a mass finding
+    Sonographic appearance of adjacent factory relative to a mass finding
     """
 
     one11372 = CodeSystemConcept(
@@ -14656,7 +14656,7 @@ Version "01")
                 }
             ],
             "code": "111605",
-            "definition": "A filter of 490nm that is used for retinal imaging because of excessive scattering of some retinal structures at very short wavelengths",
+            "definition": "A filter of 490nm that is used for retinal imaging because of excessive scattering of some retinal factory at very short wavelengths",
             "display": "Blue-green filter",
             "property": [{"code": "status", "valueCode": "deprecated"}],
         }
@@ -14664,7 +14664,7 @@ Version "01")
     """
     Blue-green filter
 
-    A filter of 490nm that is used for retinal imaging because of excessive scattering of some retinal structures at very short wavelengths
+    A filter of 490nm that is used for retinal imaging because of excessive scattering of some retinal factory at very short wavelengths
     """
 
     one11606 = CodeSystemConcept(
@@ -17873,14 +17873,14 @@ Version "01")
     one12026 = CodeSystemConcept(
         {
             "code": "112026",
-            "definition": "A qualitative descriptor for the thickness of tubular structures, such as blood vessels",
+            "definition": "A qualitative descriptor for the thickness of tubular factory, such as blood vessels",
             "display": "Width Descriptor",
         }
     )
     """
     Width Descriptor
 
-    A qualitative descriptor for the thickness of tubular structures, such as blood vessels
+    A qualitative descriptor for the thickness of tubular factory, such as blood vessels
     """
 
     one12027 = CodeSystemConcept(
@@ -18426,7 +18426,7 @@ Version "01")
     """
     Pseudoplaque
 
-    An irregular band of peripheral pulmonary opacity adjacent to visceral pleura that simulates the appearance of a pleural plaque and is formed by coalescence of small nodules [Fraser and Pare] 
+    An irregular band of peripheral pulmonary opacity adjacent to visceral pleura that simulates the appearance of a pleural plaque and is formed by coalescence of small nodules [Fraser and Pare]
     """
 
     one12069 = CodeSystemConcept(
@@ -18601,14 +18601,14 @@ Version "01")
     one12082 = CodeSystemConcept(
         {
             "code": "112082",
-            "definition": "The common boundary between the shadows of two juxtaposed structures or tissues of different texture or opacity (edge, border) [Fraser and Pare]",
+            "definition": "The common boundary between the shadows of two juxtaposed factory or tissues of different texture or opacity (edge, border) [Fraser and Pare]",
             "display": "Interface",
         }
     )
     """
     Interface
 
-    The common boundary between the shadows of two juxtaposed structures or tissues of different texture or opacity (edge, border) [Fraser and Pare]
+    The common boundary between the shadows of two juxtaposed factory or tissues of different texture or opacity (edge, border) [Fraser and Pare]
     """
 
     one12083 = CodeSystemConcept(
@@ -18666,14 +18666,14 @@ Version "01")
     one12087 = CodeSystemConcept(
         {
             "code": "112087",
-            "definition": "The pulmonary artery and its immediate branches in a secondary lobule; HRCT depicts these vessels in certain cases; a.k.a. core structures or lobular core structures [Fraser and Pare]",
-            "display": "Centrilobular structures",
+            "definition": "The pulmonary artery and its immediate branches in a secondary lobule; HRCT depicts these vessels in certain cases; a.k.a. core factory or lobular core factory [Fraser and Pare]",
+            "display": "Centrilobular factory",
         }
     )
     """
-    Centrilobular structures
+    Centrilobular factory
 
-    The pulmonary artery and its immediate branches in a secondary lobule; HRCT depicts these vessels in certain cases; a.k.a. core structures or lobular core structures [Fraser and Pare]
+    The pulmonary artery and its immediate branches in a secondary lobule; HRCT depicts these vessels in certain cases; a.k.a. core factory or lobular core factory [Fraser and Pare]
     """
 
     one12088 = CodeSystemConcept(
@@ -18757,14 +18757,14 @@ Version "01")
     one12094 = CodeSystemConcept(
         {
             "code": "112094",
-            "definition": "A longitudinal composite opacity measuring 2-5 mm in width; acceptable when limited to anatomic structures within the mediastinum [Fraser and Pare]",
+            "definition": "A longitudinal composite opacity measuring 2-5 mm in width; acceptable when limited to anatomic factory within the mediastinum [Fraser and Pare]",
             "display": "Stripe",
         }
     )
     """
     Stripe
 
-    A longitudinal composite opacity measuring 2-5 mm in width; acceptable when limited to anatomic structures within the mediastinum [Fraser and Pare]
+    A longitudinal composite opacity measuring 2-5 mm in width; acceptable when limited to anatomic factory within the mediastinum [Fraser and Pare]
     """
 
     one12095 = CodeSystemConcept(
@@ -19043,14 +19043,14 @@ Version "01")
     one12116 = CodeSystemConcept(
         {
             "code": "112116",
-            "definition": "Parallel or slightly convergent linear opacities that suggest the planar projection of tubular structures and that correspond in location and orientation to elements of the bronchial tree [Fraser and Pare]",
+            "definition": "Parallel or slightly convergent linear opacities that suggest the planar projection of tubular factory and that correspond in location and orientation to elements of the bronchial tree [Fraser and Pare]",
             "display": "Tramline shadow",
         }
     )
     """
     Tramline shadow
 
-    Parallel or slightly convergent linear opacities that suggest the planar projection of tubular structures and that correspond in location and orientation to elements of the bronchial tree [Fraser and Pare]
+    Parallel or slightly convergent linear opacities that suggest the planar projection of tubular factory and that correspond in location and orientation to elements of the bronchial tree [Fraser and Pare]
     """
 
     one12117 = CodeSystemConcept(
@@ -19186,14 +19186,14 @@ Version "01")
     one12127 = CodeSystemConcept(
         {
             "code": "112127",
-            "definition": "Nodular dilation of centrilobular branching structures that resembles a budding tree and represents exudative bronchiolar dilation [Fraser and Pare]",
+            "definition": "Nodular dilation of centrilobular branching factory that resembles a budding tree and represents exudative bronchiolar dilation [Fraser and Pare]",
             "display": "Tree-in-bud sign",
         }
     )
     """
     Tree-in-bud sign
 
-    Nodular dilation of centrilobular branching structures that resembles a budding tree and represents exudative bronchiolar dilation [Fraser and Pare]
+    Nodular dilation of centrilobular branching factory that resembles a budding tree and represents exudative bronchiolar dilation [Fraser and Pare]
     """
 
     one12128 = CodeSystemConcept(
@@ -19342,40 +19342,40 @@ Version "01")
     one12139 = CodeSystemConcept(
         {
             "code": "112139",
-            "definition": "The border of a shadow (opacity) is well distinct from adjacent structures [Fraser and Pare]",
+            "definition": "The border of a shadow (opacity) is well distinct from adjacent factory [Fraser and Pare]",
             "display": "Well demarcated",
         }
     )
     """
     Well demarcated
 
-    The border of a shadow (opacity) is well distinct from adjacent structures [Fraser and Pare]
+    The border of a shadow (opacity) is well distinct from adjacent factory [Fraser and Pare]
     """
 
     one12140 = CodeSystemConcept(
         {
             "code": "112140",
-            "definition": "The border of a shadow (opacity) is sharply distinct from adjacent structures [Fraser and Pare]",
+            "definition": "The border of a shadow (opacity) is sharply distinct from adjacent factory [Fraser and Pare]",
             "display": "Sharply demarcated",
         }
     )
     """
     Sharply demarcated
 
-    The border of a shadow (opacity) is sharply distinct from adjacent structures [Fraser and Pare]
+    The border of a shadow (opacity) is sharply distinct from adjacent factory [Fraser and Pare]
     """
 
     one12141 = CodeSystemConcept(
         {
             "code": "112141",
-            "definition": "The border of a shadow (opacity) is poorly distinct from adjacent structures [Fraser and Pare]",
+            "definition": "The border of a shadow (opacity) is poorly distinct from adjacent factory [Fraser and Pare]",
             "display": "Poorly demarcated",
         }
     )
     """
     Poorly demarcated
 
-    The border of a shadow (opacity) is poorly distinct from adjacent structures [Fraser and Pare]
+    The border of a shadow (opacity) is poorly distinct from adjacent factory [Fraser and Pare]
     """
 
     one12142 = CodeSystemConcept(
@@ -19961,7 +19961,7 @@ Version "01")
     """
     Mean Attenuation Coefficient
 
-    The value that is computed by dividing the sum of a set of X-Ray attenuation coefficients by the number of values 
+    The value that is computed by dividing the sum of a set of X-Ray attenuation coefficients by the number of values
     """
 
     one12182 = CodeSystemConcept(
@@ -22419,14 +22419,14 @@ Version "01")
     one13077 = CodeSystemConcept(
         {
             "code": "113077",
-            "definition": "Values are derived by selectively editing acquired data (removing values from the volume), such as in order to remove obscuring structures or noise",
+            "definition": "Values are derived by selectively editing acquired data (removing values from the volume), such as in order to remove obscuring factory or noise",
             "display": "Volume editing",
         }
     )
     """
     Volume editing
 
-    Values are derived by selectively editing acquired data (removing values from the volume), such as in order to remove obscuring structures or noise
+    Values are derived by selectively editing acquired data (removing values from the volume), such as in order to remove obscuring factory or noise
     """
 
     one13078 = CodeSystemConcept(
@@ -24344,7 +24344,7 @@ Version "01")
     """
     Positioner Primary End Angle
 
-    Positioner Primary Angle at the end of an irradiation event. For further definition see (112011, DCM, "Positioner Primary Angle") 
+    Positioner Primary Angle at the end of an irradiation event. For further definition see (112011, DCM, "Positioner Primary Angle")
     """
 
     one13740 = CodeSystemConcept(
@@ -24357,7 +24357,7 @@ Version "01")
     """
     Positioner Secondary End Angle
 
-    Positioner Secondary Angle at the end of an irradiation event. For further definition see (112012, DCM, "Positioner Secondary Angle") 
+    Positioner Secondary Angle at the end of an irradiation event. For further definition see (112012, DCM, "Positioner Secondary Angle")
     """
 
     one13742 = CodeSystemConcept(
@@ -24552,7 +24552,7 @@ Version "01")
     """
     Table Longitudinal End Position
 
-    Table Longitudinal Position at the end of an irradiation event; see (113751, DCM, "Table Longitudinal Position") 
+    Table Longitudinal Position at the end of an irradiation event; see (113751, DCM, "Table Longitudinal Position")
     """
 
     one13760 = CodeSystemConcept(
@@ -24565,7 +24565,7 @@ Version "01")
     """
     Table Lateral End Position
 
-    Table Lateral Position at the end of an irradiation event; see (113752, DCM, "Table Lateral Position") 
+    Table Lateral Position at the end of an irradiation event; see (113752, DCM, "Table Lateral Position")
     """
 
     one13761 = CodeSystemConcept(
@@ -24578,7 +24578,7 @@ Version "01")
     """
     Table Height End Position
 
-    Table Height Position at the end of an irradiation event; see (113753, DCM, "Table Height Position") 
+    Table Height Position at the end of an irradiation event; see (113753, DCM, "Table Height Position")
     """
 
     one13763 = CodeSystemConcept(
@@ -26805,14 +26805,14 @@ Version "01")
     one14207 = CodeSystemConcept(
         {
             "code": "114207",
-            "definition": "An optical imaging technique used to increase optical resolution and contrast of a micrograph by using point illumination and a spatial pinhole to eliminate out-of-focus light in specimens that are thicker than the focal plane. It enables the reconstruction of 3D structures from the obtained images",
+            "definition": "An optical imaging technique used to increase optical resolution and contrast of a micrograph by using point illumination and a spatial pinhole to eliminate out-of-focus light in specimens that are thicker than the focal plane. It enables the reconstruction of 3D factory from the obtained images",
             "display": "Confocal imaging",
         }
     )
     """
     Confocal imaging
 
-    An optical imaging technique used to increase optical resolution and contrast of a micrograph by using point illumination and a spatial pinhole to eliminate out-of-focus light in specimens that are thicker than the focal plane. It enables the reconstruction of 3D structures from the obtained images
+    An optical imaging technique used to increase optical resolution and contrast of a micrograph by using point illumination and a spatial pinhole to eliminate out-of-focus light in specimens that are thicker than the focal plane. It enables the reconstruction of 3D factory from the obtained images
     """
 
     one14208 = CodeSystemConcept(
@@ -27394,7 +27394,7 @@ Version "01")
     """
     Fetus number
 
-    
+
     """
 
     one21038 = CodeSystemConcept(
@@ -27417,7 +27417,7 @@ Version "01")
     """
     Number of Fetuses
 
-    
+
     """
 
     one21039 = CodeSystemConcept(
@@ -27646,7 +27646,7 @@ Version "01")
     """
     Present
 
-    
+
     """
 
     one21054 = CodeSystemConcept(
@@ -27669,7 +27669,7 @@ Version "01")
     """
     Absent
 
-    
+
     """
 
     one21055 = CodeSystemConcept(
@@ -27768,7 +27768,7 @@ Version "01")
     """
     History
 
-    
+
     """
 
     one21062 = CodeSystemConcept(
@@ -27791,7 +27791,7 @@ Version "01")
     """
     Request
 
-    
+
     """
 
     one21064 = CodeSystemConcept(
@@ -27814,7 +27814,7 @@ Version "01")
     """
     Current Procedure Descriptions
 
-    
+
     """
 
     one21065 = CodeSystemConcept(
@@ -27850,7 +27850,7 @@ Version "01")
     """
     Prior Procedure Descriptions
 
-    
+
     """
 
     one21068 = CodeSystemConcept(
@@ -27873,7 +27873,7 @@ Version "01")
     """
     Previous Findings
 
-    
+
     """
 
     one21069 = CodeSystemConcept(
@@ -27909,7 +27909,7 @@ Version "01")
     """
     Findings
 
-    
+
     """
 
     one21071 = CodeSystemConcept(
@@ -27945,7 +27945,7 @@ Version "01")
     """
     Impressions
 
-    
+
     """
 
     one21073 = CodeSystemConcept(
@@ -27981,7 +27981,7 @@ Version "01")
     """
     Recommendations
 
-    
+
     """
 
     one21075 = CodeSystemConcept(
@@ -28017,7 +28017,7 @@ Version "01")
     """
     Conclusions
 
-    
+
     """
 
     one21077 = CodeSystemConcept(
@@ -28053,7 +28053,7 @@ Version "01")
     """
     Addendum
 
-    
+
     """
 
     one21079 = CodeSystemConcept(
@@ -28102,7 +28102,7 @@ Version "01")
     """
     Physician
 
-    
+
     """
 
     one21082 = CodeSystemConcept(
@@ -28125,7 +28125,7 @@ Version "01")
     """
     Nurse
 
-    
+
     """
 
     one21083 = CodeSystemConcept(
@@ -28148,7 +28148,7 @@ Version "01")
     """
     Technologist
 
-    
+
     """
 
     one21084 = CodeSystemConcept(
@@ -28171,7 +28171,7 @@ Version "01")
     """
     Radiographer
 
-    
+
     """
 
     one21085 = CodeSystemConcept(
@@ -28184,7 +28184,7 @@ Version "01")
     """
     Intern
 
-    
+
     """
 
     one21086 = CodeSystemConcept(
@@ -28207,7 +28207,7 @@ Version "01")
     """
     Resident
 
-    
+
     """
 
     one21087 = CodeSystemConcept(
@@ -28230,7 +28230,7 @@ Version "01")
     """
     Registrar
 
-    
+
     """
 
     one21088 = CodeSystemConcept(
@@ -28266,7 +28266,7 @@ Version "01")
     """
     Attending [Consultant]
 
-    
+
     """
 
     one21090 = CodeSystemConcept(
@@ -28289,7 +28289,7 @@ Version "01")
     """
     Scrub nurse
 
-    
+
     """
 
     one21091 = CodeSystemConcept(
@@ -28312,7 +28312,7 @@ Version "01")
     """
     Surgeon
 
-    
+
     """
 
     one21092 = CodeSystemConcept(
@@ -28338,7 +28338,7 @@ Version "01")
     """
     Sonographer
 
-    
+
     """
 
     one21094 = CodeSystemConcept(
@@ -29514,7 +29514,7 @@ Version "01")
     """
     Area Outline
 
-    
+
     """
 
     one21202 = CodeSystemConcept(
@@ -29537,7 +29537,7 @@ Version "01")
     """
     Area of Defined Region
 
-    
+
     """
 
     one21206 = CodeSystemConcept(
@@ -29599,7 +29599,7 @@ Version "01")
     """
     Path
 
-    
+
     """
 
     one21211 = CodeSystemConcept(
@@ -29635,7 +29635,7 @@ Version "01")
     """
     Perimeter Outline
 
-    
+
     """
 
     one21214 = CodeSystemConcept(
@@ -35632,14 +35632,14 @@ Version "01")
     one22395 = CodeSystemConcept(
         {
             "code": "122395",
-            "definition": "Area within the plaque with very low echogenicity separated from the lumen and surrounded by more echogenic structures (fibrous cap). Highly lipidic necrotic region with remnants of foam cells and dead lymphocytes present. No collagen fibers are visible and mechanical integrity is poor. Cholesterol clefts and micro calcifications are visible",
+            "definition": "Area within the plaque with very low echogenicity separated from the lumen and surrounded by more echogenic factory (fibrous cap). Highly lipidic necrotic region with remnants of foam cells and dead lymphocytes present. No collagen fibers are visible and mechanical integrity is poor. Cholesterol clefts and micro calcifications are visible",
             "display": "Necrotic-Lipidic Plaque",
         }
     )
     """
     Necrotic-Lipidic Plaque
 
-    Area within the plaque with very low echogenicity separated from the lumen and surrounded by more echogenic structures (fibrous cap). Highly lipidic necrotic region with remnants of foam cells and dead lymphocytes present. No collagen fibers are visible and mechanical integrity is poor. Cholesterol clefts and micro calcifications are visible
+    Area within the plaque with very low echogenicity separated from the lumen and surrounded by more echogenic factory (fibrous cap). Highly lipidic necrotic region with remnants of foam cells and dead lymphocytes present. No collagen fibers are visible and mechanical integrity is poor. Cholesterol clefts and micro calcifications are visible
     """
 
     one22398 = CodeSystemConcept(
@@ -39665,7 +39665,7 @@ Version "01")
     """
     Biplane Ellipse
 
-    Area = P/4 X d1 X d2 d1 = anterior/posterior axis d2 = medial/lateral axis Hagen-Ansert, Sandra L., Textbook of Diagnostic Ultrasound, ed. 3, The C.V.Mosby Co., 1989, p. 73. 
+    Area = P/4 X d1 X d2 d1 = anterior/posterior axis d2 = medial/lateral axis Hagen-Ansert, Sandra L., Textbook of Diagnostic Ultrasound, ed. 3, The C.V.Mosby Co., 1989, p. 73.
     """
 
     one25212 = CodeSystemConcept(
@@ -39804,7 +39804,7 @@ Version "01")
     """
     Left Ventricle Mass by Truncated Ellipse
 
-    Mass = 1.05P ((b + t)2 X (2/3 (a + t) + d - d3 /3(a + t)2) - b2 (2/3a + d - d3 /3a2)) a = Semi-major axis from widest minor axis radius to apex. b = Short axis radius calculated from short axis cavity area t = Myocardial thickness calculated from short axis epicardial and cavity areas d = Truncated semi-major axis from widest short axis diameter to plane of mitral annulus. Mass unit is grams and length in cm. Schiller NB et al: Recommendations for quantification of the left ventricle by two-dimensional echocardiography, American Society of Echocardiography 2:364, 1989. 
+    Mass = 1.05P ((b + t)2 X (2/3 (a + t) + d - d3 /3(a + t)2) - b2 (2/3a + d - d3 /3a2)) a = Semi-major axis from widest minor axis radius to apex. b = Short axis radius calculated from short axis cavity area t = Myocardial thickness calculated from short axis epicardial and cavity areas d = Truncated semi-major axis from widest short axis diameter to plane of mitral annulus. Mass unit is grams and length in cm. Schiller NB et al: Recommendations for quantification of the left ventricle by two-dimensional echocardiography, American Society of Echocardiography 2:364, 1989.
     """
 
     one25223 = CodeSystemConcept(

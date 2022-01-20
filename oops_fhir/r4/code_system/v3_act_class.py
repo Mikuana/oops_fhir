@@ -113,7 +113,7 @@ class v3ActClass:
                             "display": "grouper",
                         },
                     ],
-                    "definition": "Used to group a set of acts sharing a common context. Organizer structures can nest within other context structures - such as where a document is contained within a folder, or a folder is contained within an EHR extract.",
+                    "definition": "Used to group a set of acts sharing a common context. Organizer factory can nest within other context factory - such as where a document is contained within a folder, or a folder is contained within an EHR extract.",
                     "display": "record organizer",
                     "property": [{"code": "notSelectable", "valueBoolean": True}],
                 },
@@ -762,10 +762,10 @@ class v3ActClass:
 
     A record of something that is being done, has been done, can be done, or is intended or requested to be done.
 
-                        
+
                            Examples:The kinds of acts that are common in health care are (1) a clinical observation, (2) an assessment of health condition (such as problems and diagnoses), (3) healthcare goals, (4) treatment services (such as medication, surgery, physical and psychological therapy), (5) assisting, monitoring or attending, (6) training and education services to patients and their next of kin, (7) and notary services (such as advanced directives or living will), (8)  editing and maintaining documents, and many others.
 
-                        
+
                            Discussion and Rationale: Acts are the pivot of the RIM; all domain information and processes are represented primarily in Acts. Any profession or business, including healthcare, is primarily constituted of intentional and occasionally non-intentional actions, performed and recorded by responsible actors. An Act-instance is a record of such an action.
 
                         Acts connect to Entities in their Roles through Participations and connect to other Acts through ActRelationships. Participations are the authors, performers and other responsible parties as well as subjects and beneficiaries (which includes tools and material used in the performance of the act, which are also subjects). The moodCode distinguishes between Acts that are meant as factual records, vs. records of intended or ordered services, and the other modalities in which act can appear.
@@ -787,7 +787,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     doclist = CodeSystemConcept(
@@ -796,7 +796,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     doclstitm = CodeSystemConcept(
@@ -805,7 +805,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     docpara = CodeSystemConcept(
@@ -814,7 +814,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     doctbl = CodeSystemConcept(
@@ -823,7 +823,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     linkhtml = CodeSystemConcept(
@@ -832,7 +832,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     localattr = CodeSystemConcept(
@@ -841,7 +841,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     localmrkp = CodeSystemConcept(
@@ -850,7 +850,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     ordered = CodeSystemConcept(
@@ -859,7 +859,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     refr = CodeSystemConcept(
@@ -868,7 +868,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     tblcol = CodeSystemConcept(
@@ -877,7 +877,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     tblcolgp = CodeSystemConcept(
@@ -886,7 +886,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     tbldata = CodeSystemConcept(
@@ -895,7 +895,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     tblhdr = CodeSystemConcept(
@@ -904,7 +904,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     tblrow = CodeSystemConcept(
@@ -913,7 +913,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     tbody = CodeSystemConcept(
@@ -922,7 +922,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     tfoot = CodeSystemConcept(
@@ -931,7 +931,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     thead = CodeSystemConcept(
@@ -940,7 +940,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     unordered = CodeSystemConcept(
@@ -949,7 +949,7 @@ class v3ActClass:
     """
     None
 
-    
+
     """
 
     class Meta:

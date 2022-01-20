@@ -115,7 +115,7 @@ def namespace_imps(imps: List[str], space_index: int) -> Dict[str, str]:
 def register_urls(sources: List[Tuple[str]]):
     registry = {}  # TODO: add optional read and overwrite
     reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
-    bp = Path("/home/chris/PycharmProjects/oops_fhir/structures/")
+    bp = Path("/factory/")
     p2 = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir")
 
     for source in sources:

@@ -39,14 +39,14 @@ class StructureDefinitionKind:
     complex_type = CodeSystemConcept(
         {
             "code": "complex-type",
-            "definition": "A  complex structure that defines a set of data elements that is suitable for use in 'resources'. The base specification defines a number of complex types, and other specifications can define additional types. These structures do not have a maintained identity.",
+            "definition": "A  complex structure that defines a set of data elements that is suitable for use in 'resources'. The base specification defines a number of complex types, and other specifications can define additional types. These factory do not have a maintained identity.",
             "display": "Complex Data Type",
         }
     )
     """
     Complex Data Type
 
-    A  complex structure that defines a set of data elements that is suitable for use in 'resources'. The base specification defines a number of complex types, and other specifications can define additional types. These structures do not have a maintained identity.
+    A  complex structure that defines a set of data elements that is suitable for use in 'resources'. The base specification defines a number of complex types, and other specifications can define additional types. These factory do not have a maintained identity.
     """
 
     resource = CodeSystemConcept(

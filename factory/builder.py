@@ -9,29 +9,24 @@ from typing import Union
 import jinja2
 from fhir.resources.bundle import Bundle
 
-from structures.utils import snake_case, all_imps, namespace_imps, stage_values, json_to_py, camel_case
+from factory.utils import (
+    snake_case, all_imps, namespace_imps, stage_values, json_to_py, camel_case
+)
+
+factory_path = Path(Path(__file__).parent)
+package_path = Path(factory_path.parent, "oops_fhir")
 
 logging.basicConfig(
-    filename='build.log', filemode='w', encoding='utf-8', level=logging.INFO
+    filename=Path(factory_path, 'build.log'),
+    filemode='w', encoding='utf-8', level=logging.INFO
 )
 
-reg_p = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir/registry.json")
-bp = Path("/home/chris/PycharmProjects/oops_fhir/structures/")
-p2 = Path("/home/chris/PycharmProjects/oops_fhir/oops_fhir")
+registry = json.loads(Path(package_path, "registry.json").read_text())
 
-# TODO: re-enable us core
-# sources = [("r4",), ("us", "core")]
 sources = [("r4",)]
 
-registry = json.loads(reg_p.read_text())
-# registry = register_urls(sources)
-
-
-loader = jinja2.FileSystemLoader('/home/chris/PycharmProjects/oops_fhir/structures/templates')
-jinj_env = jinja2.Environment(
-    loader=loader,
-    extensions=['jinja2.ext.do']
-)
+loader = jinja2.FileSystemLoader(Path(Path(__file__).parent, 'templates'))
+jinj_env = jinja2.Environment(loader=loader, extensions=['jinja2.ext.do'])
 jinj_env.filters['snake_case'] = snake_case
 jinj_env.filters['camel_case'] = camel_case
 jinj_env.filters['wrap'] = lambda x: '\n'.join(textwrap.wrap(x, 72))
@@ -43,27 +38,33 @@ jinj_env.filters['get_values'] = lambda x: stage_values(x, registry)
 jinj_env.filters['json_to_py'] = json_to_py
 
 build_order = [
-    # 'CodeSystem',
+    'CodeSystem',
     'ValueSet'
 ]
 experimental_exception = [
     'http://hl7.org/fhir/ValueSet/languages'
 ]
 
+ignore = [
+    'MessageEvent',  # TODO: wat? this resource is really weird
+    'v3.policyHolderRole',  # CodeSystem says itscomplete, but is empty of concepts.
+    'SecurityRoleType',  # CodeSystem is missing from bundles, ValueSet fails
+    'ParticipationRoleType',  # CodeSystem is missing from bundles, ValueSet fails
+]
+
 for o in build_order:
     logging.info(f'Building resource type {o}')
     for source in sources:
         logging.info(f'Loading source files for "{source}"')
-        sp = Path(p2, *source)
+        sp = Path(package_path, *source)
         sp.mkdir(exist_ok=True, parents=True)
         Path(sp, "__init__.py").touch()
         bundle: Union[Bundle, None] = None
         resources = []
-        for bj in Path(bp, *source).glob("*.json"):
-            # if bj.name != 'valuesets.json':
-            #     continue  # TODO: remove this break
-
-            logging.info(f'Parsing source file {bj.relative_to(Path(__file__).parent)}')
+        for bj in Path(factory_path, *source).glob("*.json"):
+            logging.info(
+                f'Parsing source file {bj.relative_to(Path(__file__).parent)}'
+            )
             try:
                 bundle = Bundle.parse_file(bj)
             except Exception as e:
@@ -93,26 +94,9 @@ for o in build_order:
                 elif resource.experimental is True and \
                     resource.url not in experimental_exception:
                     continue
-                elif resource.name == 'MessageEvent':  # TODO: wat?
-                    logging.warning(
-                        f'SKIP {resource.resource_type} {resource.name}. '
-                        f'Resource is weird...'
-                    )
+                elif resource.name in ignore:
+                    logging.info(f'Ignoring {resource.resource_type} resource {resource.name}')
                     continue
-                elif resource.name == 'v3.policyHolderRole':
-                    logging.warning(
-                        f'SKIP {resource.resource_type} {resource.name}. '
-                        f'CodeSystem claims to be complete, but is empty of concepts.'
-                    )
-                    continue
-                elif resource.name in ['SecurityRoleType', 'ParticipationRoleType']:
-                    logging.warning(
-                        f'SKIP {resource.resource_type} {resource.name}. '
-                        f'CodeSystem is missing from bundles, so ValueSet fails'
-                    )
-                    continue
-                # elif resource.name != "Yes/No/Don't Know":  # TODO: this is temp
-                #     continue
 
                 resource.text = None  # remove text to reduce size
                 rtp = Path(sp, snake_case(resource.resource_type))

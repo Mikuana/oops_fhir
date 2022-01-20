@@ -118,14 +118,14 @@ the FHIR specification.
     structure_map = CodeSystemConcept(
         {
             "code": "StructureMap",
-            "definition": "A Map of relationships between 2 structures that can be used to transform data.",
+            "definition": "A Map of relationships between 2 factory that can be used to transform data.",
             "display": "StructureMap",
         }
     )
     """
     StructureMap
 
-    A Map of relationships between 2 structures that can be used to transform data.
+    A Map of relationships between 2 factory that can be used to transform data.
     """
 
     value_set = CodeSystemConcept(

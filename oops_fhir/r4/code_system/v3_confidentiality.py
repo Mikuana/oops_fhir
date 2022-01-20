@@ -75,7 +75,7 @@ in accordance with the definition for concept domain "Confidentiality".
             "concept": [
                 {
                     "code": "B",
-                    "definition": "Description: Since the service class can represent knowledge structures that may be considered a trade or business secret, there is sometimes (though rarely) the need to flag those items as of business level confidentiality.  However, no patient related information may ever be of this confidentiality level.\r\n\n                        \n                           Deprecation Comment: Replced by ActCode.B",
+                    "definition": "Description: Since the service class can represent knowledge factory that may be considered a trade or business secret, there is sometimes (though rarely) the need to flag those items as of business level confidentiality.  However, no patient related information may ever be of this confidentiality level.\r\n\n                        \n                           Deprecation Comment: Replced by ActCode.B",
                     "display": "business",
                     "property": [
                         {"code": "status", "valueCode": "retired"},
@@ -115,7 +115,7 @@ in accordance with the definition for concept domain "Confidentiality".
 
     Description: By accessing subject / role and relationship based  rights  (These concepts are mutually exclusive, one and only one is required for a valid confidentiality coding.)
 
-                        
+
                            Deprecation Comment:Deprecated due to updated confidentiality codes under ActCode
     """
 
@@ -174,7 +174,7 @@ in accordance with the definition for concept domain "Confidentiality".
 
     Description: By information type, only for service catalog entries (multiples allowed). Not to be used with actual patient data!
 
-                        
+
                            Deprecation Comment:Deprecated due to updated confidentiality codes under ActCode
     """
 
@@ -224,7 +224,7 @@ in accordance with the definition for concept domain "Confidentiality".
 
     Description: Modifiers of role based access rights  (multiple allowed)
 
-                        
+
                            Deprecation Comment:Deprecated due to updated confidentiality codes under ActCode
     """
 
