@@ -1,4 +1,25 @@
+import json
+import types
+from importlib import import_module
+from pathlib import Path
+
 from fhir.resources.codesystem import CodeSystemConcept as _CodeSystemConcept
+
+_registry = json.loads(
+    Path(Path(__file__).parent, 'registry.json').read_text()
+)
+
+
+def lookup(url: str) -> types.ModuleType:
+    """
+    Perform module lookup of resource using URL
+
+    :param url: uniform resource locator that can be used to directly access the
+        specified resource.
+    :return: a python module in this package which represents the specified
+        resource.
+    """
+    return import_module(_registry[url])
 
 
 class CodeSystem:
