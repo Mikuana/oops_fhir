@@ -59,6 +59,6 @@ setup(
     test_suite="tests",
     tests_require=test_requirements,
     url="https://github.com/mikuana/oops_fhir",
-    version="0.1.0",
+    version="0.1.0-beta",
     zip_safe=False,
 )
