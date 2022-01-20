@@ -46,11 +46,8 @@ class {{ resource.name | camel_case }}(ValueSet):
 
     {{ resource.url }}
     """
-    {% for k, v in values.imports.items() %}
-    {% for x in v %}
-    {{ x | snake_case }} = {{ x }}
-    {% endfor %}
-    {% endfor %}
+    # TODO: fix this template issue1
+    pass
 
     {% for k, v in values.concepts.items() %}
     {{ k }} = CodeSystemConcept({{ v.json() | json_to_py}})

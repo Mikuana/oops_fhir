@@ -42,7 +42,10 @@ jinj_env.filters['oops_ref'] = lambda x: registry.get(x)
 jinj_env.filters['get_values'] = lambda x: stage_values(x, registry)
 jinj_env.filters['json_to_py'] = json_to_py
 
-build_order = ['CodeSystem', 'ValueSet']
+build_order = [
+    # 'CodeSystem',
+    'ValueSet'
+]
 experimental_exception = [
     'http://hl7.org/fhir/ValueSet/languages'
 ]
