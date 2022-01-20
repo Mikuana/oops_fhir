@@ -7,6 +7,8 @@ from oops_fhir.r4.value_set.common_languages import CommonLanguages
 from oops_fhir.r4.value_set.marital_status_codes import MaritalStatusCodes
 from oops_fhir.r4.value_set.patient_contact_relationship import PatientContactRelationship
 
+__all__ = ['Patient']
+
 
 class _Deceased:
     """
