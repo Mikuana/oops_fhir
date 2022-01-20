@@ -27,7 +27,9 @@ def read_version():
         raise RuntimeError(f"Unable to read version string: {e}")
 
 
-requirements = ["fhir.resources"]
+requirements = [
+    "fhir.resources"
+]
 
 test_requirements = [
     "pytest>=3",
@@ -56,8 +58,9 @@ setup(
     keywords="oops_fhir",
     name="oops_fhir",
     packages=find_packages(include=["oops_fhir", "oops_fhir.*"]),
-    test_suite="tests",
-    tests_require=test_requirements,
+    extras_require={
+        'Testing': [test_requirements]
+    },
     url="https://github.com/mikuana/oops_fhir",
     version="0.1.0-beta",
     zip_safe=False,
